@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>What is programmatic video? A plain definition</title>
+<meta name="description" content="Programmatic video is video produced by running a coded template against structured data, so one template renders many videos. This page defines the term, contrasts it with AI video generation and manual editing, and sets out when each is appropriate."/>
+<link rel="canonical" href="https://videngine.io/programmatic-video"/>
+<meta property="og:title" content="What is programmatic video? A plain definition"/>
+<meta property="og:description" content="Video produced by running a coded template against structured data. One template, many videos."/>
+<meta property="og:url" content="https://videngine.io/programmatic-video"/>
+<meta property="og:type" content="article"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<link href="https://api.fontshare.com" rel="preconnect"/>
+<link href="https://fonts.gstatic.com" rel="preconnect" crossorigin/>
+<link href="https://api.fontshare.com/v2/css?f[]=switzer@300,400,500,600,700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="/style.css"/>
+<style>
+  .doc-hero { padding: 200px 0 72px; border-bottom: 1px solid var(--line); }
+  .doc-hero h1 { margin: 26px 0 0; font-size: clamp(52px, 5.2vw, 80px); line-height: .96; letter-spacing: -.047em; font-weight: 500; }
+  .doc-standfirst { margin: 30px 0 0; max-width: 40ch; font-size: clamp(19px, 1.9vw, 25px); line-height: 1.34; letter-spacing: -.028em; }
+  .doc-meta { margin-top: 34px; display: flex; gap: 22px; flex-wrap: wrap; color: var(--muted); }
+
+  .doc-grid { display: grid; grid-template-columns: 200px 1fr; gap: 72px; align-items: start; padding: 90px 0 130px; }
+  .toc { position: sticky; top: 110px; border-top: 1px solid var(--line); padding-top: 16px; }
+  .toc h2 { margin: 0 0 14px; font-family: var(--mono); font-size: 10px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); font-weight: 400; }
+  .toc a { display: block; padding: 7px 0; font-size: 13px; color: var(--muted); transition: color .25s ease; }
+  .toc a:hover { color: var(--ink); }
+
+  .doc-body { max-width: 74ch; }
+  .doc-body section { padding-top: 8px; }
+  .doc-body section + section { margin-top: 68px; border-top: 1px solid var(--line); padding-top: 46px; }
+  .doc-body h2 { margin: 0 0 22px; font-size: clamp(28px, 2.9vw, 40px); line-height: 1.02; letter-spacing: -.045em; font-weight: 500; }
+  .doc-body h3 { margin: 38px 0 10px; font-size: 19px; letter-spacing: -.035em; font-weight: 600; }
+  .doc-body p { margin: 0 0 18px; font-size: 17px; line-height: 1.6; letter-spacing: -.014em; }
+  .doc-body p.lead { font-size: 19px; line-height: 1.55; }
+  .doc-body ul { margin: 0 0 18px; padding-left: 0; list-style: none; }
+  .doc-body li { position: relative; padding-left: 22px; margin-bottom: 10px; font-size: 16px; line-height: 1.55; }
+  .doc-body li::before { content: ""; position: absolute; left: 4px; top: 10px; width: 6px; height: 6px; border-radius: 2px; background: var(--amber); }
+
+  .callout { margin: 26px 0; padding: 20px 22px; border-left: 2px solid var(--amber); background: #fff; border-radius: 0 10px 10px 0; box-shadow: 0 10px 30px rgba(0,0,0,.04); }
+  .callout p { margin: 0; font-size: 16px; line-height: 1.55; }
+  .callout b { font-weight: 650; }
+
+  .cmp { width: 100%; margin: 26px 0 8px; border-collapse: collapse; background: #fff; border: 1px solid var(--line); border-radius: 12px; overflow: hidden; }
+  .cmp th, .cmp td { padding: 13px 15px; text-align: left; font-size: 13px; line-height: 1.45; border-bottom: 1px solid var(--line); vertical-align: top; }
+  .cmp thead th { font-family: var(--mono); font-size: 10px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); font-weight: 400; background: #f4f4f2; }
+  .cmp tbody th { font-weight: 600; width: 26%; }
+  .cmp tr:last-child th, .cmp tr:last-child td { border-bottom: 0; }
+  .cmp-note { font-family: var(--mono); font-size: 10px; letter-spacing: .05em; color: var(--muted); }
+
+  .verdict { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 26px 0; }
+  .verdict div { background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 20px; }
+  .verdict h3 { margin: 0 0 12px; font-size: 15px; letter-spacing: -.02em; }
+  .verdict ul { margin: 0; }
+  .verdict li { font-size: 14px; }
+  .verdict div:last-child li::before { background: #9b9b96; }
+
+  .doc-cta { border-top: 1px solid var(--line); padding: 90px 0 110px; text-align: center; }
+  .doc-cta h2 { margin: 0 auto 14px; max-width: 20ch; font-size: clamp(32px, 3.6vw, 50px); line-height: 1.02; letter-spacing: -.047em; font-weight: 500; }
+  .doc-cta p { margin: 0 auto 30px; max-width: 46ch; color: var(--muted); font-size: 16px; line-height: 1.5; }
+
+  @media (max-width: 900px) {
+    .doc-hero { padding: 150px 0 56px; }
+    .doc-grid { grid-template-columns: 1fr; gap: 0; padding: 60px 0 90px; }
+    .toc { display: none; }
+    .verdict { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 620px) {
+    .cmp { display: block; overflow-x: auto; white-space: nowrap; }
+    .cmp th, .cmp td { white-space: normal; min-width: 150px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="nav-wrap">
+<nav class="nav" aria-label="Primary navigation">
+<a class="brand" href="/"><span class="brand-mark" aria-hidden="true"></span><span>Videngine</span></a>
+<div class="nav-links">
+<a href="/#how">How it works</a>
+<a href="/#uses">Uses</a>
+<a href="/#pricing">Pricing</a>
+<a href="/#notes">Notes</a>
+</div>
+<a class="nav-cta" href="https://app.videngine.io">Open the studio</a>
+</nav>
+</div>
+
+<main id="top">
+
+<header class="doc-hero">
+<div class="page-shell">
+<div class="eyebrow"><span class="dot"></span>Definition</div>
+<h1>Programmatic video</h1>
+<p class="doc-standfirst">Video produced by running a coded template against structured data, so one template renders many videos.</p>
+<div class="doc-meta">
+<span class="mono">Published 25 August 2026</span>
+<span class="mono">Updated 25 August 2026</span>
+<span class="mono">9 min read</span>
+</div>
+</div>
+</header>
+
+<div class="page-shell doc-grid">
+
+<nav class="toc" aria-label="Contents">
+<h2>Contents</h2>
+<a href="#what">What it is</a>
+<a href="#how">How a render works</a>
+<a href="#vs-ai">Versus AI generation</a>
+<a href="#vs-editor">Versus an editor</a>
+<a href="#when">When to use it</a>
+<a href="#tools">The tools</a>
+<a href="#faq">Questions</a>
+</nav>
+
+<article class="doc-body">
+
+<section id="what">
+<h2>What is programmatic video?</h2>
+<p class="lead">Programmatic video is video produced by running a coded template against structured data. The template defines layout, typography, motion and timing once. The data supplies what changes: a price, an address, a product name, a photograph. Running the template against one hundred rows produces one hundred videos, each correct for its row and identical in every other respect.</p>
+<p>The term borrows from programmatic advertising, where ad placements are bought by machine against rules rather than negotiated one at a time. The parallel is exact. In both cases a human defines the rules once, and the volume that follows is handled without a human touching each unit.</p>
+<p>It is a production method rather than a genre. A programmatic video can look like anything, since the template is arbitrary code. What defines the category is that the video is derived from a source of truth rather than assembled by hand, and that re-running it with changed data produces a changed video and nothing else.</p>
+
+<h3>The defining property is determinism</h3>
+<p>Given the same template and the same input, a programmatic system returns the same file every time. That is the property that makes the method usable for commercial work. A price shown on screen is the price in the database. A logo sits in the same position in video four hundred as in video one. There is no drift between the first output and the last, because no judgement was applied to either.</p>
+<div class="callout">
+<p><b>Short version.</b> If a video is one of many that differ only by data, it is a programmatic video problem. If a video is the only one of its kind and its quality depends on taste, it is not.</p>
+</div>
+</section>
+
+<section id="how">
+<h2>How does a programmatic video render work?</h2>
+<p>Implementations vary, but almost all follow the same five stages.</p>
+<h3>1. Ingest the source</h3>
+<p>The system reads a structured input: a spreadsheet row, a JSON payload, a database record, or a web page loaded in a headless browser and stripped of navigation and boilerplate. The output of this stage is a clean set of fields.</p>
+<h3>2. Resolve the script</h3>
+<p>Fields become a shot list with timings attached. On simpler systems this is a fixed mapping, where field three always becomes shot two. On systems with a language model in the pipeline, the fields become prose that is then split into shots. The script is the last point at which a human normally intervenes.</p>
+<h3>3. Compose the scenes</h3>
+<p>Each shot is rendered as a frame-accurate component, most commonly a React component drawn to a canvas or a browser viewport. Brand rules live here as tokens rather than as saved presets, which is why they cannot drift between videos.</p>
+<h3>4. Produce the audio</h3>
+<p>Narration is synthesised from the script or supplied as an upload. Captions are usually transcribed back from the finished audio track rather than taken from the script, so that they match what was actually said rather than what was intended.</p>
+<h3>5. Render and deliver</h3>
+<p>Frames are rendered in parallel and muxed to a container, typically MP4. Because frames are independent, render time scales with available compute rather than with video length. The finished file is written to object storage and the calling system is notified.</p>
+</section>
+
+<section id="vs-ai">
+<h2>How is programmatic video different from AI video generation?</h2>
+<p class="lead">AI video generation creates footage from a prompt using a generative model, so the same prompt produces different footage each time. Programmatic video renders footage from a template written as code, so the same input produces the same footage every time. The first is generative and probabilistic. The second is deterministic.</p>
+<p>The distinction matters commercially rather than technically. A generative system is the right tool when you want something that does not exist yet and you can accept variance in what comes back. It is the wrong tool when the video states a fact, because a model that invents pixels can invent a price, misspell a street name or render a logo that is nearly but not quite your logo.</p>
+<p>Many systems mix the two. Using a language model to write the script while rendering the pictures from code is common, and gives you natural narration without giving up control of what appears on screen.</p>
+
+<table class="cmp">
+<caption class="cmp-note" style="text-align:left;padding:10px 15px">Generative and programmatic approaches compared</caption>
+<thead>
+<tr><th scope="col"></th><th scope="col">AI video generation</th><th scope="col">Programmatic video</th></tr>
+</thead>
+<tbody>
+<tr><th scope="row">Same input twice</th><td>Different output</td><td>Identical output</td></tr>
+<tr><th scope="row">Pictures come from</th><td>A generative model</td><td>A coded template</td></tr>
+<tr><th scope="row">Factual accuracy</th><td>Not guaranteed</td><td>Inherited from the data</td></tr>
+<tr><th scope="row">Brand consistency</th><td>Approximate</td><td>Exact, enforced in code</td></tr>
+<tr><th scope="row">Scales to hundreds</th><td>Cost scales, consistency does not</td><td>Yes, that is the design goal</td></tr>
+<tr><th scope="row">Best at</th><td>Footage that does not exist</td><td>Footage derived from records</td></tr>
+<tr><th scope="row">Examples</th><td>Runway, Sora, Synthesia, InVideo AI</td><td>Videngine, Creatomate, Shotstack, Plainly, Remotion</td></tr>
+</tbody>
+</table>
+</section>
+
+<section id="vs-editor">
+<h2>How is it different from using a video editor?</h2>
+<p class="lead">A video editor is a canvas for producing one video at a time, and the quality of the result depends on the person operating it. A programmatic system is a pipeline for producing many videos from one specification, and the quality of the result depends on how well the specification was written.</p>
+<p>An editor rewards taste and punishes volume. Every additional video costs another session at the timeline, and the two hundredth video made by a tired person at four in the afternoon is measurably worse than the first. A pipeline rewards structure and punishes ambiguity. It costs a great deal of thought once and almost nothing thereafter, and the two hundredth video is exactly as good as the first because it was produced by the same code.</p>
+<p>Template features inside editors sit between the two. They remove some repetition but still require a person to open each project, swap the assets and export, so the cost per video falls without ever approaching zero.</p>
+</section>
+
+<section id="when">
+<h2>When is programmatic video the right approach?</h2>
+<p>The test is whether a source of truth already exists and whether the video job repeats against it. If both are true, the approach pays for itself quickly. If either is false, it is overhead.</p>
+<div class="verdict">
+<div>
+<h3>Good fit</h3>
+<ul>
+<li>A property agency producing a walkthrough for every new instruction</li>
+<li>A retailer producing a short video per SKU across a large catalogue</li>
+<li>A team testing six ad variants against one product page every week</li>
+<li>A publisher turning each article into a subtitled explainer</li>
+<li>A product team shipping a clip with every release note</li>
+<li>One master video that needs a voice and caption track per language</li>
+</ul>
+</div>
+<div>
+<h3>Poor fit</h3>
+<ul>
+<li>A brand film, where the video is the product and taste is the point</li>
+<li>A one-off launch video with no second instance</li>
+<li>Anything requiring original cinematography or a presenter on camera</li>
+<li>Work where the creative direction is expected to change per video</li>
+<li>Jobs where no structured source exists and never will</li>
+<li>Fewer than roughly twenty videos a year against the same template</li>
+</ul>
+</div>
+</div>
+<p>The last point is the one most often got wrong. Building a template is real work. Below a certain volume, an editor and an afternoon is genuinely cheaper, and any honest vendor in this category will tell you so.</p>
+</section>
+
+<section id="tools">
+<h2>What tools do programmatic video?</h2>
+<p>The category is small and splits along one line: whether you are expected to write code.</p>
+<h3>Libraries</h3>
+<p>Remotion is the best known. It lets a developer define video as React components and render them with a headless browser. It is a library rather than a service, so it gives complete control and expects you to run the infrastructure, manage the render farm and build the interface yourself.</p>
+<h3>Rendering APIs</h3>
+<p>Creatomate, Shotstack and Bannerbear expose a template and a render endpoint. You send JSON, you receive a file. They remove the infrastructure problem and assume you have a developer to integrate them and a system already holding your data.</p>
+<h3>Managed engines</h3>
+<p>Plainly and Videngine sit further up. They take a source directly, a URL, a spreadsheet or a block of text, and handle the script, the scenes, the voice and the delivery without an integration project. Videngine is the one this site is about: it accepts a link, a CSV or plain text and returns a narrated, captioned MP4, with scene templates written as code so output stays deterministic.</p>
+<p>Choose on where your data already lives. If it is in a product database and you have engineers, an API is the cheapest path. If it is on a website or in a spreadsheet and you do not, a managed engine gets you to the first render in a day rather than a quarter.</p>
+</section>
+
+<section id="faq">
+<h2>Questions</h2>
+<h3>Is programmatic video the same as automated video editing?</h3>
+<p>No. Automated video editing takes existing footage and applies decisions to it, such as cutting silences or finding highlights. Programmatic video composes the footage itself from a template and data, so there is no source footage to edit.</p>
+<h3>Does programmatic video require a developer?</h3>
+<p>It depends on the layer. Libraries and rendering APIs require one. Managed engines do not, though building a custom scene set for a specific brand usually involves someone writing code once at the start.</p>
+<h3>Can programmatic video use real footage?</h3>
+<p>Yes. Photographs and video clips from the source, from stock or from your own library are composited into the template like any other asset. What stays deterministic is the composition, not the material.</p>
+<h3>How many videos does it take to be worth it?</h3>
+<p>Roughly twenty a year against the same template is the point where building one starts to beat opening an editor, though that shifts with how much the template costs to build and how often the underlying data changes.</p>
+<h3>Is programmatic video suitable for advertising?</h3>
+<p>It is well suited to variant testing, where many near-identical cuts are needed to isolate which hook performs. It is poorly suited to the hero asset the variants are testing against, which is usually better made by a person.</p>
+</section>
+
+</article>
+</div>
+
+<section class="doc-cta">
+<div class="page-shell">
+<h2>Have a video job that repeats?</h2>
+<p>Tell us what the source is and how often it changes. If the engine already renders it, you will know within a day.</p>
+<a class="pill-button" href="https://app.videngine.io"><span class="tick" aria-hidden="true"></span>Open the studio</a>
+</div>
+</section>
+
+</main>
+
+<footer class="footer" id="contact">
+<div class="page-shell">
+<div class="footer-kicker">Start rendering</div>
+<h2 class="footer-heading">Stop <span class="word-cycle"><span>editing.</span><span>exporting.</span><span>waiting.</span></span><br/><span class="ghost">Start rendering.</span></h2>
+<div class="footer-grid">
+<div class="footer-col"><h4>Studio</h4><a href="https://app.videngine.io">app.videngine.io</a><h4 style="margin-top:24px">Email</h4><a href="mailto:hello@videngine.io">hello@videngine.io</a></div>
+<div class="footer-col"><h4>Product</h4><a href="/#how">How it works</a><a href="/#uses">Uses</a><a href="/#pricing">Pricing</a><a href="/#notes">Notes</a></div>
+<div class="footer-col"><h4>Learn</h4><a href="/programmatic-video">Programmatic video</a><a href="/vs/ai-video-generators">vs AI generators</a><a href="/vs/video-editors">vs video editors</a></div>
+<div class="footer-col"><h4>Legal</h4><a href="/terms">Terms</a><a href="/privacy">Privacy</a></div>
+</div>
+<div class="footer-bottom"><span>© 2026 Videngine</span><span>Built and run by Wall &amp; Fifth</span></div>
+<div class="giant-name">VID<em>ENGINE</em></div>
+</div>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://videngine.io/programmatic-video#article",
+      "headline": "What is programmatic video? A plain definition",
+      "description": "Programmatic video is video produced by running a coded template against structured data, so one template renders many videos.",
+      "url": "https://videngine.io/programmatic-video",
+      "datePublished": "2026-08-25",
+      "dateModified": "2026-08-25",
+      "inLanguage": "en",
+      "about": { "@id": "https://videngine.io/programmatic-video#term" },
+      "publisher": { "@type": "Organization", "name": "Videngine", "url": "https://videngine.io/" },
+      "mainEntityOfPage": "https://videngine.io/programmatic-video"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://videngine.io/programmatic-video#term",
+      "name": "Programmatic video",
+      "description": "Video produced by running a coded template against structured data, so that one template renders many videos deterministically. The template defines layout, typography, motion and timing once, and the data supplies the values that change between videos.",
+      "url": "https://videngine.io/programmatic-video"
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://videngine.io/programmatic-video#faq",
+      "mainEntity": [
+        { "@type": "Question", "name": "What is programmatic video?", "acceptedAnswer": { "@type": "Answer", "text": "Programmatic video is video produced by running a coded template against structured data. The template defines layout, typography, motion and timing once, and the data supplies what changes between videos. Running one template against one hundred rows produces one hundred videos, each correct for its row and identical in every other respect." } },
+        { "@type": "Question", "name": "How is programmatic video different from AI video generation?", "acceptedAnswer": { "@type": "Answer", "text": "AI video generation creates footage from a prompt using a generative model, so the same prompt produces different footage each time. Programmatic video renders footage from a template written as code, so the same input produces the same footage every time. The first is generative and probabilistic, the second is deterministic." } },
+        { "@type": "Question", "name": "How is programmatic video different from using a video editor?", "acceptedAnswer": { "@type": "Answer", "text": "A video editor is a canvas for producing one video at a time, and the result depends on the person operating it. A programmatic system is a pipeline for producing many videos from one specification, and the result depends on how well the specification was written. An editor rewards taste and punishes volume. A pipeline rewards structure and punishes ambiguity." } },
+        { "@type": "Question", "name": "Is programmatic video the same as automated video editing?", "acceptedAnswer": { "@type": "Answer", "text": "No. Automated video editing takes existing footage and applies decisions to it, such as cutting silences or finding highlights. Programmatic video composes the footage itself from a template and data, so there is no source footage to edit." } },
+        { "@type": "Question", "name": "Does programmatic video require a developer?", "acceptedAnswer": { "@type": "Answer", "text": "It depends on the layer. Libraries such as Remotion and rendering APIs such as Creatomate or Shotstack require a developer. Managed engines do not, though building a custom scene set for a specific brand usually involves someone writing code once at the start." } },
+        { "@type": "Question", "name": "How many videos does it take for programmatic video to be worth it?", "acceptedAnswer": { "@type": "Answer", "text": "Roughly twenty a year against the same template is the point where building one starts to beat opening an editor, though that shifts with how much the template costs to build and how often the underlying data changes. Below that, an editor and an afternoon is genuinely cheaper." } },
+        { "@type": "Question", "name": "Can programmatic video use real footage?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Photographs and video clips from the source, from stock or from your own library are composited into the template like any other asset. What stays deterministic is the composition, not the material." } }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Videngine", "item": "https://videngine.io/" },
+        { "@type": "ListItem", "position": 2, "name": "Programmatic video", "item": "https://videngine.io/programmatic-video" }
+      ]
+    }
+  ]
+}
+</script>
+
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) { entry.target.classList.add("visible"); observer.unobserve(entry.target); }
+    });
+  }, { threshold: 0.12, rootMargin: "0px 0px -8% 0px" });
+  document.querySelectorAll(".reveal").forEach((el) => observer.observe(el));
+</script>
+</body>
+</html>
