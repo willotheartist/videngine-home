@@ -2,20 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://videngine.io/</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-09-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://videngine.io/programmatic-video</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-09-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://videngine.io/vs/ai-video-generators</loc>
-    <lastmod>2026-08-25</lastmod>
+    <lastmod>2026-09-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
+  <url><loc>https://videngine.io/notes</loc><lastmod>2026-09-13</lastmod></url>
+  <url><loc>https://videngine.io/notes/url-to-video</loc><lastmod>2026-09-13</lastmod></url>
+  <url><loc>https://videngine.io/notes/bulk-video-creation-from-csv</loc><lastmod>2026-09-13</lastmod></url>
+  <url><loc>https://videngine.io/notes/product-video-automation</loc><lastmod>2026-09-13</lastmod></url>
+  <url><loc>https://videngine.io/notes/article-to-video</loc><lastmod>2026-09-13</lastmod></url>
 </urlset>

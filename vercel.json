@@ -1,4 +1,21 @@
 {
   "cleanUrls": true,
-  "trailingSlash": false
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/notes/programmatic-video-explained",
+      "destination": "/programmatic-video",
+      "permanent": true
+    },
+    {
+      "source": "/notes/generated-vs-rendered",
+      "destination": "/vs/ai-video-generators",
+      "permanent": true
+    },
+    {
+      "source": "/notes/four-hundred-videos-one-spreadsheet",
+      "destination": "/notes/bulk-video-creation-from-csv",
+      "permanent": true
+    }
+  ]
 }
