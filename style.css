@@ -113,7 +113,7 @@
 
   /* MORPH SCENE */
   .morph-scene { position: relative; height: 255vh; min-height: 1900px; background: #fafafa; }
-  .morph-sticky { position: sticky; top: 0; height: 100vh; min-height: 720px; overflow: hidden; isolation: isolate; background: #fafafa; }
+  .morph-sticky { position: sticky; top: 0; height: 100vh; min-height: 0; overflow: hidden; isolation: isolate; background: #fafafa; }
   .morph-shell {
     position: relative; width: min(var(--max), calc(100% - 40px)); height: 100%;
     margin-inline: auto; border-left: 1px solid var(--line); border-right: 1px solid var(--line);
@@ -175,9 +175,10 @@
   .morph-cards { position: absolute; inset: 0; z-index: 6; pointer-events: none; }
   .morph-card { position: absolute; left: 0; top: 0; margin: 0; will-change: transform, width, opacity, filter; transform-origin: center center; pointer-events: auto; }
   .morph-card__image {
-    position: relative; width: 100%; aspect-ratio: 4 / 3; overflow: hidden;
+    position: relative; width: 100%; aspect-ratio: 16 / 9; overflow: hidden;
     border-radius: 17px; background: #111; box-shadow: 0 28px 64px rgba(0,0,0,.22); transform: translateZ(0);
   }
+  .morph-card__image img { width: 100%; height: 100%; object-fit: cover; }
   .morph-card__image::after {
     content: ""; position: absolute; inset: 0; border-radius: inherit;
     box-shadow: inset 0 0 0 1px rgba(255,255,255,.18); pointer-events: none;
@@ -186,7 +187,7 @@
     display: grid; grid-template-columns: 1fr auto; gap: 22px; align-items: start; padding-top: 15px;
     opacity: 0; transform: translateY(18px); will-change: opacity, transform;
   }
-  .morph-card__caption h3 { margin: 0 0 3px; font-size: 20px; line-height: 1; letter-spacing: -.035em; font-weight: 600; }
+  .morph-card__caption h3 { margin: 0 0 3px; font-size: 20px; line-height: 1.2; letter-spacing: -.035em; font-weight: 600; }
   .morph-card__caption p { margin: 0; font-size: 13px; color: #666; }
   .morph-card__caption a { margin: 0; font-size: 13px; color: #444; font-weight: 500; display: inline-flex; align-items: center; gap: 8px; }
   .morph-card__caption a span { display: inline-block; transition: transform .35s var(--ease); }
@@ -422,7 +423,7 @@
     .morph-projects-title { position: relative; left: auto; top: auto; opacity: 1 !important; filter: none !important; transform: none !important; margin: 80px 0 30px; }
     .morph-cards { position: relative; inset: auto; display: grid; grid-template-columns: 1fr 1fr; gap: 24px 16px; }
     .morph-card { position: relative; width: 100% !important; transform: none !important; opacity: 1 !important; filter: none !important; }
-    .morph-card__caption { opacity: 1 !important; transform: none !important; }
+    .morph-card__caption { visibility: visible !important; opacity: 1 !important; transform: none !important; }
     .morph-card__image { border-radius: 13px; box-shadow: 0 15px 35px rgba(0,0,0,.12); }
     .split-grid, .spec-grid, .faq-grid, .pricing-intro { grid-template-columns: 1fr; gap: 58px; }
     .spec-copy { padding-top: 0; }
@@ -447,6 +448,22 @@
     .footer-grid { grid-template-columns: 1fr 1fr; }
     .giant-name { margin-top: 55px; }
     .spec-row { grid-template-columns: 1fr; gap: 4px; }
+  }
+
+  @media (min-width: 901px) and (max-height: 650px), (min-width: 901px) and (prefers-reduced-motion: reduce) {
+    .morph-scene { height: auto; min-height: 0; }
+    .morph-sticky { position: relative; height: auto; min-height: 0; overflow: visible; }
+    .morph-shell { height: auto; padding: 145px 20px 90px; border: 0; width: 100%; }
+    .morph-shell::before, .morph-progress { display: none; }
+    .morph-hero-copy { position: relative; left: auto; top: auto; width: 100%; max-width: 650px; }
+    .morph-hero-copy p { font-size: 18px; }
+    .morph-clients { position: relative; left: auto; right: auto; bottom: auto; height: auto; margin-top: 70px; padding: 28px 0; display: block; }
+    .morph-clients .logo-row { margin-top: 30px; display: grid; grid-template-columns: 1fr 1fr; gap: 18px; white-space: normal; }
+    .morph-projects-title { position: relative; left: auto; top: auto; opacity: 1 !important; filter: none !important; transform: none !important; margin: 80px 0 30px; }
+    .morph-cards { position: relative; inset: auto; display: grid; grid-template-columns: 1fr 1fr; gap: 24px 16px; }
+    .morph-card { position: relative; width: 100% !important; transform: none !important; opacity: 1 !important; filter: none !important; }
+    .morph-card__caption { visibility: visible !important; opacity: 1 !important; transform: none !important; }
+    .morph-card__image { border-radius: 13px; box-shadow: 0 15px 35px rgba(0,0,0,.12); }
   }
 
   @media (prefers-reduced-motion: reduce) {

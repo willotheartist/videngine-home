@@ -66,67 +66,28 @@
 
 <article class="morph-card" data-card="listing">
 <div class="morph-card__image">
-<div class="recipe recipe--listing">
-<div class="recipe__tag">Input · URL</div>
-<div class="frame" aria-hidden="true">
-<div class="frame__bar"><i></i><i></i><i></i><b>agency.co.uk/12-rowan-street</b></div>
-<div class="frame__body">
-<div class="frame__kicker">For sale · 4 bed</div>
-<div class="frame__h">12 Rowan Street</div>
-<div class="frame__rows"><span></span><span></span><span></span></div>
-</div>
-</div>
-<div class="recipe__out">Listing <em>→</em> walkthrough</div>
-<div class="recipe__meta">00:47 · 1080×1920 · narrated</div>
-</div>
+<img src="/images/studio-portrait.webp" alt="Artist holding her work in a sunlit studio" width="1400" height="783" decoding="async" fetchpriority="high"/>
 </div>
 <div class="morph-card__caption"><div><h3>Property listings</h3><p>One URL, one vertical walkthrough</p></div><a href="#uses">Recipe <span>↗</span></a></div>
 </article>
 
 <article class="morph-card" data-card="ad">
 <div class="morph-card__image">
-<div class="recipe recipe--ad">
-<div class="recipe__tag">Input · product page</div>
-<div class="reel reel--b" aria-hidden="true"><div class="reel__sky"></div></div>
-<div class="reel" aria-hidden="true">
-<div class="reel__sky"></div>
-<div class="reel__cap">Ships in <b>48 hours</b><br/>and it folds flat</div>
-<div class="reel__bar"><i></i></div>
-</div>
-<div class="recipe__out">Page <em>→</em> six ad cuts</div>
-<div class="recipe__meta">00:15 · 9:16 · captioned</div>
-</div>
+<img src="/images/creative-campaign.webp" alt="Creator in an orange hoodie floating above the clouds" width="1400" height="783" decoding="async"/>
 </div>
 <div class="morph-card__caption"><div><h3>Ad variants</h3><p>Same product, six hooks, one run</p></div><a href="#uses">Recipe <span>↗</span></a></div>
 </article>
 
 <article class="morph-card" data-card="explainer">
 <div class="morph-card__image">
-<div class="recipe recipe--explainer">
-<div class="recipe__tag">Input · article</div>
-<div class="caption-chip" aria-hidden="true">"…and that is where the cost sits."</div>
-<div class="wave" aria-hidden="true"><i style="height:22%"></i><i style="height:58%"></i><i style="height:88%" class="hot"></i><i style="height:44%"></i><i style="height:72%" class="hot"></i><i style="height:30%"></i><i style="height:64%"></i><i style="height:96%" class="hot"></i><i style="height:38%"></i><i style="height:52%"></i><i style="height:78%"></i><i style="height:26%"></i><i style="height:60%"></i><i style="height:34%"></i></div>
-<div class="strip" aria-hidden="true"><b></b><b></b><b></b><b></b><b></b></div>
-<div class="recipe__out">Article <em>→</em> explainer</div>
-<div class="recipe__meta">02:10 · 16:9 · burned-in subs</div>
-</div>
+<img src="/images/tech-presenter.webp" alt="Tech presenter speaking to camera at his desk" width="1400" height="933" decoding="async"/>
 </div>
 <div class="morph-card__caption"><div><h3>Explainers</h3><p>Long-form text, cut to scenes</p></div><a href="#uses">Recipe <span>↗</span></a></div>
 </article>
 
 <article class="morph-card" data-card="batch">
 <div class="morph-card__image">
-<div class="recipe recipe--batch">
-<div class="recipe__tag">Input · spreadsheet</div>
-<div class="queue" aria-hidden="true">
-<div class="done"><u>001</u><s><i></i></s><u>done</u></div>
-<div><u>002</u><s><i></i></s><u>74%</u></div>
-<div><u>003</u><s><i></i></s><u>41%</u></div>
-<div><u>004</u><s><i></i></s><u>12%</u></div>
-</div>
-<div class="recipe__out">400 rows <em>→</em> 400 files</div>
-<div class="recipe__meta">Queued · unattended · webhook on finish</div>
-</div>
+<img src="/images/production-studio.webp" alt="Film crew recording a presenter in a production studio" width="1400" height="933" decoding="async"/>
 </div>
 <div class="morph-card__caption"><div><h3>Batch runs</h3><p>A row per video, left to run</p></div><a href="#uses">Recipe <span>↗</span></a></div>
 </article>
@@ -380,7 +341,8 @@
   const title = document.querySelector(".morph-projects-title");
   const cards = [...document.querySelectorAll(".morph-card")];
   const progressFill = document.querySelector(".morph-progress span");
-  const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+
+  const staticLayout = window.matchMedia("(max-width: 900px), (max-height: 650px), (prefers-reduced-motion: reduce)");
 
   let pointerX = 0, pointerY = 0, currentProgress = 0, targetProgress = 0, raf = 0;
 
@@ -399,24 +361,37 @@
   };
 
   function layoutCards(progress) {
-    if (!scene || !sticky || !shell || reducedMotion.matches || window.innerWidth <= 900) return;
+    if (!scene || !sticky || !shell) return;
+    if (staticLayout.matches) {
+      [heroCopy, clients, title, ...cards].forEach(el => el.removeAttribute("style"));
+      cards.forEach(card => {
+        const caption = card.querySelector(".morph-card__caption");
+        caption.removeAttribute("style");
+        caption.inert = false;
+      });
+      heroCopy.inert = false;
+      return;
+    }
 
     const rect = shell.getBoundingClientRect();
     const shellWidth = rect.width;
     const vh = window.innerHeight;
 
     const transition = ease(clamp((progress - .08) / .72));
-    const captionT = smooth(clamp((progress - .54) / .22));
+    const captionT = smooth(clamp((progress - .38) / .20));
     const stackT = 1 - transition;
 
     const gap = Math.max(20, Math.min(28, shellWidth * .023));
-    const maxCardWByHeight = Math.max(390, (vh - 142) / 1.5);
-    const cardW = Math.min((shellWidth - gap) / 2, maxCardWByHeight, 580);
-    const cardH = cardW * .75;
+    // Reserve room for the floating nav, both captions and bottom breathing space.
+    const topY = 104;
+    const captionSpace = 76;
+    const rowGap = 24;
+    const maxCardWByHeight = (vh - topY - 28 - captionSpace * 2 - rowGap) / 2 * (16 / 9);
+    const cardW = Math.min((shellWidth - gap - 48) / 2, maxCardWByHeight, 580);
+    const cardH = cardW * 9 / 16;
     const gridWidth = cardW * 2 + gap;
     const gridLeft = (shellWidth - gridWidth) / 2;
-    const topY = Math.max(48, Math.min(60, vh * .052));
-    const row2Y = topY + cardH + 82;
+    const row2Y = topY + cardH + captionSpace + rowGap;
 
     cards.forEach((card) => {
       const key = card.dataset.card;
@@ -448,11 +423,15 @@
       image.style.boxShadow = `0 ${lerp(34, 16, transition)}px ${lerp(72, 38, transition)}px rgba(0,0,0,${shadow})`;
 
       const caption = card.querySelector(".morph-card__caption");
+      caption.inert = captionT < .9;
+      caption.style.visibility = captionT === 0 ? "hidden" : "visible";
       caption.style.opacity = captionT;
       caption.style.transform = `translateY(${lerp(18, 0, captionT)}px)`;
     });
 
     const heroT = smooth(clamp((progress - .10) / .25));
+    heroCopy.inert = heroT > .9;
+    heroCopy.style.visibility = heroT === 1 ? "hidden" : "visible";
     heroCopy.style.opacity = 1 - heroT;
     heroCopy.style.filter = `blur(${heroT * 14}px)`;
     heroCopy.style.transform = `translate3d(0, ${-heroT * 150}px, 0) scale(${1 - heroT * .035})`;
@@ -477,7 +456,7 @@
   }
 
   function computeProgress() {
-    if (!scene || window.innerWidth <= 900 || reducedMotion.matches) return 0;
+    if (!scene || staticLayout.matches) return 0;
     const sceneTop = scene.getBoundingClientRect().top + window.scrollY;
     const distance = scene.offsetHeight - window.innerHeight;
     return clamp((window.scrollY - sceneTop) / Math.max(1, distance));
@@ -511,7 +490,7 @@
     sticky.addEventListener("pointerleave", () => { pointerX = 0; pointerY = 0; requestTick(); });
   }
 
-  reducedMotion.addEventListener?.("change", requestTick);
+  staticLayout.addEventListener?.("change", requestTick);
   requestTick();
 </script>
 </body>
