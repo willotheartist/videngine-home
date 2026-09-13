@@ -83,7 +83,7 @@
 <a href="/#how">How it works</a>
 <a href="/#uses">Uses</a>
 <a href="/#pricing">Pricing</a>
-<a href="/notes">Notes</a>
+<a href="/ai-video-tools">AI video tools</a>
 </div>
 <a class="nav-cta" href="https://app.videngine.io">Open the studio</a>
 </nav>
@@ -121,12 +121,12 @@
 
 <section id="what">
 <h2>What is programmatic video?</h2>
-<p class="lead">Programmatic video is video produced by running a coded template against structured data. The template defines layout, typography, motion and timing once. The data supplies what changes: a price, an address, a product name, a photograph. Running the template against one hundred rows produces one hundred videos, each correct for its row and identical in every other respect.</p>
+<p class="lead">Programmatic video is video produced by running a coded template against structured data. The template defines layout, typography, motion and timing once. The data supplies what changes: a price, an address, a product name, a photograph. Running the template against one hundred rows produces one hundred videos, each following the same scene rules with values supplied by its row.</p>
 <p>The term borrows from programmatic advertising, where ad placements are bought by machine against rules rather than negotiated one at a time. The parallel is exact. In both cases a human defines the rules once, and the volume that follows is handled without a human touching each unit.</p>
 <p>It is a production method rather than a genre. A programmatic video can look like anything, since the template is arbitrary code. What defines the category is that the video is derived from a source of truth rather than assembled by hand, and that re-running it with changed data produces a changed video and nothing else.</p>
 
 <h3>The defining property is determinism</h3>
-<p>Given the same template and the same input, a programmatic system returns the same file every time. That is the property that makes the method usable for commercial work. A price shown on screen is the price in the database. A logo sits in the same position in video four hundred as in video one. There is no drift between the first output and the last, because no judgement was applied to either.</p>
+<p>Repeatable composition requires the template, script, assets and relevant rendering settings to remain fixed. A pipeline that regenerates narration or fetches changing images can produce a different result. Version approved inputs and review changes rather than assuming that a source URL alone guarantees identical files.</p>
 <div class="callout">
 <p><b>Short version.</b> If a video is one of many that differ only by data, it is a programmatic video problem. If a video is the only one of its kind and its quality depends on taste, it is not.</p>
 </div>
@@ -140,7 +140,7 @@
 <h3>2. Resolve the script</h3>
 <p>Fields become a shot list with timings attached. On simpler systems this is a fixed mapping, where field three always becomes shot two. On systems with a language model in the pipeline, the fields become prose that is then split into shots. The script is the last point at which a human normally intervenes.</p>
 <h3>3. Compose the scenes</h3>
-<p>Each shot is rendered as a frame-accurate component, most commonly a React component drawn to a canvas or a browser viewport. Brand rules live here as tokens rather than as saved presets, which is why they cannot drift between videos.</p>
+<p>Each shot is rendered as a frame-accurate component, most commonly a React component drawn to a canvas or a browser viewport. Brand rules can be versioned with the scene code and tested against representative inputs.</p>
 <h3>4. Produce the audio</h3>
 <p>Narration is synthesised from the script or supplied as an upload. Captions are usually transcribed back from the finished audio track rather than taken from the script, so that they match what was actually said rather than what was intended.</p>
 <h3>5. Render and deliver</h3>
@@ -149,7 +149,7 @@
 
 <section id="vs-ai">
 <h2>How is programmatic video different from AI video generation?</h2>
-<p class="lead">AI video generation creates footage from a prompt using a generative model, so the same prompt produces different footage each time. Programmatic video renders footage from a template written as code, so the same input produces the same footage every time. The first is generative and probabilistic. The second is deterministic.</p>
+<p class="lead">AI video generation creates footage from a prompt using a generative model, so the same prompt produces different footage each time. Programmatic video renders footage from a template written as code, so the scene rules can remain fixed while the input data changes. The first is generative and probabilistic. The second is deterministic.</p>
 <p>The distinction matters commercially rather than technically. A generative system is the right tool when you want something that does not exist yet and you can accept variance in what comes back. It is the wrong tool when the video states a fact, because a model that invents pixels can invent a price, misspell a street name or render a logo that is nearly but not quite your logo.</p>
 <p>Many systems mix the two. Using a language model to write the script while rendering the pictures from code is common, and gives you natural narration without giving up control of what appears on screen.</p>
 
@@ -234,7 +234,7 @@
 </section>
 
 <section id="production-guides"><h2>Put it into practice</h2><p>Continue with a workflow for your source material.</p><ul><li><a href="/notes/url-to-video">URL to video: how to turn a webpage into a useful video</a></li><li><a href="/notes/bulk-video-creation-from-csv">Bulk video creation from a CSV: a reliable workflow</a></li><li><a href="/notes/product-video-automation">Product video automation: from catalogue to ad variants</a></li><li><a href="/notes/article-to-video">Article to video: turn a blog post into a clear explainer</a></li></ul></section>
-</article>
+<section id="ai-video-workflows"><h2>Choose your next step</h2><p>Compare the wider categories in our <a href="/ai-video-tools">AI video tools guide</a>, then explore the decisions that shape this workflow.</p><ul><li><a href="/notes/video-automation-api">Video automation APIs</a></li><li><a href="/notes/text-to-video-ai">Text-to-video AI workflows</a></li></ul></section></article>
 </div>
 
 <section class="doc-cta">
@@ -290,8 +290,8 @@
       "@type": "FAQPage",
       "@id": "https://videngine.io/programmatic-video#faq",
       "mainEntity": [
-        { "@type": "Question", "name": "What is programmatic video?", "acceptedAnswer": { "@type": "Answer", "text": "Programmatic video is video produced by running a coded template against structured data. The template defines layout, typography, motion and timing once, and the data supplies what changes between videos. Running one template against one hundred rows produces one hundred videos, each correct for its row and identical in every other respect." } },
-        { "@type": "Question", "name": "How is programmatic video different from AI video generation?", "acceptedAnswer": { "@type": "Answer", "text": "AI video generation creates footage from a prompt using a generative model, so the same prompt produces different footage each time. Programmatic video renders footage from a template written as code, so the same input produces the same footage every time. The first is generative and probabilistic, the second is deterministic." } },
+        { "@type": "Question", "name": "What is programmatic video?", "acceptedAnswer": { "@type": "Answer", "text": "Programmatic video is video produced by running a coded template against structured data. The template defines layout, typography, motion and timing once, and the data supplies what changes between videos. Running one template against one hundred rows produces one hundred videos, each following the same scene rules with values supplied by its row." } },
+        { "@type": "Question", "name": "How is programmatic video different from AI video generation?", "acceptedAnswer": { "@type": "Answer", "text": "AI video generation creates footage from a prompt using a generative model, so the same prompt produces different footage each time. Programmatic video renders footage from a template written as code, so the scene rules can remain fixed while the input data changes. The first is generative and probabilistic, the second is deterministic." } },
         { "@type": "Question", "name": "How is programmatic video different from using a video editor?", "acceptedAnswer": { "@type": "Answer", "text": "A video editor is a canvas for producing one video at a time, and the result depends on the person operating it. A programmatic system is a pipeline for producing many videos from one specification, and the result depends on how well the specification was written. An editor rewards taste and punishes volume. A pipeline rewards structure and punishes ambiguity." } },
         { "@type": "Question", "name": "Is programmatic video the same as automated video editing?", "acceptedAnswer": { "@type": "Answer", "text": "No. Automated video editing takes existing footage and applies decisions to it, such as cutting silences or finding highlights. Programmatic video composes the footage itself from a template and data, so there is no source footage to edit." } },
         { "@type": "Question", "name": "Does programmatic video require a developer?", "acceptedAnswer": { "@type": "Answer", "text": "It depends on the layer. Libraries such as Remotion and rendering APIs such as Creatomate or Shotstack require a developer. Managed engines do not, though building a custom scene set for a specific brand usually involves someone writing code once at the start." } },

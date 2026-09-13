@@ -89,7 +89,7 @@
 <a href="/#how">How it works</a>
 <a href="/#uses">Uses</a>
 <a href="/#pricing">Pricing</a>
-<a href="/programmatic-video">Learn</a>
+<a href="/ai-video-tools">AI video tools</a>
 </div>
 <a class="nav-cta" href="https://app.videngine.io">Open the studio</a>
 </nav>
@@ -128,7 +128,7 @@
 
 <section id="short">
 <h2>Is Videngine an AI video generator?</h2>
-<p class="lead">No. AI video generators create footage from a prompt using a generative model, so running the same prompt twice returns two different videos. Videngine renders footage from templates written as code, so running the same input twice returns the same file. Videngine uses AI to write the script and speak the narration. It does not use AI to decide what appears on screen.</p>
+<p class="lead">No. AI video generators create footage from a prompt using a generative model, so running the same prompt twice returns two different videos. Videngine renders footage from templates written as code, so approved scene rules can be reused across different inputs. Videngine uses AI to write the script and speak the narration. It does not use AI to decide what appears on screen.</p>
 <p>That single distinction determines almost everything else: whether output is repeatable, whether a brand survives contact with the hundredth video, whether a price shown on screen can be trusted, and whether the cost of the tenth video resembles the cost of the first.</p>
 <div class="callout">
 <p><b>Deciding quickly.</b> If your video needs footage that does not exist yet, you want a generator. If your video needs to state something that is already true and do it repeatedly, you want a renderer.</p>
@@ -143,10 +143,10 @@
 <p>A generative model samples. It produces a plausible video given a prompt, and plausibility is the standard it is optimising for, not accuracy. That is exactly what you want when you are asking for a drone shot over a coastline that was never filmed. It is exactly what you do not want when the video needs to say that a house costs £480,000 and has four bedrooms, because the model has no concept of that being checkable.</p>
 
 <h3>Renderers are deterministic</h3>
-<p>A rendering engine executes. It takes a template and a set of values and composes frames according to rules that were written down in advance. There is no sampling step, so there is nothing to vary. The engine cannot produce a surprising video, which is a limitation when you want surprise and the entire point when you do not.</p>
+<p>A rendering engine composes frames from a template and supplied values. The composition can be repeatable when scripts, assets, versions and settings are pinned. Other stages, including AI script writing and narration, may vary and should be stored after approval.</p>
 
 <h3>The consequence is consistency at volume</h3>
-<p>One video from a generator is often better looking than one video from a renderer, because the generator is drawing on an enormous prior and the renderer is drawing on a template someone wrote in an afternoon. Four hundred videos is the opposite. The generator produces four hundred slightly different interpretations of your brand. The renderer produces four hundred videos that differ only where the data differs, which is the only outcome a business can actually ship.</p>
+<p>For repeated commercial output, compare the controls available in the complete workflow. Template rendering can preserve layout rules across records; generative footage can supply creative assets within those rules. Neither approach makes source validation and output review unnecessary.</p>
 </section>
 
 <section id="table">
@@ -156,12 +156,12 @@
 <tr><th scope="col"></th><th scope="col">AI video generators</th><th scope="col">Videngine</th></tr>
 </thead>
 <tbody>
-<tr><th scope="row">Same input, twice</th><td>Two different videos</td><td>The same file</td></tr>
+<tr><th scope="row">Same input, twice</th><td>Two different videos</td><td>Repeatable composition with pinned inputs and settings</td></tr>
 <tr><th scope="row">Pictures come from</th><td>A generative model</td><td>Coded scene templates</td></tr>
 <tr><th scope="row">Primary input</th><td>A written prompt</td><td>A URL, CSV, JSON or text</td></tr>
 <tr><th scope="row">On-screen facts</th><td>Can be invented or distorted</td><td>Taken from the source data</td></tr>
 <tr><th scope="row">Brand control</th><td>Approximate, prompt-dependent</td><td>Exact, enforced as tokens in code</td></tr>
-<tr><th scope="row">Four hundred videos</th><td>Four hundred interpretations</td><td>Four hundred consistent files</td></tr>
+<tr><th scope="row">Four hundred videos</th><td>Variation depends on the model and workflow</td><td>Shared scene rules with record-specific data</td></tr>
 <tr><th scope="row">Editing after the fact</th><td>Re-prompt and accept a new result</td><td>Change the data and re-render</td></tr>
 <tr><th scope="row">Best at</th><td>Footage that does not exist</td><td>Video derived from records</td></tr>
 <tr><th scope="row">Worst at</th><td>Repeatability and factual precision</td><td>Original imagery and surprise</td></tr>
@@ -267,7 +267,7 @@
 </section>
 
 <section id="production-guides"><h2>Put it into practice</h2><p>Continue with a workflow for your source material.</p><ul><li><a href="/notes/url-to-video">URL to video: how to turn a webpage into a useful video</a></li><li><a href="/notes/bulk-video-creation-from-csv">Bulk video creation from a CSV: a reliable workflow</a></li><li><a href="/notes/product-video-automation">Product video automation: from catalogue to ad variants</a></li><li><a href="/notes/article-to-video">Article to video: turn a blog post into a clear explainer</a></li></ul></section>
-</article>
+<section id="ai-video-workflows"><h2>Choose your next step</h2><p>Compare the wider categories in our <a href="/ai-video-tools">AI video tools guide</a>, then explore the decisions that shape this workflow.</p><ul><li><a href="/notes/text-to-video-ai">Prompts, scripts and scenes</a></li><li><a href="/notes/ai-video-generator-cost">AI video generator costs</a></li></ul></section></article>
 </div>
 
 <section class="doc-cta">
@@ -315,7 +315,7 @@
       "@type": "FAQPage",
       "@id": "https://videngine.io/vs/ai-video-generators#faq",
       "mainEntity": [
-        { "@type": "Question", "name": "Is Videngine an AI video generator?", "acceptedAnswer": { "@type": "Answer", "text": "No. AI video generators create footage from a prompt using a generative model, so running the same prompt twice returns two different videos. Videngine renders footage from templates written as code, so running the same input twice returns the same file. Videngine uses AI to write the script and speak the narration, not to decide what appears on screen." } },
+        { "@type": "Question", "name": "Is Videngine an AI video generator?", "acceptedAnswer": { "@type": "Answer", "text": "No. AI video generators create footage from a prompt using a generative model, so running the same prompt twice returns two different videos. Videngine renders footage from templates written as code, so approved scene rules can be reused across different inputs. Videngine uses AI to write the script and speak the narration, not to decide what appears on screen." } },
         { "@type": "Question", "name": "What is the difference between generated and rendered video?", "acceptedAnswer": { "@type": "Answer", "text": "Generated video is produced by a model that samples a plausible result, so it varies between runs and cannot guarantee that on-screen facts are correct. Rendered video is produced by executing a template against data, so it is repeatable and inherits its accuracy from the source data." } },
         { "@type": "Question", "name": "When should I use an AI video generator instead of Videngine?", "acceptedAnswer": { "@type": "Answer", "text": "Use a generator when you need footage of something that was never filmed, when you want a presenter on screen without hiring one, when you are making a single video rather than a series, or when nothing on screen is a checkable fact. Generators are the better tool for that work." } },
         { "@type": "Question", "name": "Can Videngine generate footage from a prompt?", "acceptedAnswer": { "@type": "Answer", "text": "No. It composes video from templates and from assets in your source, such as photographs on a listing page. If you need footage that does not exist, a generative tool is the right tool, and the two can be used together by supplying generated footage to Videngine as an asset." } },

@@ -27,7 +27,7 @@
 <a href="#how">How it works</a>
 <a href="#uses">Uses</a>
 <a href="#pricing">Pricing</a>
-<a href="#notes">Notes</a>
+<a href="/ai-video-tools">AI video tools</a>
 </div>
 <a class="nav-cta" href="https://app.videngine.io">Open the studio</a>
 </nav>
@@ -141,7 +141,7 @@
 </div>
 <div class="spec-copy reveal delay-1">
 <p>A video editor gives you a canvas and expects taste. That is the right tool when the video is the point. It is the wrong tool when the video is a by-product of something else you already have: a listing, a catalogue, a changelog, a report.</p>
-<p>Videngine treats a video as an artefact of its source. Same input, same output, every time. Change a price on the page and re-run it, and only the price changes. That is not a limitation. It is the whole reason it exists.</p>
+<p>Videngine treats a video as an artefact of its source. Approved scene rules can be reused when the source changes. Preserve the script, assets and settings when you want a revision to stay consistent with an earlier video.</p>
 <p>It was built to feed one studio's own output, which means it was shaped by real deadlines rather than a feature roadmap. Everything in it earned its place by removing an evening of work.</p>
 </div>
 </div>
@@ -207,10 +207,10 @@
 <h2 class="section-title">Straight<br/><span class="ghost">answers.</span></h2>
 <div class="faq-list">
 <div class="faq-item open"><button class="faq-question" aria-expanded="true"><span class="faq-num">01</span><span>What is Videngine?</span><span class="faq-toggle" aria-hidden="true">+</span></button><div class="faq-answer">Videngine is a programmatic video engine. You give it a source, such as a web page, a block of text or a row of data, and it returns a rendered MP4 with narration and captions. There is no timeline to edit and no manual export step. It is built for video that repeats, where the same template runs against changing data.</div></div>
-<div class="faq-item"><button class="faq-question" aria-expanded="false"><span class="faq-num">02</span><span>How is it different from an AI video generator?</span><span class="faq-toggle" aria-hidden="true">+</span></button><div class="faq-answer">Most AI video generators create footage from a prompt, so the same prompt gives a different result each time. Videngine renders from templates written as code, so the same input always produces the same output. It uses AI to write the script and the voice track, not to invent the pictures. That makes it suitable for work where a wrong price or a garbled logo is not acceptable.</div></div>
+<div class="faq-item"><button class="faq-question" aria-expanded="false"><span class="faq-num">02</span><span>How is it different from an AI video generator?</span><span class="faq-toggle" aria-hidden="true">+</span></button><div class="faq-answer">Most AI video generators create footage from a prompt, so the same prompt gives a different result each time. Videngine renders from templates written as code, so approved scene rules are applied consistently to source data. It uses AI to write the script and the voice track, not to invent the pictures. That makes it suitable for work where a wrong price or a garbled logo is not acceptable.</div></div>
 <div class="faq-item"><button class="faq-question" aria-expanded="false"><span class="faq-num">03</span><span>How is it different from a video editor?</span><span class="faq-toggle" aria-hidden="true">+</span></button><div class="faq-answer">An editor is a canvas for one video at a time and rewards taste. Videngine is a pipeline for many videos and rewards structure. If you are making one hero film, use an editor. If you are making the same twenty-second video four hundred times with different data, an editor is the bottleneck.</div></div>
 <div class="faq-item"><button class="faq-question" aria-expanded="false"><span class="faq-num">04</span><span>What inputs does it accept?</span><span class="faq-toggle" aria-hidden="true">+</span></button><div class="faq-answer">A URL, plain text or markdown, a CSV, or a JSON payload. For batch work, one row becomes one video. Images are pulled from the source page or supplied alongside the data.</div></div>
-<div class="faq-item"><button class="faq-question" aria-expanded="false"><span class="faq-num">05</span><span>Can it match our brand?</span><span class="faq-toggle" aria-hidden="true">+</span></button><div class="faq-answer">Yes. Typefaces, colours, logo placement, safe areas and motion are set once as tokens in the scene code, then applied to every render. Because it is code rather than a saved preset, brand rules cannot drift between videos.</div></div>
+<div class="faq-item"><button class="faq-question" aria-expanded="false"><span class="faq-num">05</span><span>Can it match our brand?</span><span class="faq-toggle" aria-hidden="true">+</span></button><div class="faq-answer">Yes. Typefaces, colours, logo placement, safe areas and motion are set once as tokens in the scene code, then applied to every render. Versioned templates help preserve those rules; new templates and unusual inputs still need review.</div></div>
 <div class="faq-item"><button class="faq-question" aria-expanded="false"><span class="faq-num">06</span><span>How long does a render take?</span><span class="faq-toggle" aria-hidden="true">+</span></button><div class="faq-answer">A one-minute video at 1080p typically finishes in a few minutes, since frames render in parallel rather than in sequence. Batch jobs queue and run unattended, and a webhook fires with the file URL when each one lands.</div></div>
 <div class="faq-item"><button class="faq-question" aria-expanded="false"><span class="faq-num">07</span><span>Who owns the output?</span><span class="faq-toggle" aria-hidden="true">+</span></button><div class="faq-answer">You do. Rendered files, scripts and any custom scene code built for you are yours to keep and use commercially, including if you stop paying.</div></div>
 </div>
@@ -230,6 +230,7 @@
 <h2 class="section-title"><span class="ghost">Notes from</span><br/>the render farm.</h2>
 <a class="mono muted" href="/notes">All notes ↗</a>
 </div>
+<p class="notes-silo-intro">Choosing a workflow? Start with the <a href="/ai-video-tools">AI video tools guide ↗</a></p>
 <div class="notes-list">
 <a class="note-row reveal" href="/notes/url-to-video"><div class="note-thumb" aria-hidden="true"></div><div><h3>URL to video: how to turn a webpage into a useful video</h3><p>Source to screen · 5 min</p></div><span class="note-arrow" aria-hidden="true">↗</span></a>
 <a class="note-row reveal" href="/notes/bulk-video-creation-from-csv"><div class="note-thumb" aria-hidden="true"></div><div><h3>Bulk video creation from a CSV: a reliable workflow</h3><p>Production at scale · 5 min</p></div><span class="note-arrow" aria-hidden="true">↗</span></a>
@@ -297,10 +298,10 @@
       "@id": "https://videngine.io/#faq",
       "mainEntity": [
         { "@type": "Question", "name": "What is Videngine?", "acceptedAnswer": { "@type": "Answer", "text": "Videngine is a programmatic video engine. You give it a source, such as a web page, a block of text or a row of data, and it returns a rendered MP4 with narration and captions. There is no timeline to edit and no manual export step. It is built for video that repeats, where the same template runs against changing data." } },
-        { "@type": "Question", "name": "How is Videngine different from an AI video generator?", "acceptedAnswer": { "@type": "Answer", "text": "Most AI video generators create footage from a prompt, so the same prompt gives a different result each time. Videngine renders from templates written as code, so the same input always produces the same output. It uses AI to write the script and the voice track, not to invent the pictures." } },
+        { "@type": "Question", "name": "How is Videngine different from an AI video generator?", "acceptedAnswer": { "@type": "Answer", "text": "Most AI video generators create footage from a prompt, so the same prompt gives a different result each time. Videngine renders from templates written as code, so approved scene rules are applied consistently to source data. It uses AI to write the script and the voice track, not to invent the pictures." } },
         { "@type": "Question", "name": "How is Videngine different from a video editor?", "acceptedAnswer": { "@type": "Answer", "text": "An editor is a canvas for one video at a time and rewards taste. Videngine is a pipeline for many videos and rewards structure. If you are making one hero film, use an editor. If you are making the same twenty-second video four hundred times with different data, an editor is the bottleneck." } },
         { "@type": "Question", "name": "What inputs does Videngine accept?", "acceptedAnswer": { "@type": "Answer", "text": "A URL, plain text or markdown, a CSV, or a JSON payload. For batch work, one row becomes one video. Images are pulled from the source page or supplied alongside the data." } },
-        { "@type": "Question", "name": "Can Videngine match our brand?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Typefaces, colours, logo placement, safe areas and motion are set once as tokens in the scene code, then applied to every render. Because it is code rather than a saved preset, brand rules cannot drift between videos." } },
+        { "@type": "Question", "name": "Can Videngine match our brand?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Typefaces, colours, logo placement, safe areas and motion are set once as tokens in the scene code, then applied to every render. Versioned templates help preserve those rules; new templates and unusual inputs still need review." } },
         { "@type": "Question", "name": "How long does a Videngine render take?", "acceptedAnswer": { "@type": "Answer", "text": "A one-minute video at 1080p typically finishes in a few minutes, since frames render in parallel rather than in sequence. Batch jobs queue and run unattended, and a webhook fires with the file URL when each one lands." } },
         { "@type": "Question", "name": "Who owns videos rendered with Videngine?", "acceptedAnswer": { "@type": "Answer", "text": "You do. Rendered files, scripts and any custom scene code built for you are yours to keep and use commercially, including if you stop paying." } }
       ]

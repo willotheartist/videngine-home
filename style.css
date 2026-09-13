@@ -472,3 +472,6 @@
     .morph-scene { height: auto; min-height: 0; }
     .morph-sticky { position: relative; height: auto; overflow: visible; }
   }
+
+.notes-silo-intro { margin: 0 0 30px; font-size: 17px; color: #666; }
+.notes-silo-intro a { color: #111; text-decoration: underline; text-underline-offset: 4px; }
