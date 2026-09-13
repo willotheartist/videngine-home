@@ -120,7 +120,7 @@
 <div class="stage"><span class="stage-num">02</span><div><h3>Write the script</h3><p>The source becomes a shot list with timings attached. You can accept it, edit a line, or hand Videngine your own script and skip this stage entirely.</p></div></div>
 <div class="stage"><span class="stage-num">03</span><div><h3>Build the scenes</h3><p>Each shot is a React component. Type, motion, safe areas and brand tokens are applied as code, so the hundredth video is laid out exactly like the first.</p></div></div>
 <div class="stage"><span class="stage-num">04</span><div><h3>Record the voice</h3><p>Synthetic narration by default, or upload your own audio. Captions are transcribed back from the finished track, so they match what was actually said.</p></div></div>
-<div class="stage"><span class="stage-num">05</span><div><h3>Render and deliver</h3><p>Frames render in parallel and mux to MP4. The file lands in object storage and a webhook fires with the URL, duration and a still.</p></div></div>
+<div class="stage"><span class="stage-num">05</span><div><h3>Render and deliver</h3><p>Frames render in parallel and combine into MP4 files. Review and download portrait and landscape versions from the studio.</p></div></div>
 </div>
 </div>
 </section>
@@ -135,7 +135,7 @@
 <div class="spec-row"><b>Aspect ratios</b><span>16:9 · 9:16 · 1:1 · 4:5</span></div>
 <div class="spec-row"><b>Resolution</b><span>up to 1080p</span></div>
 <div class="spec-row"><b>Captions</b><span>burned-in or .srt sidecar</span></div>
-<div class="spec-row"><b>Delivery</b><span>signed URL + webhook</span></div>
+<div class="spec-row"><b>Delivery</b><span>Studio MP4 downloads</span></div>
 <div class="spec-row"><b>Inputs</b><span>URL · text · CSV · JSON</span></div>
 </div>
 </div>
@@ -184,7 +184,7 @@
 <div class="features">
 <span class="feature">120 rendered minutes</span>
 <span class="feature">All aspect ratios</span>
-<span class="feature">Batch runs and webhooks</span>
+<span class="feature">Batch runs and saved drafts</span>
 <span class="feature">Brand tokens applied in code</span>
 <span class="feature">Synthetic or uploaded voice</span>
 <span class="feature">Overage at £1.60 / minute</span>
@@ -211,7 +211,7 @@
 <div class="faq-item"><button class="faq-question" aria-expanded="false"><span class="faq-num">03</span><span>How is it different from a video editor?</span><span class="faq-toggle" aria-hidden="true">+</span></button><div class="faq-answer">An editor is a canvas for one video at a time and rewards taste. Videngine is a pipeline for many videos and rewards structure. If you are making one hero film, use an editor. If you are making the same twenty-second video four hundred times with different data, an editor is the bottleneck.</div></div>
 <div class="faq-item"><button class="faq-question" aria-expanded="false"><span class="faq-num">04</span><span>What inputs does it accept?</span><span class="faq-toggle" aria-hidden="true">+</span></button><div class="faq-answer">A URL, plain text or markdown, a CSV, or a JSON payload. For batch work, one row becomes one video. Images are pulled from the source page or supplied alongside the data.</div></div>
 <div class="faq-item"><button class="faq-question" aria-expanded="false"><span class="faq-num">05</span><span>Can it match our brand?</span><span class="faq-toggle" aria-hidden="true">+</span></button><div class="faq-answer">Yes. Typefaces, colours, logo placement, safe areas and motion are set once as tokens in the scene code, then applied to every render. Versioned templates help preserve those rules; new templates and unusual inputs still need review.</div></div>
-<div class="faq-item"><button class="faq-question" aria-expanded="false"><span class="faq-num">06</span><span>How long does a render take?</span><span class="faq-toggle" aria-hidden="true">+</span></button><div class="faq-answer">A one-minute video at 1080p typically finishes in a few minutes, since frames render in parallel rather than in sequence. Batch jobs queue and run unattended, and a webhook fires with the file URL when each one lands.</div></div>
+<div class="faq-item"><button class="faq-question" aria-expanded="false"><span class="faq-num">06</span><span>How long does a render take?</span><span class="faq-toggle" aria-hidden="true">+</span></button><div class="faq-answer">A one-minute video at 1080p typically finishes in a few minutes, since frames render in parallel rather than in sequence. Batch jobs queue and run unattended. Finished files are available in the studio.</div></div>
 <div class="faq-item"><button class="faq-question" aria-expanded="false"><span class="faq-num">07</span><span>Who owns the output?</span><span class="faq-toggle" aria-hidden="true">+</span></button><div class="faq-answer">You do. Rendered files, scripts and any custom scene code built for you are yours to keep and use commercially, including if you stop paying.</div></div>
 </div>
 </div>
@@ -276,7 +276,7 @@
         "Template scenes defined in code",
         "Synthetic or uploaded voiceover",
         "Automatic captions",
-        "Webhook delivery"
+        "Studio downloads"
       ],
       "offers": {
         "@type": "Offer",
@@ -302,7 +302,7 @@
         { "@type": "Question", "name": "How is Videngine different from a video editor?", "acceptedAnswer": { "@type": "Answer", "text": "An editor is a canvas for one video at a time and rewards taste. Videngine is a pipeline for many videos and rewards structure. If you are making one hero film, use an editor. If you are making the same twenty-second video four hundred times with different data, an editor is the bottleneck." } },
         { "@type": "Question", "name": "What inputs does Videngine accept?", "acceptedAnswer": { "@type": "Answer", "text": "A URL, plain text or markdown, a CSV, or a JSON payload. For batch work, one row becomes one video. Images are pulled from the source page or supplied alongside the data." } },
         { "@type": "Question", "name": "Can Videngine match our brand?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Typefaces, colours, logo placement, safe areas and motion are set once as tokens in the scene code, then applied to every render. Versioned templates help preserve those rules; new templates and unusual inputs still need review." } },
-        { "@type": "Question", "name": "How long does a Videngine render take?", "acceptedAnswer": { "@type": "Answer", "text": "A one-minute video at 1080p typically finishes in a few minutes, since frames render in parallel rather than in sequence. Batch jobs queue and run unattended, and a webhook fires with the file URL when each one lands." } },
+        { "@type": "Question", "name": "How long does a Videngine render take?", "acceptedAnswer": { "@type": "Answer", "text": "A one-minute video at 1080p typically finishes in a few minutes, since frames render in parallel rather than in sequence. Batch jobs queue and run unattended. Finished files are available in the studio." } },
         { "@type": "Question", "name": "Who owns videos rendered with Videngine?", "acceptedAnswer": { "@type": "Answer", "text": "You do. Rendered files, scripts and any custom scene code built for you are yours to keep and use commercially, including if you stop paying." } }
       ]
     }

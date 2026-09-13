@@ -144,7 +144,7 @@
 <h3>4. Produce the audio</h3>
 <p>Narration is synthesised from the script or supplied as an upload. Captions are usually transcribed back from the finished audio track rather than taken from the script, so that they match what was actually said rather than what was intended.</p>
 <h3>5. Render and deliver</h3>
-<p>Frames are rendered in parallel and muxed to a container, typically MP4. Because frames are independent, render time scales with available compute rather than with video length. The finished file is written to object storage and the calling system is notified.</p>
+<p>Frames are rendered in parallel and muxed to a container, typically MP4. Rendering time depends on video length, scene complexity and available compute. In Videngine, finished MP4 files are available to review and download from the studio.</p>
 </section>
 
 <section id="vs-ai">
