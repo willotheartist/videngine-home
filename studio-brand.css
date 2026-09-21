@@ -1,0 +1,13 @@
+/* Shared with the studio: Inter Tight wordmark, orange play mark and primary actions. */
+:root{--studio-orange:#ff6036;--studio-orange-hover:#ed552e}
+.nav .brand{gap:10px;font-family:'Inter Tight',Inter,Arial,sans-serif;font-size:29px;font-weight:600;letter-spacing:-1.5px;line-height:1;color:#18191b;padding:0 2px}
+.nav .brand-mark{width:33px;height:33px;flex:0 0 33px;border-radius:8px;background:var(--studio-orange);display:grid;place-items:center}
+.nav .brand-mark::after{content:none}
+.nav .brand-mark svg{width:24px;height:24px;fill:#18191b;stroke:none}
+.brand-wordmark{white-space:nowrap}.brand-dot{color:var(--studio-orange)}
+.pill-button,.nav-cta,.launch-home .waitlist-input-row button,.launch-home .white-btn{font-family:'Inter Tight',Inter,Arial,sans-serif;display:inline-flex;align-items:center;justify-content:center;gap:9px;border:1px solid var(--studio-orange);border-radius:8px;background:var(--studio-orange);color:#201912;padding:13px 18px;min-height:44px;font-size:14px;font-weight:550;letter-spacing:normal;box-shadow:none;transition:background .18s,transform .18s}
+.pill-button:hover,.nav-cta:hover,.launch-home .waitlist-input-row button:hover,.launch-home .white-btn:hover{background:var(--studio-orange-hover);border-color:var(--studio-orange-hover);box-shadow:none;transform:none}
+.pill-button:active,.nav-cta:active,.launch-home .waitlist-input-row button:active,.launch-home .white-btn:active{transform:translateY(1px)}
+.pill-button::after{content:none}.pill-button .tick{display:none}
+.pill-button:focus-visible,.nav-cta:focus-visible,.launch-home .waitlist-input-row button:focus-visible,.launch-home .white-btn:focus-visible{outline:2px solid var(--studio-orange);outline-offset:3px}
+@media(max-width:600px){.nav .brand{font-size:25px;gap:8px;letter-spacing:-1.3px}.nav .brand-mark{width:30px;height:30px;flex-basis:30px}.nav-cta{padding:11px 13px;font-size:13px}}
