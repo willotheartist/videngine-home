@@ -16,9 +16,11 @@
 <link href="https://api.fontshare.com/v2/css?f[]=switzer@300,400,500,600,700&display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
 <link rel="stylesheet" href="/style.css"/>
+<link rel="stylesheet" href="/launch.css"/>
+<script defer src="/waitlist.js"></script>
 <script defer src="/analytics.js"></script>
 </head>
-<body>
+<body class="launch-home">
 
 <div class="nav-wrap">
 <nav class="nav" aria-label="Primary navigation">
@@ -29,7 +31,7 @@
 <a href="#pricing">Pricing</a>
 <a href="/ai-video-tools">AI video tools</a>
 </div>
-<a class="nav-cta" href="https://app.videngine.io">Open the studio</a>
+<a class="nav-cta" href="#waitlist">Join the waitlist</a>
 </nav>
 </div>
 
@@ -40,11 +42,11 @@
 <div class="morph-shell">
 
 <div class="morph-hero-copy">
-<div class="eyebrow"><span class="dot"></span>Private beta, taking a small number of teams</div>
+<div class="eyebrow"><span class="dot"></span>Coming soon · Join the launch list</div>
 <h1 class="display"><span class="ghost">Paste a link.</span><br/>Get a video back.</h1>
 <p>Videngine is a rendering engine, not an editor. Point it at a page, a product or a row of data and it writes the script, cuts the scenes, records the voice and returns a finished file. No timeline. No export queue.</p>
 <div class="hero-actions">
-<a class="pill-button" href="https://app.videngine.io"><span class="tick" aria-hidden="true"></span>Open the studio</a>
+<a class="pill-button" href="#waitlist"><span class="tick" aria-hidden="true"></span>Join the waitlist</a>
 <a class="hero-secondary" href="#how">See how a render works <span>↗</span></a>
 </div>
 </div>
@@ -106,11 +108,11 @@
 </div>
 </section>
 
-<section class="section" id="how">
+<section class="section process-section" id="how">
 <div class="page-shell split-grid">
 <div class="reveal">
 <h2 class="section-title"><span class="ghost">What happens</span><br/>after you press<br/>render.</h2>
-<div class="stack-label" style="margin-top:48px">Under the hood</div>
+<p class="process-intro">The content is already there.<br/>The production is on us.</p><div class="pipeline-preview" aria-label="Example production workflow"><div class="pipeline-label">SOURCE → FINISHED FILE</div><div class="source-bar">your-website.com / your-content</div><div class="pipeline-output"><span>Script</span><span>Scenes</span><span>Voice</span><span>Captions</span></div><div class="output-bar"><span>One source. Ready for every screen.</span><b>MP4</b></div></div><div class="stack-label" style="margin-top:32px">Under the hood</div>
 <div class="chip-row">
 <span class="chip">Remotion</span><span class="chip">ffmpeg</span><span class="chip">Headless Chrome</span><span class="chip">ElevenLabs</span><span class="chip">Whisper</span>
 </div>
@@ -125,10 +127,10 @@
 </div>
 </section>
 
-<section class="section">
+<section class="section output-section">
 <div class="page-shell spec-grid">
 <div class="reveal">
-<h2 class="section-title"><span class="ghost">Deterministic by</span><br/>design.</h2>
+<h2 class="section-title"><span class="ghost">Your content.</span><br/>Every format.</h2>
 <div class="spec-panel">
 <div class="spec-title">Output</div>
 <div class="spec-row"><b>Containers</b><span>MP4 (H.264), WebM</span></div>
@@ -139,7 +141,7 @@
 <div class="spec-row"><b>Inputs</b><span>URL · text · CSV · JSON</span></div>
 </div>
 </div>
-<div class="spec-copy reveal delay-1">
+<div class="spec-copy reveal delay-1"><div class="format-display" aria-label="Landscape, square and portrait video formats"><div class="format landscape"><span>16:9</span><b>Go wide.</b></div><div class="format square"><span>1:1</span><b>Fit the feed.</b></div><div class="format portrait"><span>9:16</span><b>Own the scroll.</b></div></div>
 <p>A video editor gives you a canvas and expects taste. That is the right tool when the video is the point. It is the wrong tool when the video is a by-product of something else you already have: a listing, a catalogue, a changelog, a report.</p>
 <p>Videngine treats a video as an artefact of its source. Approved scene rules can be reused when the source changes. Preserve the script, assets and settings when you want a revision to stay consistent with an earlier video.</p>
 <p>It was built to feed one studio's own output, which means it was shaped by real deadlines rather than a feature roadmap. Everything in it earned its place by removing an evening of work.</p>
@@ -151,15 +153,15 @@
 <div class="page-shell">
 <div class="cases-head reveal">
 <h2 class="section-title"><span class="ghost">Where it earns</span><br/>its keep.</h2>
-<div class="mono muted">Six recipes running today</div>
+<div class="mono muted">BUILT FOR THE WORK THAT REPEATS</div>
 </div>
 <div class="cases-grid">
-<article class="case-card reveal"><div><h3>Property listings</h3><p>Every new instruction gets a narrated vertical walkthrough the same hour it goes live, without a videographer or a booking.</p></div><div class="case-io"><u>listing URL</u> <b>→</b> 9:16 MP4</div></article>
-<article class="case-card reveal delay-1"><div><h3>Ad variants</h3><p>One product page becomes six hooks with different openings and captions, so you are testing creative rather than guessing at it.</p></div><div class="case-io"><u>product page</u> <b>→</b> 6 × 15s</div></article>
-<article class="case-card reveal delay-2"><div><h3>Article explainers</h3><p>A long post becomes a paced explainer with subtitles, giving the same piece a second life on the platforms that do not read.</p></div><div class="case-io"><u>article</u> <b>→</b> 16:9 MP4</div></article>
-<article class="case-card reveal"><div><h3>Catalogue at scale</h3><p>A spreadsheet in, a file per row out. Four hundred SKUs render unattended overnight and land in storage by morning.</p></div><div class="case-io"><u>CSV</u> <b>→</b> file per row</div></article>
-<article class="case-card reveal delay-1"><div><h3>Release notes</h3><p>Each shipped change gets a short clip for the changelog and the launch post, built from the notes you already wrote.</p></div><div class="case-io"><u>markdown</u> <b>→</b> 30s clip</div></article>
-<article class="case-card reveal delay-2"><div><h3>Localised cuts</h3><p>One master render, one voice and caption track per language, with layout that reflows for longer strings instead of clipping them.</p></div><div class="case-io"><u>1 render</u> <b>→</b> n languages</div></article>
+<article class="case-card reveal"><div class="case-index">01<span>REAL ESTATE</span></div><div><h3>Property listings</h3><p>Turn listing details and photos into narrated walkthroughs, ready for social without organising a shoot.</p></div><div class="case-io"><u>listing URL</u> <b>→</b> 9:16 MP4</div></article>
+<article class="case-card reveal delay-1"><div class="case-index">02<span>PAID SOCIAL</span></div><div><h3>Ad variants</h3><p>One product page becomes six hooks with different openings and captions, so you are testing creative rather than guessing at it.</p></div><div class="case-io"><u>product page</u> <b>→</b> 6 × 15s</div></article>
+<article class="case-card reveal delay-2"><div class="case-index">03<span>PUBLISHING</span></div><div><h3>Article explainers</h3><p>A long post becomes a paced explainer with subtitles, giving the same piece a second life on the platforms that do not read.</p></div><div class="case-io"><u>article</u> <b>→</b> 16:9 MP4</div></article>
+<article class="case-card reveal"><div class="case-index">04<span>ECOMMERCE</span></div><div><h3>Catalogue at scale</h3><p>A spreadsheet in, a video per row out. Give every product its own moment without rebuilding the same video by hand.</p></div><div class="case-io"><u>CSV</u> <b>→</b> file per row</div></article>
+<article class="case-card reveal delay-1"><div class="case-index">05<span>PRODUCT TEAMS</span></div><div><h3>Release notes</h3><p>Each shipped change gets a short clip for the changelog and the launch post, built from the notes you already wrote.</p></div><div class="case-io"><u>markdown</u> <b>→</b> 30s clip</div></article>
+<article class="case-card reveal delay-2"><div class="case-index">06<span>GLOBAL CONTENT</span></div><div><h3>Localised cuts</h3><p>One master render, one voice and caption track per language, with layout that reflows for longer strings instead of clipping them.</p></div><div class="case-io"><u>1 render</u> <b>→</b> n languages</div></article>
 </div>
 </div>
 </section>
@@ -168,17 +170,17 @@
 <div class="page-shell">
 <div class="pricing-intro reveal">
 <h2 class="section-title"><span class="ghost">Priced by</span><br/>minutes rendered.</h2>
-<p class="body-lg">No seats, no per-export fees and nothing that punishes you for re-running a job. You pay for finished minutes that come out of the engine.</p>
+<p class="body-lg">One straightforward launch plan for recurring video production. Join the list now. Subscribe only when we open.</p>
 </div>
 <div class="pricing-board reveal delay-2">
 <div class="pricing-top">
 <div class="hire-card">
-<div class="eyebrow"><span class="dot"></span>Private beta</div>
-<h3>Bring us a real pipeline</h3>
-<p>Beta places go to teams with a repeating video job and a source of truth we can point the engine at.</p>
+<div class="eyebrow">LAUNCH PRICING</div>
+<h3>A full month of<br/>video. Sorted.</h3>
+<p>120 finished minutes. Your content, voice and brand. One production engine working through the repeat jobs.</p>
 </div>
 <div class="plan-card">
-<h3>Studio</h3>
+<div class="plan-heading"><h3>Studio</h3><span class="launch-tag">Coming soon</span></div>
 <p class="muted">For teams with a video job that repeats every week rather than every quarter.</p>
 <div class="price">£240 <span>/ month</span></div>
 <div class="features">
@@ -189,13 +191,13 @@
 <span class="feature">Synthetic or uploaded voice</span>
 <span class="feature">Overage at £1.60 / minute</span>
 </div>
-<div class="price-cta"><span class="muted" style="font-size:12px">Cancel any month, files stay yours</span><a class="pill-button" href="https://app.videngine.io">Request a place</a></div>
+<div class="price-cta"><span class="muted" style="font-size:12px">No charge today · Launch notification only</span><a class="pill-button" href="#waitlist">Notify me at launch</a></div>
 </div>
 </div>
 <div class="single-project">
 <div><h4>Custom recipe</h4><p>For a pipeline that needs its own scene set, data source or delivery target.</p></div>
 <div class="single-points"><span>Scoped once</span><span>Runs unattended</span><span>Built by Wall &amp; Fifth</span></div>
-<a class="white-btn" href="https://wallandfifth.com">Talk it through</a>
+<a class="white-btn" href="#waitlist">Register interest</a>
 </div>
 </div>
 </div>
@@ -213,13 +215,13 @@
 <div class="faq-item"><button class="faq-question" aria-expanded="false"><span class="faq-num">05</span><span>Can it match our brand?</span><span class="faq-toggle" aria-hidden="true">+</span></button><div class="faq-answer">Yes. Typefaces, colours, logo placement, safe areas and motion are set once as tokens in the scene code, then applied to every render. Versioned templates help preserve those rules; new templates and unusual inputs still need review.</div></div>
 <div class="faq-item"><button class="faq-question" aria-expanded="false"><span class="faq-num">06</span><span>How long does a render take?</span><span class="faq-toggle" aria-hidden="true">+</span></button><div class="faq-answer">A one-minute video at 1080p typically finishes in a few minutes, since frames render in parallel rather than in sequence. Batch jobs queue and run unattended. Finished files are available in the studio.</div></div>
 <div class="faq-item"><button class="faq-question" aria-expanded="false"><span class="faq-num">07</span><span>Who owns the output?</span><span class="faq-toggle" aria-hidden="true">+</span></button><div class="faq-answer">You do. Rendered files, scripts and any custom scene code built for you are yours to keep and use commercially, including if you stop paying.</div></div>
-</div>
+<div class="faq-item"><button class="faq-question" aria-expanded="false"><span class="faq-num">08</span><span>Can I create an account now?</span><span class="faq-toggle" aria-hidden="true">+</span></button><div class="faq-answer">Not yet. Videngine is coming soon. Join the email waitlist and we’ll notify you when accounts open. Joining is free, does not create an account and does not start a subscription.</div></div></div>
 </div>
 <aside class="call-card reveal delay-1">
-<div class="eyebrow"><span class="dot"></span>Beta access</div>
-<h3 style="margin-top:18px">Have a job that repeats?</h3>
-<p>Tell us what the source is and how often it changes. If the engine already renders it, you will know within a day.</p>
-<a class="pill-button" href="https://app.videngine.io"><span class="tick" aria-hidden="true"></span>Request a place</a>
+<div class="eyebrow">COMING SOON</div>
+<h3 style="margin-top:18px">Be first to hear.</h3>
+<p>We’re getting Videngine ready for launch. Leave your email and we’ll let you know when accounts open.</p>
+<a class="pill-button" href="#waitlist"><span class="tick" aria-hidden="true"></span>Notify me at launch</a>
 </aside>
 </div>
 </section>
@@ -240,17 +242,20 @@
 </div>
 </section>
 
+<section class="section waitlist-section" id="waitlist" aria-labelledby="waitlist-title">
+<div class="page-shell waitlist-grid"><div><span class="launch-tag">COMING SOON</span><h2 class="section-title" id="waitlist-title">Your next video.<br/><span class="ghost">Minus the busywork.</span></h2><p>Leave your email. We’ll let you know when Videngine is ready for you.</p></div>
+<form class="waitlist-form" novalidate><label for="launch-email">Email address</label><div class="waitlist-input-row"><input id="launch-email" type="email" name="email" autocomplete="email" placeholder="you@company.com" required maxlength="254" aria-describedby="waitlist-status"/><button type="submit">Notify me at launch <span aria-hidden="true">↗</span></button></div><div class="form-trap" aria-hidden="true"><label for="company">Leave this empty</label><input id="company" name="company" tabindex="-1" autocomplete="off"/></div><label class="consent-label"><input type="checkbox" name="consent" required/><span>Email me when Videngine launches. See how we use your email in our <a href="/privacy">privacy notice</a>.</span></label><p class="waitlist-status" id="waitlist-status" role="status" aria-live="polite"></p><p class="waitlist-small">No account. No payment. Just the launch notification.</p></form></div></section>
 </main>
 
 <footer class="footer" id="contact">
 <div class="page-shell">
-<div class="footer-kicker">Start rendering</div>
+<div class="footer-kicker">Coming soon</div>
 <h2 class="footer-heading">Stop <span class="word-cycle"><span>editing.</span><span>exporting.</span><span>waiting.</span></span><br/><span class="ghost">Start rendering.</span></h2>
 <div class="footer-grid">
-<div class="footer-col"><h4>Studio</h4><a href="https://app.videngine.io">app.videngine.io</a><h4 style="margin-top:24px">Email</h4><a href="mailto:hello@videngine.io">hello@videngine.io</a></div>
+<div class="footer-col"><h4>Studio</h4><a href="#waitlist">Join the launch list</a><h4 style="margin-top:24px">Email</h4><a href="mailto:hello@videngine.io">hello@videngine.io</a></div>
 <div class="footer-col"><h4>Product</h4><a href="#how">How it works</a><a href="#uses">Uses</a><a href="#pricing">Pricing</a><a href="#notes">Notes</a></div>
-<div class="footer-col"><h4>Compare</h4><a href="/vs/ai-video-generators">vs AI generators</a><a href="/vs/video-editors">vs video editors</a><a href="/vs/templates">vs template tools</a></div>
-<div class="footer-col"><h4>Legal</h4><a href="/terms">Terms</a><a href="/privacy">Privacy</a></div>
+<div class="footer-col"><h4>Compare</h4><a href="/vs/ai-video-generators">vs AI generators</a></div>
+<div class="footer-col"><h4>Legal</h4><a href="/privacy">Privacy</a></div>
 </div>
 <div class="footer-bottom"><span>© 2026 Videngine</span><span>Built and run by Wall &amp; Fifth</span></div>
 <div class="giant-name">VID<em>ENGINE</em></div>
@@ -282,7 +287,8 @@
         "@type": "Offer",
         "price": "240",
         "priceCurrency": "GBP",
-        "description": "Studio plan, 120 rendered minutes per month"
+        "description": "Coming soon: Studio plan, 120 rendered minutes per month",
+        "availability": "https://schema.org/PreOrder"
       },
       "publisher": { "@id": "https://videngine.io/#org" }
     },
