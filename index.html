@@ -30,7 +30,7 @@
 <div class="nav-links">
 <a href="#how">How it works</a>
 <a href="#uses">Uses</a>
-<a href="#pricing">Pricing</a>
+<a href="/pricing">Pricing</a>
 <a href="/ai-video-tools">AI video tools</a>
 </div>
 <a class="nav-cta" href="#waitlist">Join the waitlist</a>
@@ -171,37 +171,16 @@
 <section class="section" id="pricing">
 <div class="page-shell">
 <div class="pricing-intro reveal">
-<h2 class="section-title"><span class="ghost">Priced by</span><br/>minutes rendered.</h2>
-<p class="body-lg">One straightforward launch plan for recurring video production. Join the list now. Subscribe only when we open.</p>
+<h2 class="section-title"><span class="ghost">Priced by</span><br/>the video.</h2>
+<p class="body-lg">Four plans from $79 a month. Each one includes a set number of finished videos, with team seats and brands built in.</p>
 </div>
-<div class="pricing-board reveal delay-2">
-<div class="pricing-top">
-<div class="hire-card">
-<div class="eyebrow">LAUNCH PRICING</div>
-<h3>A full month of<br/>video. Sorted.</h3>
-<p>120 finished minutes. Your content, voice and brand. One production engine working through the repeat jobs.</p>
+<div class="plan-strip reveal delay-2">
+<a class="plan-strip__item" href="/pricing#plans"><span class="plan-strip__name">Starter</span><span class="plan-strip__price">$79<small>/ month</small></span><span class="plan-strip__vol">50 videos a month</span></a>
+<a class="plan-strip__item is-featured" href="/pricing#plans"><span class="plan-strip__name">Growth <em>Recommended</em></span><span class="plan-strip__price">$249<small>/ month</small></span><span class="plan-strip__vol">250 videos a month</span></a>
+<a class="plan-strip__item" href="/pricing#plans"><span class="plan-strip__name">Scale</span><span class="plan-strip__price">$599<small>/ month</small></span><span class="plan-strip__vol">750 videos a month</span></a>
+<a class="plan-strip__item" href="/pricing#plans"><span class="plan-strip__name">Custom</span><span class="plan-strip__price plan-strip__price--talk">Let’s talk</span><span class="plan-strip__vol">1,500+ videos a month</span></a>
 </div>
-<div class="plan-card">
-<div class="plan-heading"><h3>Studio</h3><span class="launch-tag">Coming soon</span></div>
-<p class="muted">For teams with a video job that repeats every week rather than every quarter.</p>
-<div class="price">£240 <span>/ month</span></div>
-<div class="features">
-<span class="feature">120 rendered minutes</span>
-<span class="feature">All aspect ratios</span>
-<span class="feature">Batch runs and saved drafts</span>
-<span class="feature">Brand tokens applied in code</span>
-<span class="feature">Synthetic or uploaded voice</span>
-<span class="feature">Overage at £1.60 / minute</span>
-</div>
-<div class="price-cta"><span class="muted" style="font-size:12px">No charge today · Launch notification only</span><a class="pill-button" href="#waitlist">Notify me at launch</a></div>
-</div>
-</div>
-<div class="single-project">
-<div><h4>Custom recipe</h4><p>For a pipeline that needs its own scene set, data source or delivery target.</p></div>
-<div class="single-points"><span>Scoped once</span><span>Runs unattended</span><span>Built by Wall &amp; Fifth</span></div>
-<a class="white-btn" href="#waitlist">Register interest</a>
-</div>
-</div>
+<div class="plan-strip__foot"><span class="muted">Coming soon. Launch pricing in US dollars, seats and brands included.</span><a class="pill-button" href="/pricing">See full pricing</a></div>
 </div>
 </section>
 
@@ -255,7 +234,7 @@
 <h2 class="footer-heading">Stop <span class="word-cycle"><span>editing.</span><span>exporting.</span><span>waiting.</span></span><br/><span class="ghost">Start rendering.</span></h2>
 <div class="footer-grid">
 <div class="footer-col"><h4>Studio</h4><a href="#waitlist">Join the launch list</a><h4 style="margin-top:24px">Email</h4><a href="mailto:hello@videngine.io">hello@videngine.io</a></div>
-<div class="footer-col"><h4>Product</h4><a href="#how">How it works</a><a href="#uses">Uses</a><a href="#pricing">Pricing</a><a href="#notes">Notes</a></div>
+<div class="footer-col"><h4>Product</h4><a href="#how">How it works</a><a href="#uses">Uses</a><a href="/pricing">Pricing</a><a href="#notes">Notes</a></div>
 <div class="footer-col"><h4>Compare</h4><a href="/vs/ai-video-generators">vs AI generators</a></div>
 <div class="footer-col"><h4>Legal</h4><a href="/terms">Terms</a><a href="/privacy">Privacy</a></div>
 </div>
@@ -286,10 +265,13 @@
         "Studio downloads"
       ],
       "offers": {
-        "@type": "Offer",
-        "price": "240",
-        "priceCurrency": "GBP",
-        "description": "Coming soon: Studio plan, 120 rendered minutes per month",
+        "@type": "AggregateOffer",
+        "lowPrice": "79",
+        "highPrice": "599",
+        "priceCurrency": "USD",
+        "offerCount": "3",
+        "url": "https://videngine.io/pricing",
+        "description": "Coming soon: Starter, Growth and Scale plans with 50, 250 or 750 finished videos a month",
         "availability": "https://schema.org/PreOrder"
       },
       "publisher": { "@id": "https://videngine.io/#org" }

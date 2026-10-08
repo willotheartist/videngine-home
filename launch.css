@@ -49,3 +49,19 @@ body.launch-home{--bg:#000;--paper:#111;--ink:#eee;--muted:#aaa;--line:#292929;-
 .launch-home .footer{background:#000;border-top:1px solid #292929}
 .launch-home .footer-heading .ghost{color:#999}
 .launch-home .footer-col h4,.launch-home .footer-bottom{color:#999}
+
+/* Homepage pricing teaser: four plans in one bordered strip, linking to /pricing. */
+.plan-strip{margin-top:44px;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:#292929;border:1px solid #292929;border-radius:20px;overflow:hidden}
+.plan-strip__item{position:relative;display:grid;gap:10px;align-content:start;padding:30px 28px 32px;background:#050505;transition:background .25s}
+.plan-strip__item:hover{background:#111}
+.plan-strip__item.is-featured{background:#101010}
+.plan-strip__item.is-featured::before{content:"";position:absolute;inset:0 0 auto;height:3px;background:#ff6036}
+.plan-strip__name{display:flex;align-items:center;justify-content:space-between;gap:10px;font-size:20px;font-weight:500;letter-spacing:-.035em;color:#fff}
+.plan-strip__name em{font-style:normal;font-size:11px;font-weight:600;letter-spacing:0;color:#18191b;background:#ff6036;padding:4px 7px;border-radius:5px}
+.plan-strip__price{margin-top:22px;font-size:clamp(46px,4.4vw,62px);line-height:.95;letter-spacing:-.065em;font-weight:500;color:#fff;white-space:nowrap}
+.plan-strip__price small{margin-left:8px;font-size:14px;letter-spacing:0;color:#999}
+.plan-strip__price--talk{font-size:clamp(34px,3.2vw,44px);letter-spacing:-.05em;padding:.12em 0}
+.plan-strip__vol{font-size:15px;color:#aaa}
+.plan-strip__foot{margin-top:22px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:14px}
+@media(max-width:1000px){.plan-strip{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:560px){.plan-strip{grid-template-columns:1fr}.plan-strip__item{padding:24px 22px 26px}.plan-strip__price{margin-top:14px}}
