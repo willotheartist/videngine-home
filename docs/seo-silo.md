@@ -58,3 +58,15 @@ No indexing or ranking claim is made. Next, connect or inspect Search Console an
 Set a pre-publication baseline if historical data is available. Segment brand and non-brand searches. Record conversions separately from ranking visibility. AI referrals and reported citations are partial observations, not a complete measure of answer-engine exposure.
 
 Prioritise further content from actual query data, user questions and demonstrated product capability. Possible next families are property-listing videos, localisation workflows and vendor comparisons, contingent on evidence and enough distinct content to serve the query.
+
+## Comparison cluster (added 8 October 2026)
+
+| Role | Target query family | Canonical destination | Distinct job |
+| --- | --- | --- | --- |
+| Hub | Videngine alternatives, compare video automation tools | /compare | Route to the right named comparison and explain which kind of tool fits which job |
+| Comparison | Synthesia alternative, Videngine vs Synthesia | /vs/synthesia | Avatar-led video against listing videos from inventory |
+| Comparison | Creatomate alternative, Videngine vs Creatomate | /vs/creatomate | Template API you wire up against a finished listing-video product |
+| Comparison | Shotstack alternative, Videngine vs Shotstack | /vs/shotstack | Developer video infrastructure against a finished product |
+| Comparison | Pictory alternative, Videngine vs Pictory | /vs/pictory | Content repurposing with stock footage against videos of the real item |
+
+Rules for this cluster: every competitor fact comes from that competitor's own site or docs and is listed under Sources on the page, with the date it was checked. Each page says plainly when the other tool is the better choice. Prices that conflict on the competitor's own pages are described rather than quoted. Re-check facts quarterly and update the "Facts checked" date; one page per competitor covers both "vs" and "alternative" intent.
