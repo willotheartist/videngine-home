@@ -55,6 +55,35 @@
 - [Video montage maker: photo montages for businesses](https://videngine.io/slideshows/video-montage-maker): A video montage maker guide for businesses: montage vs slideshow vs collage, four montages that work, how to cut one, and when an editor is the better tool.
 - [AI image to video generator vs slideshow: which do you need?](https://videngine.io/slideshows/image-to-video-ai-vs-slideshow): An AI image to video generator animates one still into new motion; a photo slideshow narrates many real photos. Compare accuracy, cost and best uses.
 
+## YouTube
+
+- [YouTube video creator for businesses: make, publish and grow a channel](https://videngine.io/youtube): A YouTube video creator for businesses: turn pages, listings and articles into Shorts and long-form videos, with metadata, automation and disclosure.
+- [YouTube channel for business: turn your website into a channel](https://videngine.io/youtube/youtube-channel-for-business): A YouTube channel for business can start with your website: what to publish by business type, playlists that mirror your site, a cadence and a 30-day plan.
+- [YouTube Shorts maker: Shorts from your website and data](https://videngine.io/youtube/youtube-shorts-maker): A YouTube Shorts maker for businesses: turn pages, listings, products and articles into vertical Shorts with captions, titles and hashtags, in batches.
+- [YouTube Shorts vs long-form videos: which a business needs](https://videngine.io/youtube/shorts-vs-long-form): YouTube Shorts vs long videos: most businesses need both, cut from the same listing, product or article. What each is for, where to start, and a workflow.
+- [YouTube titles, descriptions and tags that get videos found](https://videngine.io/youtube/youtube-titles-descriptions-tags): How to write YouTube titles and descriptions for business videos: what each field does per YouTube Help, hashtag and tag rules, a template and a checklist.
+- [YouTube automation for businesses: what to automate](https://videngine.io/youtube/youtube-automation): YouTube automation for a real business channel: what software can do from your own pages, what still needs a person, and the YouTube rules that apply.
+- [YouTube AI disclosure: when to label synthetic content](https://videngine.io/youtube/youtube-ai-disclosure): YouTube AI disclosure for business videos: what YouTube's help pages say needs the AI use label, what doesn't, where the setting is and how to decide.
+
+## Explainers
+
+- [Explainer videos: animated, AI and whiteboard, and which you need](https://videngine.io/explainers): Explainer video software by job: AI, animated, whiteboard and motion-graphics explainers, plus scripts, length, cost and tutorials from help articles.
+- [AI explainer video maker: explainers from what you have written](https://videngine.io/explainers/ai-explainer-video): An AI explainer video maker can draft the script, voice, captions and scene plan. Compare the approaches, brief it well and check the explanation is right.
+- [Animated explainer videos: motion, characters or whiteboard](https://videngine.io/explainers/animated-explainer-video): An animated explainer video can be motion graphics, character animation or whiteboard. Compare the three by job, effort and scale before choosing a tool.
+- [Whiteboard video maker: when hand-drawn explainers work](https://videngine.io/explainers/whiteboard-video): An honest guide to choosing a whiteboard video maker: when hand-drawn explainers work, when they don't, the main tools, and how to script and storyboard one.
+- [How to write an explainer video script](https://videngine.io/explainers/explainer-video-script): A practical method for an explainer video script of 60 to 120 seconds: the structure, word counts, writing for the ear, a sample script and a template.
+- [How-to videos from help articles: a tutorial for every article](https://videngine.io/explainers/how-to-videos-from-help-articles): Use a how-to video maker to turn help articles into short tutorials: which articles suit video, steps as scenes, keeping videos current and embedding them.
+- [How long should an explainer video be, and what does it cost?](https://videngine.io/explainers/explainer-video-length-and-cost): Explainer video length should follow the job: ad, homepage, feature, how-to or training. What drives explainer video cost, worked prices and how to budget.
+
+## Training
+
+- [Training videos from your documents: an AI training video maker](https://videngine.io/training): An AI training video maker for documents you already keep: SOPs, onboarding, lessons and patient leaflets as narrated, captioned videos that stay current.
+- [AI training video generator: videos from your documents](https://videngine.io/training/ai-training-video-generator): An AI training video generator that works from the documents your team already maintains: tool types, what good training needs, captions and LMS delivery.
+- [Onboarding videos: for new staff and new customers](https://videngine.io/training/onboarding-videos): Make onboarding videos for new staff and new customers from the documents you already keep: a series plan, what to leave out, delivery and keeping it current.
+- [SOP videos: turn standard operating procedures into video](https://videngine.io/training/sop-videos): SOP videos that stay matched to the controlled document: which procedures suit video, one step per scene, version on the closing card, review and delivery.
+- [Course and lesson videos from your notes](https://videngine.io/training/course-videos): Make lesson videos from written course notes: which parts suit narrated video, one objective per video, captions, a lesson structure and where to publish.
+- [Patient education videos from approved leaflets](https://videngine.io/training/patient-education-videos): Turn approved leaflets into patient education videos for waiting rooms, websites and YouTube: what to make, clinical sign-off, captions, privacy and updates.
+
 ## Video SEO
 
 - [Video SEO: get your videos found in search and AI answers](https://videngine.io/video-seo): Video SEO in one place: watch pages, VideoObject schema, video sitemaps, transcripts, AI crawlers and hosting, with a checklist and a guide for each.
@@ -92,6 +121,9 @@
 - [Videngine vs Renderforest: a Renderforest alternative at scale](https://videngine.io/vs/renderforest): Looking for a Renderforest alternative? Renderforest fills animated templates by hand; Videngine fills coded templates from your pages and data, in batches.
 - [Videngine vs Animaker: an Animaker alternative at scale](https://videngine.io/vs/animaker): Videngine vs Animaker: Animaker builds animated, character-led videos in an editor. Videngine renders narrated videos from pages and data. Plans compared.
 - [Videngine vs Animoto: an Animoto alternative for photo video](https://videngine.io/vs/animoto): Looking for an Animoto alternative? Animoto builds photo slideshow videos by hand; Videngine narrates videos from your pages, photos and data, in batches.
+- [Videngine vs Powtoon: a Powtoon alternative for explainers](https://videngine.io/vs/powtoon): Looking for a Powtoon alternative? Powtoon animates characters and presentations by hand; Videngine narrates explainers from your pages and data, in batches.
+- [Videngine vs VideoScribe: a VideoScribe alternative for volume](https://videngine.io/vs/videoscribe): Looking for a VideoScribe alternative? VideoScribe builds whiteboard videos by hand; Videngine narrates explainers from your pages and data, in batches.
+- [Videngine vs Colossyan: a Colossyan alternative for training](https://videngine.io/vs/colossyan): Looking for a Colossyan alternative? Colossyan makes avatar-led, interactive training video; Videngine narrates videos from your documents, pages and data.
 
 ## Optional
 

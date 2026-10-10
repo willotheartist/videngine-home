@@ -151,3 +151,11 @@ Rules for this silo: write for the operator in that industry; no client names, v
 - /notes/photos-to-video moves into this silo and is re-titled for "make a video with pictures" / "create video from photos"; its URL is unchanged.
 - /vs/animoto joins the comparisons. Footer Product column links Slideshows; Compare column links vs Animoto.
 - Written for businesses with photos (listings, products, venues); consumer birthday or memorial slideshows get one line pointing to free apps.
+
+## YouTube, Explainers and Training silos (10 October 2026)
+
+- **/youtube** hub ("YouTube video creator") with six clusters: youtube-channel-for-business, youtube-shorts-maker, shorts-vs-long-form, youtube-titles-descriptions-tags, youtube-automation, youtube-ai-disclosure. /use-cases/youtube-videos and /use-cases/short-form-video are carded from the hub.
+- **/explainers** hub ("explainer video software", "create explainer video") with six clusters: ai-explainer-video, animated-explainer-video, whiteboard-video, explainer-video-script, how-to-videos-from-help-articles, explainer-video-length-and-cost. /use-cases/explainer-videos keeps "explainer video maker".
+- **/training** hub ("AI training video maker") with five clusters: ai-training-video-generator, onboarding-videos, sop-videos, course-videos, patient-education-videos.
+- Comparisons: /vs/powtoon, /vs/videoscribe, /vs/colossyan.
+- Plan gating follows /pricing: batch runs and API from Growth, YouTube publishing on Scale (rolling out).
