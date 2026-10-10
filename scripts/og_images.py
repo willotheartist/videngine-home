@@ -16,7 +16,7 @@ from playwright.async_api import async_playwright
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "og"
-SECTIONS = [("video-seo/", "Video SEO"), ("video-seo", "Video SEO"), ("glossary", "Glossary"), ("about", "About"), ("industries/", "Industry"), ("industries", "Industries"), ("use-cases/", "Use case"), ("use-cases", "Use cases"), ("notes/", "Guide"), ("vs/", "Comparison"), ("compare", "Comparison"), ("pricing", "Pricing"),
+SECTIONS = [("slideshows/", "Slideshows"), ("slideshows", "Slideshows"), ("video-seo/", "Video SEO"), ("video-seo", "Video SEO"), ("glossary", "Glossary"), ("about", "About"), ("industries/", "Industry"), ("industries", "Industries"), ("use-cases/", "Use case"), ("use-cases", "Use cases"), ("notes/", "Guide"), ("vs/", "Comparison"), ("compare", "Comparison"), ("pricing", "Pricing"),
             ("programmatic-video", "Definition"), ("ai-video-tools", "Guide"), ("notes", "Notes"),
             ("terms", "Legal"), ("privacy", "Legal"), ("index", "Programmatic video engine")]
 

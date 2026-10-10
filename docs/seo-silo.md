@@ -144,3 +144,10 @@ Rules for this silo: write for the operator in that industry; no client names, v
 - Reference: /glossary (55 terms, DefinedTermSet with an anchor per term) and /about (AboutPage with the Organization, parent company and registered details, plus our editorial rules).
 - Site-wide footer Product column now links Video SEO, Glossary and About.
 - Corrections: Sora removed as a current tool (OpenAI discontinued it); the voiceover guide now matches /pricing on consented voice cloning (Scale).
+
+## Slideshows silo (10 October 2026)
+
+- New hub **/slideshows** ("AI slideshow maker", "slideshow maker", "slideshow video maker") with eight clusters: how-to-make-a-slideshow, automatic-slideshow-maker, best-slideshow-makers, slideshow-with-music, vertical-slideshow, ken-burns-effect, video-montage-maker, image-to-video-ai-vs-slideshow ("ai image to video generator", the largest fit keyword in the 21:58 export).
+- /notes/photos-to-video moves into this silo and is re-titled for "make a video with pictures" / "create video from photos"; its URL is unchanged.
+- /vs/animoto joins the comparisons. Footer Product column links Slideshows; Compare column links vs Animoto.
+- Written for businesses with photos (listings, products, venues); consumer birthday or memorial slideshows get one line pointing to free apps.

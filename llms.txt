@@ -42,6 +42,19 @@
 - [SaaS video: release, feature and help videos from your docs](https://videngine.io/industries/saas-video): SaaS video from what you already write: turn release notes, changelogs and help articles into short narrated, captioned clips that keep pace with shipping.
 - [Publisher video: turn articles into videos at newsroom scale](https://videngine.io/industries/publisher-video): Publisher video from your own articles: choose which stories suit video, clear image rights, keep desk sign-off and publish daily to YouTube and the page.
 
+## Slideshows
+
+- [AI slideshow maker: turn your photos into narrated videos](https://videngine.io/slideshows): An AI slideshow maker for businesses: turn listing, product and page photos into narrated, captioned slideshow videos, with a guide to every step.
+- [Make a video with pictures: photos to a narrated video](https://videngine.io/notes/photos-to-video): How to make a video with pictures, step by step: order the photos, time each one, add narration and captions, frame for 9:16 and 16:9, and when AI fits.
+- [How to make a slideshow video: photos, order, timing and music](https://videngine.io/slideshows/how-to-make-a-slideshow): How to make a slideshow video for a business: how many photos, what resolution, story order, timing to narration, music, captions and 16:9 or 9:16 formats.
+- [Automatic slideshow maker: one video per listing or product](https://videngine.io/slideshows/automatic-slideshow-maker): How an automatic slideshow maker should work for a business: the data each video needs, photo checks, a CSV or sitemap workflow and cost per approved video.
+- [Best slideshow makers in 2026, by what you need to make](https://videngine.io/slideshows/best-slideshow-makers): The best slideshow maker depends on the job. Tools for phones, design, desktop, business video, APIs and narrated slideshows, checked against their own pages.
+- [Slideshow maker with music: photo videos with narration](https://videngine.io/slideshows/slideshow-with-music): A slideshow maker with music for business video: when music alone works, when it belongs under a voiceover, licences, Content ID, mixing levels and captions.
+- [Vertical slideshow: landscape photos in a 9:16 video](https://videngine.io/slideshows/vertical-slideshow): How to make a vertical slideshow from landscape photos: crop, letterbox or blurred fill, safe areas, captions and 1080×1920 for Reels, Shorts and TikTok.
+- [Ken Burns effect: pan and zoom for photo videos](https://videngine.io/slideshows/ken-burns-effect): The Ken Burns effect is a slow pan and zoom across a still photo. Which move suits which photo, how much zoom a photo can take, and how to use it in iMovie.
+- [Video montage maker: photo montages for businesses](https://videngine.io/slideshows/video-montage-maker): A video montage maker guide for businesses: montage vs slideshow vs collage, four montages that work, how to cut one, and when an editor is the better tool.
+- [AI image to video generator vs slideshow: which do you need?](https://videngine.io/slideshows/image-to-video-ai-vs-slideshow): An AI image to video generator animates one still into new motion; a photo slideshow narrates many real photos. Compare accuracy, cost and best uses.
+
 ## Video SEO
 
 - [Video SEO: get your videos found in search and AI answers](https://videngine.io/video-seo): Video SEO in one place: watch pages, VideoObject schema, video sitemaps, transcripts, AI crawlers and hosting, with a checklist and a guide for each.
@@ -56,7 +69,6 @@
 - [AI video tools: choose the right generator or platform](https://videngine.io/ai-video-tools): Compare AI video tools, generators and creation platforms by the job: generated footage, presenters, text, photos, URLs, ads or repeatable automation.
 - [Best AI video generators in 2026, by what you need to make](https://videngine.io/notes/best-ai-video-generators): The best AI video generator depends on the job. Named tools for footage, avatars, creators, articles, design, APIs and data, checked against their own pages.
 - [Text to video AI: prompt generators vs script to video](https://videngine.io/notes/text-to-video-ai): Text to video AI covers two jobs: generating footage from a prompt, and script to video with narration, scenes and captions. How to choose and what to check.
-- [Photos to video: turn pictures into a narrated video](https://videngine.io/notes/photos-to-video): Photos to video, step by step: order the pictures, time each one, add narration and captions, frame for 9:16 and 16:9, and know when AI image-to-video fits.
 - [AI voiceover for video: voices, pronunciation and disclosure](https://videngine.io/notes/ai-voiceover): AI voiceover for video: pick a voice, fix pronunciation with a lexicon, write scripts for the ear, get consent before voice cloning and disclose where needed.
 - [AI video generator costs: compare the full production bill](https://videngine.io/notes/ai-video-generator-cost): Compare AI video tool costs across subscriptions, credits, generated footage, rendering, retries and review using cost per approved video.
 - [URL to video: how to turn a webpage into a useful video](https://videngine.io/notes/url-to-video): A practical URL-to-video workflow: choose the right source, check extracted facts, plan scenes and evaluate tools before automating production.
@@ -69,7 +81,7 @@
 
 ## Comparisons
 
-- [Compare Videngine with Synthesia, Canva, InVideo and more](https://videngine.io/compare): Honest comparisons of Videngine with Synthesia, Canva, InVideo, Creatomate, Shotstack, Pictory, Renderforest and Animaker, checked against their own sites.
+- [Compare Videngine with Synthesia, Canva, InVideo and more](https://videngine.io/compare): Honest comparisons of Videngine with Synthesia, Canva, InVideo, Animoto, Creatomate, Shotstack, Pictory, Renderforest and Animaker, checked on their own sites.
 - [Videngine vs AI video generators: which one do you need?](https://videngine.io/vs/ai-video-generators): Videngine is not an AI video generator. Generators invent new footage on every run; Videngine renders from templates and repeats. When to use each.
 - [Videngine vs Synthesia: a Synthesia alternative for bulk video](https://videngine.io/vs/synthesia): Synthesia makes avatar-led training and business video. Videngine renders narrated videos from your pages, products and data. Plans and prices compared.
 - [Videngine vs Canva: a Canva video alternative for bulk video](https://videngine.io/vs/canva): Canva’s video editor builds each video by hand. Videngine renders narrated videos from pages and data in batches. A Canva video alternative, compared.
@@ -79,6 +91,7 @@
 - [Videngine vs Pictory: a Pictory alternative for pages and data](https://videngine.io/vs/pictory): Pictory turns articles and scripts into stock-footage videos. Videngine renders videos from pages, products and data, with their own photos. Plans compared.
 - [Videngine vs Renderforest: a Renderforest alternative at scale](https://videngine.io/vs/renderforest): Looking for a Renderforest alternative? Renderforest fills animated templates by hand; Videngine fills coded templates from your pages and data, in batches.
 - [Videngine vs Animaker: an Animaker alternative at scale](https://videngine.io/vs/animaker): Videngine vs Animaker: Animaker builds animated, character-led videos in an editor. Videngine renders narrated videos from pages and data. Plans compared.
+- [Videngine vs Animoto: an Animoto alternative for photo video](https://videngine.io/vs/animoto): Looking for an Animoto alternative? Animoto builds photo slideshow videos by hand; Videngine narrates videos from your pages, photos and data, in batches.
 
 ## Optional
 
