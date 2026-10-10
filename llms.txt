@@ -30,6 +30,15 @@
 - [Short-form video maker: Shorts, Reels and TikTok at scale](https://videngine.io/use-cases/short-form-video): A short-form video maker for businesses: turn listings, products and articles into vertical Shorts, Reels and TikToks with burned-in captions, in batches.
 - [Real estate listing video: a narrated video for every property](https://videngine.io/use-cases/real-estate-video): A real estate listing video for every property: narrated, captioned 9:16 and 16:9 cuts from the listing's photos and facts, kept accurate as prices change.
 
+## Industries
+
+- [Automated video by industry: dealers, brokers, marketplaces and more](https://videngine.io/industries): Automated video for dealers, yacht brokers, estate agents, marketplaces, shops, software companies and publishers, and what each one turns into video.
+- [Car dealer video: a listing video for every vehicle in stock](https://videngine.io/industries/car-dealer-video): Car dealer video for every vehicle in stock: narrated, captioned 9:16 and 16:9 cuts from each listing's photos and spec, re-rendered when prices change.
+- [Boat listing video: a narrated video for every boat for sale](https://videngine.io/industries/boat-listing-video): A boat listing video for every boat for sale: narrated, captioned 9:16 and 16:9 cuts from the listing photos and specification, kept current as prices change.
+- [Marketplace listing video: a video for every listing](https://videngine.io/industries/marketplace-video): Marketplace listing video for every listing: quality gates, seller opt-outs, a backfill and daily batches, review at scale, and delivery and cost at volume.
+- [SaaS video: release, feature and help videos from your docs](https://videngine.io/industries/saas-video): SaaS video from what you already write: turn release notes, changelogs and help articles into short narrated, captioned clips that keep pace with shipping.
+- [Publisher video: turn articles into videos at newsroom scale](https://videngine.io/industries/publisher-video): Publisher video from your own articles: choose which stories suit video, clear image rights, keep desk sign-off and publish daily to YouTube and the page.
+
 ## Guides
 
 - [AI video tools: choose the right generator or platform](https://videngine.io/ai-video-tools): Compare AI video tools, generators and creation platforms by the job: generated footage, presenters, text, photos, URLs, ads or repeatable automation.

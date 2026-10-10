@@ -118,3 +118,20 @@ Global navigation's "Uses" now links to /use-cases. Homepage recipe links point 
 2. A named case study once the client agrees to it. A dated, numbered account of real volume is the asset answer engines are most likely to cite.
 3. /vs/canva: canva video editor 50k at competition index 4. Build it the way the other comparisons were built, from Canva's own pages.
 4. Connect Search Console and record impressions and clicks per page from this date; check for the wrong page ranking for a target intent before adding more.
+
+## Industries silo (10 October 2026)
+
+Built ahead of keyword data, by decision: these are the pages prospects in each industry are sent to and the ones answer engines need to recommend Videngine for a vertical. Measure them in Search Console and re-check against a Keyword Planner export seeded with the terms below before adding more.
+
+| Role | Target query family | Canonical destination | Distinct job |
+| --- | --- | --- | --- |
+| Hub | automated video by industry | /industries | Route each industry to its guide; what changes and what stays the same |
+| Industry | car dealer video, vehicle listing video, dealer inventory video | /industries/car-dealer-video | Walkaround photo order, vehicle facts, portals, stock turnover |
+| Industry | boat listing video, yacht broker video, yacht charter video | /industries/boat-listing-video | Boat facts, builder and marina pronunciation, charter template |
+| Industry | marketplace listing video, classifieds video, video for every listing | /industries/marketplace-video | Platform-made video: quality gates, seller trust, backfill and daily flow, delivery and cost at volume |
+| Industry | SaaS video, release notes video, changelog video | /industries/saas-video | A software company's video programme; links to the explainer guide for the how-to |
+| Industry | publisher video, video for publishers, news video automation | /industries/publisher-video | Which stories suit video, image rights, desk sign-off, corrections, cadence; links to article to video for the craft |
+
+Property stays at /use-cases/real-estate-video and products at /notes/product-video-automation; the hub lists both. The use-cases hub's industry table now points at these pages. Footer "Product" column carries Industries sitewide; the Notes index has an Industries group.
+
+Rules for this silo: write for the operator in that industry; no client names, volumes or results; third-party portal and regulator statements only when verified on their own pages (Autotrader UK video links, CAP Code section 3 and the FTC small-business advertising guide are cited on the car dealer page); narration is described as English only.
