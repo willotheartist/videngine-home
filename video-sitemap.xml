@@ -11,4 +11,15 @@
       <video:publication_date>2026-10-10T18:27:51.751Z</video:publication_date>
     </video:video>
   </url>
+  <url>
+    <loc>https://videngine.io/use-cases/video-ads</loc>
+    <video:video>
+      <video:thumbnail_loc>https://videngine.io/videos/use-cases-video-ads.jpg</video:thumbnail_loc>
+      <video:title>AI video ad maker: ads and marketing videos from your own content</video:title>
+      <video:description>Use an AI video ad maker on your own listings, pages and data: which ads to automate, a 20-second ad plan, formats by placement, variants and cost.</video:description>
+      <video:content_loc>https://videngine.io/videos/use-cases-video-ads.mp4</video:content_loc>
+      <video:duration>60</video:duration>
+      <video:publication_date>2026-10-10T18:27:52.297Z</video:publication_date>
+    </video:video>
+  </url>
 </urlset>
