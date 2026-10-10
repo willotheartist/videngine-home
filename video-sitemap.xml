@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+  <url>
+    <loc>https://videngine.io/ai-video-tools</loc>
+    <video:video>
+      <video:thumbnail_loc>https://videngine.io/videos/ai-video-tools.jpg</video:thumbnail_loc>
+      <video:title>AI video tools: choose the right generator or platform</video:title>
+      <video:description>Compare AI video tools, generators and creation platforms by the job: generated footage, presenters, text, photos, URLs, ads or repeatable automation.</video:description>
+      <video:content_loc>https://videngine.io/videos/ai-video-tools.mp4</video:content_loc>
+      <video:duration>64</video:duration>
+      <video:publication_date>2026-10-10T18:27:51.751Z</video:publication_date>
+    </video:video>
+  </url>
+</urlset>

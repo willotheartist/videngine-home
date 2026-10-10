@@ -17,3 +17,4 @@ User-agent: CCBot
 Allow: /
 
 Sitemap: https://videngine.io/sitemap.xml
+Sitemap: https://videngine.io/video-sitemap.xml
