@@ -3,14 +3,29 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>What is programmatic video? A plain definition</title>
-<meta name="description" content="Programmatic video is video produced by running a coded template against structured data, so one template renders many videos. This page defines the term, contrasts it with AI video generation and manual editing, and sets out when each is appropriate."/>
+<link rel="icon" href="/favicon.ico" sizes="32x32"/>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml"/>
+<link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
+<link rel="manifest" href="/site.webmanifest"/>
+<meta name="theme-color" content="#fafafa"/>
+<title>What is programmatic video? A plain definition | Videngine</title>
+<meta name="description" content="Programmatic video is rendered from a coded template and structured data, so one template makes many videos. A plain definition, and when to use it."/>
 <link rel="canonical" href="https://videngine.io/programmatic-video"/>
-<meta property="og:title" content="What is programmatic video? A plain definition"/>
+<meta property="og:title" content="What is programmatic video? A plain definition | Videngine"/>
 <meta property="og:description" content="Video produced by running a coded template against structured data. One template, many videos."/>
 <meta property="og:url" content="https://videngine.io/programmatic-video"/>
 <meta property="og:type" content="article"/>
 <meta name="twitter:card" content="summary_large_image"/>
+<meta property="og:site_name" content="Videngine"/>
+<meta property="og:locale" content="en_GB"/>
+<meta property="og:image" content="https://videngine.io/og/programmatic-video.png"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="630"/>
+<meta property="og:image:alt" content="Videngine: Programmatic video"/>
+<meta name="twitter:title" content="What is programmatic video? A plain definition | Videngine"/>
+<meta name="twitter:description" content="Video produced by running a coded template against structured data. One template, many videos."/>
+<meta name="twitter:image" content="https://videngine.io/og/programmatic-video.png"/>
+<meta name="twitter:image:alt" content="Videngine: Programmatic video"/>
 <link href="https://api.fontshare.com" rel="preconnect"/>
 <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin/>
 <link href="https://api.fontshare.com/v2/css?f[]=switzer@300,400,500,600,700&display=swap" rel="stylesheet"/>
@@ -277,9 +292,20 @@
       "datePublished": "2026-08-25",
       "dateModified": "2026-08-25",
       "inLanguage": "en",
-      "about": { "@id": "https://videngine.io/programmatic-video#term" },
-      "publisher": { "@type": "Organization", "name": "Videngine", "url": "https://videngine.io/" },
-      "mainEntityOfPage": "https://videngine.io/programmatic-video"
+      "about": {
+        "@id": "https://videngine.io/programmatic-video#term"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Videngine",
+        "url": "https://videngine.io/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://videngine.io/icon-512.png"
+        }
+      },
+      "mainEntityOfPage": "https://videngine.io/programmatic-video",
+      "image": "https://videngine.io/og/programmatic-video.png"
     },
     {
       "@type": "DefinedTerm",
@@ -292,20 +318,79 @@
       "@type": "FAQPage",
       "@id": "https://videngine.io/programmatic-video#faq",
       "mainEntity": [
-        { "@type": "Question", "name": "What is programmatic video?", "acceptedAnswer": { "@type": "Answer", "text": "Programmatic video is video produced by running a coded template against structured data. The template defines layout, typography, motion and timing once, and the data supplies what changes between videos. Running one template against one hundred rows produces one hundred videos, each following the same scene rules with values supplied by its row." } },
-        { "@type": "Question", "name": "How is programmatic video different from AI video generation?", "acceptedAnswer": { "@type": "Answer", "text": "AI video generation creates footage from a prompt using a generative model, so the same prompt produces different footage each time. Programmatic video renders footage from a template written as code, so the scene rules can remain fixed while the input data changes. The first is generative and probabilistic, the second is deterministic." } },
-        { "@type": "Question", "name": "How is programmatic video different from using a video editor?", "acceptedAnswer": { "@type": "Answer", "text": "A video editor is a canvas for producing one video at a time, and the result depends on the person operating it. A programmatic system is a pipeline for producing many videos from one specification, and the result depends on how well the specification was written. An editor rewards taste and punishes volume. A pipeline rewards structure and punishes ambiguity." } },
-        { "@type": "Question", "name": "Is programmatic video the same as automated video editing?", "acceptedAnswer": { "@type": "Answer", "text": "No. Automated video editing takes existing footage and applies decisions to it, such as cutting silences or finding highlights. Programmatic video composes the footage itself from a template and data, so there is no source footage to edit." } },
-        { "@type": "Question", "name": "Does programmatic video require a developer?", "acceptedAnswer": { "@type": "Answer", "text": "It depends on the layer. Libraries such as Remotion and rendering APIs such as Creatomate or Shotstack require a developer. Managed engines do not, though building a custom scene set for a specific brand usually involves someone writing code once at the start." } },
-        { "@type": "Question", "name": "How many videos does it take for programmatic video to be worth it?", "acceptedAnswer": { "@type": "Answer", "text": "Roughly twenty a year against the same template is the point where building one starts to beat opening an editor, though that shifts with how much the template costs to build and how often the underlying data changes. Below that, an editor and an afternoon is genuinely cheaper." } },
-        { "@type": "Question", "name": "Can programmatic video use real footage?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Photographs and video clips from the source, from stock or from your own library are composited into the template like any other asset. What stays deterministic is the composition, not the material." } }
+        {
+          "@type": "Question",
+          "name": "What is programmatic video?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Programmatic video is video produced by running a coded template against structured data. The template defines layout, typography, motion and timing once, and the data supplies what changes between videos. Running one template against one hundred rows produces one hundred videos, each following the same scene rules with values supplied by its row."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How is programmatic video different from AI video generation?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "AI video generation creates footage from a prompt using a generative model, so the same prompt produces different footage each time. Programmatic video renders footage from a template written as code, so the scene rules can remain fixed while the input data changes. The first is generative and probabilistic, the second is deterministic."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How is programmatic video different from using a video editor?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A video editor is a canvas for producing one video at a time, and the result depends on the person operating it. A programmatic system is a pipeline for producing many videos from one specification, and the result depends on how well the specification was written. An editor rewards taste and punishes volume. A pipeline rewards structure and punishes ambiguity."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is programmatic video the same as automated video editing?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Automated video editing takes existing footage and applies decisions to it, such as cutting silences or finding highlights. Programmatic video composes the footage itself from a template and data, so there is no source footage to edit."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does programmatic video require a developer?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It depends on the layer. Libraries such as Remotion and rendering APIs such as Creatomate or Shotstack require a developer. Managed engines do not, though building a custom scene set for a specific brand usually involves someone writing code once at the start."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How many videos does it take for programmatic video to be worth it?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Roughly twenty a year against the same template is the point where building one starts to beat opening an editor, though that shifts with how much the template costs to build and how often the underlying data changes. Below that, an editor and an afternoon is genuinely cheaper."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can programmatic video use real footage?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Photographs and video clips from the source, from stock or from your own library are composited into the template like any other asset. What stays deterministic is the composition, not the material."
+          }
+        }
       ]
     },
     {
       "@type": "BreadcrumbList",
       "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Videngine", "item": "https://videngine.io/" },
-        { "@type": "ListItem", "position": 2, "name": "Programmatic video", "item": "https://videngine.io/programmatic-video" }
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Videngine",
+          "item": "https://videngine.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Programmatic video",
+          "item": "https://videngine.io/programmatic-video"
+        }
       ]
     }
   ]
