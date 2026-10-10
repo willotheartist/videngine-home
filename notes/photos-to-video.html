@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link rel="icon" href="/favicon.ico" sizes="32x32"/>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml"/>
+<link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
+<link rel="manifest" href="/site.webmanifest"/>
+<meta name="theme-color" content="#fafafa"/>
+
+
+
+
+
+
+
+
+<link href="https://api.fontshare.com" rel="preconnect"/>
+<link href="https://fonts.gstatic.com" rel="preconnect" crossorigin/>
+<link href="https://api.fontshare.com/v2/css?f[]=switzer@300,400,500,600,700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="/style.css"/>
+<script defer src="/analytics.js"></script>
+<title>Photos to video: turn pictures into a narrated video | Videngine</title>
+<meta name="description" content="Photos to video, step by step: order the pictures, time each one, add narration and captions, frame for 9:16 and 16:9, and know when AI image-to-video fits."/>
+<link rel="canonical" href="https://videngine.io/notes/photos-to-video"/>
+<meta property="og:title" content="Photos to video: turn pictures into a narrated video"/>
+<meta property="og:description" content="Photos to video, step by step: order the pictures, time each one, add narration and captions, frame for 9:16 and 16:9, and know when AI image-to-video fits."/>
+<meta property="og:url" content="https://videngine.io/notes/photos-to-video"/>
+<meta property="og:type" content="article"/>
+<meta name="twitter:card" content="summary"/>
+<meta property="og:site_name" content="Videngine"/>
+<meta property="og:locale" content="en_GB"/>
+<meta property="og:image" content="https://videngine.io/og/notes/photos-to-video.png"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="630"/>
+<meta property="og:image:alt" content="Videngine: Photos to video: turn pictures into a narrated video"/>
+<meta name="twitter:title" content="Photos to video: turn pictures into a narrated video"/>
+<meta name="twitter:description" content="Photos to video, step by step: order the pictures, time each one, add narration and captions, frame for 9:16 and 16:9, and know when AI image-to-video fits."/>
+<meta name="twitter:image" content="https://videngine.io/og/notes/photos-to-video.png"/>
+<meta name="twitter:image:alt" content="Videngine: Photos to video: turn pictures into a narrated video"/>
+<link rel="stylesheet" href="/notes.css"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;550;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="/studio-brand.css"/>
+</head>
+<body>
+<div class="nav-wrap">
+<nav class="nav" aria-label="Primary navigation">
+<a class="brand" href="/"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m8 5 12 7-12 7z"/></svg></span><span class="brand-wordmark">videngine<span class="brand-dot">.</span></span></a>
+<div class="nav-links">
+<a href="/#how">How it works</a>
+<a href="/use-cases">Use cases</a>
+<a href="/pricing">Pricing</a>
+<a href="/ai-video-tools">AI video tools</a>
+</div>
+<a class="nav-cta" href="/#waitlist">Join the waitlist</a>
+</nav>
+</div>
+
+<main id="top"><header class="journal-hero"><div class="page-shell"><nav class="journal-crumbs" aria-label="Breadcrumb"><a href="/">Videngine</a><span>/</span><a href="/notes">Notes</a></nav><h1>Photos to video: turn pictures into a narrated video</h1><p class="journal-deck">Photos to video, step by step: order the pictures, time each one, add narration and captions, frame for 9:16 and 16:9, and know when AI image-to-video fits.</p><div class="journal-meta"><span>By <a href="/">Videngine</a></span><time datetime="2026-10-10">10 October 2026</time><span>9 min read</span></div></div></header><div class="page-shell journal-layout"><aside class="journal-toc"><span class="journal-label">In this guide</span><a href="#two-kinds">Two different things are sold as photo to video</a><a href="#steps">How to create a video from photos people actually watch</a><a href="#timing">Timing, narration and captions</a><a href="#framing">Framing for 9:16 and 16:9, with motion and music</a><a href="#example">A worked example: eight listing photos in 30 seconds</a><a href="#checklist">Photo problems to fix before rendering</a><a href="#fit">Where Videngine fits, and when it is the wrong tool</a><a href="#questions">Questions about turning photos into video</a></aside><article class="journal-body"><div class="journal-answer"><span class="journal-label">The short answer</span><p>Photos to video usually means arranging real photos into a finished video: ordered from wide to detail, a few seconds each, with narration that adds facts the photos cannot show, captions for sound-off viewing and framing for vertical and landscape screens. That is different from AI image-to-video, which invents new motion from one still. Videngine does the first kind: it turns a listing’s or product’s own photos into a narrated, captioned MP4.</p></div>
+<section id="two-kinds"><h2>Two different things are sold as photo to video</h2>
+<p>“Photo to video” covers two unrelated products: tools that arrange your photos into a video, and AI models that generate new motion from a single image.</p>
+<p>The first is the slideshow, grown up. Your photos stay as taken; the tool orders and times them, then adds narration, captions and a gentle pan and zoom. Most AI slideshow makers belong here: the AI helps order or script, but the pictures are yours.</p>
+<p>The second is generative: a model takes one still and invents frames that never existed. <a href="https://help.runwayml.com/hc/en-us/articles/37327109429011-Creating-with-Gen-4-Video">Runway’s Gen-4 documentation</a> describes 5- or 10-second clips made from an input image and a text prompt.</p>
+<div class="journal-table"><table><thead><tr><th></th><th>Arranging real photos</th><th>AI image-to-video</th></tr></thead><tbody><tr><td>What happens</td><td>Photos are ordered, timed, narrated and captioned, with slow pan and zoom</td><td>A model generates new frames from one still</td></tr><tr><td>What the viewer sees</td><td>The photos as they were taken</td><td>Pixels that were never photographed</td></tr><tr><td>Typical length</td><td>20 seconds to a few minutes</td><td>A few seconds per generated clip</td></tr><tr><td>Main risk</td><td>Dull if badly ordered or timed</td><td>Details change, so it can misrepresent the subject</td></tr><tr><td>Fits</td><td>Listings, products, properties, vehicles, personal memories</td><td>Mood pieces, concepts, creative social posts</td></tr></tbody></table></div>
+<p>The deciding question is whether the photo is evidence. A buyer of a property, a used vehicle or a product is judging something real, so the video should show what the photos show and nothing more. For a birthday or a mood piece, invented motion can be the point. <a href="/vs/ai-video-generators">Our comparison of Videngine and AI video generators</a> covers generative image animation.</p></section>
+<section id="steps"><h2>How to create a video from photos people actually watch</h2>
+<p>A watchable photo video comes from a short edit, a deliberate order and narration that earns each photo its place on screen.</p>
+<ol><li><strong>Pick the main placement.</strong> A listing portal, a product page and a Shorts feed each want a different length and shape.</li><li><strong>Cull hard.</strong> Eight strong photos beat twenty-five similar ones.</li><li><strong>Order from wide to detail.</strong> Open with an establishing shot (the building, the whole vehicle, the product in full), then the main spaces or features, then details, then the photo with hard facts, such as a floor plan.</li><li><strong>Write one narration line per photo</strong> that adds something the photo cannot show.</li><li><strong>Let each line set the timing</strong> of its photo.</li><li><strong>Add captions and short on-screen labels.</strong></li><li><strong>Render a 16:9 and a 9:16 cut</strong> from the same plan.</li><li><strong>Review twice:</strong> once with the sound off and once with it on.</li></ol>
+<p>Order matters more than transitions. Group photos by room or feature and move through them once, in the order a visitor would. A plain cut or a short dissolve is enough.</p></section>
+<section id="timing"><h2>Timing, narration and captions</h2>
+<p>As a rule of thumb, hold each photo for 2–4 seconds, and longer when the viewer has text to read.</p>
+<div class="journal-table"><table><thead><tr><th>Photo type</th><th>Time on screen</th><th>Why</th></tr></thead><tbody><tr><td>Establishing shot</td><td>3–4 seconds</td><td>Sets the scene and carries the opening line</td></tr><tr><td>Main room or feature</td><td>3–4 seconds</td><td>Long enough for one narration line</td></tr><tr><td>Detail or close-up</td><td>2–3 seconds</td><td>A quick confirmation; group details together</td></tr><tr><td>Photo with text (floor plan, spec sheet)</td><td>5–6 seconds</td><td>The viewer needs time to read it</td></tr><tr><td>Near-duplicate angle</td><td>0 seconds</td><td>Cut it</td></tr></tbody></table></div>
+<p>Narration sets the pace: at a calm speaking pace, a ten-word line takes about four seconds. If a line runs long, shorten it rather than stretching the photo.</p>
+<p>Narration should never describe what is on screen. “Here is the kitchen” wastes four seconds. “The kitchen was refitted last year and the appliances stay” adds two facts no photo can prove. Good lines supply size, age, location and what is included.</p>
+<p>Captions make the video work for people who watch muted or cannot hear it; <a href="https://www.w3.org/WAI/WCAG22/Understanding/captions-prerecorded.html">WCAG 2.2 success criterion 1.2.2</a> asks for captions on prerecorded audio in synchronised media, at level A. Keep on-screen labels to a few words (“68 m²”, not a sentence) and away from the caption area. Videngine transcribes captions back from the finished audio, so they match what was said, and burns them in or supplies an .srt sidecar.</p></section>
+<section id="framing"><h2>Framing for 9:16 and 16:9, with motion and music</h2>
+<p>Make a separate cut for each shape rather than cropping one video into the other.</p>
+<p>Landscape (16:9) suits websites, listing portals and long-form YouTube; <a href="https://support.google.com/youtube/answer/1722171">YouTube’s upload guidance</a> gives 16:9 as the standard aspect ratio on a computer. Vertical (9:16) suits phone feeds, which our <a href="/use-cases/short-form-video">guide to short-form video</a> covers.</p>
+<p>Most listing and product photos are landscape, and cropping one to fill a vertical frame keeps a narrow middle slice, perhaps a doorway rather than the room. A blurred fill avoids that: the whole photo sits over an enlarged, blurred copy of itself. That is how Videngine frames any photo that does not fit the output, so the same photos work in the 9:16 and 16:9 cuts, and in 1:1 or 4:5.</p>
+<p>Keep motion slow: a gentle pan or zoom, one direction per photo, with text photos held nearly still.</p>
+<p>Music belongs underneath, as a quiet bed: the message is in the narration and labels, and a track that competes with the voice makes both harder to follow. Use music you are licensed to use, or leave it out. In Videngine the music bed is optional.</p></section>
+<section id="example"><h2>A worked example: eight listing photos in 30 seconds</h2>
+<p>A good scene plan gives every photo a time, a narration line and at most one label. Here is one for eight photos of a flat, cut as a 30-second vertical video. It is illustrative, not a real listing.</p>
+<div class="journal-table"><table><thead><tr><th>Time</th><th>Photo</th><th>Narration line</th><th>On-screen text</th></tr></thead><tbody><tr><td>0:00–0:04</td><td>Front of the building</td><td>A two-bedroom flat on the second floor, five minutes’ walk from the station.</td><td>2-bed flat, 2nd floor</td></tr><tr><td>0:04–0:08</td><td>Living room, wide</td><td>The living room faces south-west, so it gets the afternoon sun.</td><td>South-west facing</td></tr><tr><td>0:08–0:12</td><td>Kitchen</td><td>The kitchen was refitted in 2024, and the appliances are included.</td><td>Refitted 2024</td></tr><tr><td>0:12–0:15</td><td>Main bedroom</td><td>The main bedroom fits a double bed and a wall of wardrobes.</td><td>Bedroom 1: 4.1 × 3.2 m</td></tr><tr><td>0:15–0:18</td><td>Second bedroom</td><td>The second bedroom works as a study or a nursery.</td><td>Bedroom 2</td></tr><tr><td>0:18–0:21</td><td>Bathroom</td><td>One bathroom, with a shower over the bath.</td><td>Bathroom</td></tr><tr><td>0:21–0:26</td><td>Floor plan</td><td>In total, 68 square metres, with storage in the hall.</td><td>68 m²</td></tr><tr><td>0:26–0:30</td><td>Shared garden</td><td>A shared garden at the back. Book a viewing from the listing.</td><td>Book a viewing</td></tr></tbody></table></div>
+<p>No line says what the photo shows; each adds orientation, age, size or a next step. The floor plan gets five seconds because it has text to read. Our <a href="/use-cases/real-estate-video">real estate video guide</a> covers the property version in more depth.</p>
+<p>Products follow the same shape: the whole product, key features, a size or specification scene, then where to buy. <a href="/notes/product-video-automation">Our product video automation guide</a> covers variants and prices.</p></section>
+<section id="checklist"><h2>Photo problems to fix before rendering</h2>
+<p>Most weak photo videos fail on the photos rather than the edit, so check the set first.</p>
+<div class="journal-table"><table><thead><tr><th>Problem</th><th>Why it matters</th><th>Fix before rendering</th></tr></thead><tbody><tr><td>Low resolution</td><td>A 1080p landscape frame is 1,920 × 1,080 pixels; a smaller photo looks soft, and zooming makes it worse</td><td>Use photos at least 1,920 pixels wide, or about 2,100 if they zoom in by 10%</td></tr><tr><td>Watermarks</td><td>Another portal’s or photographer’s mark looks borrowed and may not be licensed for video</td><td>Use clean originals and check the licence covers video</td></tr><tr><td>Duplicates</td><td>Two shots of the same corner waste seconds</td><td>Keep the better one</td></tr><tr><td>Wrong order</td><td>Jumping between rooms makes the viewer rebuild the place</td><td>Reorder from wide to detail, grouped by room or feature</td></tr><tr><td>Faces and personal details</td><td>Identifiable people, family photos, number plates or house numbers raise privacy questions</td><td>Get consent, blur the detail in an editor or drop the photo</td></tr><tr><td>Text in photos</td><td>Small print is unreadable in a vertical frame, and old prices go out of date</td><td>Move the fact into an on-screen label or drop the photo</td></tr></tbody></table></div>
+<p>Videngine renders up to 1080p, so photos larger than these sizes add nothing to the output.</p></section>
+<section id="fit"><h2>Where Videngine fits, and when it is the wrong tool</h2>
+<p>Videngine fits when you have many photo sets that each need the same kind of video; it is the wrong tool for a personal slideshow or for making one photo move.</p>
+<h3>Hundreds of photo sets, one template</h3>
+<p>One listing video made by hand is an afternoon; four hundred is a production problem. The answer is one template and a list of sources. The template fixes the scene order, typefaces, colours, logo and motion once, and each listing or product supplies its own photos and facts.</p>
+<p>The list can be a CSV with image URLs in columns, as in our guide to <a href="/notes/bulk-video-creation-from-csv">bulk video creation from a CSV</a>, or the address of each listing page, as in <a href="/notes/url-to-video">turning a URL into a video</a>. Videngine can also read your sitemap so your team picks what to render, in batches. Each source gets a script, narration, captions and a 9:16 and a 16:9 cut, reviewed in the studio before it goes out. On <a href="/pricing">launch pricing</a>, plans start at $79 a month for 50 videos.</p>
+<h3>When to use something else</h3>
+<ul><li><strong>A wedding or birthday slideshow set to a song.</strong> The music is the message. A consumer slideshow app or your phone’s photo library will do it faster, and Videngine has no free plan.</li><li><strong>Making one photo “come alive”.</strong> Videngine does not animate a still into new motion. Use an image-to-video generator; our <a href="/ai-video-tools">AI video tools guide</a> sorts the categories.</li><li><strong>One video cut by hand.</strong> If you want to fine-tune every transition on a timeline, use a video editor. Videngine has no timeline.</li></ul></section>
+<section id="questions"><h2>Questions about turning photos into video</h2>
+<h3>How do I make a video with pictures and music?</h3><p>For a personal video, a consumer slideshow app or your phone’s photo app will set pictures to a song with titles and transitions. For a listing or product video, put the message in narration and captions and keep the music as a quiet bed underneath. Either way, use a track you have the rights to use.</p>
+<h3>How long should each photo stay on screen in a video?</h3><p>As a rule of thumb, 2–4 seconds per photo, and 5–6 seconds for photos with text to read, such as a floor plan. If the video is narrated, let each narration line set the hold. Eight photos make a video of roughly 30 seconds.</p>
+<h3>What is the difference between an AI slideshow maker and AI image-to-video?</h3><p>An AI slideshow maker arranges your real photos into a video and uses AI to help order, script or narrate it. AI image-to-video generates new frames from a single still, inventing motion that was never photographed. Use the first when the photo is evidence, such as a listing or a product, and the second for mood or creative effect.</p>
+<h3>Can I convert landscape photos to a vertical video without cropping?</h3><p>Yes. Place the whole photo in the 9:16 frame over an enlarged, blurred copy of itself, which fills the space above and below. This keeps the subject in view, where a crop might keep only a narrow slice of the room or product.</p>
+<h3>What resolution do photos need for a 1080p video?</h3><p>A 1080p landscape frame is 1,920 × 1,080 pixels, so photos that fill it should be at least 1,920 pixels wide, or about 2,100 if they zoom in by 10%. In a vertical cut with blurred fill, a landscape photo is shown about 1,080 pixels wide. Smaller photos will look soft.</p></section>
+<section id="next"><h2>Choose your next step</h2><p>Compare the wider categories in our <a href="/ai-video-tools">AI video tools guide</a>, then see how the same approach applies to other jobs.</p><ul><li><a href="/use-cases">Browse video by use case</a></li></ul></section><div class="journal-cta"><h2>Build your video workflow.</h2><p>Bring one representative photo set, a listing or a product, and the formats you publish. Agree the scene plan on that set first, then repeat it across the rest.</p><a class="pill-button" href="/#waitlist">Join the waitlist ↗</a></div><p class="journal-note" style="margin-top:24px">Published by Videngine, a video rendering product built and run by Wall &amp; Fifth. External links refer to the original documentation or product descriptions; examples are illustrative unless stated otherwise.</p></article></div><section class="journal-related"><div class="page-shell"><h2>Keep reading.</h2><div class="journal-grid"><a class="journal-card" href="/use-cases/real-estate-video"><span class="journal-label">Use case</span><h3>Real estate listing video: a narrated video for every property</h3><p>A real estate listing video for every property: narrated, captioned 9:16 and 16:9 cuts from the listing&#x27;s photos and facts, kept accurate as prices change.</p><span>Read the guide ↗</span></a><a class="journal-card" href="/notes/url-to-video"><span class="journal-label">Source to screen</span><h3>URL to video: how to turn a webpage into a useful video</h3><p>A practical URL-to-video workflow: choose the right source, check extracted facts, plan scenes and evaluate tools before automating production.</p><span>Read the guide ↗</span></a></div></div></section></main><footer class="footer" id="contact">
+<div class="page-shell">
+<div class="footer-kicker">Start rendering</div>
+<h2 class="footer-heading">Stop <span class="word-cycle"><span>editing.</span><span>exporting.</span><span>waiting.</span></span><br/><span class="ghost">Start rendering.</span></h2>
+<div class="footer-grid">
+<div class="footer-col"><h4>Studio</h4><a href="/#waitlist">Join the waitlist</a><h4 style="margin-top:24px">Email</h4><a href="mailto:hello@videngine.io">hello@videngine.io</a></div>
+<div class="footer-col"><h4>Product</h4><a href="/#how">How it works</a><a href="/use-cases">Use cases</a><a href="/pricing">Pricing</a><a href="/notes">Notes</a></div>
+<div class="footer-col"><h4>Learn</h4><a href="/vs/ai-video-generators">vs AI generators</a><a href="/compare">All comparisons</a><a href="/programmatic-video">Programmatic video</a><a href="/notes">All guides</a></div>
+<div class="footer-col"><h4>Contact</h4><a href="mailto:hello@videngine.io">hello@videngine.io</a><a href="https://wallandfifth.com">Wall &amp; Fifth</a><a href="/terms">Terms</a><a href="/privacy">Privacy</a></div>
+</div>
+<div class="footer-bottom"><span>© 2026 Videngine</span><span>Built and run by Wall &amp; Fifth</span></div>
+<div class="giant-name">VID<em>ENGINE</em></div>
+</div>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://videngine.io/notes/photos-to-video#article",
+      "headline": "Photos to video: turn pictures into a narrated video",
+      "description": "Photos to video, step by step: order the pictures, time each one, add narration and captions, frame for 9:16 and 16:9, and know when AI image-to-video fits.",
+      "datePublished": "2026-10-10",
+      "dateModified": "2026-10-10",
+      "inLanguage": "en",
+      "mainEntityOfPage": "https://videngine.io/notes/photos-to-video",
+      "author": {
+        "@type": "Organization",
+        "name": "Videngine",
+        "url": "https://videngine.io/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://videngine.io/icon-512.png"
+        }
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Videngine",
+        "url": "https://videngine.io/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://videngine.io/icon-512.png"
+        }
+      },
+      "image": "https://videngine.io/og/notes/photos-to-video.png"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Videngine",
+          "item": "https://videngine.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Notes",
+          "item": "https://videngine.io/notes"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Photos to video: turn pictures into a narrated video",
+          "item": "https://videngine.io/notes/photos-to-video"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://videngine.io/notes/photos-to-video#questions",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How do I make a video with pictures and music?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For a personal video, a consumer slideshow app or your phone’s photo app will set pictures to a song with titles and transitions. For a listing or product video, put the message in narration and captions and keep the music as a quiet bed underneath. Either way, use a track you have the rights to use."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long should each photo stay on screen in a video?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "As a rule of thumb, 2–4 seconds per photo, and 5–6 seconds for photos with text to read, such as a floor plan. If the video is narrated, let each narration line set the hold. Eight photos make a video of roughly 30 seconds."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the difference between an AI slideshow maker and AI image-to-video?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "An AI slideshow maker arranges your real photos into a video and uses AI to help order, script or narrate it. AI image-to-video generates new frames from a single still, inventing motion that was never photographed. Use the first when the photo is evidence, such as a listing or a product, and the second for mood or creative effect."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I convert landscape photos to a vertical video without cropping?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Place the whole photo in the 9:16 frame over an enlarged, blurred copy of itself, which fills the space above and below. This keeps the subject in view, where a crop might keep only a narrow slice of the room or product."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What resolution do photos need for a 1080p video?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A 1080p landscape frame is 1,920 × 1,080 pixels, so photos that fill it should be at least 1,920 pixels wide, or about 2,100 if they zoom in by 10%. In a vertical cut with blurred fill, a landscape photo is shown about 1,080 pixels wide. Smaller photos will look soft."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script></body></html>

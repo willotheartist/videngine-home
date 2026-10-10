@@ -104,7 +104,7 @@
 <a class="brand" href="/"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m8 5 12 7-12 7z"/></svg></span><span class="brand-wordmark">videngine<span class="brand-dot">.</span></span></a>
 <div class="nav-links">
 <a href="/#how">How it works</a>
-<a href="/#uses">Uses</a>
+<a href="/use-cases">Use cases</a>
 <a href="/pricing">Pricing</a>
 <a href="/ai-video-tools">AI video tools</a>
 </div>
@@ -253,7 +253,7 @@
 <div class="tool">
 <h3>Runway and Sora</h3>
 <div class="role">Generative footage</div>
-<p>Generate original video clips from text or image prompts. These are creative tools for making footage that does not exist, closer to a camera than to a production line. Used inside a larger edit rather than as a finished-video pipeline.</p>
+<p>Generate original video clips from text or image prompts. These are creative tools for making footage that does not exist, closer to a camera than to a production line. Used inside a larger edit rather than as a finished-video pipeline. Image-to-video, where one still photograph is animated into a short clip, belongs here too; Google Veo and Meta’s video models are in the same family. If you want your existing photos arranged into a narrated video instead, that is a different job: see <a href="/notes/photos-to-video">photos to video</a>.</p>
 </div>
 
 <div class="tool">
@@ -273,6 +273,8 @@
 <h2>Questions</h2>
 <h3>Can Videngine generate footage from a prompt?</h3>
 <p>No. It composes video from templates and from assets in your source, such as photographs on a listing page. If you need footage that does not exist, a generative tool is the right tool and the two can be used together.</p>
+<h3>Can Videngine turn an image into a video?</h3>
+<p>Not in the generative sense. It does not animate a single still into new motion. It does turn a set of photos, such as a listing or product gallery, into a narrated, captioned video with gentle pan and zoom, which is often what businesses mean when they search for an image to video tool.</p>
 <h3>Is AI-generated video cheaper than programmatic video?</h3>
 <p>For one video, usually yes. Across hundreds, usually no, because generator cost scales per video while a template is built once and re-run. The crossover depends on template complexity and how often you re-render.</p>
 <h3>Which is better for social media?</h3>
@@ -283,7 +285,7 @@
 <p>It means they follow the same rules, not that they look identical. Scenes branch on the data, so a listing with eight photographs produces a different edit from one with two. What stays fixed is how each case is treated.</p>
 </section>
 
-<section id="production-guides"><h2>Put it into practice</h2><p>Continue with a workflow for your source material.</p><ul><li><a href="/notes/url-to-video">URL to video: how to turn a webpage into a useful video</a></li><li><a href="/notes/bulk-video-creation-from-csv">Bulk video creation from a CSV: a reliable workflow</a></li><li><a href="/notes/product-video-automation">Product video automation: from catalogue to ad variants</a></li><li><a href="/notes/article-to-video">Article to video: turn a blog post into a clear explainer</a></li></ul></section>
+<section id="production-guides"><h2>Put it into practice</h2><p>Continue with a workflow for your source material.</p><ul><li><a href="/notes/url-to-video">URL to video: how to turn a webpage into a useful video</a></li><li><a href="/notes/bulk-video-creation-from-csv">Bulk video creation from a CSV: a reliable workflow</a></li><li><a href="/notes/photos-to-video">Photos to video: turn pictures into a narrated video</a></li><li><a href="/use-cases">AI video for business: use cases by team and industry</a></li><li><a href="/notes/product-video-automation">Product video automation: from catalogue to ad variants</a></li><li><a href="/notes/article-to-video">Article to video: turn a blog post into a clear explainer</a></li></ul></section>
 <section id="ai-video-workflows"><h2>Choose your next step</h2><p>See how Videngine compares with <a href="/vs/synthesia">Synthesia</a>, <a href="/vs/creatomate">Creatomate</a>, <a href="/vs/shotstack">Shotstack</a> and <a href="/vs/pictory">Pictory</a> in <a href="/compare">our comparisons</a>. Compare the wider categories in our <a href="/ai-video-tools">AI video tools guide</a>, then explore the decisions that shape this workflow.</p><ul><li><a href="/notes/text-to-video-ai">Prompts, scripts and scenes</a></li><li><a href="/notes/ai-video-generator-cost">AI video generator costs</a></li></ul></section></article>
 </div>
 
@@ -303,7 +305,7 @@
 <h2 class="footer-heading">Stop <span class="word-cycle"><span>editing.</span><span>exporting.</span><span>waiting.</span></span><br/><span class="ghost">Start rendering.</span></h2>
 <div class="footer-grid">
 <div class="footer-col"><h4>Studio</h4><a href="/#waitlist">Join the waitlist</a><h4 style="margin-top:24px">Email</h4><a href="mailto:hello@videngine.io">hello@videngine.io</a></div>
-<div class="footer-col"><h4>Product</h4><a href="/#how">How it works</a><a href="/#uses">Uses</a><a href="/pricing">Pricing</a><a href="/notes">Notes</a></div>
+<div class="footer-col"><h4>Product</h4><a href="/#how">How it works</a><a href="/use-cases">Use cases</a><a href="/pricing">Pricing</a><a href="/notes">Notes</a></div>
 <div class="footer-col"><h4>Learn</h4><a href="/programmatic-video">Programmatic video</a><a href="/vs/ai-video-generators">vs AI generators</a><a href="/compare">All comparisons</a></div>
 <div class="footer-col"><h4>Legal</h4><a href="/terms">Terms</a><a href="/privacy">Privacy</a></div>
 </div>
@@ -323,7 +325,7 @@
       "description": "AI video generators create footage from a prompt and vary each run. Videngine renders footage from coded templates and repeats exactly. A comparison of when each is appropriate.",
       "url": "https://videngine.io/vs/ai-video-generators",
       "datePublished": "2026-08-25",
-      "dateModified": "2026-08-25",
+      "dateModified": "2026-10-10",
       "inLanguage": "en",
       "publisher": {
         "@type": "Organization",
@@ -341,6 +343,14 @@
       "@type": "FAQPage",
       "@id": "https://videngine.io/vs/ai-video-generators#faq",
       "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can Videngine turn an image into a video?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not in the generative sense. It does not animate a single still into new motion. It does turn a set of photos, such as a listing or product gallery, into a narrated, captioned video with gentle pan and zoom, which is often what businesses mean when they search for an image to video tool."
+          }
+        },
         {
           "@type": "Question",
           "name": "Is Videngine an AI video generator?",

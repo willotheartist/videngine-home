@@ -70,3 +70,51 @@ Prioritise further content from actual query data, user questions and demonstrat
 | Comparison | Pictory alternative, Videngine vs Pictory | /vs/pictory | Content repurposing with stock footage against videos of the real item |
 
 Rules for this cluster: every competitor fact comes from that competitor's own site or docs and is listed under Sources on the page, with the date it was checked. Each page says plainly when the other tool is the better choice. Prices that conflict on the competitor's own pages are described rather than quoted. Re-check facts quarterly and update the "Facts checked" date; one page per competitor covers both "vs" and "alternative" intent.
+
+## Keyword-led expansion (10 October 2026)
+
+First pass driven by measured demand: a Google Keyword Planner export of 3,048 keywords (1 September 2025 to 31 August 2026, average monthly searches in Planner's rounded ranges, bids in EUR). Every keyword is mapped to a cluster, a fit level and one target page in `docs/keyword-map.csv`. Volumes are ranges and close variants share a figure, so cluster sums overstate demand; compare clusters by their top term and keyword count, not by sums.
+
+Fit, by keyword count: 1,807 excluded (editors and editing apps, free tools, subtitles and transcripts, cartoons, music and lyric videos, avatars, downloads, adult), 78 low (free AI video generators: no free plan), 778 adjacent (category and format terms Videngine can answer honestly), 278 core (jobs Videngine does), 107 competitor. About half of all volume is excluded.
+
+### Silo architecture
+
+URLs stay where they were; silos are expressed through hubs, breadcrumbs, the Notes index grouping and internal links. New use-case pages live under `/use-cases/` so that silo is also physical.
+
+| Silo | Hub | Members |
+| --- | --- | --- |
+| AI video tools (category) | /ai-video-tools | /notes/text-to-video-ai, /notes/photos-to-video, /notes/ai-video-generator-cost, /vs/ai-video-generators |
+| Programmatic video (method) | /programmatic-video | /notes/url-to-video, /notes/article-to-video, /notes/bulk-video-creation-from-csv, /notes/video-automation-api |
+| Use cases (commercial) | /use-cases | /use-cases/video-ads, /notes/product-video-automation, /use-cases/explainer-videos, /use-cases/youtube-videos, /use-cases/short-form-video, /use-cases/real-estate-video |
+| Comparisons | /compare | /vs/synthesia, /vs/creatomate, /vs/shotstack, /vs/pictory |
+
+Global navigation's "Uses" now links to /use-cases. Homepage recipe links point to the matching use-case pages. Every page links up to its hub and across to at least two siblings; the Notes index lists every guide grouped by silo.
+
+### New and re-tuned pages
+
+| Page | Primary target | Evidence from the export |
+| --- | --- | --- |
+| /use-cases (new hub) | AI video for business, video creation for business | Head of the commercial silo; low-volume terms with high bids |
+| /use-cases/video-ads (new) | AI video ad maker; marketing, promo and brand video makers | ads maker 5k (top bid €26), ai video ad generator 500 (€23), marketing video maker 500 (€21) |
+| /use-cases/explainer-videos (new) | explainer video maker; AI training videos; video presentation maker | 10 terms at 500, bids €10–21 |
+| /use-cases/youtube-videos (new) | YouTube video maker; AI YouTube videos | youtube video maker 5k, ai youtube videos 5k; median competition index 28 |
+| /use-cases/short-form-video (new) | Shorts maker, reel maker, short video maker | youtube shorts maker 5k, reel maker 5k |
+| /use-cases/real-estate-video (new) | real estate listing video | real estate video editing 500 (€8.65); homepage's first use |
+| /notes/photos-to-video (new) | create a video from photos; AI slideshow maker | 25+ terms at 5k; separates slideshow intent from generative image-to-video |
+| /ai-video-tools (re-tuned) | AI video tools, AI video generation platform, AI video creation software | ai video generation platform 50k (competition index 1), ai video creation software 50k; new platform section and FAQ |
+| /notes/text-to-video-ai (re-tuned) | text to video AI, script to video AI | text to video ai 50k (low competition), script to video ai 5k |
+| /vs/ai-video-generators (extended) | image to video AI, Sora/Veo/Meta comparisons | ai image to video generator 50k; image-to-video paragraph and FAQ |
+
+### Rules carried forward
+
+- One page per intent. Ads and marketing share /use-cases/video-ads; product catalogue ads stay on /notes/product-video-automation. Shorts live on the short-form page; the YouTube page owns channel and publishing intent.
+- No capability claims beyond what the studio does today (checked against the app repo on 10 October 2026). No avatars, generated footage, free plan, languages other than English, ad-platform integrations or analytics.
+- Platform facts (YouTube, Instagram, TikTok, Google Ads) are cited to the platform's own pages and dated; where a page could not be verified, the copy says to check current guidance.
+- Each page leads with a self-contained short answer, has tables, a numbered workflow, a "wrong tool" section and FAQ schema matching the visible questions, so answer engines can quote it accurately.
+
+### Next
+
+1. Run a second Keyword Planner export seeded with the verticals and jobs this export missed: car dealer video, vehicle listing video, boat listing video, yacht broker video, property video marketing, listing video, ecommerce product video, catalogue video, video for every product, automated YouTube uploads, bulk video creation, CSV to video, video API. Build vertical pages only where demand shows.
+2. A named case study once the client agrees to it. A dated, numbered account of real volume is the asset answer engines are most likely to cite.
+3. /vs/canva: canva video editor 50k at competition index 4. Build it the way the other comparisons were built, from Canva's own pages.
+4. Connect Search Console and record impressions and clicks per page from this date; check for the wrong page ranking for a target intent before adding more.
