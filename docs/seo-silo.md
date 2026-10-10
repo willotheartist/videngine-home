@@ -135,3 +135,12 @@ Built ahead of keyword data, by decision: these are the pages prospects in each 
 Property stays at /use-cases/real-estate-video and products at /notes/product-video-automation; the hub lists both. The use-cases hub's industry table now points at these pages. Footer "Product" column carries Industries sitewide; the Notes index has an Industries group.
 
 Rules for this silo: write for the operator in that industry; no client names, volumes or results; third-party portal and regulator statements only when verified on their own pages (Autotrader UK video links, CAP Code section 3 and the FTC small-business advertising guide are cited on the car dealer page); narration is described as English only.
+
+## Batch 3 (10 October 2026): Video SEO silo, comparisons, reference
+
+- New hub **/video-seo** (CollectionPage) with five clusters: /video-seo/videoobject-schema, /video-seo/video-sitemap, /video-seo/video-transcripts-captions, /video-seo/ai-search-video, /video-seo/youtube-vs-self-hosted. Each links up to the hub and sideways to its siblings; facts are cited to Google Search Central, schema.org, sitemaps.org, the W3C and the AI crawler docs.
+- AI video tools silo gains /notes/best-ai-video-generators and /notes/ai-voiceover. Programmatic silo gains /notes/video-templates.
+- Comparisons gain /vs/canva, /vs/invideo, /vs/renderforest and /vs/animaker (facts checked 10 October 2026 on each product's own pages). The older four comparisons and /compare now describe Videngine as a programmatic video engine for pages and data, not listings only.
+- Reference: /glossary (55 terms, DefinedTermSet with an anchor per term) and /about (AboutPage with the Organization, parent company and registered details, plus our editorial rules).
+- Site-wide footer Product column now links Video SEO, Glossary and About.
+- Corrections: Sora removed as a current tool (OpenAI discontinued it); the voiceover guide now matches /pricing on consented voice cloning (Scale).

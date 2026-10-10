@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link rel="icon" href="/favicon.ico" sizes="32x32"/>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml"/>
+<link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
+<link rel="manifest" href="/site.webmanifest"/>
+<meta name="theme-color" content="#fafafa"/>
+
+
+
+
+
+
+
+
+<link href="https://api.fontshare.com" rel="preconnect"/>
+<link href="https://fonts.gstatic.com" rel="preconnect" crossorigin/>
+<link href="https://api.fontshare.com/v2/css?f[]=switzer@300,400,500,600,700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="/style.css"/>
+<script defer src="/analytics.js"></script>
+<title>Video in AI search: getting videos cited by AI assistants | Videngine</title>
+<meta name="description" content="Video in AI search: what ChatGPT, Claude, Perplexity and Google's AI features read, which crawlers to allow, and a checklist to get your videos cited."/>
+<link rel="canonical" href="https://videngine.io/video-seo/ai-search-video"/>
+<meta property="og:title" content="Video in AI search: getting videos cited by AI assistants"/>
+<meta property="og:description" content="Video in AI search: what ChatGPT, Claude, Perplexity and Google's AI features read, which crawlers to allow, and a checklist to get your videos cited."/>
+<meta property="og:url" content="https://videngine.io/video-seo/ai-search-video"/>
+<meta property="og:type" content="article"/>
+<meta name="twitter:card" content="summary"/>
+<meta property="og:site_name" content="Videngine"/>
+<meta property="og:locale" content="en_GB"/>
+<meta property="og:image" content="https://videngine.io/og/video-seo/ai-search-video.png"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="630"/>
+<meta property="og:image:alt" content="Videngine: Video in AI search: getting videos cited by AI assistants"/>
+<meta name="twitter:title" content="Video in AI search: getting videos cited by AI assistants"/>
+<meta name="twitter:description" content="Video in AI search: what ChatGPT, Claude, Perplexity and Google's AI features read, which crawlers to allow, and a checklist to get your videos cited."/>
+<meta name="twitter:image" content="https://videngine.io/og/video-seo/ai-search-video.png"/>
+<meta name="twitter:image:alt" content="Videngine: Video in AI search: getting videos cited by AI assistants"/>
+<link rel="stylesheet" href="/notes.css"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;550;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="/studio-brand.css"/>
+</head>
+<body>
+<div class="nav-wrap">
+<nav class="nav" aria-label="Primary navigation">
+<a class="brand" href="/"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m8 5 12 7-12 7z"/></svg></span><span class="brand-wordmark">videngine<span class="brand-dot">.</span></span></a>
+<div class="nav-links">
+<a href="/#how">How it works</a>
+<a href="/use-cases">Use cases</a>
+<a href="/pricing">Pricing</a>
+<a href="/ai-video-tools">AI video tools</a>
+</div>
+<a class="nav-cta" href="/#waitlist">Join the waitlist</a>
+</nav>
+</div>
+
+<main id="top"><header class="journal-hero"><div class="page-shell"><nav class="journal-crumbs" aria-label="Breadcrumb"><a href="/">Videngine</a><span>/</span><a href="/video-seo">Video SEO</a></nav><h1>Video in AI search: getting your videos cited by AI assistants</h1><p class="journal-deck">Video in AI search: what ChatGPT, Claude, Perplexity and Google's AI features read, which crawlers to allow, and a checklist to get your videos cited.</p><div class="journal-meta"><span>By <a href="/">Videngine</a></span><time datetime="2026-10-10">10 October 2026</time><span>9 min read</span></div></div></header><div class="page-shell journal-layout"><aside class="journal-toc"><span class="journal-label">In this guide</span><a href="#what-ai-reads">What AI assistants read on a video page</a><a href="#crawlers">Choose which crawlers can read you</a><a href="#html">Put the transcript and markup in the HTML</a><a href="#checklist">A checklist for video in AI search</a><a href="#measure">What you can and can't measure</a><a href="#videngine">How Videngine publishes video for AI search</a><a href="#wrong-tool">When Videngine is the wrong tool</a><a href="#questions">Questions about video in AI search</a></aside><article class="journal-body"><div class="journal-answer"><span class="journal-label">The short answer</span><p>Video in AI search depends on text more than footage. ChatGPT search, Claude, Perplexity and Google's AI Overviews answer from pages their crawlers fetch, and they can cite those pages. To get a video cited, publish it on a crawlable page with a clear heading, a short answer, a transcript and VideoObject markup in the HTML, and allow the crawlers you want in robots.txt. Videngine publishes the player, transcript and markup to your page in one commit.</p></div>
+<!-- videngine -->
+<section id="what-ai-reads"><h2>What AI assistants read on a video page</h2>
+<p>AI assistants read the text and markup of the page that holds a video, fetched by crawlers that each identify themselves with a named user agent.</p>
+<p>The crawler documentation from OpenAI, Anthropic and Perplexity describes fetching web pages, not watching video files. Google's <a href="https://developers.google.com/search/docs/appearance/ai-features">guidance on AI features and your website</a> asks you to make sure "important content is available in textual form", supported by images and videos where they help. So the heading, the opening answer, the transcript and the structured data are what an assistant can quote and link to.</p>
+<p>Each operator documents separate agents for search, training and user-requested fetches:</p>
+<div class="journal-table"><table><thead><tr><th>User agent</th><th>Operator</th><th>What it does, per the operator</th><th>robots.txt</th></tr></thead><tbody><tr><td>OAI-SearchBot</td><td>OpenAI</td><td>Surfaces websites in ChatGPT search</td><td>The control for ChatGPT search</td></tr><tr><td>GPTBot</td><td>OpenAI</td><td>Crawls content that may be used to train OpenAI's models</td><td>Disallow it to opt out of training</td></tr><tr><td>ChatGPT-User</td><td>OpenAI</td><td>Visits a page when a ChatGPT user's request needs it</td><td>OpenAI says rules may not apply</td></tr><tr><td>Claude-SearchBot</td><td>Anthropic</td><td>Indexes content to improve search results for Claude users</td><td>Honoured</td></tr><tr><td>Claude-User</td><td>Anthropic</td><td>Retrieves pages in response to a Claude user's query</td><td>Honoured</td></tr><tr><td>ClaudeBot</td><td>Anthropic</td><td>Collects web content that may be used for training</td><td>Disallow it to opt out of training</td></tr><tr><td>PerplexityBot</td><td>Perplexity</td><td>Surfaces and links websites in Perplexity's results</td><td>Allow it to appear in Perplexity search</td></tr><tr><td>Perplexity-User</td><td>Perplexity</td><td>Visits a page when a Perplexity user asks a question</td><td>Perplexity says it generally ignores rules</td></tr><tr><td>Googlebot</td><td>Google</td><td>Crawls for Google Search, which includes AI Overviews and AI Mode</td><td>The control for access, AI features included</td></tr><tr><td>Google-Extended</td><td>Google</td><td>A token for AI training and grounding in other Google systems</td><td>Google says it doesn't affect inclusion in Search</td></tr></tbody></table></div>
+<p>So you can appear in an assistant's search answers and still opt out of training. The <a href="/glossary">Videngine glossary</a> defines the terms used here.</p></section>
+<section id="crawlers"><h2>Choose which crawlers can read you</h2>
+<p>robots.txt is the switch for each crawler: allow the search agents of the assistants you want to be cited by, and decide about training agents separately.</p>
+<p><a href="https://developers.openai.com/api/docs/bots">OpenAI's crawler overview</a> says "Sites that are opted out of OAI-SearchBot will not be shown in ChatGPT search answers", though they can still appear as navigational links. <a href="https://docs.perplexity.ai/guides/bots">Perplexity's crawler page</a> recommends allowing PerplexityBot so your site appears in its results. <a href="https://support.claude.com/en/articles/8896518-does-anthropic-crawl-data-from-the-web-and-how-can-site-owners-block-the-crawler">Anthropic's help article</a> says its bots honour robots.txt, that blocking Claude-SearchBot "may reduce your site's visibility and accuracy in user search results", and that each subdomain needs its own rule. For Google, the AI features page names robots.txt rules for Googlebot as the control. A file that welcomes AI search crawlers and opts out of training might read:</p>
+<pre><code># Everyone else, including Googlebot
+User-agent: *
+Allow: /
+
+# Search crawlers for AI assistants
+User-agent: OAI-SearchBot
+User-agent: Claude-SearchBot
+User-agent: PerplexityBot
+Allow: /
+
+# Training crawlers
+User-agent: GPTBot
+User-agent: ClaudeBot
+Disallow: /
+
+Sitemap: https://www.example.com/video-sitemap.xml</code></pre>
+<p>Two cautions. A firewall or CDN can block a crawler that robots.txt allows; Google asks you to check crawling is allowed "by any CDN or hosting infrastructure". And OpenAI and Perplexity both say a robots.txt change can take about 24 hours to reach their systems.</p>
+<p>The user-triggered fetchers are different. OpenAI says robots.txt rules may not apply to ChatGPT-User, and Perplexity says Perplexity-User generally ignores them, because a person asked for the page.</p></section>
+<section id="html"><h2>Put the transcript and markup in the HTML</h2>
+<p>Put the transcript and structured data in the HTML your server sends, because that is the version of the page every crawler receives.</p>
+<p>The crawler pages from OpenAI, Anthropic and Perplexity say nothing about running JavaScript, and Google's AI features page doesn't discuss it. Google's separate JavaScript SEO documentation says Google Search does run JavaScript, sometimes after a wait in a rendering queue, and also that "not all bots can run JavaScript".</p>
+<p>The cautious reading: content that only appears after scripts run may not be seen by every crawler. A transcript loaded by a player widget, or VideoObject added by a tag manager, is a bet that the reader runs your scripts.</p>
+<div class="journal-table"><table><thead><tr><th>Element</th><th>Put it in the HTML as</th><th>What it gives a reader</th></tr></thead><tbody><tr><td>Heading and short answer</td><td>A heading and a paragraph beside the player</td><td>A passage an assistant can quote on its own</td></tr><tr><td>Transcript</td><td>Text on the page, for example in a <code>&lt;details&gt;</code> element</td><td>Everything the narration says, as text</td></tr><tr><td>Caption track</td><td>A WebVTT file in a <code>&lt;track&gt;</code> element</td><td>Timed text for viewers watching without sound</td></tr><tr><td>VideoObject</td><td>JSON-LD in the page source</td><td>Title, description, thumbnail, duration and file URL</td></tr><tr><td>Player</td><td>A <code>&lt;video&gt;</code> element with a poster</td><td>A real file URL and thumbnail on the page</td></tr></tbody></table></div>
+<p>To check, open View Source and search for a sentence from the transcript. Our guide to <a href="/video-seo/video-transcripts-captions">video transcripts and captions</a> covers writing both.</p></section>
+<section id="checklist"><h2>A checklist for video in AI search</h2>
+<p>Nine checks cover most of what you control; none guarantees a citation.</p>
+<p>Google says "There are no additional requirements to appear in AI Overviews or AI Mode, nor other special optimizations necessary" beyond being indexed and eligible for a snippet. Generative engine optimisation is mostly ordinary search discipline.</p>
+<ol><li><strong>Make the page crawlable.</strong> A normal response, no noindex, and internal links pointing to it.</li><li><strong>Put the transcript in the HTML.</strong> The full narration as text in the page source, next to the player.</li><li><strong>Lead with a descriptive heading and a short answer.</strong> Name the question the video answers, then answer it in two or three sentences that stand on their own.</li><li><strong>Add VideoObject.</strong> JSON-LD with name, description, thumbnail, upload date, duration and file URL, matching the visible text as Google asks. Our <a href="/video-seo/videoobject-schema">VideoObject schema guide</a> has a full example.</li><li><strong>List the video in a video sitemap.</strong> Reference it from robots.txt; the <a href="/video-seo/video-sitemap">video sitemap guide</a> lists the fields.</li><li><strong>Allow the crawlers you want.</strong> In robots.txt, and in your CDN or firewall.</li><li><strong>Consider llms.txt.</strong> <a href="https://llmstxt.org/">llmstxt.org</a> calls it "a proposal to standardise on using an /llms.txt file": a markdown summary at the site root with links to key pages. It is a proposal, not a standard, and Google says you don't need "AI text files" for its AI features. Cheap to add; no promise anyone reads it.</li><li><strong>Make only claims the page supports.</strong> A price or result in the narration that the page doesn't carry is a contradiction an assistant may repeat.</li><li><strong>Keep one source of truth.</strong> One canonical page per video, with the same title in the heading, markup and sitemap. If it is also on YouTube, decide which page you want cited; see <a href="/video-seo/youtube-vs-self-hosted">YouTube or self-hosted video</a>.</li></ol></section>
+<section id="measure"><h2>What you can and can't measure</h2>
+<p>You can count the clicks AI tools send and see Google's AI features within Search Console's totals; you can't see citations that send no click.</p>
+<p>Google says AI features are included in Search Console's Performance report under the "Web" search type, with no separate breakdown described. OpenAI's publishers FAQ says ChatGPT adds <code>utm_source=chatgpt.com</code> to referral URLs.</p>
+<div class="journal-table"><table><thead><tr><th>Where to look</th><th>What you can see</th><th>What it misses</th></tr></thead><tbody><tr><td>Search Console</td><td>Clicks and impressions from Google Search, AI Overviews and AI Mode included under "Web"</td><td>A separate figure for AI features</td></tr><tr><td>Web analytics</td><td>ChatGPT visits tagged <code>utm_source=chatgpt.com</code>; other assistants where a referrer is passed</td><td>Answers that cite you and send nobody</td></tr><tr><td>Server logs</td><td>Fetches by OAI-SearchBot, Claude-SearchBot, PerplexityBot and the rest</td><td>Whether a fetch became a citation</td></tr><tr><td>Manual checks</td><td>Whether a sample of questions cites your page today</td><td>Answers vary by person, wording and day</td></tr></tbody></table></div>
+<p>Treat every number as a floor: an assistant can quote your transcript without sending a visit. Keep a short list of questions your pages answer and check them monthly in the assistants that matter to you.</p></section>
+<section id="videngine"><h2>How Videngine publishes video for AI search</h2>
+<p>Videngine's website publishing puts the player, transcript and VideoObject into the page's HTML in one commit.</p>
+<p>Videngine turns a page, a listing, text or a row of data into a narrated, captioned MP4 rendered from coded templates. A workspace connects its website's GitHub repository, with Connect with GitHub or a fine-grained access token. Once a video is approved in review, Publish makes one commit that:</p>
+<ul><li>adds the MP4, a poster JPG and a WebVTT caption track, in <code>/videos/</code> by default;</li><li>writes an HTML5 player into the page the video was made from, with the poster and metadata-only preload;</li><li>adds a readable transcript in a <code>&lt;details&gt;</code> element;</li><li>adds VideoObject JSON-LD with name, description, thumbnailUrl, contentUrl, uploadDate, duration, width, height, inLanguage, transcript and publisher;</li><li>updates <code>video-sitemap.xml</code> and adds a Sitemap line to robots.txt.</li></ul>
+<p>All of it is in the HTML the server sends, not injected by JavaScript. A <code>&lt;!-- videngine --&gt;</code> comment marks where the video goes; republishing replaces it in place, and Remove takes it out in one commit.</p>
+<p>Each video is made from the page it sits on, so that page is its source of truth. Your rules for AI crawlers and any llms.txt stay yours to write; videngine.io, for example, publishes its own <a href="/llms.txt">llms.txt</a>.</p></section>
+<section id="wrong-tool"><h2>When Videngine is the wrong tool</h2>
+<p>Videngine is the wrong tool if your pages aren't HTML files in a repository, if you need to track AI citations, or if the video needs footage you don't have.</p>
+<ul><li><strong>Framework or CMS sites.</strong> Website publishing works for static sites whose pages are HTML files in the repository, such as sites on Vercel, Netlify, Cloudflare Pages or GitHub Pages. Framework-built sites aren't supported yet; download the MP4 and add the player, transcript and markup yourself.</li><li><strong>Tracking AI visibility.</strong> Videngine makes and publishes videos; it doesn't report citations. Use Search Console and analytics, or a dedicated AI visibility monitoring tool for prompt tracking at scale.</li><li><strong>Several videos per page, or non-English narration.</strong> Publishing places one video per page, and narration is English only.</li><li><strong>New footage or a presenter.</strong> Videngine builds scenes from your own pages and images, not generated footage or avatars. Our <a href="/ai-video-tools">AI video tools guide</a> covers generators and presenter tools.</li></ul></section>
+<section id="questions"><h2>Questions about video in AI search</h2>
+<h3>How do I get my videos cited by AI assistants?</h3><p>Put each video on its own crawlable page with a descriptive heading, a short answer, a transcript and VideoObject in the HTML the server sends. Allow the search crawlers of the assistants you care about in robots.txt, such as OAI-SearchBot, Claude-SearchBot and PerplexityBot. Nothing guarantees a citation, but a page an assistant cannot read cannot be cited.</p>
+<h3>Can ChatGPT search or Perplexity watch my video?</h3><p>OpenAI's and Perplexity's crawler documentation describes fetching web pages and says nothing about processing video files. Assume an assistant knows what your page tells it in text: the heading, the transcript and the structured data.</p>
+<h3>Does VideoObject schema help a video appear in AI Overviews?</h3><p>Google says no special schema.org structured data is needed for AI Overviews or AI Mode, and asks that structured data match the visible text. VideoObject still describes the video to search engines and other readers of the page, so add it for that reason, not as a switch for AI Overviews.</p>
+<h3>Do I need an llms.txt file for AI search?</h3><p>No. llms.txt is a proposal published at llmstxt.org, not an agreed standard, and Google says you don't need AI text files to appear in AI Overviews or AI Mode. It is a small markdown file that is cheap to add, so treat it as optional.</p>
+<h3>What is generative engine optimisation (GEO)?</h3><p>Generative engine optimisation, or GEO, is the name used for making content easy for AI assistants to find, read and cite. In practice it overlaps heavily with ordinary SEO: crawlable pages, important content in text, accurate structured data and clear answers.</p></section>
+<section id="next"><h2>Choose your next step</h2><p>Start with the whole picture, then fix the part an assistant reads first.</p><ul><li><a href="/video-seo">Read the video SEO guide for business sites</a></li><li><a href="/video-seo/video-transcripts-captions">Publish transcripts and captions that match the video</a></li></ul></section><div class="journal-cta"><h2>Publish video an assistant can read.</h2><p>Bring one page that already answers a question well. Review the video in the studio, then publish the player, transcript and VideoObject to that page in one commit.</p><a class="pill-button" href="/#waitlist">Join the waitlist ↗</a></div><p class="journal-note" style="margin-top:24px">Published by Videngine, a video rendering product built and run by Wall &amp; Fifth. External links refer to the original documentation or product descriptions; examples are illustrative unless stated otherwise.</p></article></div><section class="journal-related"><div class="page-shell"><h2>Keep reading.</h2><div class="journal-grid"><a class="journal-card" href="/video-seo/video-transcripts-captions"><span class="journal-label">Video SEO</span><h3>Video transcripts and captions for SEO and accessibility</h3><p>Video transcripts for SEO and accessibility: captions vs subtitles, open vs closed captions, SRT vs WebVTT, accuracy checks and publishing on your site.</p><span>Read the guide ↗</span></a><a class="journal-card" href="/video-seo/youtube-vs-self-hosted"><span class="journal-label">Video SEO</span><h3>YouTube vs self-hosted video: which is better for SEO?</h3><p>YouTube vs self-hosted video for SEO: what each one wins, what it loads on the page, and how to publish one video to YouTube and your own site together.</p><span>Read the guide ↗</span></a></div></div></section></main><footer class="footer" id="contact">
+<div class="page-shell">
+<div class="footer-kicker">Start rendering</div>
+<h2 class="footer-heading">Stop <span class="word-cycle"><span>editing.</span><span>exporting.</span><span>waiting.</span></span><br/><span class="ghost">Start rendering.</span></h2>
+<div class="footer-grid">
+<div class="footer-col"><h4>Studio</h4><a href="/#waitlist">Join the waitlist</a><h4 style="margin-top:24px">Email</h4><a href="mailto:hello@videngine.io">hello@videngine.io</a></div>
+<div class="footer-col"><h4>Product</h4><a href="/#how">How it works</a><a href="/use-cases">Use cases</a><a href="/industries">Industries</a><a href="/video-seo">Video SEO</a><a href="/pricing">Pricing</a><a href="/notes">Notes</a><a href="/glossary">Glossary</a><a href="/about">About</a></div>
+<div class="footer-col"><h4>Learn</h4><a href="/vs/ai-video-generators">vs AI generators</a><a href="/compare">All comparisons</a><a href="/programmatic-video">Programmatic video</a><a href="/notes">All guides</a></div>
+<div class="footer-col"><h4>Contact</h4><a href="mailto:hello@videngine.io">hello@videngine.io</a><a href="https://wallandfifth.com">Wall &amp; Fifth</a><a href="/terms">Terms</a><a href="/privacy">Privacy</a></div>
+</div>
+<div class="footer-bottom"><span>© 2026 Videngine</span><span>Built and run by Wall &amp; Fifth</span></div>
+<div class="giant-name">VID<em>ENGINE</em></div>
+</div>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://videngine.io/video-seo/ai-search-video#article",
+      "headline": "Video in AI search: getting your videos cited by AI assistants",
+      "description": "Video in AI search: what ChatGPT, Claude, Perplexity and Google's AI features read, which crawlers to allow, and a checklist to get your videos cited.",
+      "datePublished": "2026-10-10",
+      "dateModified": "2026-10-10",
+      "inLanguage": "en",
+      "mainEntityOfPage": "https://videngine.io/video-seo/ai-search-video",
+      "author": {
+        "@type": "Organization",
+        "name": "Videngine",
+        "url": "https://videngine.io/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://videngine.io/icon-512.png"
+        }
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Videngine",
+        "url": "https://videngine.io/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://videngine.io/icon-512.png"
+        }
+      },
+      "image": "https://videngine.io/og/video-seo/ai-search-video.png"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Videngine",
+          "item": "https://videngine.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Video SEO",
+          "item": "https://videngine.io/video-seo"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Video in AI search: getting your videos cited by AI assistants",
+          "item": "https://videngine.io/video-seo/ai-search-video"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://videngine.io/video-seo/ai-search-video#questions",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How do I get my videos cited by AI assistants?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Put each video on its own crawlable page with a descriptive heading, a short answer, a transcript and VideoObject in the HTML the server sends. Allow the search crawlers of the assistants you care about in robots.txt, such as OAI-SearchBot, Claude-SearchBot and PerplexityBot. Nothing guarantees a citation, but a page an assistant cannot read cannot be cited."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can ChatGPT search or Perplexity watch my video?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "OpenAI's and Perplexity's crawler documentation describes fetching web pages and says nothing about processing video files. Assume an assistant knows what your page tells it in text: the heading, the transcript and the structured data."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does VideoObject schema help a video appear in AI Overviews?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Google says no special schema.org structured data is needed for AI Overviews or AI Mode, and asks that structured data match the visible text. VideoObject still describes the video to search engines and other readers of the page, so add it for that reason, not as a switch for AI Overviews."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need an llms.txt file for AI search?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. llms.txt is a proposal published at llmstxt.org, not an agreed standard, and Google says you don't need AI text files to appear in AI Overviews or AI Mode. It is a small markdown file that is cheap to add, so treat it as optional."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is generative engine optimisation (GEO)?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Generative engine optimisation, or GEO, is the name used for making content easy for AI assistants to find, read and cite. In practice it overlaps heavily with ordinary SEO: crawlable pages, important content in text, accurate structured data and clear answers."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script></body></html>

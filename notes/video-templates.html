@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link rel="icon" href="/favicon.ico" sizes="32x32"/>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml"/>
+<link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
+<link rel="manifest" href="/site.webmanifest"/>
+<meta name="theme-color" content="#fafafa"/>
+
+
+
+
+
+
+
+
+<link href="https://api.fontshare.com" rel="preconnect"/>
+<link href="https://fonts.gstatic.com" rel="preconnect" crossorigin/>
+<link href="https://api.fontshare.com/v2/css?f[]=switzer@300,400,500,600,700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="/style.css"/>
+<script defer src="/analytics.js"></script>
+<title>Video templates: editor, API and data-driven templates | Videngine</title>
+<meta name="description" content="Video templates compared: editor templates, template APIs and coded templates that fill from your data, plus a checklist for records that break them."/>
+<link rel="canonical" href="https://videngine.io/notes/video-templates"/>
+<meta property="og:title" content="Video templates: from editor templates to templates that fill themselves"/>
+<meta property="og:description" content="Video templates compared: editor templates, template APIs and coded templates that fill from your data, plus a checklist for records that break them."/>
+<meta property="og:url" content="https://videngine.io/notes/video-templates"/>
+<meta property="og:type" content="article"/>
+<meta name="twitter:card" content="summary"/>
+<meta property="og:site_name" content="Videngine"/>
+<meta property="og:locale" content="en_GB"/>
+<meta property="og:image" content="https://videngine.io/og/notes/video-templates.png"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="630"/>
+<meta property="og:image:alt" content="Videngine: Video templates: from editor templates to templates that fill themselves"/>
+<meta name="twitter:title" content="Video templates: from editor templates to templates that fill themselves"/>
+<meta name="twitter:description" content="Video templates compared: editor templates, template APIs and coded templates that fill from your data, plus a checklist for records that break them."/>
+<meta name="twitter:image" content="https://videngine.io/og/notes/video-templates.png"/>
+<meta name="twitter:image:alt" content="Videngine: Video templates: from editor templates to templates that fill themselves"/>
+<link rel="stylesheet" href="/notes.css"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;550;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="/studio-brand.css"/>
+</head>
+<body>
+<div class="nav-wrap">
+<nav class="nav" aria-label="Primary navigation">
+<a class="brand" href="/"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m8 5 12 7-12 7z"/></svg></span><span class="brand-wordmark">videngine<span class="brand-dot">.</span></span></a>
+<div class="nav-links">
+<a href="/#how">How it works</a>
+<a href="/use-cases">Use cases</a>
+<a href="/pricing">Pricing</a>
+<a href="/ai-video-tools">AI video tools</a>
+</div>
+<a class="nav-cta" href="/#waitlist">Join the waitlist</a>
+</nav>
+</div>
+
+<main id="top"><header class="journal-hero"><div class="page-shell"><nav class="journal-crumbs" aria-label="Breadcrumb"><a href="/">Videngine</a><span>/</span><a href="/notes">Notes</a></nav><h1>Video templates: from editor templates to templates that fill themselves</h1><p class="journal-deck">Video templates compared: editor templates, template APIs and coded templates that fill from your data, plus a checklist for records that break them.</p><div class="journal-meta"><span>By <a href="/">Videngine</a></span><time datetime="2026-10-10">10 October 2026</time><span>9 min read</span></div></div></header><div class="page-shell journal-layout"><aside class="journal-toc"><span class="journal-label">In this guide</span><a href="#kinds">Three kinds of video template</a><a href="#real-data">What makes a video template survive real data</a><a href="#family">Designing a template family</a><a href="#automatic">What an automatic video maker really does</a><a href="#videngine">How Videngine does video templates</a><a href="#wrong-tool">When Videngine is the wrong tool</a><a href="#questions">Video template questions</a></aside><article class="journal-body"><div class="journal-answer"><span class="journal-label">The short answer</span><p>Video templates are reusable designs in which the layout, type and motion stay fixed while the words, pictures and numbers change. They come in three kinds: editor templates a person fills by hand, template APIs your own code fills with data, and coded templates in a finished product that fill themselves from pages and records. Videngine is the third kind: it reads your page, listing or data row and renders a narrated, captioned MP4 for review.</p></div>
+<!-- videngine -->
+<section id="kinds"><h2>Three kinds of video template</h2>
+<p>The three kinds of video template differ less in their designs than in who, or what, fills them in. That is the useful way to sort any video template generator or online video template maker.</p>
+<div class="journal-table"><table><thead><tr><th>Kind</th><th>Who fills it</th><th>Good at</th><th>Weak at</th><th>Examples</th></tr></thead><tbody><tr><td>Editor templates</td><td>A person, in an online editor</td><td>Designed one-offs, seasonal promos, social posts</td><td>Volume and consistency</td><td>Canva, Renderforest and similar. See <a href="/vs/canva">Videngine vs Canva</a> and <a href="/vs/renderforest">Videngine vs Renderforest</a></td></tr><tr><td>Template APIs</td><td>Your own code, sending data to a render service</td><td>Developers who want full control of template and pipeline</td><td>The workflow around the render is yours to design</td><td>Creatomate, Shotstack and similar. See <a href="/vs/creatomate">Videngine vs Creatomate</a> and <a href="/vs/shotstack">Videngine vs Shotstack</a></td></tr><tr><td>Coded templates in a finished product</td><td>The product, from a page, listing, text or data row</td><td>Recurring jobs: listings, products, articles, release notes</td><td>Creative direction that changes per video</td><td>Videngine</td></tr></tbody></table></div>
+<p>Editor templates are often the right answer: for a video made once, by someone with an eye for it, nothing is quicker. The trouble is repetition.</p>
+<p>Template APIs and coded templates are both data-driven video templates: the design is fixed and the record supplies the values. An API renders what you send it, so the workflow around it, from script to review, is yours to design; a finished product includes it. The underlying idea is defined in <a href="/programmatic-video">what programmatic video is</a>; this guide is about making the templates work.</p></section>
+<section id="real-data"><h2>What makes a video template survive real data</h2>
+<p>A video template survives real data when every field has a rule for its worst value, not only its sample value.</p>
+<p>The demonstration record has a short name, a landscape photo and a round price. The real catalogue has a 48-character model name, a single portrait photo and no price. Automated video templates without rules for these fail quietly.</p>
+<div class="journal-table"><table><thead><tr><th>Edge case</th><th>What goes wrong</th><th>What the template should do</th></tr></thead><tbody><tr><td>Long names</td><td>Text runs off the frame, or shrinks past legibility</td><td>Wrap to a set number of lines, then reduce to a minimum size, then shorten at a word boundary.</td></tr><tr><td>Text that wraps</td><td>A stranded word, or a model number split across lines</td><td>Balance the lines; keep model numbers, prices and units together; test at 9:16, where lines are shortest.</td></tr><tr><td>Missing photos</td><td>An empty frame or a broken-image placeholder</td><td>Drop an optional photo scene and retime; if a required image is missing, stop that render and report it.</td></tr><tr><td>Portrait photos in a landscape frame</td><td>A crop that cuts off the subject: a mast, a head, a roofline</td><td>Show the whole photo over a blurred fill of itself, or crop around a known focal point. The same goes for landscape photos in 9:16.</td></tr><tr><td>Prices and numbers</td><td>“24995.0”, the wrong currency, or digits read out one by one</td><td>Keep amount and currency separate; format with separators and symbol; handle “price on application”; write numbers for the voice as people say them.</td></tr><tr><td>Brand rules</td><td>Colours and type drift as people adjust single videos</td><td>Typefaces, colours, logo, spacing and motion stored once as tokens that every video inherits.</td></tr><tr><td>Safe areas for 9:16</td><td>Captions or the price hidden under a platform's buttons</td><td>A safe-area token per format that text and logo stay inside; check each platform's current guidance.</td></tr><tr><td>Variable scene counts</td><td>Three photos stretched across a minute, or thirty crammed in</td><td>A minimum and maximum scene count, with the duration worked out from the narration and the scenes present.</td></tr></tbody></table></div>
+<p>Coded templates handle these as ordinary logic. Remotion documents <a href="https://www.remotion.dev/docs/parameterized-rendering">input props merged over default props</a>, <a href="https://www.remotion.dev/docs/schemas">schemas that validate the props a composition accepts</a> and <a href="https://www.remotion.dev/docs/dynamic-metadata">a composition's duration calculated from its data</a>. That last point lets a listing with four photos and one with twenty share a template.</p></section>
+<section id="family"><h2>Designing a template family</h2>
+<p>A template family is a small set of templates, one per job, that share brand tokens but not scene structure.</p>
+<p>One universal template serves every job slightly badly: a listing needs photographs and key facts, an explainer needs chapter cards, an ad needs a reason to keep watching. Give each job its own template, sharing what should never differ: type, colour, logo, safe areas, motion and voice rules. Change the brand colour once and every template follows.</p>
+<div class="journal-table"><table><thead><tr><th>Template</th><th>Job</th><th>Scenes it needs</th><th>Its hardest records</th></tr></thead><tbody><tr><td>Listing</td><td>Show one vehicle, boat or property for sale</td><td>Photo scenes, key facts, price, how to enquire</td><td>One photo or forty; portrait-only photos; no price</td></tr><tr><td>Product</td><td>Help a buyer choose one product or variant</td><td>Product images, specification, variant name</td><td>Long variant names; cut-outs on white</td></tr><tr><td>Explainer</td><td>Make one thing understood</td><td>Chapter cards, information cards, comparisons</td><td>Long articles; screenshots with small text</td></tr><tr><td>Ad</td><td>Earn attention, then a click</td><td>A hook, one supported benefit, the offer</td><td>Expiring offers; claims that need evidence</td></tr></tbody></table></div>
+<p>Version templates as you would code. An approved template should not change under a running batch: record the version against every output and make changes in a new, tested version. A video re-rendered next month then comes out the same.</p>
+<p>Before any batch, render the ten records most likely to break the template rather than the first ten rows.</p>
+<ol><li><strong>Pick the ten hardest records.</strong> The longest and shortest names, the most and fewest photos, portrait-only photos, the lowest-resolution image, a missing price, unusual characters, the longest script and one typical record.</li><li><strong>Render every format you publish.</strong> At least 16:9 and 9:16; a layout that fits landscape often breaks in vertical.</li><li><strong>Review with sound and without.</strong> Text, cropping, captions and pronunciation.</li><li><strong>Fix the rule, not the video.</strong> Change the template or the data rule, then re-render all ten.</li><li><strong>Approve and record the version.</strong> Note the template version and data snapshot the approval covers.</li><li><strong>Run the batch, then review it.</strong> Testing reduces surprises; it does not replace looking at what goes out.</li></ol>
+<p>The batch itself, from column design to retrying failed rows, is covered in <a href="/notes/bulk-video-creation-from-csv">bulk video creation from a CSV</a>.</p></section>
+<section id="automatic"><h2>What an automatic video maker really does</h2>
+<p>An automatic video maker automates the production work (layout, timing, narration and captions) and leaves three decisions to people: approving the template, choosing what to say and reviewing what comes out.</p>
+<p>“Automatic video generator” and “automated video editing” are used loosely. Automated editing usually means cutting footage you already have, a different job that the <a href="/programmatic-video">programmatic video definition</a> separates out. For template-based video, the split is this.</p>
+<div class="journal-table"><table><thead><tr><th>Task</th><th>What is automated</th><th>What still needs a person</th></tr></thead><tbody><tr><td>Layout</td><td>Text, photos and logo placed in each scene, for each format</td><td>Approving the template once</td></tr><tr><td>Timing</td><td>Scene lengths fitted to the narration</td><td>Checking a sample for pace</td></tr><tr><td>Script</td><td>A draft written from the source</td><td>Deciding what to say, what to leave out and which claims stand</td></tr><tr><td>Narration</td><td>A synthetic voice reading the approved script</td><td>Adding names it says wrongly to a pronunciation list</td></tr><tr><td>Captions</td><td>Transcribed from the finished audio, so they match what was said</td><td>Spot-checking names, numbers and prices</td></tr><tr><td>Rendering</td><td>Every format, queued and run unattended</td><td>Looking into any render that fails</td></tr><tr><td>Publishing</td><td>Queued once a video is approved</td><td>Approving each video</td></tr></tbody></table></div>
+<p>“One click” describes the render, not the approval. Every claim and price in a video still belongs to the business that publishes it.</p></section>
+<section id="videngine"><h2>How Videngine does video templates</h2>
+<p>Videngine uses coded templates, React scenes rendered with Remotion, with your typefaces, colours, logo, safe areas and motion set once as tokens that every video follows.</p>
+<ul><li><strong>A template per business type.</strong> Workspaces are set up for vehicles and equipment, boats and marine, property, products and e-commerce, software and apps, media and publishing, or services.</li><li><strong>Templates that fill themselves.</strong> Start from a URL, plain text or markdown, a CSV, a JSON payload, or pages picked from your sitemap in batches. A headless browser keeps the content and drops navigation and cookie banners; a script and scene plan follows, which you can accept, edit or replace.</li><li><strong>Photos framed for the format.</strong> A photo that does not fit sits over a blurred fill of itself, so a landscape photo works in a 9:16 cut.</li><li><strong>An explainer template</strong> with chapter title cards, information cards and side-by-side comparisons.</li><li><strong>Voice rules per brand.</strong> A pronunciation lexicon, banned phrases, positive-only wording and a target length, in English.</li><li><strong>Captions from the audio.</strong> Transcribed from the finished narration, burned in or as an .srt file, plus a WebVTT track for your website.</li><li><strong>Every format from one source.</strong> 16:9, 9:16, 1:1 and 4:5 up to 1080p, as MP4 (H.264) or WebM.</li></ul>
+<p>Every video is reviewed in the studio before it goes out, and a rebuild is saved as a new version beside the original. On a Custom plan, from 1,500 videos a month (see <a href="/pricing">pricing</a>), the scene set can be your own. Terms used here are defined in the <a href="/glossary">Videngine glossary</a>.</p></section>
+<section id="wrong-tool"><h2>When Videngine is the wrong tool</h2>
+<p>Videngine is the wrong tool for a one-off designed piece, and for developers who want to own the template system themselves.</p>
+<ul><li><strong>A one-off designed promo.</strong> An event invitation or a launch teaser cut to a track. An editor template is quicker and gives a designer direct control; <a href="/vs/canva">our Canva comparison</a> and <a href="/vs/renderforest">our Renderforest comparison</a> set out the differences.</li><li><strong>Developers who want to own the template system.</strong> A template API fits better; <a href="/vs/creatomate">Creatomate</a> and <a href="/vs/shotstack">Shotstack</a> are compared on their own pages, and the Remotion library is the route to owning the scene code itself.</li><li><strong>Footage that does not exist yet.</strong> Videngine does not generate footage, animate a still into new motion or put a presenter on camera, and has no stock library.</li><li><strong>Low volume.</strong> A template used a handful of times a year costs more to set up than it saves.</li></ul></section>
+<section id="questions"><h2>Video template questions</h2>
+<h3>What is a video template generator?</h3><p>The term covers two things. Some tools offer ready-made designs that you customise by hand in an online editor. Others generate videos from a template and records of data, so one template makes many videos. For more than a few videos from one design, you want the second kind.</p>
+<h3>What are data-driven video templates?</h3><p>They are templates in which the layout, type and motion are fixed and the content comes from a record: a listing, a product, an article or a spreadsheet row. Each record produces its own video. They are only as reliable as their rules for missing, long or awkward values.</p>
+<h3>Do coded video templates need a developer?</h3><p>Someone has to write the code once. With a template API or a library such as Remotion, that is your developer, and the pipeline around it is yours too. In Videngine the templates come with the product and your brand is applied as tokens; on a Custom plan the scene set can be your own.</p>
+<h3>How automatic is an automatic video maker?</h3><p>It can automate layout, scene timing, narration, captions and rendering in every format. It cannot decide what your video should say or confirm that a price or claim is right. Plan for a person to approve the template once and review each video before it is published.</p>
+<h3>How many records should I test a video template with?</h3><p>Ten catch most problems, provided they are the hardest records rather than the first ten rows: extreme names, photo counts and image sizes, a missing price, unusual characters and one typical record. Render each in every format you publish, and re-render all ten after any fix.</p></section>
+<section id="next"><h2>Choose your next step</h2><p>Start with the definition if you are still deciding; plan the batch if you already have the data.</p><ul><li><a href="/programmatic-video">What programmatic video is, and when it pays</a></li><li><a href="/notes/bulk-video-creation-from-csv">Plan a batch of videos from a CSV</a></li><li><a href="/pricing">See plans priced by the finished video</a></li></ul></section><div class="journal-cta"><h2>Put your templates to work.</h2><p>Bring the pages and records you already have, including the ten most likely to break a template. Videngine is coming soon; join the waitlist to hear when you can run them through it.</p><a class="pill-button" href="/#waitlist">Join the waitlist ↗</a></div><p class="journal-note" style="margin-top:24px">Published by Videngine, a video rendering product built and run by Wall &amp; Fifth. External links refer to the original documentation or product descriptions; examples are illustrative unless stated otherwise.</p></article></div><section class="journal-related"><div class="page-shell"><h2>Keep reading.</h2><div class="journal-grid"><a class="journal-card" href="/programmatic-video"><span class="journal-label">Fundamentals</span><h3>What is programmatic video?</h3><p>Programmatic video is rendered from a coded template and structured data, so one template makes many videos. A plain definition, and when to use it.</p><span>Read the guide ↗</span></a><a class="journal-card" href="/notes/bulk-video-creation-from-csv"><span class="journal-label">Production at scale</span><h3>Bulk video creation from a CSV: a reliable workflow</h3><p>How to structure a spreadsheet for bulk video creation, validate rows, track failures and estimate render volume without losing control of quality.</p><span>Read the guide ↗</span></a></div></div></section></main><footer class="footer" id="contact">
+<div class="page-shell">
+<div class="footer-kicker">Start rendering</div>
+<h2 class="footer-heading">Stop <span class="word-cycle"><span>editing.</span><span>exporting.</span><span>waiting.</span></span><br/><span class="ghost">Start rendering.</span></h2>
+<div class="footer-grid">
+<div class="footer-col"><h4>Studio</h4><a href="/#waitlist">Join the waitlist</a><h4 style="margin-top:24px">Email</h4><a href="mailto:hello@videngine.io">hello@videngine.io</a></div>
+<div class="footer-col"><h4>Product</h4><a href="/#how">How it works</a><a href="/use-cases">Use cases</a><a href="/industries">Industries</a><a href="/video-seo">Video SEO</a><a href="/pricing">Pricing</a><a href="/notes">Notes</a><a href="/glossary">Glossary</a><a href="/about">About</a></div>
+<div class="footer-col"><h4>Learn</h4><a href="/vs/ai-video-generators">vs AI generators</a><a href="/compare">All comparisons</a><a href="/programmatic-video">Programmatic video</a><a href="/notes">All guides</a></div>
+<div class="footer-col"><h4>Contact</h4><a href="mailto:hello@videngine.io">hello@videngine.io</a><a href="https://wallandfifth.com">Wall &amp; Fifth</a><a href="/terms">Terms</a><a href="/privacy">Privacy</a></div>
+</div>
+<div class="footer-bottom"><span>© 2026 Videngine</span><span>Built and run by Wall &amp; Fifth</span></div>
+<div class="giant-name">VID<em>ENGINE</em></div>
+</div>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://videngine.io/notes/video-templates#article",
+      "headline": "Video templates: from editor templates to templates that fill themselves",
+      "description": "Video templates compared: editor templates, template APIs and coded templates that fill from your data, plus a checklist for records that break them.",
+      "datePublished": "2026-10-10",
+      "dateModified": "2026-10-10",
+      "inLanguage": "en",
+      "mainEntityOfPage": "https://videngine.io/notes/video-templates",
+      "author": {
+        "@type": "Organization",
+        "name": "Videngine",
+        "url": "https://videngine.io/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://videngine.io/icon-512.png"
+        }
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Videngine",
+        "url": "https://videngine.io/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://videngine.io/icon-512.png"
+        }
+      },
+      "image": "https://videngine.io/og/notes/video-templates.png"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Videngine",
+          "item": "https://videngine.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Notes",
+          "item": "https://videngine.io/notes"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Video templates: from editor templates to templates that fill themselves",
+          "item": "https://videngine.io/notes/video-templates"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://videngine.io/notes/video-templates#questions",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is a video template generator?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The term covers two things. Some tools offer ready-made designs that you customise by hand in an online editor. Others generate videos from a template and records of data, so one template makes many videos. For more than a few videos from one design, you want the second kind."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are data-driven video templates?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "They are templates in which the layout, type and motion are fixed and the content comes from a record: a listing, a product, an article or a spreadsheet row. Each record produces its own video. They are only as reliable as their rules for missing, long or awkward values."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do coded video templates need a developer?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Someone has to write the code once. With a template API or a library such as Remotion, that is your developer, and the pipeline around it is yours too. In Videngine the templates come with the product and your brand is applied as tokens; on a Custom plan the scene set can be your own."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How automatic is an automatic video maker?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It can automate layout, scene timing, narration, captions and rendering in every format. It cannot decide what your video should say or confirm that a price or claim is right. Plan for a person to approve the template once and review each video before it is published."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How many records should I test a video template with?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ten catch most problems, provided they are the hardest records rather than the first ten rows: extreme names, photo counts and image sizes, a missing price, unusual characters and one typical record. Render each in every format you publish, and re-render all ten after any fix."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script></body></html>

@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link rel="icon" href="/favicon.ico" sizes="32x32"/>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml"/>
+<link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
+<link rel="manifest" href="/site.webmanifest"/>
+<meta name="theme-color" content="#fafafa"/>
+
+
+
+
+
+
+
+
+<link href="https://api.fontshare.com" rel="preconnect"/>
+<link href="https://fonts.gstatic.com" rel="preconnect" crossorigin/>
+<link href="https://api.fontshare.com/v2/css?f[]=switzer@300,400,500,600,700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="/style.css"/>
+<script defer src="/analytics.js"></script>
+<title>Video sitemaps: what to include and when you need one | Videngine</title>
+<meta name="description" content="What a video sitemap is, when you need one, the video:video tags Google supports, a complete XML example, size limits and how to submit it to Google."/>
+<link rel="canonical" href="https://videngine.io/video-seo/video-sitemap"/>
+<meta property="og:title" content="Video sitemaps: what to include and when you need one"/>
+<meta property="og:description" content="What a video sitemap is, when you need one, the video:video tags Google supports, a complete XML example, size limits and how to submit it to Google."/>
+<meta property="og:url" content="https://videngine.io/video-seo/video-sitemap"/>
+<meta property="og:type" content="article"/>
+<meta name="twitter:card" content="summary"/>
+<meta property="og:site_name" content="Videngine"/>
+<meta property="og:locale" content="en_GB"/>
+<meta property="og:image" content="https://videngine.io/og/video-seo/video-sitemap.png"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="630"/>
+<meta property="og:image:alt" content="Videngine: Video sitemaps: what to include and when you need one"/>
+<meta name="twitter:title" content="Video sitemaps: what to include and when you need one"/>
+<meta name="twitter:description" content="What a video sitemap is, when you need one, the video:video tags Google supports, a complete XML example, size limits and how to submit it to Google."/>
+<meta name="twitter:image" content="https://videngine.io/og/video-seo/video-sitemap.png"/>
+<meta name="twitter:image:alt" content="Videngine: Video sitemaps: what to include and when you need one"/>
+<link rel="stylesheet" href="/notes.css"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;550;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="/studio-brand.css"/>
+</head>
+<body>
+<div class="nav-wrap">
+<nav class="nav" aria-label="Primary navigation">
+<a class="brand" href="/"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m8 5 12 7-12 7z"/></svg></span><span class="brand-wordmark">videngine<span class="brand-dot">.</span></span></a>
+<div class="nav-links">
+<a href="/#how">How it works</a>
+<a href="/use-cases">Use cases</a>
+<a href="/pricing">Pricing</a>
+<a href="/ai-video-tools">AI video tools</a>
+</div>
+<a class="nav-cta" href="/#waitlist">Join the waitlist</a>
+</nav>
+</div>
+
+<main id="top"><header class="journal-hero"><div class="page-shell"><nav class="journal-crumbs" aria-label="Breadcrumb"><a href="/">Videngine</a><span>/</span><a href="/video-seo">Video SEO</a></nav><h1>Video sitemaps: what to include and when you need one</h1><p class="journal-deck">What a video sitemap is, when you need one, the video:video tags Google supports, a complete XML example, size limits and how to submit it to Google.</p><div class="journal-meta"><span>By <a href="/">Videngine</a></span><time datetime="2026-10-10">10 October 2026</time><span>9 min read</span></div></div></header><div class="page-shell journal-layout"><aside class="journal-toc"><span class="journal-label">In this guide</span><a href="#when">When a video sitemap helps, and when it doesn't</a><a href="#tags">The video:video tags Google supports today</a><a href="#example">A video sitemap example for two pages</a><a href="#submit">Where to put it and how to submit a video sitemap</a><a href="#upkeep">Keeping the sitemap true</a><a href="#videoobject">Sitemap and VideoObject: use both</a><a href="#videngine">How Videngine keeps the sitemap, and when to use something else</a><a href="#questions">Questions about video sitemaps</a></aside><article class="journal-body"><div class="journal-answer"><span class="journal-label">The short answer</span><p>A video sitemap is an XML file, or extra tags in an existing sitemap, that lists the pages on your site that carry video and describes each video: thumbnail, title, description and the file or player URL. Google says it helps it find video it might otherwise miss, especially new video. It works alongside VideoObject markup, not instead of it. Videngine updates video-sitemap.xml in the same commit as each video it publishes.</p></div>
+<!-- videngine -->
+<section id="when"><h2>When a video sitemap helps, and when it doesn't</h2>
+<p>A video sitemap helps when Google might not find or understand your videos by crawling alone: on a new site, a large one, or one that publishes a lot of video.</p>
+<p>Google's <a href="https://developers.google.com/search/docs/crawling-indexing/sitemaps/video-sitemaps">video sitemap documentation</a> calls it a good way to help Google find and understand the video on your site, “especially content that was recently added or that we might not otherwise discover with our usual crawling mechanisms”. Its <a href="https://developers.google.com/search/docs/crawling-indexing/sitemaps/overview">general guidance on sitemaps</a> says you might need one if:</p>
+<ul><li>the site is large, so some new pages may not be linked from anywhere else on it;</li><li>the site is new and has few external links pointing to it;</li><li>the site has a lot of rich media, such as video, that you want to appear in Search.</li></ul>
+<p>You might not need one if the site is small (about 500 pages or fewer that you want in search), every important page is reachable by links from the home page, and you have few media files you want shown in results.</p>
+<p>Then ordinary discovery is usually enough. <a href="https://developers.google.com/search/docs/appearance/video">Google's video best practices</a> say it can find videos referenced by a <code>&lt;video&gt;</code>, <code>&lt;embed&gt;</code>, <code>&lt;iframe&gt;</code> or <code>&lt;object&gt;</code> element, and VideoObject markup on each page describes them. A sitemap still costs little, and earns more with every video you add.</p>
+<p>Either way, Google's overview says a sitemap doesn't guarantee that every item in it will be crawled and indexed.</p></section>
+<section id="tags"><h2>The video:video tags Google supports today</h2>
+<p>Each video sits in a <code>&lt;video:video&gt;</code> element inside the <code>&lt;url&gt;</code> entry for the page that shows it, and needs a thumbnail, a title, a description, and either the file's URL or a player's URL.</p>
+<p>This is the list as Google's video sitemap reference gives it, last updated 20 May 2026.</p>
+<div class="journal-table"><table><thead><tr><th>Tag</th><th>Required?</th><th>What it holds</th></tr></thead><tbody>
+<tr><td>video:video</td><td>Yes</td><td>Parent element for one video on the page in <code>&lt;loc&gt;</code>; repeat it per video.</td></tr>
+<tr><td>video:thumbnail_loc</td><td>Yes</td><td>URL of the thumbnail image, meeting Google's thumbnail requirements.</td></tr>
+<tr><td>video:title</td><td>Yes</td><td>The title, ideally as shown on the page. Escape HTML entities or use CDATA.</td></tr>
+<tr><td>video:description</td><td>Yes</td><td>Up to 2,048 characters; must match the page's description, though not word for word.</td></tr>
+<tr><td>video:content_loc</td><td>This or player_loc</td><td>URL of the video file, in a supported format. Google recommends it where possible. Not the same as <code>&lt;loc&gt;</code>.</td></tr>
+<tr><td>video:player_loc</td><td>This or content_loc</td><td>URL of a player for the video, such as a YouTube or Vimeo embed. Not the same as <code>&lt;loc&gt;</code>.</td></tr>
+<tr><td>video:duration</td><td>No</td><td>Length in seconds, 1 to 28,800.</td></tr>
+<tr><td>video:expiration_date</td><td>No</td><td>Date after which Google won't show the video. Omit if it doesn't expire.</td></tr>
+<tr><td>video:rating</td><td>No</td><td>0.0 to 5.0.</td></tr>
+<tr><td>video:view_count</td><td>No</td><td>Number of views.</td></tr>
+<tr><td>video:publication_date</td><td>No</td><td>Date first published: YYYY-MM-DD, or a timestamp with timezone.</td></tr>
+<tr><td>video:family_friendly</td><td>No</td><td>yes or no for SafeSearch; omitted means yes.</td></tr>
+<tr><td>video:restriction</td><td>No</td><td>Country codes (ISO 3166), with relationship allow or deny.</td></tr>
+<tr><td>video:platform</td><td>No</td><td>web, mobile or tv, with relationship allow or deny.</td></tr>
+<tr><td>video:requires_subscription</td><td>No</td><td>yes or no.</td></tr>
+<tr><td>video:uploader</td><td>No</td><td>Uploader's name, up to 255 characters.</td></tr>
+<tr><td>video:live</td><td>No</td><td>yes for a livestream, otherwise no.</td></tr>
+<tr><td>video:tag</td><td>No</td><td>One short tag per element, up to 32 per video.</td></tr>
+</tbody></table></div>
+<p>Google's page also lists tags and attributes it has removed from its documentation: <code>&lt;video:category&gt;</code>, <code>&lt;video:gallery_loc&gt;</code>, the <code>autoplay</code> and <code>allow_embed</code> attributes of <code>&lt;video:player_loc&gt;</code>, and <code>&lt;video:price&gt;</code> and <code>&lt;video:tvshow&gt;</code>. If an older plugin writes them, leave them out of new files.</p></section>
+<section id="example"><h2>A video sitemap example for two pages</h2>
+<p>Here is a complete video sitemap XML file for two pages: a product page that hosts its own video file, and a guide that embeds a YouTube video.</p>
+<pre><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1"&gt;
+  &lt;url&gt;
+    &lt;loc&gt;https://www.example.com/products/folding-desk&lt;/loc&gt;
+    &lt;video:video&gt;
+      &lt;video:thumbnail_loc&gt;https://www.example.com/videos/folding-desk.jpg&lt;/video:thumbnail_loc&gt;
+      &lt;video:title&gt;Oak &amp;amp; steel folding desk: sizes and storage&lt;/video:title&gt;
+      &lt;video:description&gt;A 45-second look at the oak and steel folding desk: its open and folded sizes, and how it stores flat against a wall.&lt;/video:description&gt;
+      &lt;video:content_loc&gt;https://www.example.com/videos/folding-desk.mp4&lt;/video:content_loc&gt;
+      &lt;video:duration&gt;45&lt;/video:duration&gt;
+      &lt;video:publication_date&gt;2026-09-14T09:30:00+01:00&lt;/video:publication_date&gt;
+    &lt;/video:video&gt;
+  &lt;/url&gt;
+  &lt;url&gt;
+    &lt;loc&gt;https://www.example.com/guides/desk-for-a-small-room&lt;/loc&gt;
+    &lt;video:video&gt;
+      &lt;video:thumbnail_loc&gt;https://www.example.com/videos/small-room-desk.jpg&lt;/video:thumbnail_loc&gt;
+      &lt;video:title&gt;How to choose a desk for a small room&lt;/video:title&gt;
+      &lt;video:description&gt;How to measure a small room for a desk, and what to check before buying: depth, legroom and where the cables go.&lt;/video:description&gt;
+      &lt;video:player_loc&gt;https://www.youtube.com/embed/VIDEO_ID&lt;/video:player_loc&gt;
+      &lt;video:duration&gt;132&lt;/video:duration&gt;
+      &lt;video:publication_date&gt;2026-10-02&lt;/video:publication_date&gt;
+      &lt;video:tag&gt;small room&lt;/video:tag&gt;
+      &lt;video:tag&gt;home office&lt;/video:tag&gt;
+    &lt;/video:video&gt;
+  &lt;/url&gt;
+&lt;/urlset&gt;</code></pre>
+<ul>
+<li><strong>Two namespaces.</strong> The <code>&lt;urlset&gt;</code> declares the sitemaps.org namespace and Google's video namespace, which makes the <code>video:</code> tags valid.</li>
+<li><strong>One <code>&lt;url&gt;</code> per page.</strong> <code>&lt;loc&gt;</code> is the page the video is watched on, never the file. A page with two videos carries two <code>&lt;video:video&gt;</code> elements in its one <code>&lt;url&gt;</code>.</li>
+<li><strong>content_loc for a file you host.</strong> The product page serves its own MP4, so it uses <code>&lt;video:content_loc&gt;</code>, which Google calls the most effective way for it to fetch the video file.</li>
+<li><strong>player_loc for an embed.</strong> The guide embeds a YouTube video, so it gives the embed URL; replace VIDEO_ID with the real ID. Choosing where to host is covered in <a href="/video-seo/youtube-vs-self-hosted">YouTube or self-hosted video for SEO</a>.</li>
+<li><strong>Escaped text.</strong> The ampersand in the first title is written <code>&amp;amp;</code>: the <a href="https://www.sitemaps.org/protocol.html">sitemaps.org protocol</a> requires UTF-8 and entity-escaped values.</li>
+<li><strong>Numbers and dates.</strong> Duration is in seconds; dates are a plain date or a timestamp with timezone.</li>
+</ul></section>
+<section id="submit"><h2>Where to put it and how to submit a video sitemap</h2>
+<p>Put the file at the root of your site, point to it from robots.txt, and submit it in Google Search Console.</p>
+<p>Google lets you keep video entries in a separate file or add the video tags to your existing sitemap. A separate video-sitemap.xml is easier to rebuild when videos change. Keep it at the root: sitemaps.org says a sitemap's location determines which URLs it can include.</p>
+<p>Then tell crawlers where it is. Sitemaps.org says a <code>Sitemap:</code> line in robots.txt applies whatever the User-agent lines say, and that you can list more than one:</p>
+<pre><code>Sitemap: https://www.example.com/sitemap.xml
+Sitemap: https://www.example.com/video-sitemap.xml</code></pre>
+<p>For Google, also submit the file's URL in the Sitemaps report in Search Console, where you will see whether Google could read it.</p>
+<div class="journal-table"><table><thead><tr><th>Rule</th><th>What sitemaps.org says</th></tr></thead><tbody>
+<tr><td>URLs per sitemap file</td><td>No more than 50,000</td></tr>
+<tr><td>Size per sitemap file</td><td>No larger than 50MB (52,428,800 bytes) uncompressed; the file may be gzipped</td></tr>
+<tr><td>Sitemaps per index file</td><td>No more than 50,000, and the index itself no larger than 50MB</td></tr>
+<tr><td>Encoding</td><td>UTF-8, with every data value entity-escaped</td></tr>
+<tr><td>Hosts</td><td>All URLs in one sitemap from a single host</td></tr>
+<tr><td>robots.txt</td><td>A Sitemap line with the full URL, independent of any User-agent line; more than one allowed</td></tr>
+</tbody></table></div>
+<p>A large catalogue or marketplace can reach those limits: split the entries across several files, list them in a sitemap index, and submit the index.</p></section>
+<section id="upkeep"><h2>Keeping the sitemap true</h2>
+<p>A video sitemap is only useful while it matches the site, so change it in the same release as the page it describes.</p>
+<ol>
+<li><strong>Add the entry when the video goes live.</strong> Google says every file the sitemap references must be reachable by Googlebot: not blocked by robots.txt, not behind a login, not stopped by a firewall.</li>
+<li><strong>Match the page.</strong> Use the title and description the page shows, and list only videos related to the page's content.</li>
+<li><strong>Update the entry when you replace a video.</strong> A new cut usually brings a new thumbnail and duration, often a new title. Google asks for stable thumbnail and file URLs and the same thumbnail URL across all your metadata, so change sitemap, markup and page together.</li>
+<li><strong>Take out what is gone.</strong> Remove the entry when a video comes down. For a removed or expired video, Google lists three options: a 404 for the page that embedded it, a noindex robots meta tag on that page, or an expiration date in the sitemap or structured data.</li>
+<li><strong>Keep dates honest.</strong> <code>video:publication_date</code> is when the video was first published; don't move it forward to look fresh.</li>
+</ol>
+<p>A sitemap written by hand drifts. One generated by the process that publishes the video does not.</p></section>
+<section id="videoobject"><h2>Sitemap and VideoObject: use both</h2>
+<p>A video sitemap and VideoObject markup are complementary: the sitemap tells Google where your videos are, and the markup describes each video on the page that shows it.</p>
+<p>Google supports structured data, video sitemaps and the Open Graph protocol for video, and asks for the same thumbnail URL for a video across all of them. Give both the same facts. Our guide to <a href="/video-seo/videoobject-schema">VideoObject schema</a> covers the markup side in full.</p>
+<div class="journal-table"><table><thead><tr><th>Point</th><th>Video sitemap</th><th>VideoObject on the page</th></tr></thead><tbody>
+<tr><td>Where it lives</td><td>One XML file (or several) at the site root</td><td>JSON-LD in the HTML of each watch page</td></tr>
+<tr><td>Main job</td><td>Helping Google find video, especially new or hard-to-reach video</td><td>Describing the video on the page it sits on</td></tr>
+<tr><td>Video file</td><td>video:content_loc</td><td>contentUrl</td></tr>
+<tr><td>Player</td><td>video:player_loc</td><td>embedUrl</td></tr>
+<tr><td>Thumbnail</td><td>video:thumbnail_loc</td><td>thumbnailUrl</td></tr>
+</tbody></table></div>
+<p>If you can only do one, do the markup, because it travels with the page, then add the sitemap as the site grows. How AI assistants find and cite video is covered in <a href="/video-seo/ai-search-video">video in AI search</a>, and unfamiliar terms are in the <a href="/glossary">Videngine glossary</a>.</p></section>
+<section id="videngine"><h2>How Videngine keeps the sitemap, and when to use something else</h2>
+<p>Videngine's website publishing maintains video-sitemap.xml for you and adds its Sitemap line to robots.txt, in the same commit as the video.</p>
+<p>A workspace connects the GitHub repository its website is built from, with “Connect with GitHub” or a fine-grained access token. When a video is approved in the studio, Publish makes one commit that adds the MP4, its poster JPG and a WebVTT caption track (in /videos/ by default); writes an HTML5 player, a readable transcript and VideoObject JSON-LD into the page the video was made from; and updates video-sitemap.xml. All of it is in the HTML the server sends, not injected by JavaScript.</p>
+<p>Because the sitemap changes in the same commit as the page, it lists what is actually on the site. Republishing replaces a page's video in place; Remove takes it out in one commit. The <a href="/video-seo">video SEO guide</a> shows how player, markup, transcript and sitemap fit together.</p>
+<p>Videngine is the wrong tool in three cases:</p>
+<ul>
+<li><strong>Framework or CMS sites.</strong> Website publishing works for sites whose pages are HTML files in the repository, such as static sites on Vercel, Netlify, Cloudflare Pages or GitHub Pages. For framework-built sites, which aren't supported yet, use the framework's or CMS's own sitemap tooling.</li>
+<li><strong>Videos you already have.</strong> Videngine publishes videos it makes from your pages. For an existing library, a CMS, an SEO plugin or a developer is the direct route.</li>
+<li><strong>Pages with several videos.</strong> Videngine places one video per page. A gallery needs one <code>&lt;video:video&gt;</code> per video, written by your own generator.</li>
+</ul></section>
+<section id="questions"><h2>Questions about video sitemaps</h2>
+<h3>Do I need a video sitemap if I already use VideoObject schema?</h3><p>Not always, but it is worth having once you publish video regularly. The markup describes the video on its page; the sitemap tells Google where all your videos are, which helps most for new videos and pages that are hard to reach by links. Google supports both, and asks you to keep details such as the thumbnail URL the same in each.</p>
+<h3>What is the difference between a video sitemap and a normal XML sitemap?</h3><p>A video sitemap uses the same sitemaps.org format with Google's video namespace added, and a video:video element inside each page's entry. You can keep it as a separate file or add the video tags to your existing sitemap. Google accepts either.</p>
+<h3>How do I submit a video sitemap to Google?</h3><p>Add a Sitemap line with the file's full URL to robots.txt, and submit the same URL in the Sitemaps report in Google Search Console. Submission is a signal, not a promise: Google says a sitemap doesn't guarantee that every item in it will be crawled and indexed.</p>
+<h3>Can a video sitemap include YouTube videos embedded on my site?</h3><p>Yes. For a YouTube video embedded on your page, put the embed URL in video:player_loc, because you don't have the file to give in video:content_loc. The loc entry is still your own page, not the YouTube watch page.</p>
+<h3>How many videos can one video sitemap hold?</h3><p>The sitemaps.org limits are 50,000 URLs and 50MB uncompressed per file. A page with several videos can carry several video:video elements in its one entry. Beyond the limits, split the file and list the parts in a sitemap index.</p></section>
+<section id="next"><h2>Choose your next step</h2><p>See how the sitemap fits into the rest of video SEO, then make sure the markup on each page says the same thing.</p><ul><li><a href="/video-seo">Read the video SEO guide for business sites</a></li><li><a href="/video-seo/videoobject-schema">Add VideoObject schema that matches your sitemap</a></li></ul></section><div class="journal-cta"><h2>Publish the video and its sitemap entry together.</h2><p>Bring one page that already has a reason for a video. Review the video in the studio, then publish the player, the markup and the sitemap entry to your site in one commit.</p><a class="pill-button" href="/#waitlist">Join the waitlist ↗</a></div><p class="journal-note" style="margin-top:24px">Published by Videngine, a video rendering product built and run by Wall &amp; Fifth. External links refer to the original documentation or product descriptions; examples are illustrative unless stated otherwise.</p></article></div><section class="journal-related"><div class="page-shell"><h2>Keep reading.</h2><div class="journal-grid"><a class="journal-card" href="/video-seo/videoobject-schema"><span class="journal-label">Video SEO</span><h3>VideoObject schema: the markup that gets your videos into search</h3><p>VideoObject schema explained: the properties Google requires, a complete JSON-LD example, common mistakes, watch pages and how to test video rich results.</p><span>Read the guide ↗</span></a><a class="journal-card" href="/video-seo/youtube-vs-self-hosted"><span class="journal-label">Video SEO</span><h3>YouTube vs self-hosted video: which is better for SEO?</h3><p>YouTube vs self-hosted video for SEO: what each one wins, what it loads on the page, and how to publish one video to YouTube and your own site together.</p><span>Read the guide ↗</span></a></div></div></section></main><footer class="footer" id="contact">
+<div class="page-shell">
+<div class="footer-kicker">Start rendering</div>
+<h2 class="footer-heading">Stop <span class="word-cycle"><span>editing.</span><span>exporting.</span><span>waiting.</span></span><br/><span class="ghost">Start rendering.</span></h2>
+<div class="footer-grid">
+<div class="footer-col"><h4>Studio</h4><a href="/#waitlist">Join the waitlist</a><h4 style="margin-top:24px">Email</h4><a href="mailto:hello@videngine.io">hello@videngine.io</a></div>
+<div class="footer-col"><h4>Product</h4><a href="/#how">How it works</a><a href="/use-cases">Use cases</a><a href="/industries">Industries</a><a href="/video-seo">Video SEO</a><a href="/pricing">Pricing</a><a href="/notes">Notes</a><a href="/glossary">Glossary</a><a href="/about">About</a></div>
+<div class="footer-col"><h4>Learn</h4><a href="/vs/ai-video-generators">vs AI generators</a><a href="/compare">All comparisons</a><a href="/programmatic-video">Programmatic video</a><a href="/notes">All guides</a></div>
+<div class="footer-col"><h4>Contact</h4><a href="mailto:hello@videngine.io">hello@videngine.io</a><a href="https://wallandfifth.com">Wall &amp; Fifth</a><a href="/terms">Terms</a><a href="/privacy">Privacy</a></div>
+</div>
+<div class="footer-bottom"><span>© 2026 Videngine</span><span>Built and run by Wall &amp; Fifth</span></div>
+<div class="giant-name">VID<em>ENGINE</em></div>
+</div>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://videngine.io/video-seo/video-sitemap#article",
+      "headline": "Video sitemaps: what to include and when you need one",
+      "description": "What a video sitemap is, when you need one, the video:video tags Google supports, a complete XML example, size limits and how to submit it to Google.",
+      "datePublished": "2026-10-10",
+      "dateModified": "2026-10-10",
+      "inLanguage": "en",
+      "mainEntityOfPage": "https://videngine.io/video-seo/video-sitemap",
+      "author": {
+        "@type": "Organization",
+        "name": "Videngine",
+        "url": "https://videngine.io/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://videngine.io/icon-512.png"
+        }
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Videngine",
+        "url": "https://videngine.io/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://videngine.io/icon-512.png"
+        }
+      },
+      "image": "https://videngine.io/og/video-seo/video-sitemap.png"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Videngine",
+          "item": "https://videngine.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Video SEO",
+          "item": "https://videngine.io/video-seo"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Video sitemaps: what to include and when you need one",
+          "item": "https://videngine.io/video-seo/video-sitemap"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://videngine.io/video-seo/video-sitemap#questions",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Do I need a video sitemap if I already use VideoObject schema?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not always, but it is worth having once you publish video regularly. The markup describes the video on its page; the sitemap tells Google where all your videos are, which helps most for new videos and pages that are hard to reach by links. Google supports both, and asks you to keep details such as the thumbnail URL the same in each."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the difference between a video sitemap and a normal XML sitemap?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A video sitemap uses the same sitemaps.org format with Google's video namespace added, and a video:video element inside each page's entry. You can keep it as a separate file or add the video tags to your existing sitemap. Google accepts either."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I submit a video sitemap to Google?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Add a Sitemap line with the file's full URL to robots.txt, and submit the same URL in the Sitemaps report in Google Search Console. Submission is a signal, not a promise: Google says a sitemap doesn't guarantee that every item in it will be crawled and indexed."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can a video sitemap include YouTube videos embedded on my site?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. For a YouTube video embedded on your page, put the embed URL in video:player_loc, because you don't have the file to give in video:content_loc. The loc entry is still your own page, not the YouTube watch page."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How many videos can one video sitemap hold?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The sitemaps.org limits are 50,000 URLs and 50MB uncompressed per file. A page with several videos can carry several video:video elements in its one entry. Beyond the limits, split the file and list the parts in a sitemap index."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script></body></html>

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link rel="icon" href="/favicon.ico" sizes="32x32"/>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml"/>
+<link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
+<link rel="manifest" href="/site.webmanifest"/>
+<meta name="theme-color" content="#fafafa"/>
+
+
+
+
+
+
+
+
+<link href="https://api.fontshare.com" rel="preconnect"/>
+<link href="https://fonts.gstatic.com" rel="preconnect" crossorigin/>
+<link href="https://api.fontshare.com/v2/css?f[]=switzer@300,400,500,600,700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="/style.css"/>
+<script defer src="/analytics.js"></script>
+<title>Video transcripts and captions for SEO and accessibility | Videngine</title>
+<meta name="description" content="Video transcripts for SEO and accessibility: captions vs subtitles, open vs closed captions, SRT vs WebVTT, accuracy checks and publishing on your site."/>
+<link rel="canonical" href="https://videngine.io/video-seo/video-transcripts-captions"/>
+<meta property="og:title" content="Video transcripts and captions for SEO and accessibility"/>
+<meta property="og:description" content="Video transcripts for SEO and accessibility: captions vs subtitles, open vs closed captions, SRT vs WebVTT, accuracy checks and publishing on your site."/>
+<meta property="og:url" content="https://videngine.io/video-seo/video-transcripts-captions"/>
+<meta property="og:type" content="article"/>
+<meta name="twitter:card" content="summary"/>
+<meta property="og:site_name" content="Videngine"/>
+<meta property="og:locale" content="en_GB"/>
+<meta property="og:image" content="https://videngine.io/og/video-seo/video-transcripts-captions.png"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="630"/>
+<meta property="og:image:alt" content="Videngine: Video transcripts and captions for SEO and accessibility"/>
+<meta name="twitter:title" content="Video transcripts and captions for SEO and accessibility"/>
+<meta name="twitter:description" content="Video transcripts for SEO and accessibility: captions vs subtitles, open vs closed captions, SRT vs WebVTT, accuracy checks and publishing on your site."/>
+<meta name="twitter:image" content="https://videngine.io/og/video-seo/video-transcripts-captions.png"/>
+<meta name="twitter:image:alt" content="Videngine: Video transcripts and captions for SEO and accessibility"/>
+<link rel="stylesheet" href="/notes.css"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;550;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="/studio-brand.css"/>
+</head>
+<body>
+<div class="nav-wrap">
+<nav class="nav" aria-label="Primary navigation">
+<a class="brand" href="/"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m8 5 12 7-12 7z"/></svg></span><span class="brand-wordmark">videngine<span class="brand-dot">.</span></span></a>
+<div class="nav-links">
+<a href="/#how">How it works</a>
+<a href="/use-cases">Use cases</a>
+<a href="/pricing">Pricing</a>
+<a href="/ai-video-tools">AI video tools</a>
+</div>
+<a class="nav-cta" href="/#waitlist">Join the waitlist</a>
+</nav>
+</div>
+
+<main id="top"><header class="journal-hero"><div class="page-shell"><nav class="journal-crumbs" aria-label="Breadcrumb"><a href="/">Videngine</a><span>/</span><a href="/video-seo">Video SEO</a></nav><h1>Video transcripts and captions for SEO and accessibility</h1><p class="journal-deck">Video transcripts for SEO and accessibility: captions vs subtitles, open vs closed captions, SRT vs WebVTT, accuracy checks and publishing on your site.</p><div class="journal-meta"><span>By <a href="/">Videngine</a></span><time datetime="2026-10-10">10 October 2026</time><span>10 min read</span></div></div></header><div class="page-shell journal-layout"><aside class="journal-toc"><span class="journal-label">In this guide</span><a href="#definitions">Captions, subtitles, transcripts and audio description</a><a href="#open-closed">Open (burned-in) vs closed captions</a><a href="#formats">SRT vs WebVTT: which caption file to use</a><a href="#seo">Video transcripts for SEO: why the text belongs in the page</a><a href="#accuracy">Accurate captions: names, numbers and timing</a><a href="#videngine">How Videngine makes captions and transcripts</a><a href="#wrong-tool">When Videngine is the wrong tool</a><a href="#questions">Questions about video captions and transcripts</a></aside><article class="journal-body"><div class="journal-answer"><span class="journal-label">The short answer</span><p>Video transcripts for SEO put what a video says into the page as text that search engines, visitors and AI assistants can read. Captions carry the same words inside the video for anyone who can't hear it, and WCAG 2.2 requires them at Level A for prerecorded video. Publish both: captions burned in or as a WebVTT track, and the transcript as HTML on the same page. Videngine does both from each video's finished narration.</p></div>
+<!-- videngine -->
+<section id="definitions"><h2>Captions, subtitles, transcripts and audio description</h2>
+<p>Captions and subtitles are timed text shown with the video, a transcript is all the words in one place, and audio description speaks what is only shown on screen.</p>
+<p>The W3C defines captions as “a text version of the speech and non-speech audio information needed to understand the content”, so they name speakers and include sounds that matter. Subtitles, strictly, carry dialogue only, often translated; in some regions the two words mean the same thing.</p>
+<div class="journal-table"><table><thead><tr><th>Format</th><th>What it contains</th><th>Who it serves</th><th>Where it lives</th></tr></thead><tbody><tr><td>Captions</td><td>Dialogue, speakers and meaningful sounds, timed</td><td>People who are Deaf or hard of hearing; sound-off viewers</td><td>Burned in, or a caption file</td></tr><tr><td>Subtitles</td><td>Dialogue only, often translated</td><td>Viewers who don't understand the language</td><td>A track per language</td></tr><tr><td>Transcript</td><td>All the words as text, untimed; a descriptive transcript adds what is shown</td><td>Readers, skimmers, people who are Deafblind, and anything that reads the page</td><td>The page's HTML</td></tr><tr><td>Audio description</td><td>Narration of what is only shown on screen</td><td>People who are blind or have low vision</td><td>An extra audio track, or the main narration</td></tr></tbody></table></div>
+<p>The <a href="https://www.w3.org/WAI/media/av/captions/">W3C's captions guidance</a> says captions for prerecorded video are required at Level A, under WCAG 2.2 success criterion 1.2.2; live captions are Level AA (1.2.4). Audio description or a descriptive transcript is Level A (1.2.3), and audio description Level AA (1.2.5).</p>
+<p>If a price or dimension appears only as on-screen text, say it in the narration too. The <a href="/glossary#transcript">glossary</a> defines each term briefly.</p></section>
+<section id="open-closed"><h2>Open (burned-in) vs closed captions</h2>
+<p>Open captions are burned into the picture and always show; closed captions are a separate track viewers turn on or off, and most businesses need both.</p>
+<div class="journal-table"><table><thead><tr><th></th><th>Open (burned-in) captions</th><th>Closed captions</th></tr></thead><tbody><tr><td>What they are</td><td>Part of the video frame</td><td>A WebVTT or SRT file the player reads</td></tr><tr><td>Viewer control</td><td>None: always on, as you styled them</td><td>On or off, restyled where the player allows</td></tr><tr><td>Best for</td><td>Social feeds and ads, where you don't control the player</td><td>Your own website's player and long-form uploads</td></tr><tr><td>Fixing a typo</td><td>Re-render the video</td><td>Edit a text file</td></tr><tr><td>Languages</td><td>One per render</td><td>One track per language</td></tr></tbody></table></div>
+<p>Burn captions in for anything that plays in a feed or as an ad: you don't control the player, and many people watch with the sound off. Keep them clear of the app's buttons; our <a href="/use-cases/short-form-video">short-form video</a> guide covers the vertical frame's safe areas.</p>
+<p>Use closed captions on your own site's player. Viewers can switch them off, and a mistake is fixed in a text file rather than a new render.</p>
+<p>Many teams use both because one video goes to both places. Don't show both at once: if the website cut already has captions in the picture, don't set the track to show by default.</p></section>
+<section id="formats"><h2>SRT vs WebVTT: which caption file to use</h2>
+<p>Use WebVTT for your own website, because the browser's <code>&lt;track&gt;</code> element reads WebVTT; keep SRT for tools and platforms that ask for it.</p>
+<p>SRT (SubRip) is the older, simpler format: a cue number, a time range with a comma before the milliseconds, the text, a blank line. It has little formal documentation and no set encoding.</p>
+<pre><code>1
+00:00:01,000 --&gt; 00:00:04,200
+This 2019 van has covered 48,000 miles
+and has a full service history.
+
+2
+00:00:04,400 --&gt; 00:00:07,000
+It's on our forecourt in Leeds.</code></pre>
+<p>WebVTT is a W3C specification and, says the W3C, the most common caption format on the web. A file starts with <code>WEBVTT</code>, uses a full stop before the milliseconds, must be UTF-8 and is served as <code>text/vtt</code>. Cue numbers are optional, and cue settings can move a caption, here to the top of the frame.</p>
+<pre><code>WEBVTT
+
+00:01.000 --&gt; 00:04.200
+This 2019 van has covered 48,000 miles
+and has a full service history.
+
+00:04.400 --&gt; 00:07.000 line:0
+It's on our forecourt in Leeds.</code></pre>
+<div class="journal-table"><table><thead><tr><th></th><th>SRT</th><th>WebVTT</th></tr></thead><tbody><tr><td>First line</td><td>The first cue number</td><td><code>WEBVTT</code></td></tr><tr><td>Timestamps</td><td><code>00:00:01,000</code></td><td><code>00:00:01.000</code> or <code>00:01.000</code></td></tr><tr><td>Position and styling</td><td>Basic formatting at most; players differ</td><td>Cue settings for line, position, size and alignment; speaker tags; CSS</td></tr><tr><td>Comments</td><td>None</td><td><code>NOTE</code> blocks, ignored by players</td></tr><tr><td>Use it for</td><td>Platforms and editors that ask for SRT</td><td>The <code>&lt;track&gt;</code> element on your site</td></tr></tbody></table></div>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/track">MDN's track element reference</a> is explicit that tracks are formatted in WebVTT:</p>
+<pre><code>&lt;video controls preload="metadata" poster="/videos/van-10482.jpg"&gt;
+  &lt;source src="/videos/van-10482.mp4" type="video/mp4"&gt;
+  &lt;track kind="captions" src="/videos/van-10482.vtt" srclang="en" label="English"&gt;
+&lt;/video&gt;</code></pre>
+<p>Use <code>kind="captions"</code> when the track includes speakers and sounds, and set <code>srclang</code>. To convert SRT, add <code>WEBVTT</code> and a blank line at the top, change the timestamp commas to full stops, and save as UTF-8.</p></section>
+<section id="seo"><h2>Video transcripts for SEO: why the text belongs in the page</h2>
+<p>A transcript in the page's HTML gives search engines, visitors and AI assistants the video's words as ordinary page text.</p>
+<p>Google's <a href="https://developers.google.com/search/docs/fundamentals/seo-starter-guide">SEO starter guide</a> asks you to embed a video “on a standalone page, near text that's relevant to that video”. A transcript is the most relevant text there is. Google's <a href="https://developers.google.com/search/docs/appearance/video">video best practices</a> don't mention transcripts; they cover getting the video itself found, through a <code>&lt;video&gt;</code> element, a watch page, a thumbnail and structured data. Neither promises a ranking benefit from a transcript. Our <a href="/video-seo/videoobject-schema">VideoObject schema</a> guide covers the markup, including its <code>transcript</code> property.</p>
+<p>Visitors skim, search the page for a word or copy a figure. The W3C's guidance on transcripts says that for media on your website, “usually it's best to include the transcript on the same page”.</p>
+<p>For AI assistants, this is practical reasoning, not a promise: an assistant reading your page can only quote what the page says in text. If the answer exists only in the narration, there is nothing to quote. Put the transcript in the HTML the server sends, not in a widget that loads it by script. <a href="/video-seo/ai-search-video">Video in AI search</a> covers what the assistants' crawlers read.</p>
+<p>Keep the transcript identical to the video, and to the VideoObject <code>transcript</code> if you use one. A transcript that has drifted from an edited video misleads anything that quotes it.</p></section>
+<section id="accuracy"><h2>Accurate captions: names, numbers and timing</h2>
+<p>Treat automatic captions as a first draft: the W3C says unedited automatic captions don't meet accessibility requirements, and one missed “not” can reverse a sentence.</p>
+<div class="journal-table"><table><thead><tr><th>Check</th><th>What goes wrong</th><th>How to check</th></tr></thead><tbody><tr><td>Names</td><td>People, places, models and brands spelt as the recogniser guessed</td><td>Compare with the source page</td></tr><tr><td>Numbers</td><td>“Fifteen” heard as “fifty”; mixed number styles</td><td>Check every figure against the source data</td></tr><tr><td>Small words</td><td>“Can” and “can't” swapped, “not” dropped</td><td>Read the captions while listening</td></tr><tr><td>Punctuation</td><td>Run-on text with no sentence breaks</td><td>End cues at a sentence or clause</td></tr><tr><td>Timing</td><td>Captions early, late or drifting after an edit</td><td>Take timings from the final audio</td></tr></tbody></table></div>
+<p>Line length and reading speed have no single standard; style guides differ. Rules of thumb, not rules:</p>
+<ul><li><strong>Lines:</strong> two at most on screen.</li><li><strong>Line length:</strong> around 32 to 42 characters in landscape, shorter in a 9:16 vertical.</li><li><strong>Reading speed:</strong> roughly 160 to 180 words a minute, slower for less fluent readers.</li><li><strong>Breaks:</strong> at natural phrases, with each caption on screen for at least about a second.</li></ul>
+<p>A workflow that keeps the captions, caption file and transcript in step:</p>
+<ol><li><strong>Lock the script and audio.</strong> Any later edit moves the timings.</li><li><strong>Transcribe the final audio.</strong> Not the script, and not an earlier mix.</li><li><strong>Correct the words.</strong> Names, numbers, small words and punctuation.</li><li><strong>Watch with the sound off.</strong> Every caption should be readable in time.</li><li><strong>Export each form.</strong> Burned in for feeds, WebVTT for your player, SRT where asked.</li><li><strong>Publish the transcript as HTML.</strong> Next to the player.</li><li><strong>Replace them together.</strong> A re-rendered video gets new captions, track and transcript.</li></ol></section>
+<section id="videngine"><h2>How Videngine makes captions and transcripts</h2>
+<p>Videngine transcribes captions back from each video's finished narration and burns them in, and publishing to your website adds a WebVTT track and a readable transcript to the page.</p>
+<p>Videngine turns a page, a listing, text or a row of data into a narrated MP4 from coded templates. The narration is a synthetic voice chosen per brand or audio you upload, in English, with a pronunciation lexicon so names are said correctly; see <a href="/notes/ai-voiceover">AI voiceover</a>.</p>
+<p>Because captions are transcribed from the finished audio, not copied from the script, they match what was said, with timings from the voice. They can be burned in or delivered as an .srt sidecar, and every video is reviewed in the studio before it goes out.</p>
+<p>A workspace can connect the GitHub repository its website is built from. Publish on an approved video then makes one commit that:</p>
+<ul><li>adds the MP4, its poster JPG and a WebVTT caption track, in <code>/videos/</code> by default;</li><li>writes an HTML5 player into the page the video was made from;</li><li>adds the transcript as readable text in a <code>&lt;details&gt;</code> element, and in VideoObject JSON-LD;</li><li>updates <code>video-sitemap.xml</code> and adds a Sitemap line to robots.txt.</li></ul>
+<p>All of it is in the HTML the server sends, not injected by JavaScript. It works for static sites whose pages are HTML files in the repository, such as on Vercel, Netlify, Cloudflare Pages or GitHub Pages; framework-built sites aren't supported yet. The <a href="/video-seo">video SEO guide</a> shows how this fits with markup, sitemaps and hosting.</p></section>
+<section id="wrong-tool"><h2>When Videngine is the wrong tool</h2>
+<p>If you already have the video and need captions or subtitles for it, use a subtitle tool: Videngine only captions the videos it makes.</p>
+<div class="journal-table"><table><thead><tr><th>The job</th><th>Better fit</th><th>Why</th></tr></thead><tbody><tr><td>Captioning a video made elsewhere</td><td>A subtitle generator that imports the file and exports SRT, WebVTT or burned-in captions</td><td>Videngine doesn't caption uploaded videos</td></tr><tr><td>Subtitles in other languages</td><td>A subtitle tool with translation, and a fluent reviewer</td><td>Videngine narrates and captions in English only</td></tr><tr><td>Live events and streams</td><td>A live captioner or the platform's live captions</td><td>Videngine renders finished files</td></tr><tr><td>Broadcast caption specifications</td><td>A professional captioning service</td><td>Their style rules go beyond a review step</td></tr><tr><td>A framework-built website</td><td>Download the MP4 and .srt, convert to WebVTT, and add them in your templates</td><td>Website publishing writes to HTML files in a repository</td></tr></tbody></table></div>
+<p>Videngine fits when the video is still to be made.</p></section>
+<section id="questions"><h2>Questions about video captions and transcripts</h2>
+<h3>Do video transcripts help SEO?</h3><p>A transcript puts the video's words on the page as text, which matches Google's advice to embed a video near relevant text. Google's video best practices don't mention transcripts, so treat one as completing the page, not as a ranking trick. Put it in the HTML, next to the video.</p><h3>What is the difference between closed captions and open captions?</h3><p>Closed captions are a separate track, such as a WebVTT file, that viewers turn on and off. Open captions, also called burned-in captions, are part of the picture and always show. Use open captions for social feeds and ads, and closed captions on your own website's player.</p><h3>Should I use SRT or WebVTT?</h3><p>Use WebVTT for video on your own website, because the HTML track element reads WebVTT. Use SRT when a platform or editing tool asks for it. Converting SRT to WebVTT takes a header line and full stops instead of commas in the timestamps.</p><h3>How do I add subtitles to a video I already have?</h3><p>Use a subtitle tool: it transcribes the audio, lets you correct words and timing, and exports SRT, WebVTT or burned-in captions. Check names, numbers and small words such as “not”. Videngine doesn't caption uploaded videos; it captions the videos it makes.</p><h3>Are automatic captions good enough for accessibility?</h3><p>Not without editing. The W3C says automatically generated captions do not meet user needs or accessibility requirements, and one missed word can make a caption contradict the audio. Use them as a first draft and correct them while listening.</p></section>
+<section id="next"><h2>Choose your next step</h2><p>See where captions and transcripts sit in the wider picture, then check what AI assistants read on a video page.</p><ul><li><a href="/video-seo">Read the video SEO guide for business sites</a></li><li><a href="/video-seo/ai-search-video">Get your videos cited by AI assistants</a></li></ul></section><div class="journal-cta"><h2>Publish the captions with the video.</h2><p>Bring one page that already has a reason for a video. Review the video and its captions in the studio, then publish the player, caption track and transcript to that page in one commit.</p><a class="pill-button" href="/#waitlist">Join the waitlist ↗</a></div><p class="journal-note" style="margin-top:24px">Published by Videngine, a video rendering product built and run by Wall &amp; Fifth. External links refer to the original documentation or product descriptions; examples are illustrative unless stated otherwise.</p></article></div><section class="journal-related"><div class="page-shell"><h2>Keep reading.</h2><div class="journal-grid"><a class="journal-card" href="/video-seo/ai-search-video"><span class="journal-label">Video SEO</span><h3>Video in AI search: getting your videos cited by AI assistants</h3><p>Video in AI search: what ChatGPT, Claude, Perplexity and Google&#x27;s AI features read, which crawlers to allow, and a checklist to get your videos cited.</p><span>Read the guide ↗</span></a><a class="journal-card" href="/video-seo/videoobject-schema"><span class="journal-label">Video SEO</span><h3>VideoObject schema: the markup that gets your videos into search</h3><p>VideoObject schema explained: the properties Google requires, a complete JSON-LD example, common mistakes, watch pages and how to test video rich results.</p><span>Read the guide ↗</span></a></div></div></section></main><footer class="footer" id="contact">
+<div class="page-shell">
+<div class="footer-kicker">Start rendering</div>
+<h2 class="footer-heading">Stop <span class="word-cycle"><span>editing.</span><span>exporting.</span><span>waiting.</span></span><br/><span class="ghost">Start rendering.</span></h2>
+<div class="footer-grid">
+<div class="footer-col"><h4>Studio</h4><a href="/#waitlist">Join the waitlist</a><h4 style="margin-top:24px">Email</h4><a href="mailto:hello@videngine.io">hello@videngine.io</a></div>
+<div class="footer-col"><h4>Product</h4><a href="/#how">How it works</a><a href="/use-cases">Use cases</a><a href="/industries">Industries</a><a href="/video-seo">Video SEO</a><a href="/pricing">Pricing</a><a href="/notes">Notes</a><a href="/glossary">Glossary</a><a href="/about">About</a></div>
+<div class="footer-col"><h4>Learn</h4><a href="/vs/ai-video-generators">vs AI generators</a><a href="/compare">All comparisons</a><a href="/programmatic-video">Programmatic video</a><a href="/notes">All guides</a></div>
+<div class="footer-col"><h4>Contact</h4><a href="mailto:hello@videngine.io">hello@videngine.io</a><a href="https://wallandfifth.com">Wall &amp; Fifth</a><a href="/terms">Terms</a><a href="/privacy">Privacy</a></div>
+</div>
+<div class="footer-bottom"><span>© 2026 Videngine</span><span>Built and run by Wall &amp; Fifth</span></div>
+<div class="giant-name">VID<em>ENGINE</em></div>
+</div>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://videngine.io/video-seo/video-transcripts-captions#article",
+      "headline": "Video transcripts and captions for SEO and accessibility",
+      "description": "Video transcripts for SEO and accessibility: captions vs subtitles, open vs closed captions, SRT vs WebVTT, accuracy checks and publishing on your site.",
+      "datePublished": "2026-10-10",
+      "dateModified": "2026-10-10",
+      "inLanguage": "en",
+      "mainEntityOfPage": "https://videngine.io/video-seo/video-transcripts-captions",
+      "author": {
+        "@type": "Organization",
+        "name": "Videngine",
+        "url": "https://videngine.io/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://videngine.io/icon-512.png"
+        }
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Videngine",
+        "url": "https://videngine.io/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://videngine.io/icon-512.png"
+        }
+      },
+      "image": "https://videngine.io/og/video-seo/video-transcripts-captions.png"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Videngine",
+          "item": "https://videngine.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Video SEO",
+          "item": "https://videngine.io/video-seo"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Video transcripts and captions for SEO and accessibility",
+          "item": "https://videngine.io/video-seo/video-transcripts-captions"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://videngine.io/video-seo/video-transcripts-captions#questions",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Do video transcripts help SEO?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A transcript puts the video's words on the page as text, which matches Google's advice to embed a video near relevant text. Google's video best practices don't mention transcripts, so treat one as completing the page, not as a ranking trick. Put it in the HTML, next to the video."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the difference between closed captions and open captions?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Closed captions are a separate track, such as a WebVTT file, that viewers turn on and off. Open captions, also called burned-in captions, are part of the picture and always show. Use open captions for social feeds and ads, and closed captions on your own website's player."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should I use SRT or WebVTT?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Use WebVTT for video on your own website, because the HTML track element reads WebVTT. Use SRT when a platform or editing tool asks for it. Converting SRT to WebVTT takes a header line and full stops instead of commas in the timestamps."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I add subtitles to a video I already have?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Use a subtitle tool: it transcribes the audio, lets you correct words and timing, and exports SRT, WebVTT or burned-in captions. Check names, numbers and small words such as “not”. Videngine doesn't caption uploaded videos; it captions the videos it makes."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are automatic captions good enough for accessibility?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not without editing. The W3C says automatically generated captions do not meet user needs or accessibility requirements, and one missed word can make a caption contradict the audio. Use them as a first draft and correct them while listening."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script></body></html>

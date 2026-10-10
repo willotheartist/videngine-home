@@ -5,10 +5,12 @@
 ## Key facts
 
 - What it does: reads a source (a URL, plain text or markdown, a CSV or a JSON payload), writes a script, builds scenes from coded templates with the brand's type, colours and logo, records a synthetic voiceover or uses uploaded audio, transcribes captions from the finished track and renders MP4 files.
-- Formats: 16:9, 9:16, 1:1 and 4:5, up to 1080p; captions burned in or as an .srt file.
+- Formats: 16:9, 9:16, 1:1 and 4:5, up to 1080p; captions burned in, as an .srt file, or as a WebVTT track for the web.
 - What it is not: not an AI video generator (it does not invent footage; AI writes the script and voice, the pictures come from the source) and not a timeline editor.
 - Review: a studio where each video is reviewed before it goes out; batch runs turn one row, or one page from the site's sitemap, into one video. Rebuilds are kept as new versions beside the original.
-- Delivery: MP4 downloads, delivery to a Google Drive folder the client owns, or publishing approved videos to a connected YouTube channel with a title, description, hashtags and tags written for the Short and the landscape cut.
+- Delivery: MP4 downloads, delivery to a Google Drive folder the client owns, publishing approved videos to a connected YouTube channel with a title, description, hashtags and tags written for the Short and the landscape cut, or publishing into the client's own website.
+- Website publishing: a workspace connects the GitHub repository its static site is built from (Connect with GitHub, or a fine-grained token). Publishing an approved video makes one commit that adds the MP4, a poster image and a WebVTT caption track, writes an HTML5 player, a readable transcript and VideoObject JSON-LD into the page the video was made from, and keeps video-sitemap.xml and the robots.txt Sitemap line up to date. Everything is in the server-rendered HTML. Framework-built sites are not supported yet.
+- Voice: a house voice by default, other synthetic voices per brand, or uploaded audio; a per-brand pronunciation lexicon; the Scale plan adds a cloned voice made only with the speaker's written consent. Narration is in English only.
 - Who it is for: businesses with many things worth a video. Workspaces are set up for vehicles and equipment, boats and marine, property, products and e-commerce, software and apps, media and publishing, or services.
 - Pricing (launch pricing, US dollars): Starter $79 a month for 50 videos; Growth $249 a month for 250; Scale $599 a month for 750; Custom from 1,500 videos a month. Extra videos cost $1.50, $1.00 and $0.80. A video is one finished render up to 2 minutes; re-rendering the same video in the same month is free. Seats and brands are included in each plan.
 - Status: coming soon. Choosing a plan joins the launch list; there is no charge today.
@@ -19,6 +21,7 @@
 - [Videngine: turn a URL into a finished video](https://videngine.io): Videngine is a programmatic video engine. Give it a link, a product page or a row of data and get back a rendered, narrated, captioned video. No editor.
 - [Pricing: plans from $79 a month](https://videngine.io/pricing): Videngine pricing. Four plans priced by finished video, from $79 a month for 50 videos. Team seats and brands included, re-renders free, no per-minute maths.
 - [What is programmatic video? A plain definition](https://videngine.io/programmatic-video): Programmatic video is rendered from a coded template and structured data, so one template makes many videos. A plain definition, and when to use it.
+- [About Videngine: who makes it and how we write](https://videngine.io/about): Videngine is a programmatic video engine built and run by Wall & Fifth Ltd in London. What it is, what it is built on, and how our guides are checked.
 
 ## Use cases
 
@@ -39,26 +42,43 @@
 - [SaaS video: release, feature and help videos from your docs](https://videngine.io/industries/saas-video): SaaS video from what you already write: turn release notes, changelogs and help articles into short narrated, captioned clips that keep pace with shipping.
 - [Publisher video: turn articles into videos at newsroom scale](https://videngine.io/industries/publisher-video): Publisher video from your own articles: choose which stories suit video, clear image rights, keep desk sign-off and publish daily to YouTube and the page.
 
+## Video SEO
+
+- [Video SEO: get your videos found in search and AI answers](https://videngine.io/video-seo): Video SEO in one place: watch pages, VideoObject schema, video sitemaps, transcripts, AI crawlers and hosting, with a checklist and a guide for each.
+- [VideoObject schema: the markup that gets videos into search](https://videngine.io/video-seo/videoobject-schema): VideoObject schema explained: the properties Google requires, a complete JSON-LD example, common mistakes, watch pages and how to test video rich results.
+- [Video sitemaps: what to include and when you need one](https://videngine.io/video-seo/video-sitemap): What a video sitemap is, when you need one, the video:video tags Google supports, a complete XML example, size limits and how to submit it to Google.
+- [Video transcripts and captions for SEO and accessibility](https://videngine.io/video-seo/video-transcripts-captions): Video transcripts for SEO and accessibility: captions vs subtitles, open vs closed captions, SRT vs WebVTT, accuracy checks and publishing on your site.
+- [Video in AI search: getting videos cited by AI assistants](https://videngine.io/video-seo/ai-search-video): Video in AI search: what ChatGPT, Claude, Perplexity and Google's AI features read, which crawlers to allow, and a checklist to get your videos cited.
+- [YouTube vs self-hosted video: which is better for SEO?](https://videngine.io/video-seo/youtube-vs-self-hosted): YouTube vs self-hosted video for SEO: what each one wins, what it loads on the page, and how to publish one video to YouTube and your own site together.
+
 ## Guides
 
 - [AI video tools: choose the right generator or platform](https://videngine.io/ai-video-tools): Compare AI video tools, generators and creation platforms by the job: generated footage, presenters, text, photos, URLs, ads or repeatable automation.
+- [Best AI video generators in 2026, by what you need to make](https://videngine.io/notes/best-ai-video-generators): The best AI video generator depends on the job. Named tools for footage, avatars, creators, articles, design, APIs and data, checked against their own pages.
 - [Text to video AI: prompt generators vs script to video](https://videngine.io/notes/text-to-video-ai): Text to video AI covers two jobs: generating footage from a prompt, and script to video with narration, scenes and captions. How to choose and what to check.
 - [Photos to video: turn pictures into a narrated video](https://videngine.io/notes/photos-to-video): Photos to video, step by step: order the pictures, time each one, add narration and captions, frame for 9:16 and 16:9, and know when AI image-to-video fits.
+- [AI voiceover for video: voices, pronunciation and disclosure](https://videngine.io/notes/ai-voiceover): AI voiceover for video: pick a voice, fix pronunciation with a lexicon, write scripts for the ear, get consent before voice cloning and disclose where needed.
 - [AI video generator costs: compare the full production bill](https://videngine.io/notes/ai-video-generator-cost): Compare AI video tool costs across subscriptions, credits, generated footage, rendering, retries and review using cost per approved video.
 - [URL to video: how to turn a webpage into a useful video](https://videngine.io/notes/url-to-video): A practical URL-to-video workflow: choose the right source, check extracted facts, plan scenes and evaluate tools before automating production.
 - [Article to video: turn a blog post into a clear explainer](https://videngine.io/notes/article-to-video): Turn articles into videos with an editorial workflow for choosing one answer, writing a spoken script, matching visuals and reviewing captions.
+- [Video templates: editor, API and data-driven templates](https://videngine.io/notes/video-templates): Video templates compared: editor templates, template APIs and coded templates that fill from your data, plus a checklist for records that break them.
 - [Bulk video creation from a CSV: a reliable workflow](https://videngine.io/notes/bulk-video-creation-from-csv): How to structure a spreadsheet for bulk video creation, validate rows, track failures and estimate render volume without losing control of quality.
 - [Video automation APIs: what to evaluate before integrating](https://videngine.io/notes/video-automation-api): Compare video generation and rendering APIs, asynchronous jobs, webhooks, retries, storage and the controls a production integration needs.
+- [Video automation glossary: AI video and video SEO terms explained](https://videngine.io/glossary): A video automation glossary of 55 terms in plain English: templates, renders, AI video generators, aspect ratios, captions, VideoObject and video sitemaps.
 - [Video automation guides and notes](https://videngine.io/notes): Guides to AI video tools, text, photos and URLs to video, bulk and API workflows, business use cases and honest comparisons, grouped by topic.
 
 ## Comparisons
 
-- [Compare Videngine with Synthesia, Creatomate, Shotstack and Pictory](https://videngine.io/compare): Honest comparisons between Videngine and the video tools people weigh it against, with prices checked against each tool's own website on 8 October 2026.
+- [Compare Videngine with Synthesia, Canva, InVideo and more](https://videngine.io/compare): Honest comparisons of Videngine with Synthesia, Canva, InVideo, Creatomate, Shotstack, Pictory, Renderforest and Animaker, checked against their own sites.
 - [Videngine vs AI video generators: which one do you need?](https://videngine.io/vs/ai-video-generators): Videngine is not an AI video generator. Generators invent new footage on every run; Videngine renders from templates and repeats. When to use each.
-- [Videngine vs Synthesia: a Synthesia alternative for listing videos](https://videngine.io/vs/synthesia): Synthesia makes avatar-led training and business video. Videngine renders listing videos from inventory data. Plans, prices and features compared.
-- [Videngine vs Creatomate: a Creatomate alternative for listing videos](https://videngine.io/vs/creatomate): Creatomate is a template editor and API for data-driven video. Videngine is a finished listing-video product. Scripts, voice, review and price compared.
-- [Videngine vs Shotstack: a Shotstack alternative for listing videos](https://videngine.io/vs/shotstack): Shotstack is a video editing API for developers. Videngine is a finished product for listing videos. Pricing, bulk rendering, voice and delivery compared.
-- [Videngine vs Pictory: a Pictory alternative for listing videos](https://videngine.io/vs/pictory): Pictory turns articles and scripts into stock-footage videos. Videngine turns listings into videos of the real item for sale. Plans and prices compared.
+- [Videngine vs Synthesia: a Synthesia alternative for bulk video](https://videngine.io/vs/synthesia): Synthesia makes avatar-led training and business video. Videngine renders narrated videos from your pages, products and data. Plans and prices compared.
+- [Videngine vs Canva: a Canva video alternative for bulk video](https://videngine.io/vs/canva): Canva’s video editor builds each video by hand. Videngine renders narrated videos from pages and data in batches. A Canva video alternative, compared.
+- [Videngine vs InVideo: an InVideo alternative for bulk video](https://videngine.io/vs/invideo): Looking for an InVideo alternative? InVideo AI makes one video at a time from a prompt; Videngine renders many from your own pages and data. Compared.
+- [Videngine vs Creatomate: a Creatomate alternative for bulk video](https://videngine.io/vs/creatomate): Creatomate is a template editor and API for data-driven video. Videngine renders narrated videos from pages and data. Script, voice and price compared.
+- [Videngine vs Shotstack: a Shotstack alternative for bulk video](https://videngine.io/vs/shotstack): Shotstack is a video editing API for developers. Videngine renders narrated videos from pages and data without code. Pricing, voice and delivery compared.
+- [Videngine vs Pictory: a Pictory alternative for pages and data](https://videngine.io/vs/pictory): Pictory turns articles and scripts into stock-footage videos. Videngine renders videos from pages, products and data, with their own photos. Plans compared.
+- [Videngine vs Renderforest: a Renderforest alternative at scale](https://videngine.io/vs/renderforest): Looking for a Renderforest alternative? Renderforest fills animated templates by hand; Videngine fills coded templates from your pages and data, in batches.
+- [Videngine vs Animaker: an Animaker alternative at scale](https://videngine.io/vs/animaker): Videngine vs Animaker: Animaker builds animated, character-led videos in an editor. Videngine renders narrated videos from pages and data. Plans compared.
 
 ## Optional
 

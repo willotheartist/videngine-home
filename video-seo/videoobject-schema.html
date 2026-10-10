@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link rel="icon" href="/favicon.ico" sizes="32x32"/>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml"/>
+<link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
+<link rel="manifest" href="/site.webmanifest"/>
+<meta name="theme-color" content="#fafafa"/>
+
+
+
+
+
+
+
+
+<link href="https://api.fontshare.com" rel="preconnect"/>
+<link href="https://fonts.gstatic.com" rel="preconnect" crossorigin/>
+<link href="https://api.fontshare.com/v2/css?f[]=switzer@300,400,500,600,700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="/style.css"/>
+<script defer src="/analytics.js"></script>
+<title>VideoObject schema: the markup that gets videos into search | Videngine</title>
+<meta name="description" content="VideoObject schema explained: the properties Google requires, a complete JSON-LD example, common mistakes, watch pages and how to test video rich results."/>
+<link rel="canonical" href="https://videngine.io/video-seo/videoobject-schema"/>
+<meta property="og:title" content="VideoObject schema: the markup that gets videos into search"/>
+<meta property="og:description" content="VideoObject schema explained: the properties Google requires, a complete JSON-LD example, common mistakes, watch pages and how to test video rich results."/>
+<meta property="og:url" content="https://videngine.io/video-seo/videoobject-schema"/>
+<meta property="og:type" content="article"/>
+<meta name="twitter:card" content="summary"/>
+<meta property="og:site_name" content="Videngine"/>
+<meta property="og:locale" content="en_GB"/>
+<meta property="og:image" content="https://videngine.io/og/video-seo/videoobject-schema.png"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="630"/>
+<meta property="og:image:alt" content="Videngine: VideoObject schema: the markup that gets videos into search"/>
+<meta name="twitter:title" content="VideoObject schema: the markup that gets videos into search"/>
+<meta name="twitter:description" content="VideoObject schema explained: the properties Google requires, a complete JSON-LD example, common mistakes, watch pages and how to test video rich results."/>
+<meta name="twitter:image" content="https://videngine.io/og/video-seo/videoobject-schema.png"/>
+<meta name="twitter:image:alt" content="Videngine: VideoObject schema: the markup that gets videos into search"/>
+<link rel="stylesheet" href="/notes.css"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;550;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="/studio-brand.css"/>
+</head>
+<body>
+<div class="nav-wrap">
+<nav class="nav" aria-label="Primary navigation">
+<a class="brand" href="/"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m8 5 12 7-12 7z"/></svg></span><span class="brand-wordmark">videngine<span class="brand-dot">.</span></span></a>
+<div class="nav-links">
+<a href="/#how">How it works</a>
+<a href="/use-cases">Use cases</a>
+<a href="/pricing">Pricing</a>
+<a href="/ai-video-tools">AI video tools</a>
+</div>
+<a class="nav-cta" href="/#waitlist">Join the waitlist</a>
+</nav>
+</div>
+
+<main id="top"><header class="journal-hero"><div class="page-shell"><nav class="journal-crumbs" aria-label="Breadcrumb"><a href="/">Videngine</a><span>/</span><a href="/video-seo">Video SEO</a></nav><h1>VideoObject schema: the markup that gets your videos into search</h1><p class="journal-deck">VideoObject schema explained: the properties Google requires, a complete JSON-LD example, common mistakes, watch pages and how to test video rich results.</p><div class="journal-meta"><span>By <a href="/">Videngine</a></span><time datetime="2026-10-10">10 October 2026</time><span>10 min read</span></div></div></header><div class="page-shell journal-layout"><aside class="journal-toc"><span class="journal-label">In this guide</span><a href="#properties">What VideoObject schema is and what Google asks for</a><a href="#example">A complete JSON-LD example for a business page</a><a href="#mistakes">Common video schema markup mistakes</a><a href="#watch-pages">Watch pages and pages where video supports the content</a><a href="#testing">How to test video structured data</a><a href="#videngine">How Videngine writes VideoObject when it publishes</a><a href="#wrong-fix">When markup, or Videngine, isn't the fix</a><a href="#questions">Questions about VideoObject schema</a></aside><article class="journal-body"><div class="journal-answer"><span class="journal-label">The short answer</span><p>VideoObject schema is structured data, usually a JSON-LD block, that tells search engines what a video on a page is: its title, thumbnail, upload date, length and file location. Google requires name, thumbnailUrl and uploadDate, and recommends description, duration and contentUrl. The markup helps Google understand the video; it does not guarantee a rich result. Videngine writes it into the page's HTML, beside the player and transcript, when it publishes a video.</p></div>
+<!-- videngine -->
+<section id="properties"><h2>What VideoObject schema is and what Google asks for</h2>
+<p>VideoObject is the schema.org type for a video, which <a href="https://schema.org/VideoObject">schema.org defines</a> as “a video file”, and Google reads it to understand the videos on a page and decide how to show them.</p>
+<p><a href="https://developers.google.com/search/docs/appearance/structured-data/video">Google's video structured data documentation</a> says videos can appear in the main results, Video mode, Google Images and Google Discover. These are its required and recommended properties as listed on 10 October 2026.</p>
+<div class="journal-table"><table><thead><tr><th>Property</th><th>What it is</th><th>Example</th></tr></thead><tbody>
+<tr><td><code>name</code><br/>Required</td><td>The video's title, unique to each video on your site</td><td>“Oak extending dining table: sizes, finish and care”</td></tr>
+<tr><td><code>thumbnailUrl</code><br/>Required</td><td>The URL of the video's own thumbnail image file</td><td>https://www.example.com/videos/oak-table.jpg</td></tr>
+<tr><td><code>uploadDate</code><br/>Required</td><td>When the video was first published, in ISO 8601, ideally with a timezone</td><td>2026-10-08T09:30:00+01:00</td></tr>
+<tr><td><code>description</code><br/>Recommended</td><td>A description of the video, unique to each video</td><td>One or two sentences on what the video shows</td></tr>
+<tr><td><code>duration</code><br/>Recommended</td><td>The video's length in ISO 8601 duration format</td><td>PT1M12S (one minute, twelve seconds)</td></tr>
+<tr><td><code>contentUrl</code><br/>Recommended</td><td>The URL of the video file itself, not the page it sits on</td><td>https://www.example.com/videos/oak-table.mp4</td></tr>
+<tr><td><code>embedUrl</code><br/>Recommended</td><td>The URL of the player for this video, used when you can't give contentUrl</td><td>https://www.example.com/player/oak-table</td></tr>
+<tr><td><code>creator</code> (or <code>author</code>)<br/>Recommended</td><td>The person or organisation that made or published the video, with name and url</td><td>An Organization named “Example Furniture Ltd”</td></tr>
+<tr><td><code>expires</code><br/>Recommended</td><td>When the video stops being available, if it does</td><td>2027-01-31T23:59:00+00:00</td></tr>
+<tr><td><code>hasPart</code><br/>Recommended</td><td>Clip objects marking important segments, used for key moments</td><td>A Clip called “Storing the leaf” from 0:40</td></tr>
+<tr><td><code>interactionStatistic</code><br/>Recommended</td><td>Counts of watches, likes, comments or shares, if applicable</td><td>A WatchAction with a userInteractionCount</td></tr>
+<tr><td><code>regionsAllowed</code> or <code>ineligibleRegion</code><br/>Recommended</td><td>Where the video may or may not be shown; use one, not both</td><td>["GB", "IE"]</td></tr>
+<tr><td><code>publication</code><br/>Recommended</td><td>A BroadcastEvent, for livestreams and the LIVE badge</td><td>Only relevant to live video</td></tr>
+</tbody></table></div>
+<p>Without the required properties, Google says it may not be able to extract any information about the video. Transcript, width, height and inLanguage are valid schema.org properties not on Google's list; they still help other readers.</p></section>
+<section id="example"><h2>A complete JSON-LD example for a business page</h2>
+<p>A complete VideoObject block sits in a script element in the page's HTML, near the player it describes, and fills every field you can supply truthfully. Here is one for a furniture retailer's product page with a 72-second, self-hosted walk-through of a dining table:</p>
+<pre><code>&lt;script type="application/ld+json"&gt;
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "Oak extending dining table: sizes, finish and care",
+  "description": "A 72-second walk-through of the oak extending dining table: both lengths, the oiled finish and where the extra leaf is stored.",
+  "thumbnailUrl": [
+    "https://www.example.com/videos/oak-table.jpg"
+  ],
+  "uploadDate": "2026-10-08T09:30:00+01:00",
+  "duration": "PT1M12S",
+  "contentUrl": "https://www.example.com/videos/oak-table.mp4",
+  "width": 1920,
+  "height": 1080,
+  "inLanguage": "en",
+  "creator": {
+    "@type": "Organization",
+    "name": "Example Furniture Ltd",
+    "url": "https://www.example.com/"
+  },
+  "transcript": "This is the oak extending dining table. Closed, it is 140 centimetres long and seats four. Pull the ends apart, lift the leaf from underneath, and it reaches 190 centimetres and seats six. The top is finished with a hard-wax oil: wipe spills with a damp cloth and re-oil once a year."
+}
+&lt;/script&gt;</code></pre>
+<p>The type <code>application/ld+json</code> tells parsers the contents are JSON-LD, not code to run. <code>@context</code> names the schema.org vocabulary and <code>@type</code> says this is a VideoObject.</p>
+<p><code>name</code> is the title a person would recognise, and <code>description</code> says what the viewer will see. Google asks for unique text in both for every video.</p>
+<p><code>thumbnailUrl</code> is an array because you may supply several images; Google's own example gives three shapes. One crawlable image is valid, and it should be the poster frame the player shows.</p>
+<p><code>uploadDate</code> is when the video was first published, ending in a UTC offset: +01:00 is British Summer Time. <code>duration</code> is ISO 8601: PT for a period of time, 1M for one minute, 12S for twelve seconds.</p>
+<p><code>contentUrl</code> points at the MP4 itself, which Google calls the most effective way for it to fetch video files. There is no <code>embedUrl</code> because the file is self-hosted; add one for a third-party player, a choice our comparison of <a href="/video-seo/youtube-vs-self-hosted">YouTube and self-hosted video</a> covers.</p>
+<p><code>width</code>, <code>height</code> and <code>inLanguage</code> describe the file, and <code>creator</code> names the business. <code>transcript</code> is trimmed here; in production it should match the visible transcript word for word, as our guide to <a href="/video-seo/video-transcripts-captions">video transcripts and captions</a> explains. The <a href="/glossary">glossary</a> defines JSON-LD, ISO 8601 and the other terms.</p></section>
+<section id="mistakes"><h2>Common video schema markup mistakes</h2>
+<p>Most broken video schema markup describes a video Google can't reach, or describes it in a format Google can't read.</p>
+<div class="journal-table"><table><thead><tr><th>Mistake</th><th>What goes wrong</th><th>Fix</th></tr></thead><tbody>
+<tr><td>Markup for a video that isn't on the page</td><td>Google requires the video to be embedded on the page and the markup to match the actual video</td><td>Output VideoObject only where the player is</td></tr>
+<tr><td>Thumbnail Google can't fetch</td><td>It must be reachable by Googlebot and Googlebot Images at a stable URL, not blocked by robots.txt or a login</td><td>A public BMP, GIF, JPEG, PNG, WebP, SVG or AVIF, at least 60x30 pixels</td></tr>
+<tr><td>uploadDate without a timezone</td><td>Google falls back to Googlebot's timezone</td><td>End with an offset such as +01:00 or Z</td></tr>
+<tr><td>Duration written as 1:12 or 72</td><td>Not ISO 8601, which Google and schema.org specify</td><td>Write PT1M12S</td></tr>
+<tr><td>One block for several videos, or shared values</td><td>Google asks for a unique name, description and thumbnail per video</td><td>One VideoObject per video</td></tr>
+<tr><td>contentUrl pointing at the web page</td><td>Google says not to link to the page where the video lives</td><td>Point it at the video file</td></tr>
+<tr><td>Markup injected by JavaScript</td><td>Google reads the rendered page; a crawler that reads only the server's HTML won't see it</td><td>Put the markup in the server's HTML</td></tr>
+</tbody></table></div>
+<p><a href="https://developers.google.com/search/docs/appearance/structured-data/generate-structured-data-with-javascript">Google's guide to JavaScript-generated structured data</a> says Google Search can process structured data in the DOM when it renders the page. That covers Google only; markup in the server's HTML doesn't depend on any crawler running scripts, which matters for the readers in our note on <a href="/video-seo/ai-search-video">video in AI search</a>.</p></section>
+<section id="watch-pages"><h2>Watch pages and pages where video supports the content</h2>
+<p>Google keeps most video features for watch pages, pages whose main purpose is to show a single video; elsewhere, the same video is shown in fewer ways.</p>
+<p><a href="https://developers.google.com/search/docs/appearance/video">Google's video SEO best practices</a> say that to be eligible for video features, including video results on the main results page, Video mode, key moments and the LIVE badge, you should create a dedicated watch page for each video, “if it makes sense for your business”. A video landing page is a watch page. A blog post reviewing an embedded video is not, because the video complements the page, and nor is a category page listing several videos of equal prominence.</p>
+<p>Most business pages, like the dining table page above, are in the second group. That isn't a reason to leave the markup off: Google says a non-watch page can still appear as a text result and as a Google Images result with a video badge.</p>
+<p>So the decision is a business one. If people would search for the video itself, such as a tour or a how-to, give it a page of its own. If it supports a listing, product or article, mark it up accurately and judge the page by its existing job.</p></section>
+<section id="testing"><h2>How to test video structured data</h2>
+<p>Test the live URL with Google's Rich Results Test, then confirm in Search Console that Google rendered, indexed and accepted the video.</p>
+<ol>
+<li><strong>Run the Rich Results Test on the published URL.</strong> Google's JavaScript guide recommends the URL input over pasted code. Fix any critical errors.</li>
+<li><strong>Inspect the page with the URL Inspection tool.</strong> Check that the rendered HTML contains both the video element and the VideoObject block.</li>
+<li><strong>Check the Video indexing report.</strong> It shows how many indexed watch pages contain an indexed video, and why other videos weren't indexed.</li>
+<li><strong>Watch the rich result status report.</strong> Fix invalid items, inspect the live URL and request validation. Recheck after any template change.</li>
+<li><strong>Give it time.</strong> Google suggests allowing several days for recrawling and reindexing.</li>
+</ol>
+<p>A passing test proves the syntax, not the substance: Google notes the Rich Results Test can't catch markup that misdescribes the video.</p></section>
+<section id="videngine"><h2>How Videngine writes VideoObject when it publishes</h2>
+<p>Videngine's website publishing puts the video file, the player, the transcript and the VideoObject markup into your site in one commit.</p>
+<p>A workspace connects the GitHub repository its website is built from, with “Connect with GitHub” or a fine-grained access token. Once a video is reviewed and approved in the studio, Publish makes a single commit that:</p>
+<ul>
+<li>adds the MP4, its poster JPG and a WebVTT caption track to the site, in /videos/ by default;</li>
+<li>writes into the page the video was made from an HTML5 video player with the poster and a metadata-only preload, and a readable transcript in a details element;</li>
+<li>adds VideoObject JSON-LD with name, description, thumbnailUrl, contentUrl, uploadDate, duration, width, height, inLanguage, transcript and publisher;</li>
+<li>keeps a video sitemap, video-sitemap.xml, and adds a Sitemap line to robots.txt. Our guide to <a href="/video-seo/video-sitemap">video sitemaps</a> explains what that file adds.</li>
+</ul>
+<p>All of it is in the HTML the server sends, not injected by JavaScript, and because player and markup arrive together, the markup always describes a video on the page. One video per page means one VideoObject. Republishing replaces it in place; Remove takes video and markup out in one commit. A <code>&lt;!-- videngine --&gt;</code> comment marks where the video goes.</p>
+<p>This works for sites whose pages are HTML files in the repository: static sites on Vercel, Netlify, Cloudflare Pages or GitHub Pages. The <a href="/video-seo">video SEO hub</a> shows how markup, sitemap and transcript fit together.</p></section>
+<section id="wrong-fix"><h2>When markup, or Videngine, isn't the fix</h2>
+<p>Markup describes a video Google can already reach; it can't make a page indexable, turn a supporting video into a watch page or promise a rich result.</p>
+<p>Start with the page. Google's indexing requirements say the page must be indexed, and performing well in Search, before its video is considered.</p>
+<p>If the video genuinely isn't the point of the page, accurate markup still helps Google understand it. Anything more is Google's decision: it says it does not guarantee that features using structured data will appear.</p>
+<p>Videngine is the wrong tool in three cases:</p>
+<ul>
+<li><strong>Framework-built sites.</strong> Website publishing doesn't support them yet. Add the JSON-LD to your page template instead.</li>
+<li><strong>Videos you already have.</strong> Videngine publishes videos it made from your pages. For an existing library, your CMS, an SEO plugin or a developer is the direct route.</li>
+<li><strong>A page of many videos.</strong> Videngine places one video per page. A gallery needs one VideoObject per video.</li>
+</ul></section>
+<section id="questions"><h2>Questions about VideoObject schema</h2>
+<h3>Is VideoObject schema required for a video to appear in Google?</h3><p>No. Google can find videos referenced by video, embed, iframe or object elements on a page. It recommends providing metadata, and supports structured data, video sitemaps and Open Graph for that. If you do add VideoObject, the name, thumbnailUrl and uploadDate properties are required.</p>
+<h3>Does video structured data guarantee video rich results?</h3><p>No. Google says it does not guarantee that features using structured data will show. Video features also depend on the page being indexed, on a crawlable thumbnail and, for most features, on a dedicated watch page.</p>
+<h3>Should I use JSON-LD for video or microdata?</h3><p>Google's documentation shows both. JSON-LD keeps the whole description in one block that you can generate from your data without touching the player markup, which makes it easier to keep correct. Whichever you choose, the values must match the video on the page.</p>
+<h3>Do I need video schema markup for an embedded YouTube video?</h3><p>Google still recommends structured data when a video plays in a third-party player. Use embedUrl for the player's URL, since you won't have a contentUrl for the file. The other required properties stay the same.</p>
+<h3>Can one page have more than one VideoObject?</h3><p>Yes, with one VideoObject per video and a unique name, description and thumbnail for each. Google doesn't treat a page listing several videos of equal prominence as a watch page, so give a video its own page if you want video features for it.</p></section>
+<section id="next"><h2>Choose your next step</h2><p>See how the markup fits into the rest of video SEO, then add the file that lists every video on your site.</p><ul><li><a href="/video-seo">Read the video SEO guide for business sites</a></li><li><a href="/video-seo/video-sitemap">Build a video sitemap that matches your markup</a></li></ul></section><div class="journal-cta"><h2>Publish the video and its markup together.</h2><p>Bring one page that already has a reason for a video. Review the video in the studio, then publish the player, transcript and VideoObject to your site in one commit.</p><a class="pill-button" href="/#waitlist">Join the waitlist ↗</a></div><p class="journal-note" style="margin-top:24px">Published by Videngine, a video rendering product built and run by Wall &amp; Fifth. External links refer to the original documentation or product descriptions; examples are illustrative unless stated otherwise.</p></article></div><section class="journal-related"><div class="page-shell"><h2>Keep reading.</h2><div class="journal-grid"><a class="journal-card" href="/video-seo/video-sitemap"><span class="journal-label">Video SEO</span><h3>Video sitemaps: what to include and when you need one</h3><p>What a video sitemap is, when you need one, the video:video tags Google supports, a complete XML example, size limits and how to submit it to Google.</p><span>Read the guide ↗</span></a><a class="journal-card" href="/video-seo/video-transcripts-captions"><span class="journal-label">Video SEO</span><h3>Video transcripts and captions for SEO and accessibility</h3><p>Video transcripts for SEO and accessibility: captions vs subtitles, open vs closed captions, SRT vs WebVTT, accuracy checks and publishing on your site.</p><span>Read the guide ↗</span></a></div></div></section></main><footer class="footer" id="contact">
+<div class="page-shell">
+<div class="footer-kicker">Start rendering</div>
+<h2 class="footer-heading">Stop <span class="word-cycle"><span>editing.</span><span>exporting.</span><span>waiting.</span></span><br/><span class="ghost">Start rendering.</span></h2>
+<div class="footer-grid">
+<div class="footer-col"><h4>Studio</h4><a href="/#waitlist">Join the waitlist</a><h4 style="margin-top:24px">Email</h4><a href="mailto:hello@videngine.io">hello@videngine.io</a></div>
+<div class="footer-col"><h4>Product</h4><a href="/#how">How it works</a><a href="/use-cases">Use cases</a><a href="/industries">Industries</a><a href="/video-seo">Video SEO</a><a href="/pricing">Pricing</a><a href="/notes">Notes</a><a href="/glossary">Glossary</a><a href="/about">About</a></div>
+<div class="footer-col"><h4>Learn</h4><a href="/vs/ai-video-generators">vs AI generators</a><a href="/compare">All comparisons</a><a href="/programmatic-video">Programmatic video</a><a href="/notes">All guides</a></div>
+<div class="footer-col"><h4>Contact</h4><a href="mailto:hello@videngine.io">hello@videngine.io</a><a href="https://wallandfifth.com">Wall &amp; Fifth</a><a href="/terms">Terms</a><a href="/privacy">Privacy</a></div>
+</div>
+<div class="footer-bottom"><span>© 2026 Videngine</span><span>Built and run by Wall &amp; Fifth</span></div>
+<div class="giant-name">VID<em>ENGINE</em></div>
+</div>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://videngine.io/video-seo/videoobject-schema#article",
+      "headline": "VideoObject schema: the markup that gets your videos into search",
+      "description": "VideoObject schema explained: the properties Google requires, a complete JSON-LD example, common mistakes, watch pages and how to test video rich results.",
+      "datePublished": "2026-10-10",
+      "dateModified": "2026-10-10",
+      "inLanguage": "en",
+      "mainEntityOfPage": "https://videngine.io/video-seo/videoobject-schema",
+      "author": {
+        "@type": "Organization",
+        "name": "Videngine",
+        "url": "https://videngine.io/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://videngine.io/icon-512.png"
+        }
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Videngine",
+        "url": "https://videngine.io/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://videngine.io/icon-512.png"
+        }
+      },
+      "image": "https://videngine.io/og/video-seo/videoobject-schema.png"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Videngine",
+          "item": "https://videngine.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Video SEO",
+          "item": "https://videngine.io/video-seo"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "VideoObject schema: the markup that gets your videos into search",
+          "item": "https://videngine.io/video-seo/videoobject-schema"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://videngine.io/video-seo/videoobject-schema#questions",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is VideoObject schema required for a video to appear in Google?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Google can find videos referenced by video, embed, iframe or object elements on a page. It recommends providing metadata, and supports structured data, video sitemaps and Open Graph for that. If you do add VideoObject, the name, thumbnailUrl and uploadDate properties are required."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does video structured data guarantee video rich results?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Google says it does not guarantee that features using structured data will show. Video features also depend on the page being indexed, on a crawlable thumbnail and, for most features, on a dedicated watch page."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should I use JSON-LD for video or microdata?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Google's documentation shows both. JSON-LD keeps the whole description in one block that you can generate from your data without touching the player markup, which makes it easier to keep correct. Whichever you choose, the values must match the video on the page."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need video schema markup for an embedded YouTube video?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Google still recommends structured data when a video plays in a third-party player. Use embedUrl for the player's URL, since you won't have a contentUrl for the file. The other required properties stay the same."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can one page have more than one VideoObject?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, with one VideoObject per video and a unique name, description and thumbnail for each. Google doesn't treat a page listing several videos of equal prominence as a watch page, so give a video its own page if you want video features for it."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script></body></html>
