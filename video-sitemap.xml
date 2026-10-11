@@ -12,6 +12,17 @@
     </video:video>
   </url>
   <url>
+    <loc>https://videngine.io/industries/car-dealer-video</loc>
+    <video:video>
+      <video:thumbnail_loc>https://videngine.io/videos/industries-car-dealer-video.jpg</video:thumbnail_loc>
+      <video:title>Car dealer video: a listing video for every vehicle in stock</video:title>
+      <video:description>Car dealer video for every vehicle in stock: narrated, captioned 9:16 and 16:9 cuts from each listing&apos;s photos and spec, re-rendered when prices change.</video:description>
+      <video:content_loc>https://videngine.io/videos/industries-car-dealer-video.mp4</video:content_loc>
+      <video:duration>56</video:duration>
+      <video:publication_date>2026-10-11T11:19:54.168Z</video:publication_date>
+    </video:video>
+  </url>
+  <url>
     <loc>https://videngine.io/use-cases/video-ads</loc>
     <video:video>
       <video:thumbnail_loc>https://videngine.io/videos/use-cases-video-ads.jpg</video:thumbnail_loc>
