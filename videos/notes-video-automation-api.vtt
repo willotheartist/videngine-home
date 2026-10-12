@@ -1,0 +1,65 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:06.237
+When you connect software to a video API, the visual output is only part of what
+
+2
+00:00:06.237 --> 00:00:06.861
+matters.
+
+3
+00:00:06.861 --> 00:00:11.297
+A generative video API creates new footage from instructions.
+
+4
+00:00:11.297 --> 00:00:17.194
+A rendering API composes your supplied assets and scene rules into finished files.
+
+5
+00:00:17.194 --> 00:00:21.896
+Some workflows need both, plus voice and approval steps.
+
+6
+00:00:21.896 --> 00:00:27.827
+Before integrating either, define your input and output contract: what your system
+
+7
+00:00:27.827 --> 00:00:33.541
+supplies, what identifiers come back, and how long downloads remain accessible.
+
+8
+00:00:33.541 --> 00:00:36.165
+Design around asynchronous jobs.
+
+9
+00:00:36.165 --> 00:00:42.174
+Submitting a render and completing one are separate events, so retain a job record
+
+10
+00:00:42.174 --> 00:00:46.498
+with its identifier and current status after every request.
+
+11
+00:00:46.498 --> 00:00:52.599
+Use an application-level key to prevent duplicate submissions when a network request
+
+12
+00:00:52.599 --> 00:00:53.325
+times out.
+
+13
+00:00:53.325 --> 00:00:59.122
+Verify callbacks using the provider's documented method, and tolerate duplicate
+
+14
+00:00:59.122 --> 00:01:03.158
+notifications without moving a completed job backwards.
+
+15
+00:01:03.158 --> 00:01:08.696
+Test invalid inputs, timeouts, and repeated notifications before scaling.
+
+16
+00:01:08.696 --> 00:01:14.661
+Measure time to approved output, failures, and total cost at the pilot stage.
