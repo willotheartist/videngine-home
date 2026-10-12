@@ -12,6 +12,17 @@
     </video:video>
   </url>
   <url>
+    <loc>https://videngine.io/explainers/how-to-videos-from-help-articles</loc>
+    <video:video>
+      <video:thumbnail_loc>https://videngine.io/videos/explainers-how-to-videos-from-help-articles.jpg</video:thumbnail_loc>
+      <video:title>How-to videos from help articles: a tutorial for every article</video:title>
+      <video:description>Use a how-to video maker to turn help articles into short tutorials: which articles suit video, steps as scenes, keeping videos current and embedding them.</video:description>
+      <video:content_loc>https://videngine.io/videos/explainers-how-to-videos-from-help-articles.mp4</video:content_loc>
+      <video:duration>58</video:duration>
+      <video:publication_date>2026-10-12T09:54:55.192Z</video:publication_date>
+    </video:video>
+  </url>
+  <url>
     <loc>https://videngine.io/industries/car-dealer-video</loc>
     <video:video>
       <video:thumbnail_loc>https://videngine.io/videos/industries-car-dealer-video.jpg</video:thumbnail_loc>

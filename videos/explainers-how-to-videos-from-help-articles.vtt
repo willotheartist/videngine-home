@@ -1,0 +1,53 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:05.178
+Help articles are full of knowledge that most readers never finish reading.
+
+2
+00:00:05.178 --> 00:00:11.387
+Turning each task article into a short tutorial means one step becomes one scene,
+
+3
+00:00:11.387 --> 00:00:17.442
+with the exact screenshot on screen and narration that names every click by its
+
+4
+00:00:17.442 --> 00:00:17.902
+label.
+
+5
+00:00:17.902 --> 00:00:24.358
+Start with task articles of three to eight steps on a screen that changes rarely.
+
+6
+00:00:24.358 --> 00:00:30.320
+Concept pages and settings references do not suit video, but a clear task with a
+
+7
+00:00:30.320 --> 00:00:31.811
+visible result does.
+
+8
+00:00:31.811 --> 00:00:38.526
+Each scene shows the screenshot, a slow zoom, and a sentence that says what to click
+
+9
+00:00:38.526 --> 00:00:40.205
+and where to find it.
+
+10
+00:00:40.205 --> 00:00:43.433
+Captions are burned in so the video works without sound.
+
+11
+00:00:43.433 --> 00:00:49.122
+When the interface changes, update the article and its screenshots, then re-render.
+
+12
+00:00:49.122 --> 00:00:54.776
+The article stays the source of truth, and the written steps stay below the video so
+
+13
+00:00:54.776 --> 00:00:57.603
+readers can still scan and copy from them.
