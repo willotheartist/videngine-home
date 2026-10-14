@@ -36,6 +36,8 @@
 <script defer src="/analytics.js"></script>
 <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;550;600&display=swap" rel="stylesheet"/>
 <link rel="stylesheet" href="/studio-brand.css"/>
+<link rel="stylesheet" href="/reel.css"/>
+<script defer src="/reel.js"></script>
 </head>
 <body class="launch-home">
 
@@ -114,6 +116,36 @@
 </div>
 
 <div class="morph-progress" aria-hidden="true"><span></span></div>
+</div>
+</div>
+</section>
+
+<section class="reel-section" id="reel" aria-labelledby="reel-title" data-reel>
+<div class="page-shell">
+<div class="reel-head">
+<div class="reveal">
+<span class="launch-tag">THE 15-SECOND VERSION</span>
+<h2 class="section-title" id="reel-title"><span class="ghost">One link in.</span><br/>One video out.</h2>
+</div>
+<p class="reveal delay-1">Paste a page and Videngine writes the script, records the voice, adds captions and cuts the vertical clips. You review it, then it goes out to YouTube, your website or Google Drive. <strong>Every page, a video.</strong></p>
+</div>
+<div class="reel-body">
+<div class="reel-stage">
+<figure class="reel-frame">
+<video class="reel-video" muted loop playsinline controls preload="none" width="1920" height="1080" poster="/videos/home-reel.jpg" disablepictureinpicture disableremoteplayback aria-label="Videngine in 15 seconds: a product page link is pasted in, the video comes back scripted and voiced, it is reviewed with its script, voiceover, captions and vertical clips, then published to YouTube, a website and Google Drive.">
+<source src="/videos/home-reel.mp4" type="video/mp4" media="(min-width: 701px)"/>
+<source src="/videos/home-reel-720.mp4" type="video/mp4"/>
+</video>
+<button class="reel-play" type="button" aria-label="Play the Videngine reel" tabindex="-1"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m7 4.5 13 7.5-13 7.5z"/></svg></button>
+<button class="reel-toggle" type="button" aria-label="Pause the Videngine reel"><svg class="i-pause" viewBox="0 0 16 16" aria-hidden="true"><rect x="3.5" y="2.5" width="3" height="11" rx="1"/><rect x="9.5" y="2.5" width="3" height="11" rx="1"/></svg><svg class="i-play" viewBox="0 0 16 16" aria-hidden="true"><path d="M4.5 2.6v10.8a.6.6 0 0 0 .9.5l8.6-5.4a.6.6 0 0 0 0-1L5.4 2.1a.6.6 0 0 0-.9.5z"/></svg><span class="reel-toggle__text">Pause</span></button>
+</figure>
+</div>
+<ol class="reel-chapters reveal" id="reel-chapters" aria-label="What happens in the reel">
+<li><button class="reel-chapter" type="button" data-start="0" data-end="2.9"><span class="reel-chapter__bar" aria-hidden="true"><i></i></span><span class="reel-chapter__num" aria-hidden="true">01</span><span class="reel-chapter__label">Paste any page</span><span class="reel-chapter__sub">A product, a listing or an article. Just the URL.</span></button></li>
+<li><button class="reel-chapter" type="button" data-start="2.9" data-end="5.6"><span class="reel-chapter__bar" aria-hidden="true"><i></i></span><span class="reel-chapter__num" aria-hidden="true">02</span><span class="reel-chapter__label">Scripted and voiced</span><span class="reel-chapter__sub">The page becomes scenes, a script and a voiceover.</span></button></li>
+<li><button class="reel-chapter" type="button" data-start="5.6" data-end="9.9"><span class="reel-chapter__bar" aria-hidden="true"><i></i></span><span class="reel-chapter__num" aria-hidden="true">03</span><span class="reel-chapter__label">Review, on brand</span><span class="reel-chapter__sub">Captions in each language and vertical clips, ready to approve.</span></button></li>
+<li><button class="reel-chapter" type="button" data-start="9.9" data-end="15"><span class="reel-chapter__bar" aria-hidden="true"><i></i></span><span class="reel-chapter__num" aria-hidden="true">04</span><span class="reel-chapter__label">Publish on autopilot</span><span class="reel-chapter__sub">Straight to YouTube, your website or Google Drive.</span></button></li>
+</ol>
 </div>
 </div>
 </section>
@@ -304,6 +336,25 @@
         "@id": "https://videngine.io/#org"
       },
       "image": "https://videngine.io/og/home.png"
+    },
+    {
+      "@type": "VideoObject",
+      "@id": "https://videngine.io/#reel",
+      "name": "Videngine in 15 seconds: one link in, one video out",
+      "description": "Paste a product page into Videngine and it comes back scripted and voiced, with captions and vertical clips ready to review, then publishes to YouTube, your website or Google Drive.",
+      "thumbnailUrl": [
+        "https://videngine.io/videos/home-reel.jpg"
+      ],
+      "contentUrl": "https://videngine.io/videos/home-reel.mp4",
+      "uploadDate": "2026-10-14T11:30:00+01:00",
+      "duration": "PT15S",
+      "width": 1920,
+      "height": 1080,
+      "inLanguage": "en",
+      "isFamilyFriendly": true,
+      "publisher": {
+        "@id": "https://videngine.io/#org"
+      }
     },
     {
       "@type": "Organization",
