@@ -193,3 +193,21 @@ Merged (the first page retired into the second, which now owns both keyword sets
 - Footer Product column links every top-level topic; Guides column links the Video types children, comparisons, glossary and the library.
 - /notes lists every guide grouped by these topics; the homepage guides section links each topic with its guide count.
 - Source of truth for clusters is the CLUSTERS table in the build script used for this change; when adding a page, add it to its cluster so the blocks, nav and breadcrumbs stay in step.
+
+## Industries depth (16 October 2026)
+
+Industries now has sub-hubs. Each vertical's lead page is a sub-hub with its own guides, breadcrumbs Videngine / Industries / <vertical>, and a "Guides for …" block listing them. Built ahead of keyword data, by decision; re-check against a Keyword Planner export seeded with these terms and cut any page with no demand.
+
+| Vertical (lead page) | Guides |
+| --- | --- |
+| Vehicles (/industries/car-dealer-video) | bus-and-coach-video, van-and-truck-video, machinery-video, vdp-video, dealer-social-video, vehicle-video-for-portals |
+| Property (/industries/real-estate-video) | rental-listing-video, new-development-video, estate-agent-social-video |
+| Boats (/industries/boat-listing-video) | yacht-broker-video, charter-yacht-video |
+| Marketplaces (/industries/marketplace-video) | auction-lot-video, marketplace-video-api |
+| Ecommerce (/industries/ecommerce-product-video, new lead) | shopify-product-video, product-page-video-seo |
+
+SaaS and publisher pages stay standalone. Each guide owns one job its lead page only touches: the lead keeps the broad query (car dealer video, real estate listing video, boat listing video, marketplace listing video). Proposed used-car-video was replaced by vdp-video (the car dealer page already owns per-vehicle listing video) and classifieds-video by machinery-video (the marketplace page owns classifieds).
+
+Rules held: no client named or hinted at; every third-party platform, regulator or standard claim checked on its own pages that day and linked (Auto Trader UK, Autotrader.com, carsales, eBay, Etsy, Shopify, Google Search Central, gov.uk, HUD, ADA, ASA/CAP, NTSELAT, NHQB, MYBA, HSE, CESAR); where a platform's own pages say nothing about video, the page does not name it as supporting video. API described as it is: read-only, one key per workspace.
+
+Next: the BusesForSale case study once they agree to be named, filed under Vehicles and linked from the bus and coach page.

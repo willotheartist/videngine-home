@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link rel="icon" href="/favicon.ico" sizes="32x32"/>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml"/>
+<link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
+<link rel="manifest" href="/site.webmanifest"/>
+<meta name="theme-color" content="#fafafa"/>
+<link href="https://api.fontshare.com" rel="preconnect"/>
+<link href="https://fonts.gstatic.com" rel="preconnect" crossorigin/>
+<link href="https://api.fontshare.com/v2/css?f[]=switzer@300,400,500,600,700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="/style.css"/>
+<script defer src="/analytics.js"></script>
+<title>Marketplace video API: a reviewed video for every listing | Videngine</title>
+<meta name="description" content="Marketplace video API for platform teams: look up each listing's reviewed video by stock number, embed a stable link, and add captions and transcripts."/>
+<link rel="canonical" href="https://videngine.io/industries/marketplace-video-api"/>
+<meta property="og:title" content="Marketplace video API: a reviewed video for every listing, wired into your platform"/>
+<meta property="og:description" content="Marketplace video API for platform teams: look up each listing's reviewed video by stock number, embed a stable link, and add captions and transcripts."/>
+<meta property="og:url" content="https://videngine.io/industries/marketplace-video-api"/>
+<meta property="og:type" content="article"/>
+<meta name="twitter:card" content="summary"/>
+<meta property="og:site_name" content="Videngine"/>
+<meta property="og:locale" content="en_GB"/>
+<meta property="og:image" content="https://videngine.io/og/industries/marketplace-video-api.png"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="630"/>
+<meta property="og:image:alt" content="Videngine: Marketplace video API: a reviewed video for every listing, wired into your platform"/>
+<meta name="twitter:title" content="Marketplace video API: a reviewed video for every listing, wired into your platform"/>
+<meta name="twitter:description" content="Marketplace video API for platform teams: look up each listing's reviewed video by stock number, embed a stable link, and add captions and transcripts."/>
+<meta name="twitter:image" content="https://videngine.io/og/industries/marketplace-video-api.png"/>
+<meta name="twitter:image:alt" content="Videngine: Marketplace video API: a reviewed video for every listing, wired into your platform"/>
+<link rel="stylesheet" href="/notes.css"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;550;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="/studio-brand.css"/>
+</head>
+<body>
+<div class="nav-wrap">
+<nav class="nav" aria-label="Primary navigation">
+<a class="brand" href="/"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m8 5 12 7-12 7z"/></svg></span><span class="brand-wordmark">videngine<span class="brand-dot">.</span></span></a>
+<div class="nav-links">
+<a href="/industries" aria-current="true">Industries</a>
+<a href="/programmatic-video">Programmatic video</a>
+<a href="/use-cases">Video types</a>
+<a href="/video-seo">Video SEO</a>
+<a href="/compare">Compare</a>
+<a href="/pricing">Pricing</a>
+</div>
+<details class="nav-menu">
+<summary aria-label="Menu"><span>Menu</span><i aria-hidden="true"></i></summary>
+<div class="nav-sheet">
+<a href="/industries" aria-current="true"><strong>Industries</strong><span>Dealers, property, boats, marketplaces, shops, software and publishers.</span></a>
+<a href="/programmatic-video"><strong>Programmatic video</strong><span>How one template turns pages, feeds and spreadsheets into videos.</span></a>
+<a href="/use-cases"><strong>Video types</strong><span>Explainers, training, slideshows, ads and short-form.</span></a>
+<a href="/video-seo"><strong>Video SEO</strong><span>Getting videos indexed in search and cited in AI answers.</span></a>
+<a href="/youtube"><strong>YouTube</strong><span>Running a business channel from the pages you already have.</span></a>
+<a href="/ai-video-tools"><strong>AI video tools</strong><span>Choosing between generators, editors and video engines.</span></a>
+<a href="/compare"><strong>Compare</strong><span>Videngine against Synthesia, Canva, InVideo and others.</span></a>
+<a href="/pricing"><strong>Pricing</strong><span>Plans from $79 a month, priced per finished video.</span></a>
+<a class="nav-sheet__cta" href="/#waitlist">Join the waitlist</a>
+</div>
+</details><a class="nav-cta" href="/#waitlist">Join the waitlist</a>
+</nav>
+</div>
+<main id="top"><header class="journal-hero"><div class="page-shell"><nav class="journal-crumbs" aria-label="Breadcrumb"><a href="/">Videngine</a><span>/</span><a href="/industries">Industries</a><span>/</span><a href="/industries/marketplace-video">Marketplaces</a></nav><h1>Marketplace video API: a reviewed video for every listing, wired into your platform</h1><p class="journal-deck">Marketplace video API for platform teams: look up each listing's reviewed video by stock number, embed a stable link, and add captions and transcripts.</p><div class="journal-meta"><span>By <a href="/">Videngine</a></span><time datetime="2026-10-16">16 October 2026</time><span>9 min read</span></div></div></header><div class="page-shell journal-layout"><aside class="journal-toc"><span class="journal-label">In this guide</span><a href="#api">What the API does today</a><a href="#patterns">Integration patterns</a><a href="#build-or-buy">Build or buy</a><a href="#data-contract">The data contract</a><a href="#governance">Review and API keys at scale</a><a href="#wrong-tool">When Videngine is the wrong tool</a><a href="#questions">Questions platform teams ask</a><a href="#next">Choose your next step</a></aside><article class="journal-body"><div class="journal-answer"><span class="journal-label">The short answer</span><p>A marketplace video API connects listing videos to the platform's own pages and data. Videngine's API, on Growth and above, is read-only: your systems look up the approved video for a listing by stock number, list and fetch versions with their cuts, captions, chapters and transcript, and read the publishing history. Videos are made in the studio and in batch runs, or on the Custom plan by inventory sync, with delivery into listings through one stable link per listing that only plays a reviewed cut.</p></div>
+<!-- videngine -->
+<section id="api"><h2>Marketplace video API: what exists today</h2>
+<p>Videngine's marketplace video API is a read API: your systems read the videos and their review status, and the videos themselves are made inside Videngine.</p>
+<p>The lead guide, <a href="/industries/marketplace-video">marketplace listing video for every listing on the platform</a>, covers why the platform should make the video, seller rights, quality gates and the rollout. This page covers the API side of a video for every listing: how it joins your platform's data and listing pages.</p>
+<p>Videos are made in the studio, from a listing's link or from pages picked from your sitemap, and from Growth in batch runs from CSV or JSON. API access starts on Growth, and reviewer sign-off with defect codes on Scale. Inventory sync and delivery straight into listings, including one stable link per listing, come with Custom, from 1,500 videos a month.</p>
+<p>As a listing video API, it answers five kinds of request:</p>
+<ul><li><strong>Lookup.</strong> The approved video for a listing, by stock number or SKU, or by the address of a file Videngine published.</li><li><strong>Versions.</strong> Every version, newest first, filtered by status or by updated since a given time.</li><li><strong>One version in full.</strong> Each cut's dimensions, file, poster and captions URLs, plus chapters and the timed transcript.</li><li><strong>Captions.</strong> Each cut's captions as WebVTT.</li><li><strong>Publishing history.</strong> Every upload to a listing, in order.</li></ul>
+<p>There is no public endpoint for creating or editing videos, no webhooks and no SDK. Every video is reviewed in the studio before it goes out.</p></section>
+<section id="patterns"><h2>Integration patterns for listing video</h2>
+<p>An automated listing video integration usually needs one or two of five patterns: a link in the listing template for playback, and the read API for data, captions and reporting.</p>
+<div class="journal-table"><table><thead><tr><th>Pattern</th><th>How it works</th><th>Plan</th><th>Watch for</th></tr></thead><tbody><tr><td>Stable link in the listing template</td><td>The template embeds the listing's one stable link. It only plays a cut that passed review, and switches to the new cut when a rebuild is approved.</td><td>Custom</td><td>Until the first cut passes review there is nothing to play, so the page must render without a player.</td></tr><tr><td>Lookup at page render</td><td>The page server looks up the listing's approved video by stock number, or lists its versions and takes the newest that passed review, then renders a player with its poster and captions.</td><td>Growth and above</td><td>Rate-limited per key. Cache each answer; never call the API from the browser.</td></tr><tr><td>Nightly job</td><td>A job lists versions updated since its last run, keeps those that passed review and writes their URLs into your listing table, which pages read.</td><td>Growth and above</td><td>Store the last run time, page through results, and wait when asked to.</td></tr><tr><td>Captions and transcript on the page</td><td>Fetch the version in full, store its WebVTT and serve it yourself as a captions track, and print the transcript and chapters under the player.</td><td>Growth and above</td><td>Use the version actually playing, not the newest.</td></tr><tr><td>Publishing history for reporting</td><td>Read every upload in order and join it to your listing table.</td><td>Growth and above</td><td>Join on your platform's own listing ID, not a seller's stock number.</td></tr></tbody></table></div>
+<p>The nightly job is the safer default: pages render from your own database, so a slow answer from Videngine never holds one up. We publish no uptime figure, so build pages to render without the video. Player placement and poster-first loading are covered in <a href="/industries/vdp-video">putting a video on every detail page</a>.</p>
+<p>Captions belong on the page as well as in the file. The W3C's <a href="https://www.w3.org/TR/webvtt1/">WebVTT specification</a> says WebVTT files provide captions or subtitles for video, for use with the HTML <a href="https://html.spec.whatwg.org/multipage/media.html#the-track-element">track element</a>; give that element <code>kind="captions"</code>. <a href="https://www.w3.org/TR/WCAG22/#captions-prerecorded">WCAG 2.2 success criterion 1.2.2</a>, at Level A, asks for captions for all prerecorded audio in synchronised media. The printed transcript also puts the narration into the page's own HTML; see <a href="/video-seo/video-transcripts-captions">video transcripts and captions</a> and <a href="/video-seo/videoobject-schema">VideoObject schema</a>.</p></section>
+<section id="build-or-buy"><h2>Build on a rendering API, or buy finished listing videos</h2>
+<p>A rendering API gives you a renderer to build a listing-video product on; Videngine gives you a finished, reviewed video for each listing. Both get called a video API for marketplaces, but your team builds very different things around each.</p>
+<p><a href="https://shotstack.io/docs/guide/">Shotstack's documentation</a> describes edits as JSON timelines rendered in the cloud, with a webhook when each is ready. <a href="https://creatomate.com/">Creatomate</a> has you design a template in its editor, then call its REST endpoint to render it with your data. <a href="/vs/shotstack">Videngine vs Shotstack</a> and <a href="/vs/creatomate">Videngine vs Creatomate</a> compare price and features, and <a href="/programmatic-video/video-automation-api">what to evaluate in a video automation API</a> covers jobs, retries and callbacks.</p>
+<p>Building on a rendering API, your team owns the mapping from each category's fields to a script, the voice and pronunciation list, caption timing from the finished audio, a review queue where the approver is not the builder, versioning when a price or photo changes, and delivery to the listing. With Videngine those are included, and your team owns the integration: the join key, the template change and the nightly job.</p>
+<p>Building on a rendering API is the better choice when:</p>
+<ul><li><strong>Sellers should edit their own video in your app.</strong> Shotstack offers a <a href="https://shotstack.io/">white-label video editor to embed</a>, and <a href="https://creatomate.com/">Creatomate a JavaScript Preview SDK</a> for web-based editing.</li><li><strong>Your own events must start a render.</strong> If a listing going live should trigger a render and a callback, you need a create endpoint; Videngine's API only reads.</li><li><strong>Video is a product you sell to sellers,</strong> with your own templates and pricing.</li><li><strong>Narration must be in other languages.</strong> Videngine narrates in English only.</li></ul></section>
+<section id="data-contract"><h2>The data contract: join keys, changes and versions</h2>
+<p>Agree one join key before the backfill: your platform's listing ID, with the seller's stock number carried beside it.</p>
+<p>Videngine names files by stock number or reference, and the API looks videos up by stock number or SKU. On a marketplace, stock numbers belong to sellers, so two dealers can both list stock number 1042 (illustrative). Use a key that is unique on the platform and never reused, usually the listing ID, in every batch row or sync. Store the version you play beside the listing, and fetch captions and transcript for that version, so the words on the page match the cut.</p>
+<div class="journal-table"><table><thead><tr><th>Listing event</th><th>In Videngine</th><th>On your platform</th></tr></thead><tbody><tr><td>Price change</td><td>Re-render. The rebuild is saved as _v2 beside the original, free in the same month. The stable link keeps playing the approved original until the rebuild passes review.</td><td>If the narration states the price, hide the player until the rebuild is approved, or use a price policy that leaves the price out.</td></tr><tr><td>Photos or facts edited</td><td>A rebuild, reviewed before it replaces the original</td><td>Send the change in the next batch or sync.</td></tr><tr><td>Sold or closed</td><td>The ledger keeps every version as a record. On Custom, the rollout agrees how inventory sync treats a closed listing.</td><td>Your listing state wins: hide the player when the listing closes, whatever the video's status.</td></tr><tr><td>Relisted, same listing ID</td><td>Existing versions still belong to the listing.</td><td>Check the photos and facts; if anything changed, rebuild before the video shows again.</td></tr><tr><td>Relisted, new listing ID</td><td>A new listing; earlier versions stay in the ledger.</td><td>Render fresh unless the photos and facts are identical.</td></tr></tbody></table></div>
+<p>Platforms with a fixed close, such as timed auctions, have their own timing for retiring a video; see <a href="/industries/auction-lot-video">auction lot video</a>.</p>
+<p>Versions keep old links working. A rebuild is saved beside the original, never over it, so a page or cache holding the old address plays an older reviewed video, not a broken one. That video may state an old price, so find stale links: looking up an older file's address returns its version marked as no longer current, and the publishing history shows when the listing moved on.</p></section>
+<section id="governance"><h2>Review and API keys at platform scale</h2>
+<p>At platform scale, only reviewed videos should reach a listing, and only the systems you name should be able to read them.</p>
+<h3>Review as part of the contract</h3>
+<p>The <a href="/industries/marketplace-video">marketplace listing video guide</a> sets out the quality gates, the review model and every defect code. For the integration they give four guarantees:</p>
+<ul><li><strong>Nothing unreviewed plays.</strong> The stable link only plays a cut that passed review. With the read API, filter versions by status and play only those that passed.</li><li><strong>The approver is not the builder.</strong> A workspace can require it, so nobody builds and ships a video alone. Reviewer sign-off and defect codes come with Scale and above.</li><li><strong>Defects point to an owner.</strong> Specification and photo defects usually mean a feed mapping or photo gate for the platform team to fix; pronunciation, audio, brand, render and mobile defects are fixed in the lexicon or scene set.</li><li><strong>The ledger is the audit trail.</strong> It records each version's builder, reviewer, status and defect code, and exports to CSV for a join against live listings.</li></ul>
+<h3>API keys</h3>
+<p>Keys are made and revoked in Studio settings by the workspace's owners and admins; members cannot see them.</p>
+<ul><li><strong>Read-only, one workspace.</strong> A key reads one workspace's videos, versions, captions and publishing history. It cannot create, edit, approve or delete anything.</li><li><strong>Shown once.</strong> The key is displayed when it is made and never again, so put it in your secrets manager straight away.</li><li><strong>Server-side only.</strong> A key reads every video in its workspace, so keep it out of browser code and apps. Pages play from the stable link or from URLs your server stored.</li><li><strong>Rate-limited per key.</strong> Cache answers in your own store, and wait when the API asks you to.</li><li><strong>Revoked at once.</strong> A revoked key stops working. Replace keys when someone with access leaves.</li></ul></section>
+<section id="wrong-tool"><h2>When Videngine is the wrong tool for a marketplace</h2>
+<p>Videngine makes and reviews videos from listings you already hold; it does not take uploads, stream live or give sellers an editor.</p>
+<div class="journal-table"><table><thead><tr><th>Job</th><th>Why Videngine does not fit</th><th>Better option</th></tr></thead><tbody><tr><td>Sellers upload their own video</td><td>It does not accept, host or moderate uploads</td><td>A video hosting service with uploads and transcoding, plus your trust and safety tools</td></tr><tr><td>Live video: viewings, live auctions or calls</td><td>It has no live video</td><td>A live streaming or video-call service</td></tr><tr><td>An in-browser editor for sellers</td><td>There is no seller-facing editor</td><td>A rendering API with an embeddable editor, such as <a href="https://shotstack.io/">Shotstack's white-label editor</a> or <a href="https://creatomate.com/">Creatomate's Preview SDK</a></td></tr><tr><td>Creating videos from your code on demand</td><td>The API is read-only, with no create endpoint and no webhooks</td><td>A rendering API built around jobs and callbacks</td></tr><tr><td>Narration in other languages</td><td>Narration is English only</td><td>A tool that narrates in your listings' language</td></tr></tbody></table></div>
+</section>
+<section id="questions"><h2>Questions platform teams ask about a marketplace video API</h2>
+<h3>Does Videngine have a marketplace video API?</h3><p>Yes, on Growth and above. It is read-only: look up a listing's approved video by stock number, fetch its versions, cuts, captions, chapters and transcript, and read the publishing history. Each key reads one workspace.</p>
+<h3>Can we create videos through the API?</h3><p>No. There is no public endpoint for creating or editing videos, and no webhooks. Videos are made in the studio, from CSV or JSON batch runs on Growth and above, or by inventory sync from your site on the Custom plan.</p>
+<h3>What happens to a listing's video when its price changes?</h3><p>Re-render it. The rebuild is saved as _v2 beside the original and is free within the same month. On Custom, the listing's stable link keeps playing the approved original until the rebuild passes review, then switches to it.</p>
+<h3>How do we know which listings have an approved video?</h3><p>Run a nightly job that lists versions updated since its last run and keeps those that passed review, or export the video ledger to CSV. Join either to your live listings on your join key.</p>
+<h3>Should we build on Shotstack or Creatomate instead?</h3><p>Build on a rendering API if sellers need an editor in your app, your own events must trigger renders, or you sell video as a product. Buy finished, reviewed listing videos if you would rather not build the script, voice, captions and review yourself.</p></section>
+<section id="next"><h2>Choose your next step</h2><p>Plan the rollout, see the sibling guide for auctions, or check what any video API should offer.</p><ul><li><a href="/industries/marketplace-video">Plan the rollout: gates, backfill and daily flow</a></li><li><a href="/industries/auction-lot-video">Video for auction lots with a fixed close</a></li><li><a href="/programmatic-video/video-automation-api">What to evaluate in any video automation API</a></li><li><a href="/pricing">Compare plans, API access and the Custom rate</a></li></ul></section><div class="journal-cta"><h2>Start with one category's feed.</h2><p>Bring a sample of listing IDs and stock numbers and a slice of your sitemap. Agree the join key, the integration pattern and the review model, then plan the backfill.</p><a class="pill-button" href="/#waitlist">Join the waitlist ↗</a></div><p class="journal-note" style="margin-top:24px">Published by Videngine, a video rendering product built and run by Wall &amp; Fifth. External links refer to the original documentation or product descriptions; examples are illustrative unless stated otherwise.</p></article></div>
+
+<!-- cluster-nav -->
+<section class="cluster-nav" aria-labelledby="cluster-nav-title"><div class="page-shell cluster-nav__inner"><div class="cluster-nav__head"><span class="cluster-nav__label">Marketplaces</span><h2 id="cluster-nav-title">More in Marketplaces.</h2><a class="cluster-nav__up" href="/industries/marketplace-video">Marketplace listing video <span aria-hidden="true">↗</span></a></div><ol class="cluster-nav__list"><li><a href="/industries/auction-lot-video">Auction lot video</a></li><li aria-current="page"><span>Marketplace video API</span><em>You are here</em></li></ol></div></section>
+<!-- /cluster-nav -->
+<section class="journal-related"><div class="page-shell"><h2>Keep reading.</h2><div class="journal-grid"><a class="journal-card" href="/industries/marketplace-video"><span class="journal-label">Industry</span><h3>Marketplace listing video: a video for every listing on the platform</h3><p>Why the platform should make the video, seller rights, quality gates, the backfill and daily flow, and cost at volume.</p><span>Read the guide ↗</span></a><a class="journal-card" href="/programmatic-video/video-automation-api"><span class="journal-label">Programmatic video</span><h3>Video automation APIs: what to evaluate before integrating</h3><p>What to check in any video API: the input and output contract, asynchronous jobs, safe retries and a pilot before volume.</p><span>Read the guide ↗</span></a></div></div></section></main><footer class="footer" id="contact">
+<div class="page-shell">
+<div class="footer-kicker">Start rendering</div>
+<h2 class="footer-heading">Stop <span class="word-cycle"><span>editing.</span><span>exporting.</span><span>waiting.</span></span><br/><span class="ghost">Start rendering.</span></h2>
+<div class="footer-grid">
+<div class="footer-col"><h4>Studio</h4><a href="/#waitlist">Join the waitlist</a><h4 style="margin-top:24px">Email</h4><a href="mailto:hello@videngine.io">hello@videngine.io</a></div>
+<div class="footer-col"><h4>Product</h4><a href="/#how">How it works</a><a href="/pricing">Pricing</a><a href="/industries">Industries</a><a href="/programmatic-video">Programmatic video</a><a href="/use-cases">Video types</a><a href="/video-seo">Video SEO</a><a href="/youtube">YouTube</a><a href="/ai-video-tools">AI video tools</a><a href="/about">About</a></div>
+<div class="footer-col"><h4>Guides</h4><a href="/explainers">Explainers</a><a href="/training">Training</a><a href="/slideshows">Slideshows</a><a href="/compare">All comparisons</a><a href="/glossary">Glossary</a><a href="/notes">All guides</a></div>
+<div class="footer-col"><h4>Contact</h4><a href="mailto:hello@videngine.io">hello@videngine.io</a><a href="https://wallandfifth.com">Wall &amp; Fifth</a><a href="/terms">Terms</a><a href="/privacy">Privacy</a></div>
+</div>
+<div class="footer-bottom"><span>© 2026 Videngine</span><span>Built and run by Wall &amp; Fifth</span></div>
+<div class="giant-name">VID<em>ENGINE</em></div>
+</div>
+</footer>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://videngine.io/industries/marketplace-video-api#article",
+      "headline": "Marketplace video API: a reviewed video for every listing, wired into your platform",
+      "description": "Marketplace video API for platform teams: look up each listing's reviewed video by stock number, embed a stable link, and add captions and transcripts.",
+      "datePublished": "2026-10-16",
+      "dateModified": "2026-10-16",
+      "inLanguage": "en",
+      "mainEntityOfPage": "https://videngine.io/industries/marketplace-video-api",
+      "author": {
+        "@type": "Organization",
+        "name": "Videngine",
+        "url": "https://videngine.io/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://videngine.io/icon-512.png"
+        }
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Videngine",
+        "url": "https://videngine.io/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://videngine.io/icon-512.png"
+        }
+      },
+      "image": "https://videngine.io/og/industries/marketplace-video-api.png"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Videngine",
+          "item": "https://videngine.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Industries",
+          "item": "https://videngine.io/industries"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Marketplaces",
+          "item": "https://videngine.io/industries/marketplace-video"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Marketplace video API: a reviewed video for every listing, wired into your platform",
+          "item": "https://videngine.io/industries/marketplace-video-api"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://videngine.io/industries/marketplace-video-api#questions",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Does Videngine have a marketplace video API?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, on Growth and above. It is read-only: look up a listing's approved video by stock number, fetch its versions, cuts, captions, chapters and transcript, and read the publishing history. Each key reads one workspace."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can we create videos through the API?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. There is no public endpoint for creating or editing videos, and no webhooks. Videos are made in the studio, from CSV or JSON batch runs on Growth and above, or by inventory sync from your site on the Custom plan."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What happens to a listing's video when its price changes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Re-render it. The rebuild is saved as _v2 beside the original and is free within the same month. On Custom, the listing's stable link keeps playing the approved original until the rebuild passes review, then switches to it."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do we know which listings have an approved video?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Run a nightly job that lists versions updated since its last run and keeps those that passed review, or export the video ledger to CSV. Join either to your live listings on your join key."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should we build on Shotstack or Creatomate instead?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Build on a rendering API if sellers need an editor in your app, your own events must trigger renders, or you sell video as a product. Buy finished, reviewed listing videos if you would rather not build the script, voice, captions and review yourself."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script><script defer src="/nav.js"></script>
+</body></html>
