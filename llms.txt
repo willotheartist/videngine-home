@@ -23,9 +23,9 @@
 - [What is programmatic video? A plain definition](https://videngine.io/programmatic-video): Programmatic video is rendered from a coded template and structured data, so one template makes many videos. A plain definition, and when to use it.
 - [About Videngine: who makes it and how we write](https://videngine.io/about): Videngine is a programmatic video engine built and run by Wall & Fifth Ltd in London. What it is, what it is built on, and how our guides are checked.
 
-## Use cases
+## Video types
 
-- [AI video for business: use cases by team and industry](https://videngine.io/use-cases): Where automated video works for a business: ads, product, explainer, YouTube, short-form and listing videos, and the source each one starts from.
+- [AI video for business: use cases and video types](https://videngine.io/use-cases): Every kind of business video you can make from what you already have: ads, explainers, training, slideshows, YouTube and short-form, and the guide for each.
 - [AI video ad maker: ads and marketing videos from your content](https://videngine.io/use-cases/video-ads): Use an AI video ad maker on your own listings, pages and data: which ads to automate, a 20-second ad plan, formats by placement, variants and cost.
 - [Product video automation: from catalogue to ad variants](https://videngine.io/programmatic-video/product-video-automation): Build a product video workflow with accurate variants, a reusable scene plan, controlled creative tests and a process for refreshing outdated videos.
 - [YouTube video maker for businesses: videos from your pages](https://videngine.io/youtube): A YouTube video maker for businesses: turn listings, products and articles into narrated videos and Shorts, with metadata, review and channel publishing.

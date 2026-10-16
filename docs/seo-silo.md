@@ -184,3 +184,12 @@ Merged (the first page retired into the second, which now owns both keyword sets
 | /training/ai-training-video-generator | /training | AI training video maker |
 
 /notes is now the library index only; it is no longer a breadcrumb parent. Keyword map targets updated to match.
+
+### Navigation and linking (16 October 2026)
+
+- Top nav is the silo list: Industries, Programmatic video, Video types, Video SEO, Compare, Pricing. The current silo is marked. Below 1180px it becomes a Menu sheet that also lists YouTube and AI video tools (nav.js closes it on outside click and Escape; it works without JavaScript).
+- Hierarchy: Industries, Programmatic video, Video types (/use-cases), Video SEO, YouTube, AI video tools and Compare are top-level topics. Explainers, Training and Slideshows sit under Video types, so their breadcrumbs read Videngine / Video types / Explainers.
+- Every spoke ends with a "More in <topic>" block listing the topic overview and every sibling, with the current page marked. Every top-level hub ends with an "Other topics" block linking the other hubs. Child hubs list the other video types. Cross-silo links stay only where they help the reader in the body copy.
+- Footer Product column links every top-level topic; Guides column links the Video types children, comparisons, glossary and the library.
+- /notes lists every guide grouped by these topics; the homepage guides section links each topic with its guide count.
+- Source of truth for clusters is the CLUSTERS table in the build script used for this change; when adding a page, add it to its cluster so the blocks, nav and breadcrumbs stay in step.

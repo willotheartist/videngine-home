@@ -48,12 +48,27 @@
 <nav class="nav" aria-label="Primary navigation">
 <a class="brand" href="/"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m8 5 12 7-12 7z"/></svg></span><span class="brand-wordmark">videngine<span class="brand-dot">.</span></span></a>
 <div class="nav-links">
-<a href="/#how">How it works</a>
-<a href="/use-cases">Use cases</a>
+<a href="/industries">Industries</a>
+<a href="/programmatic-video">Programmatic video</a>
+<a href="/use-cases">Video types</a>
+<a href="/video-seo">Video SEO</a>
+<a href="/compare" aria-current="true">Compare</a>
 <a href="/pricing">Pricing</a>
-<a href="/ai-video-tools">AI video tools</a>
 </div>
-<a class="nav-cta" href="/#waitlist">Join the waitlist</a>
+<details class="nav-menu">
+<summary aria-label="Menu"><span>Menu</span><i aria-hidden="true"></i></summary>
+<div class="nav-sheet">
+<a href="/industries"><strong>Industries</strong><span>Dealers, property, boats, marketplaces, software and publishers.</span></a>
+<a href="/programmatic-video"><strong>Programmatic video</strong><span>How one template turns pages, feeds and spreadsheets into videos.</span></a>
+<a href="/use-cases"><strong>Video types</strong><span>Explainers, training, slideshows, ads and short-form.</span></a>
+<a href="/video-seo"><strong>Video SEO</strong><span>Getting videos indexed in search and cited in AI answers.</span></a>
+<a href="/youtube"><strong>YouTube</strong><span>Running a business channel from the pages you already have.</span></a>
+<a href="/ai-video-tools" aria-current="true"><strong>AI video tools</strong><span>Choosing between generators, editors and video engines.</span></a>
+<a href="/compare"><strong>Compare</strong><span>Videngine against Synthesia, Canva, InVideo and others.</span></a>
+<a href="/pricing"><strong>Pricing</strong><span>Plans from $79 a month, priced per finished video.</span></a>
+<a class="nav-sheet__cta" href="/#waitlist">Join the waitlist</a>
+</div>
+</details><a class="nav-cta" href="/#waitlist">Join the waitlist</a>
 </nav>
 </div>
 
@@ -64,14 +79,19 @@
 <section id="example"><h2>A worked brief for a script-based video</h2><p>Consider a hypothetical onboarding video explaining how to submit an expense. The objective is that a new employee knows which three items to prepare. The source is the company's approved instructions; the output is a short narrated walkthrough.</p><ol><li><strong>Specify the approved wording.</strong> Supply the steps and exceptions, rather than asking the tool to invent a standard expense policy.</li><li><strong>Choose evidence for each step.</strong> Use approved screenshots or simple labelled diagrams. Avoid generic office footage where it hides the actual action.</li><li><strong>Assign the scene boundaries.</strong> Keep one action per scene and allow time to read essential interface labels.</li><li><strong>Review names and terminology.</strong> Check the narration's pronunciation and the captions' spelling.</li><li><strong>Test a correction.</strong> Change the submission deadline and confirm the rest of the approved explanation remains intact.</li></ol><p>This is an example brief, not a claim about a shipped Videngine training workflow. Its value is that it makes the evaluation concrete.</p></section>
 <section id="compare"><h2>What to check in text-to-video tools</h2><p><a href="https://fliki.ai/features/text-to-video">Fliki describes producing narrated videos from text</a>. <a href="https://www.synthesia.io/features/ai-video-generator">Synthesia documents text inputs and avatar-based presentation alongside other creation features</a>. Treat provider descriptions as a shortlist starting point and test the controls that matter to your actual content.</p><ul><li>Can you lock the spoken wording after approval?</li><li>Can you replace a visual without changing the voice track?</li><li>Can you control scene duration and pauses?</li><li>Can you export captions in the form your destination needs?</li><li>Does a changed aspect ratio preserve legibility?</li><li>Can another team member identify and reproduce the approved version?</li></ul><p>Check the output with sound muted and then listen without looking. A sequence can have attractive images while failing to communicate the answer. Neither a transcript nor a thumbnail is enough to judge the finished video.</p></section>
 <section id="repeat"><h2>When text-to-video becomes an automation job</h2><p>Once a scene structure is approved, repeated scripts may fit a template. Store each script with its source, language, required assets and version. Reuse the design rules while allowing the content to change.</p><p>For explainers built from help articles and release notes, see the <a href="/explainers/ai-explainer-video">explainer video guide</a>; if the source is a set of photographs rather than text, start with <a href="/slideshows/photos-to-video">photos to video</a>. For many related scripts, use the <a href="/programmatic-video/bulk-video-creation-from-csv">bulk-video workflow</a>. For software-driven submissions and delivery, use the <a href="/programmatic-video/video-automation-api">video automation API checklist</a>. Both require a way to identify failures and prevent outdated drafts from being published.</p><p>Estimate the human review time as well as the generated or rendered seconds. Our <a href="/ai-video-tools/ai-video-generator-cost">cost guide</a> shows how to compare these workflows using approved outputs.</p></section>
-<section id="questions"><h2>Text-to-video questions</h2><h3>Is script to video the same as text to video?</h3><p>Script to video is one kind of text to video: the words you supply become the narration, and the tool assembles visuals for each scene. Prompt-based text to video treats the words as a description of footage to generate. If the wording must stay exactly as approved, you want script to video.</p><h3>Can I turn a script into a video without generating new footage?</h3><p>Yes. A script-based video can use supplied photographs, screen recordings, diagrams, text and existing footage. Generating new moving images is an optional source of assets rather than a requirement.</p><h3>Can I make the same video again?</h3><p>Preserve the approved script, assets, template version and relevant settings. Regenerating a script or fetching changing source assets can change the result even when the project has the same name.</p><h3>Does a short prompt produce a publishable explainer?</h3><p>It may produce a draft, but check the argument, facts, visuals and captions before publication. A prompt cannot substitute for source evidence when the content makes specific claims.</p></section><div class="journal-cta"><h2>Have a video job that repeats?</h2><p>Bring your source material, required format and expected volume. Start with an approved example, then define a workflow you can repeat.</p><a class="pill-button" href="/#waitlist">Join the waitlist ↗</a></div><p class="journal-note" style="margin-top:24px">Published by Videngine, built and run by Wall &amp; Fifth. This guide combines workflow recommendations with linked provider documentation. Worked examples are illustrative.</p></article></div></main><footer class="footer" id="contact">
+<section id="questions"><h2>Text-to-video questions</h2><h3>Is script to video the same as text to video?</h3><p>Script to video is one kind of text to video: the words you supply become the narration, and the tool assembles visuals for each scene. Prompt-based text to video treats the words as a description of footage to generate. If the wording must stay exactly as approved, you want script to video.</p><h3>Can I turn a script into a video without generating new footage?</h3><p>Yes. A script-based video can use supplied photographs, screen recordings, diagrams, text and existing footage. Generating new moving images is an optional source of assets rather than a requirement.</p><h3>Can I make the same video again?</h3><p>Preserve the approved script, assets, template version and relevant settings. Regenerating a script or fetching changing source assets can change the result even when the project has the same name.</p><h3>Does a short prompt produce a publishable explainer?</h3><p>It may produce a draft, but check the argument, facts, visuals and captions before publication. A prompt cannot substitute for source evidence when the content makes specific claims.</p></section><div class="journal-cta"><h2>Have a video job that repeats?</h2><p>Bring your source material, required format and expected volume. Start with an approved example, then define a workflow you can repeat.</p><a class="pill-button" href="/#waitlist">Join the waitlist ↗</a></div><p class="journal-note" style="margin-top:24px">Published by Videngine, built and run by Wall &amp; Fifth. This guide combines workflow recommendations with linked provider documentation. Worked examples are illustrative.</p></article></div>
+
+<!-- cluster-nav -->
+<section class="cluster-nav" aria-labelledby="cluster-nav-title"><div class="page-shell cluster-nav__inner"><div class="cluster-nav__head"><span class="cluster-nav__label">AI video tools</span><h2 id="cluster-nav-title">More in AI video tools.</h2><a class="cluster-nav__up" href="/ai-video-tools">AI video tools: choose the right one <span aria-hidden="true">↗</span></a></div><ol class="cluster-nav__list"><li><a href="/ai-video-tools/best-ai-video-generators">Best AI video generators</a></li><li aria-current="page"><span>Text to video AI</span><em>You are here</em></li><li><a href="/ai-video-tools/ai-video-generator-cost">AI video generator costs</a></li><li><a href="/ai-video-tools/ai-voiceover">AI voiceover</a></li></ol></div></section>
+<!-- /cluster-nav -->
+</main><footer class="footer" id="contact">
 <div class="page-shell">
 <div class="footer-kicker">Start rendering</div>
 <h2 class="footer-heading">Stop <span class="word-cycle"><span>editing.</span><span>exporting.</span><span>waiting.</span></span><br/><span class="ghost">Start rendering.</span></h2>
 <div class="footer-grid">
 <div class="footer-col"><h4>Studio</h4><a href="/#waitlist">Join the waitlist</a><h4 style="margin-top:24px">Email</h4><a href="mailto:hello@videngine.io">hello@videngine.io</a></div>
-<div class="footer-col"><h4>Product</h4><a href="/#how">How it works</a><a href="/use-cases">Use cases</a><a href="/industries">Industries</a><a href="/slideshows">Slideshows</a><a href="/youtube">YouTube</a><a href="/explainers">Explainers</a><a href="/training">Training</a><a href="/video-seo">Video SEO</a><a href="/pricing">Pricing</a><a href="/notes">Notes</a><a href="/glossary">Glossary</a><a href="/about">About</a></div>
-<div class="footer-col"><h4>Learn</h4><a href="/ai-video-tools">vs AI generators</a><a href="/compare">All comparisons</a><a href="/programmatic-video">Programmatic video</a><a href="/notes">All guides</a></div>
+<div class="footer-col"><h4>Product</h4><a href="/#how">How it works</a><a href="/pricing">Pricing</a><a href="/industries">Industries</a><a href="/programmatic-video">Programmatic video</a><a href="/use-cases">Video types</a><a href="/video-seo">Video SEO</a><a href="/youtube">YouTube</a><a href="/ai-video-tools">AI video tools</a><a href="/about">About</a></div>
+<div class="footer-col"><h4>Guides</h4><a href="/explainers">Explainers</a><a href="/training">Training</a><a href="/slideshows">Slideshows</a><a href="/compare">All comparisons</a><a href="/glossary">Glossary</a><a href="/notes">All guides</a></div>
 <div class="footer-col"><h4>Contact</h4><a href="mailto:hello@videngine.io">hello@videngine.io</a><a href="https://wallandfifth.com">Wall &amp; Fifth</a><a href="/terms">Terms</a><a href="/privacy">Privacy</a></div>
 </div>
 <div class="footer-bottom"><span>© 2026 Videngine</span><span>Built and run by Wall &amp; Fifth</span></div>
@@ -175,4 +195,5 @@
     }
   ]
 }
-</script></body></html>
+</script><script defer src="/nav.js"></script>
+</body></html>

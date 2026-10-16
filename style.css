@@ -475,3 +475,67 @@
 
 .notes-silo-intro { margin: 0 0 30px; font-size: 17px; color: #666; }
 .notes-silo-intro a { color: #111; text-decoration: underline; text-underline-offset: 4px; }
+
+/* SILO NAVIGATION (16 Oct 2026): nav by topic, a menu below 1180px, cluster blocks on every guide */
+.nav { position: relative; }
+.nav-links a[aria-current] { opacity: 1; position: relative; }
+.nav-links a[aria-current]::after { content: ""; position: absolute; left: 50%; bottom: -8px; width: 4px; height: 4px; margin-left: -2px; border-radius: 50%; background: var(--studio-orange, #ff6036); }
+.nav-menu { display: none; }
+.nav-menu summary { list-style: none; cursor: pointer; display: inline-flex; align-items: center; gap: 9px; min-height: 40px; padding: 0 12px; border-radius: 8px; font-size: 13px; font-weight: 600; color: var(--ink); user-select: none; }
+.nav-menu summary::-webkit-details-marker { display: none; }
+.nav-menu summary:hover { background: var(--soft); }
+.nav-menu summary:focus-visible { outline: 2px solid rgba(11,11,11,.35); outline-offset: 2px; }
+.nav-menu summary i { position: relative; width: 14px; height: 9px; border-top: 1.5px solid currentColor; border-bottom: 1.5px solid currentColor; transition: border-color .2s; }
+.nav-menu summary i::before, .nav-menu summary i::after { content: ""; position: absolute; left: 0; right: 0; top: 50%; border-top: 1.5px solid currentColor; transform: translateY(-50%); transition: transform .25s var(--ease); }
+.nav-menu[open] summary i { border-color: transparent; }
+.nav-menu[open] summary i::before { transform: translateY(-50%) rotate(45deg); }
+.nav-menu[open] summary i::after { transform: translateY(-50%) rotate(-45deg); }
+.nav-sheet { position: absolute; top: calc(100% + 10px); right: 0; width: min(440px, calc(100vw - 24px)); max-height: calc(100vh - 110px); overflow-y: auto; display: grid; gap: 2px; padding: 8px; background: #fff; border: 1px solid rgba(0,0,0,.09); border-radius: 16px; box-shadow: 0 24px 60px rgba(0,0,0,.14); animation: sheetIn .28s var(--ease); }
+@keyframes sheetIn { from { opacity: 0; transform: translateY(-6px); } }
+.nav-sheet a { display: grid; gap: 3px; padding: 12px 14px; border-radius: 10px; transition: background .15s; }
+.nav-sheet a:hover { background: #f4f4f2; }
+.nav-sheet strong { font-size: 15px; font-weight: 600; letter-spacing: -.01em; }
+.nav-sheet span { font-size: 13px; line-height: 1.4; color: var(--muted); }
+.nav-sheet a[aria-current] { background: #f4f4f2; }
+.nav-sheet a[aria-current] strong::after { content: ""; display: inline-block; width: 5px; height: 5px; margin-left: 8px; vertical-align: middle; border-radius: 50%; background: var(--studio-orange, #ff6036); }
+.nav-sheet .nav-sheet__cta { display: none; margin: 6px 6px 4px; padding: 13px 16px; text-align: center; border-radius: 8px; background: var(--studio-orange, #ff6036); color: #201912; font-family: 'Inter Tight', Inter, Arial, sans-serif; font-size: 14px; font-weight: 550; }
+.nav-sheet .nav-sheet__cta:hover { background: var(--studio-orange-hover, #ed552e); }
+@media (max-width: 1180px) {
+  .nav { gap: 14px; }
+  .nav .nav-links { display: none; }
+  .nav-menu { display: block; margin-left: auto; }
+}
+@media (max-width: 480px) {
+  .nav > .nav-cta { display: none; }
+  .nav { width: calc(100% - 24px); justify-content: space-between; }
+  .nav-sheet .nav-sheet__cta { display: block; }
+}
+
+.cluster-nav { border-top: 1px solid var(--line); padding-block: 64px 72px; }
+.cluster-nav__inner { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 56px; align-items: start; }
+.cluster-nav__label { display: block; margin-bottom: 12px; font: 11px var(--mono); letter-spacing: .08em; text-transform: uppercase; color: #69675e; }
+.cluster-nav__head h2 { margin: 0 0 18px; font-size: 30px; line-height: 1.1; font-weight: 500; letter-spacing: -.035em; }
+.cluster-nav__head p { margin: 0; color: #666; line-height: 1.55; max-width: 34ch; }
+.cluster-nav__up { display: inline-flex; gap: 6px; font-size: 14px; padding-bottom: 3px; border-bottom: 1px solid rgba(11,11,11,.28); transition: border-color .2s; }
+.cluster-nav__up:hover { border-color: var(--ink); }
+.cluster-nav__list { list-style: none; margin: 0; padding: 0; counter-reset: cluster; border-bottom: 1px solid var(--line); }
+.cluster-nav__list li { counter-increment: cluster; display: flex; align-items: baseline; gap: 16px; padding: 14px 0; border-top: 1px solid var(--line); font-size: 16px; line-height: 1.35; }
+.cluster-nav__list li::before { content: counter(cluster, decimal-leading-zero); flex: 0 0 22px; font: 11px var(--mono); color: #8a887f; }
+.cluster-nav__list a { flex: 1; transition: color .15s; }
+.cluster-nav__list a::after { content: "↗"; float: right; margin-left: 12px; opacity: 0; transition: opacity .15s; }
+.cluster-nav__list a:hover::after { opacity: .6; }
+.cluster-nav__list li[aria-current] span { flex: 1; color: #8a887f; }
+.cluster-nav__list li[aria-current] em { font: 10px var(--mono); font-style: normal; letter-spacing: .08em; text-transform: uppercase; color: #8a887f; white-space: nowrap; }
+.cluster-nav__topics { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+.cluster-nav__topics a { display: grid; gap: 6px; height: 100%; padding: 20px 22px; border: 1px solid var(--line); border-radius: 14px; background: #fff; transition: border-color .2s; }
+.cluster-nav__topics a:hover { border-color: rgba(11,11,11,.35); }
+.cluster-nav__topics strong { font-size: 17px; font-weight: 600; letter-spacing: -.02em; }
+.cluster-nav__topics span { font-size: 14px; line-height: 1.45; color: #666; }
+@media (max-width: 860px) {
+  .cluster-nav { padding-block: 48px 56px; }
+  .cluster-nav__inner { grid-template-columns: 1fr; gap: 28px; }
+  .cluster-nav__topics { grid-template-columns: 1fr; }
+}
+.cluster-nav__list--wide { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 32px; border-bottom: 0; }
+.cluster-nav__list--wide li:nth-last-child(-n+2) { border-bottom: 1px solid var(--line); }
+@media (max-width: 860px) { .cluster-nav__list--wide { grid-template-columns: 1fr; } .cluster-nav__list--wide li:nth-last-child(2) { border-bottom: 0; } }
