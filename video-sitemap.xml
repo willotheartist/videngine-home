@@ -89,6 +89,17 @@
     </video:video>
   </url>
   <url>
+    <loc>https://videngine.io/slideshows/vertical-slideshow</loc>
+    <video:video>
+      <video:thumbnail_loc>https://videngine.io/videos/slideshows-vertical-slideshow.jpg</video:thumbnail_loc>
+      <video:title>Vertical slideshow: landscape photos in a 9:16 video</video:title>
+      <video:description>How to make a vertical slideshow from landscape photos: crop, letterbox or blurred fill, safe areas, captions and 1080×1920 for Reels, Shorts and TikTok.</video:description>
+      <video:content_loc>https://videngine.io/videos/slideshows-vertical-slideshow.mp4</video:content_loc>
+      <video:duration>62</video:duration>
+      <video:publication_date>2026-10-16T11:16:41.413Z</video:publication_date>
+    </video:video>
+  </url>
+  <url>
     <loc>https://videngine.io/use-cases/video-ads</loc>
     <video:video>
       <video:thumbnail_loc>https://videngine.io/videos/use-cases-video-ads.jpg</video:thumbnail_loc>
