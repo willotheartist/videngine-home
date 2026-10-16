@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link rel="icon" href="/favicon.ico" sizes="32x32"/>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml"/>
+<link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
+<link rel="manifest" href="/site.webmanifest"/>
+<meta name="theme-color" content="#fafafa"/>
+
+
+
+
+
+
+
+
+<link href="https://api.fontshare.com" rel="preconnect"/>
+<link href="https://fonts.gstatic.com" rel="preconnect" crossorigin/>
+<link href="https://api.fontshare.com/v2/css?f[]=switzer@300,400,500,600,700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="/style.css"/>
+<script defer src="/analytics.js"></script>
+<title>VDP video: putting a video on every vehicle detail page | Videngine</title>
+<meta name="description" content="VDP video for every vehicle detail page: where the player sits, poster-first loading for page speed, VideoObject markup, and what happens when stock sells."/>
+<link rel="canonical" href="https://videngine.io/industries/vdp-video"/>
+<meta property="og:title" content="VDP video: putting a video on every vehicle detail page"/>
+<meta property="og:description" content="VDP video for every vehicle detail page: where the player sits, poster-first loading for page speed, VideoObject markup, and what happens when stock sells."/>
+<meta property="og:url" content="https://videngine.io/industries/vdp-video"/>
+<meta property="og:type" content="article"/>
+<meta name="twitter:card" content="summary"/>
+<meta property="og:site_name" content="Videngine"/>
+<meta property="og:locale" content="en_GB"/>
+<meta property="og:image" content="https://videngine.io/og/industries/vdp-video.png"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="630"/>
+<meta property="og:image:alt" content="Videngine: VDP video: putting a video on every vehicle detail page"/>
+<meta name="twitter:title" content="VDP video: putting a video on every vehicle detail page"/>
+<meta name="twitter:description" content="VDP video for every vehicle detail page: where the player sits, poster-first loading for page speed, VideoObject markup, and what happens when stock sells."/>
+<meta name="twitter:image" content="https://videngine.io/og/industries/vdp-video.png"/>
+<meta name="twitter:image:alt" content="Videngine: VDP video: putting a video on every vehicle detail page"/>
+<link rel="stylesheet" href="/notes.css"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;550;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="/studio-brand.css"/>
+</head>
+<body>
+<div class="nav-wrap">
+<nav class="nav" aria-label="Primary navigation">
+<a class="brand" href="/"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m8 5 12 7-12 7z"/></svg></span><span class="brand-wordmark">videngine<span class="brand-dot">.</span></span></a>
+<div class="nav-links">
+<a href="/industries" aria-current="true">Industries</a>
+<a href="/programmatic-video">Programmatic video</a>
+<a href="/use-cases">Video types</a>
+<a href="/video-seo">Video SEO</a>
+<a href="/compare">Compare</a>
+<a href="/pricing">Pricing</a>
+</div>
+<details class="nav-menu">
+<summary aria-label="Menu"><span>Menu</span><i aria-hidden="true"></i></summary>
+<div class="nav-sheet">
+<a href="/industries" aria-current="true"><strong>Industries</strong><span>Dealers, property, boats, marketplaces, software and publishers.</span></a>
+<a href="/programmatic-video"><strong>Programmatic video</strong><span>How one template turns pages, feeds and spreadsheets into videos.</span></a>
+<a href="/use-cases"><strong>Video types</strong><span>Explainers, training, slideshows, ads and short-form.</span></a>
+<a href="/video-seo"><strong>Video SEO</strong><span>Getting videos indexed in search and cited in AI answers.</span></a>
+<a href="/youtube"><strong>YouTube</strong><span>Running a business channel from the pages you already have.</span></a>
+<a href="/ai-video-tools"><strong>AI video tools</strong><span>Choosing between generators, editors and video engines.</span></a>
+<a href="/compare"><strong>Compare</strong><span>Videngine against Synthesia, Canva, InVideo and others.</span></a>
+<a href="/pricing"><strong>Pricing</strong><span>Plans from $79 a month, priced per finished video.</span></a>
+<a class="nav-sheet__cta" href="/#waitlist">Join the waitlist</a>
+</div>
+</details><a class="nav-cta" href="/#waitlist">Join the waitlist</a>
+</nav>
+</div>
+
+<main id="top"><header class="journal-hero"><div class="page-shell"><nav class="journal-crumbs" aria-label="Breadcrumb"><a href="/">Videngine</a><span>/</span><a href="/industries">Industries</a><span>/</span><a href="/industries/car-dealer-video">Vehicles</a></nav><h1>VDP video: putting a video on every vehicle detail page</h1><p class="journal-deck">VDP video for every vehicle detail page: where the player sits, poster-first loading for page speed, VideoObject markup, and what happens when stock sells.</p><div class="journal-meta"><span>By <a href="/">Videngine</a></span><time datetime="2026-10-16">16 October 2026</time><span>10 min read</span></div></div></header><div class="page-shell journal-layout"><aside class="journal-toc"><span class="journal-label">In this guide</span><a href="#where-it-goes">Where a VDP video goes on the page</a><a href="#page-speed">VDP video and page speed</a><a href="#markup">Markup, captions and transcript on a VDP</a><a href="#onto-the-vdp">How the video gets onto the VDP</a><a href="#keeping-right">Keeping the VDP video right</a><a href="#wrong-tool">When Videngine is the wrong tool</a><a href="#questions">Questions about VDP video</a></aside><article class="journal-body"><div class="journal-answer"><span class="journal-label">The short answer</span><p>A VDP video is a short narrated video of one vehicle, played on its vehicle detail page. Put the landscape 16:9 cut first in the photo gallery or directly under it, with the lead photo as its poster, and load little more than that poster until the buyer presses play. Give the page VideoObject markup, a caption track and a transcript. Tie the video to the stock number, so a price change brings a re-render and a sale retires it.</p></div>
+<!-- videngine -->
+<section id="where-it-goes"><h2>Where a VDP video goes on the vehicle detail page</h2>
+<p>A VDP video goes first in the photo gallery, or directly under it, because that is where a buyer on a vehicle detail page is already looking.</p>
+<p>A vehicle detail page (VDP) is the page a dealer website or marketplace gives one unit in stock: gallery, price, specification, finance, stock number and enquiry form. What the video should show is covered in <a href="/industries/car-dealer-video">car dealer video: a listing video for every vehicle in stock</a>; this guide is about the page it plays on, for cars, <a href="/industries/van-and-truck-video">vans and trucks</a>, <a href="/industries/bus-and-coach-video">buses and coaches</a> or <a href="/industries/machinery-video">machinery</a>.</p>
+<ul><li><strong>First item in the gallery.</strong> The buyer meets it while swiping through photos. This needs a gallery that accepts a video item; ask your website provider.</li><li><strong>Directly under the gallery.</strong> The fallback where the gallery takes images only, above the specification and finance calculator.</li><li><strong>Not in a tab or a pop-up.</strong> A “Video” tab is easy to miss, and a pop-up covers the photos.</li></ul>
+<h3>Which cut, and which poster</h3>
+<p>Use the landscape 16:9 cut in the gallery on desktop and, usually, on phones, because the gallery is built around landscape photos. Test the vertical 9:16 cut where your site opens video full screen on phones.</p>
+<p>Make the poster, the still shown before play, the VDP's lead photo. The gallery then opens on the same image whether or not the video has loaded. Without a poster, <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/video">MDN's video element reference</a> notes, nothing is displayed until the first frame is available.</p>
+<h3>Autoplay: click to play is the safer default</h3>
+<p>Show the player with controls and let the buyer press play. <a href="https://developer.chrome.com/blog/autoplay">Chrome's autoplay policy</a> says muted autoplay is always allowed, allows sound only in some cases, and advises never assuming a video will play. <a href="https://webkit.org/blog/6784/new-video-policies-for-ios/">WebKit's iOS video policy</a> lets muted video autoplay and plays video inline on iPhone only with the playsinline attribute. Muted autoplay loses the narration and starts the download whether or not anyone watches; if you use it, choose a cut with burned-in captions and add an unmute button.</p></section>
+<section id="page-speed"><h2>VDP video and page speed: load nothing until play</h2>
+<p>A VDP video should cost the page almost nothing until a buyer presses play: the poster shows, little or no video data loads, and the player's space is held from the start.</p>
+<p>Google's Core Web Vitals measure real-world page experience. <a href="https://web.dev/articles/vitals">web.dev</a> sets the targets at the 75th percentile of page loads: Largest Contentful Paint (loading) within 2.5 seconds, Interaction to Next Paint at 200 milliseconds or less, and Cumulative Layout Shift (visual stability) at 0.1 or less. <a href="https://developers.google.com/search/docs/appearance/core-web-vitals">Google Search Central</a> highly recommends good Core Web Vitals for success with Search. A VDP video touches two.</p>
+<ul><li><strong>Largest Contentful Paint.</strong> For a video, <a href="https://web.dev/articles/lcp">web.dev</a> uses the poster's load time or the first frame's, whichever is earlier. At the top of a VDP the poster is often the largest thing in view, so compress it like the lead photo it replaces.</li><li><strong>Cumulative Layout Shift.</strong> <a href="https://web.dev/articles/optimize-cls">web.dev</a> says always include width and height attributes on images and video elements, or reserve the space with CSS aspect-ratio, so the specification below does not jump when the player appears.</li></ul>
+<p>The preload attribute sets how much of the file to fetch before play. MDN describes none as no preloading, metadata as fetching only details such as length, and auto as allowing the whole file to download; autoplay overrides it. <a href="https://web.dev/articles/fast-playback-with-preload">web.dev's guide to fast playback</a> notes that preload is a hint the browser may ignore.</p>
+<div class="journal-table"><table><thead><tr><th>Setting</th><th>What loads before play</th><th>Use it on</th></tr></thead><tbody><tr><td>Poster, preload="metadata"</td><td>The poster and the file's length and size</td><td>A single VDP, so the player shows the running time</td></tr><tr><td>Poster, preload="none"</td><td>The poster only</td><td>A results page or any page with many vehicle videos</td></tr><tr><td>preload="auto", or autoplay</td><td>Possibly the whole file</td><td>Avoid: it downloads whether or not anyone watches</td></tr></tbody></table></div>
+<pre><code>&lt;video controls playsinline preload="metadata"
+  width="1920" height="1080"
+  poster="/stock/ST50217/lead.jpg"&gt;
+  &lt;source src="/stock/ST50217/ST50217_16x9.mp4" type="video/mp4"&gt;
+  &lt;track kind="captions" src="/stock/ST50217/ST50217.vtt" srclang="en" label="English"&gt;
+&lt;/video&gt;</code></pre>
+<p>The paths are illustrative, for a fictional stock number. Poster-first is not loading the player on click: <a href="https://developers.google.com/search/docs/appearance/video">Google's video best practices</a> say not to rely on user actions such as clicking to load the video, so put the video element in the page and let preload limit the download. <a href="/video-seo/youtube-vs-self-hosted">YouTube vs self-hosted video</a> compares what an embed loads.</p></section>
+<section id="markup"><h2>Markup, captions and transcript on a VDP</h2>
+<p>Each VDP with a video needs one VideoObject block describing that vehicle's video, a caption track in the player and the transcript as text on the page.</p>
+<p>Google says <a href="https://developers.google.com/search/docs/appearance/structured-data/video">VideoObject markup must be added to a page where users can watch the video</a>, and requires name, thumbnailUrl and uploadDate. Google keeps most video features for watch pages and gives a product page with a 360 video as an example of a page that is not one; a VDP is in that group, but can still appear as a text result and a Google Images result with a video badge. <a href="/video-seo/videoobject-schema">VideoObject schema</a> covers every property and testing.</p>
+<div class="journal-table"><table><thead><tr><th>Property</th><th>What a VDP puts there</th></tr></thead><tbody><tr><td>name</td><td>Year, make, model and variant; add the stock number if two units match</td></tr><tr><td>description</td><td>What the video shows: mileage, colour, the condition photos it covers</td></tr><tr><td>thumbnailUrl</td><td>The poster (the lead photo) at one stable URL</td></tr><tr><td>uploadDate</td><td>When this video first went on the VDP, with a timezone</td></tr><tr><td>contentUrl or embedUrl</td><td>contentUrl for an MP4 file; embedUrl for a player link or embed</td></tr></tbody></table></div>
+<p>Captions are a Level A requirement in WCAG 2.2: <a href="https://www.w3.org/WAI/WCAG22/Understanding/captions-prerecorded.html">success criterion 1.2.2</a> asks for captions for all prerecorded audio content in synchronised media. Add the WebVTT file as a track in the player and the transcript as text in the page's HTML, so a buyer on a train can follow without sound and crawlers that do not run scripts can read it (see <a href="/video-seo/video-transcripts-captions">video transcripts and captions</a>). List each VDP with a video in a <a href="/video-seo/video-sitemap">video sitemap</a>, and remove the entry when the video comes down.</p></section>
+<section id="onto-the-vdp"><h2>How the video gets onto the VDP</h2>
+<p>How the video reaches the VDP depends on your dealer website platform, so ask your website provider which of four routes it takes before you render a whole stock list. Platforms differ, and we claim no support for any named one.</p>
+<div class="journal-table"><table><thead><tr><th>Route</th><th>How it works</th><th>Watch for</th></tr></thead><tbody><tr><td>Upload the MP4</td><td>Download the 16:9 cut, named by stock number, and upload it to the vehicle's media in your platform</td><td>Manual per unit: re-upload after each rebuild, delete on sale; check file size limits</td></tr><tr><td>A stable video link per stock number</td><td>The platform holds one video URL per vehicle, from its feed or the vehicle record, and plays it on the VDP</td><td>The platform must accept an external video URL</td></tr><tr><td>An embed</td><td>A player snippet, such as the landscape cut on your YouTube channel, in a video or custom HTML field</td><td>Loads a third-party player before play; markup uses embedUrl</td></tr><tr><td>Videngine website publishing</td><td>For a static HTML site built from GitHub, one commit adds the MP4, poster and WebVTT track, writes player, transcript and VideoObject into the VDP, and updates video-sitemap.xml</td><td>Framework-built sites are not supported yet; one video per page</td></tr></tbody></table></div>
+<p>For the second route, the Custom plan (from 1,500 videos a month) includes delivery straight into listings as one stable link per stock number. On Growth and above, a website provider can instead use the read-only API, one key per workspace, to look up the approved video for a stock number, list its versions and fetch captions as WebVTT.</p>
+<h3>Questions for your website provider</h3>
+<ul><li>Can the VDP gallery hold a video, and in which position?</li><li>Does it take an MP4 upload, a video URL per vehicle, or only an embed?</li><li>Can the player carry a WebVTT track, and the page a transcript?</li><li>Does the VDP template output VideoObject in the HTML the server sends?</li><li>What happens to the video and its markup when a vehicle is marked sold?</li></ul></section>
+<section id="keeping-right"><h2>Keeping the VDP video right as stock changes</h2>
+<p>A VDP should only play an approved video that matches the vehicle's current price and status, so tie it to the stock number and decide in advance what a price change or sale does.</p>
+<ul><li><strong>One stable link per stock number.</strong> With listing delivery on the Custom plan, each stock number keeps one link that plays only a cut that passed review, and switches to the new cut when a rebuild is approved. Nobody edits the VDP, and an unreviewed draft never reaches it.</li><li><strong>A price change means a re-render.</strong> If the video states the price, update the listing and render again; the rebuild is saved as _v2 beside the original, free within the same month. Review price rebuilds the same day, or leave the price out of the video.</li><li><strong>Sold units: retire or keep, per your policy.</strong> Write it down before launch.</li></ul>
+<div class="journal-table"><table><thead><tr><th>Policy</th><th>What the VDP shows</th><th>Markup and sitemap</th></tr></thead><tbody><tr><td>Retire on sale</td><td>The video goes, whether or not the page stays up as a sold record</td><td>Remove VideoObject and the sitemap entry with the player</td></tr><tr><td>Keep on the sold VDP</td><td>Only if the page is clearly marked sold and the closing scene does not invite an enquiry</td><td>Keep markup only while the player is on the page</td></tr><tr><td>Reserved</td><td>The video stays until the deal completes</td><td>No change until then</td></tr></tbody></table></div>
+<p><a href="https://developers.google.com/search/docs/appearance/video">Google's video best practices</a> list an expiration date in the structured data as one way to handle a removed video. The video ledger records each version, reviewer and status, and exports to CSV: match it to your stock list to find sold units still carrying a video.</p>
+<h3>A VDP video checklist</h3>
+<div class="journal-table"><table><thead><tr><th>Item</th><th>What to do</th><th>How to check</th></tr></thead><tbody><tr><td>Placement</td><td>First gallery item, or directly under the gallery</td><td>Visible on a phone without opening a tab</td></tr><tr><td>Cut</td><td>16:9 in the gallery; 9:16 where phones open video full screen</td><td>Played on a phone and a desktop</td></tr><tr><td>Poster</td><td>The lead photo at one stable URL, also the thumbnailUrl</td><td>No blank frame or jump as the page loads</td></tr><tr><td>Loading</td><td>preload none or metadata, width and height set</td><td>Page speed report before and after</td></tr><tr><td>Captions</td><td>A WebVTT track, and the transcript on the page</td><td>Match the narration word for word</td></tr><tr><td>Markup</td><td>One VideoObject per VDP and a video sitemap entry</td><td>Rich Results Test on the live URL</td></tr><tr><td>Sold policy</td><td>Retire or keep, written down</td><td>Video, markup and sitemap change together</td></tr><tr><td>Analytics event</td><td>A play event carrying the stock number</td><td>Events arrive with the right stock number</td></tr></tbody></table></div>
+<p>On analytics: <a href="https://support.google.com/analytics/answer/9216061">Google Analytics' enhanced measurement</a> tracks video events for embedded YouTube videos with JS API support enabled. For a self-hosted player, send your own play event with the stock number, and compare enquiries on units with and without video yourself.</p></section>
+<section id="wrong-tool"><h2>When Videngine is the wrong tool for VDP video</h2>
+<p>Videngine renders a narrated video from the photos and facts already on the VDP; it does not spin, stream or film.</p>
+<div class="journal-table"><table><thead><tr><th>Job</th><th>Why Videngine does not fit</th><th>Better fit</th></tr></thead><tbody><tr><td>A 360 spin viewer on the VDP</td><td>It does not capture or build an interactive spin; its video moves across stills</td><td>A 360 spin photography system and its viewer</td></tr><tr><td>A live video appointment with a salesperson</td><td>It has no live video and no presenter</td><td>A video-call or dealer video messaging tool, booked from the VDP</td></tr><tr><td>A manufacturer's model film for new cars</td><td>It builds from one unit's listing, not a model range, and creates no footage</td><td>The manufacturer's own film, used as the brand allows</td></tr><tr><td>Narration in a language other than English</td><td>Narration is English only</td><td>A tool that narrates in your buyers' language</td></tr></tbody></table></div>
+<p>All of these can sit beside a listing video on the same VDP.</p></section>
+<section id="questions"><h2>Questions about VDP video</h2>
+<h3>What is a VDP video?</h3><p>A VDP video is a short video of one vehicle played on its vehicle detail page, the page a dealer website gives each unit in stock. Videngine builds it from that page's own photos and specification, with narration and captions, in a landscape and a vertical cut.</p>
+<h3>Where should the video go on a vehicle detail page?</h3><p>First in the photo gallery, or directly under it if the gallery takes images only. Use the landscape cut there, with the lead photo as the poster, and keep it out of tabs and pop-ups.</p>
+<h3>Should a VDP video autoplay?</h3><p>Click to play is the safer default. Chrome always allows muted autoplay but allows autoplay with sound only in some cases, and a muted video loses its narration. If you do autoplay muted, use burned-in captions and an unmute button.</p>
+<h3>Will a video slow down my vehicle detail pages?</h3><p>Not much, if the page loads only the poster until play. Set preload to none or metadata, give the player width and height, and avoid autoplay, which starts the download whether or not anyone watches.</p>
+<h3>Does a VDP need VideoObject markup?</h3><p>It should have it, on the page where the video plays, with name, thumbnailUrl and uploadDate. A VDP is not a watch page, so expect a text result or a Google Images result with a video badge rather than full video features.</p>
+<h3>What happens to the VDP video when the vehicle sells?</h3><p>Whatever your sold policy says. Retiring it is the simple default: remove the video, its markup and its sitemap entry together.</p></section>
+<section id="next"><h2>Choose your next step</h2><p>Go back to what the video should show, or take the same video to portals and social.</p><ul><li><a href="/industries/car-dealer-video">Plan a listing video for every vehicle in stock</a></li><li><a href="/industries/vehicle-video-for-portals">Put vehicle videos on portals and marketplaces</a></li><li><a href="/industries/dealer-social-video">Use the vertical cut on dealer social</a></li><li><a href="/video-seo/video-sitemap">List your VDP videos in a video sitemap</a></li></ul></section><div class="journal-cta"><h2>Start with one VDP.</h2><p>Bring one vehicle detail page and the name of your website platform. Review the vehicle's video in the studio, settle the poster, captions and markup, then choose the route onto the page that your platform takes.</p><a class="pill-button" href="/#waitlist">Join the waitlist ↗</a></div><p class="journal-note" style="margin-top:24px">Published by Videngine, a video rendering product built and run by Wall &amp; Fifth. External links refer to the original documentation or product descriptions; examples are illustrative unless stated otherwise.</p></article></div>
+
+<!-- cluster-nav -->
+<section class="cluster-nav" aria-labelledby="cluster-nav-title"><div class="page-shell cluster-nav__inner"><div class="cluster-nav__head"><span class="cluster-nav__label">Vehicles</span><h2 id="cluster-nav-title">More in Vehicles.</h2><a class="cluster-nav__up" href="/industries/car-dealer-video">Car dealer video <span aria-hidden="true">↗</span></a></div><ol class="cluster-nav__list"><li><a href="/industries/bus-and-coach-video">Bus and coach video</a></li><li><a href="/industries/van-and-truck-video">Van and truck video</a></li><li><a href="/industries/machinery-video">Machinery video</a></li><li aria-current="page"><span>VDP video</span><em>You are here</em></li><li><a href="/industries/dealer-social-video">Car dealer social media video</a></li><li><a href="/industries/vehicle-video-for-portals">Vehicle video for listing portals</a></li></ol></div></section>
+<!-- /cluster-nav -->
+<section class="journal-related"><div class="page-shell"><h2>Keep reading.</h2><div class="journal-grid"><a class="journal-card" href="/industries/car-dealer-video"><span class="journal-label">Industry</span><h3>Car dealer video: a listing video for every vehicle in stock</h3><p>What each vehicle's listing video should show, in what order, and how it stays honest as prices change and stock sells.</p><span>Read the guide ↗</span></a><a class="journal-card" href="/video-seo/videoobject-schema"><span class="journal-label">Video SEO</span><h3>VideoObject schema: the markup that gets your videos into search</h3><p>Every VideoObject property Google asks for, a complete JSON-LD example, the common mistakes and how to test the markup on a live page.</p><span>Read the guide ↗</span></a></div></div></section></main><footer class="footer" id="contact">
+<div class="page-shell">
+<div class="footer-kicker">Start rendering</div>
+<h2 class="footer-heading">Stop <span class="word-cycle"><span>editing.</span><span>exporting.</span><span>waiting.</span></span><br/><span class="ghost">Start rendering.</span></h2>
+<div class="footer-grid">
+<div class="footer-col"><h4>Studio</h4><a href="/#waitlist">Join the waitlist</a><h4 style="margin-top:24px">Email</h4><a href="mailto:hello@videngine.io">hello@videngine.io</a></div>
+<div class="footer-col"><h4>Product</h4><a href="/#how">How it works</a><a href="/pricing">Pricing</a><a href="/industries">Industries</a><a href="/programmatic-video">Programmatic video</a><a href="/use-cases">Video types</a><a href="/video-seo">Video SEO</a><a href="/youtube">YouTube</a><a href="/ai-video-tools">AI video tools</a><a href="/about">About</a></div>
+<div class="footer-col"><h4>Guides</h4><a href="/explainers">Explainers</a><a href="/training">Training</a><a href="/slideshows">Slideshows</a><a href="/compare">All comparisons</a><a href="/glossary">Glossary</a><a href="/notes">All guides</a></div>
+<div class="footer-col"><h4>Contact</h4><a href="mailto:hello@videngine.io">hello@videngine.io</a><a href="https://wallandfifth.com">Wall &amp; Fifth</a><a href="/terms">Terms</a><a href="/privacy">Privacy</a></div>
+</div>
+<div class="footer-bottom"><span>© 2026 Videngine</span><span>Built and run by Wall &amp; Fifth</span></div>
+<div class="giant-name">VID<em>ENGINE</em></div>
+</div>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://videngine.io/industries/vdp-video#article",
+      "headline": "VDP video: putting a video on every vehicle detail page",
+      "description": "VDP video for every vehicle detail page: where the player sits, poster-first loading for page speed, VideoObject markup, and what happens when stock sells.",
+      "datePublished": "2026-10-16",
+      "dateModified": "2026-10-16",
+      "inLanguage": "en",
+      "mainEntityOfPage": "https://videngine.io/industries/vdp-video",
+      "author": {
+        "@type": "Organization",
+        "name": "Videngine",
+        "url": "https://videngine.io/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://videngine.io/icon-512.png"
+        }
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Videngine",
+        "url": "https://videngine.io/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://videngine.io/icon-512.png"
+        }
+      },
+      "image": "https://videngine.io/og/industries/vdp-video.png"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Videngine",
+          "item": "https://videngine.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Industries",
+          "item": "https://videngine.io/industries"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Vehicles",
+          "item": "https://videngine.io/industries/car-dealer-video"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "VDP video: putting a video on every vehicle detail page",
+          "item": "https://videngine.io/industries/vdp-video"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://videngine.io/industries/vdp-video#questions",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is a VDP video?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A VDP video is a short video of one vehicle played on its vehicle detail page, the page a dealer website gives each unit in stock. Videngine builds it from that page's own photos and specification, with narration and captions, in a landscape and a vertical cut."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where should the video go on a vehicle detail page?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "First in the photo gallery, or directly under it if the gallery takes images only. Use the landscape cut there, with the lead photo as the poster, and keep it out of tabs and pop-ups."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should a VDP video autoplay?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Click to play is the safer default. Chrome always allows muted autoplay but allows autoplay with sound only in some cases, and a muted video loses its narration. If you do autoplay muted, use burned-in captions and an unmute button."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will a video slow down my vehicle detail pages?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not much, if the page loads only the poster until play. Set preload to none or metadata, give the player width and height, and avoid autoplay, which starts the download whether or not anyone watches."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does a VDP need VideoObject markup?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It should have it, on the page where the video plays, with name, thumbnailUrl and uploadDate. A VDP is not a watch page, so expect a text result or a Google Images result with a video badge rather than full video features."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What happens to the VDP video when the vehicle sells?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Whatever your sold policy says. Retiring it is the simple default: remove the video, its markup and its sitemap entry together."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script><script defer src="/nav.js"></script>
+</body></html>
