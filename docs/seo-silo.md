@@ -173,7 +173,7 @@ Moved (content unchanged, breadcrumbs and canonicals updated):
 | /notes/photos-to-video | /slideshows/photos-to-video |
 | /use-cases/real-estate-video | /industries/real-estate-video |
 
-Merged (the first page retired into the second, which now owns both keyword sets):
+Merged (the first page retired into the second, which now owns both keyword sets; the retired pages' unique sections were folded into the kept pages on 16 October 2026, and /ai-video-tools#generated-vs-rendered now carries the generated-vs-rendered comparison):
 
 | Retired | Kept | Search |
 | --- | --- | --- |
