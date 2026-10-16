@@ -1,0 +1,57 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:05.786
+An automatic slideshow maker should take everything an editor decides and pull it
+
+2
+00:00:05.786 --> 00:00:07.500
+straight from your data.
+
+3
+00:00:07.500 --> 00:00:13.800
+That means choosing which photos to use, setting their order and timing, writing a
+
+4
+00:00:13.800 --> 00:00:19.716
+script from the facts in each record, recording a voice, adding captions, and
+
+5
+00:00:19.716 --> 00:00:22.175
+exporting every format you need.
+
+6
+00:00:22.175 --> 00:00:25.844
+What it should not decide is whether a video goes live.
+
+7
+00:00:25.844 --> 00:00:29.931
+Every finished video waits for a human to review it first.
+
+8
+00:00:29.931 --> 00:00:37.226
+The source for each video is one record: a title, a set of facts, photo URLs in
+
+9
+00:00:37.226 --> 00:00:39.811
+order, a status, and a link.
+
+10
+00:00:39.811 --> 00:00:45.496
+Before anything renders, quality gates check that photos are sharp enough, that key
+
+11
+00:00:45.496 --> 00:00:49.331
+facts are present, and that the item is still available.
+
+12
+00:00:49.331 --> 00:00:55.577
+Videos can be queued in batches from a CSV or a sitemap, running unattended while a
+
+13
+00:00:55.577 --> 00:00:57.609
+person reviews each result.
+
+14
+00:00:57.609 --> 00:01:03.141
+When a price or status changes, the same record re-renders as a new version.

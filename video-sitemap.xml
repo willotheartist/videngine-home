@@ -1,17 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
   <url>
-    <loc>https://videngine.io/</loc>
-    <video:video>
-      <video:thumbnail_loc>https://videngine.io/videos/home-reel.jpg</video:thumbnail_loc>
-      <video:title>Videngine in 15 seconds: one link in, one video out</video:title>
-      <video:description>Paste a product page into Videngine and it comes back scripted and voiced, with captions and vertical clips ready to review, then publishes to YouTube, your website or Google Drive.</video:description>
-      <video:content_loc>https://videngine.io/videos/home-reel.mp4</video:content_loc>
-      <video:duration>15</video:duration>
-      <video:publication_date>2026-10-14T10:30:00.000Z</video:publication_date>
-    </video:video>
-  </url>
-  <url>
     <loc>https://videngine.io/ai-video-tools</loc>
     <video:video>
       <video:thumbnail_loc>https://videngine.io/videos/ai-video-tools.jpg</video:thumbnail_loc>
@@ -53,6 +42,17 @@
       <video:content_loc>https://videngine.io/videos/notes-video-automation-api.mp4</video:content_loc>
       <video:duration>75</video:duration>
       <video:publication_date>2026-10-12T11:49:01.443Z</video:publication_date>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://videngine.io/slideshows/automatic-slideshow-maker</loc>
+    <video:video>
+      <video:thumbnail_loc>https://videngine.io/videos/slideshows-automatic-slideshow-maker.jpg</video:thumbnail_loc>
+      <video:title>Automatic slideshow maker: one video per listing or product</video:title>
+      <video:description>How an automatic slideshow maker should work for a business: the data each video needs, photo checks, a CSV or sitemap workflow and cost per approved video.</video:description>
+      <video:content_loc>https://videngine.io/videos/slideshows-automatic-slideshow-maker.mp4</video:content_loc>
+      <video:duration>63</video:duration>
+      <video:publication_date>2026-10-16T11:15:23.914Z</video:publication_date>
     </video:video>
   </url>
   <url>
