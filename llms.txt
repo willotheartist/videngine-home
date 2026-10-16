@@ -27,11 +27,10 @@
 
 - [AI video for business: use cases by team and industry](https://videngine.io/use-cases): Where automated video works for a business: ads, product, explainer, YouTube, short-form and listing videos, and the source each one starts from.
 - [AI video ad maker: ads and marketing videos from your content](https://videngine.io/use-cases/video-ads): Use an AI video ad maker on your own listings, pages and data: which ads to automate, a 20-second ad plan, formats by placement, variants and cost.
-- [Product video automation: from catalogue to ad variants](https://videngine.io/notes/product-video-automation): Build a product video workflow with accurate variants, a reusable scene plan, controlled creative tests and a process for refreshing outdated videos.
-- [Explainer video maker: turn your writing into clear explainers](https://videngine.io/use-cases/explainer-videos): Use an explainer video maker to turn help articles, release notes and guides into narrated, captioned videos: structure, scripts, scene plans and limits.
-- [YouTube video maker for businesses: videos from your pages](https://videngine.io/use-cases/youtube-videos): A YouTube video maker for businesses: turn listings, products and articles into narrated videos and Shorts, with metadata, review and channel publishing.
+- [Product video automation: from catalogue to ad variants](https://videngine.io/programmatic-video/product-video-automation): Build a product video workflow with accurate variants, a reusable scene plan, controlled creative tests and a process for refreshing outdated videos.
+- [YouTube video maker for businesses: videos from your pages](https://videngine.io/youtube): A YouTube video maker for businesses: turn listings, products and articles into narrated videos and Shorts, with metadata, review and channel publishing.
 - [Short-form video maker: Shorts, Reels and TikTok at scale](https://videngine.io/use-cases/short-form-video): A short-form video maker for businesses: turn listings, products and articles into vertical Shorts, Reels and TikToks with burned-in captions, in batches.
-- [Real estate listing video: a narrated video for every property](https://videngine.io/use-cases/real-estate-video): A real estate listing video for every property: narrated, captioned 9:16 and 16:9 cuts from the listing's photos and facts, kept accurate as prices change.
+- [Real estate listing video: a narrated video for every property](https://videngine.io/industries/real-estate-video): A real estate listing video for every property: narrated, captioned 9:16 and 16:9 cuts from the listing's photos and facts, kept accurate as prices change.
 
 ## Industries
 
@@ -45,7 +44,7 @@
 ## Slideshows
 
 - [AI slideshow maker: turn your photos into narrated videos](https://videngine.io/slideshows): An AI slideshow maker for businesses: turn listing, product and page photos into narrated, captioned slideshow videos, with a guide to every step.
-- [Make a video with pictures: photos to a narrated video](https://videngine.io/notes/photos-to-video): How to make a video with pictures, step by step: order the photos, time each one, add narration and captions, frame for 9:16 and 16:9, and when AI fits.
+- [Make a video with pictures: photos to a narrated video](https://videngine.io/slideshows/photos-to-video): How to make a video with pictures, step by step: order the photos, time each one, add narration and captions, frame for 9:16 and 16:9, and when AI fits.
 - [How to make a slideshow video: photos, order, timing and music](https://videngine.io/slideshows/how-to-make-a-slideshow): How to make a slideshow video for a business: how many photos, what resolution, story order, timing to narration, music, captions and 16:9 or 9:16 formats.
 - [Automatic slideshow maker: one video per listing or product](https://videngine.io/slideshows/automatic-slideshow-maker): How an automatic slideshow maker should work for a business: the data each video needs, photo checks, a CSV or sitemap workflow and cost per approved video.
 - [Best slideshow makers in 2026, by what you need to make](https://videngine.io/slideshows/best-slideshow-makers): The best slideshow maker depends on the job. Tools for phones, design, desktop, business video, APIs and narrated slideshows, checked against their own pages.
@@ -57,9 +56,7 @@
 
 ## YouTube
 
-- [YouTube video creator for businesses: make, publish and grow a channel](https://videngine.io/youtube): A YouTube video creator for businesses: turn pages, listings and articles into Shorts and long-form videos, with metadata, automation and disclosure.
 - [YouTube channel for business: turn your website into a channel](https://videngine.io/youtube/youtube-channel-for-business): A YouTube channel for business can start with your website: what to publish by business type, playlists that mirror your site, a cadence and a 30-day plan.
-- [YouTube Shorts maker: Shorts from your website and data](https://videngine.io/youtube/youtube-shorts-maker): A YouTube Shorts maker for businesses: turn pages, listings, products and articles into vertical Shorts with captions, titles and hashtags, in batches.
 - [YouTube Shorts vs long-form videos: which a business needs](https://videngine.io/youtube/shorts-vs-long-form): YouTube Shorts vs long videos: most businesses need both, cut from the same listing, product or article. What each is for, where to start, and a workflow.
 - [YouTube titles, descriptions and tags that get videos found](https://videngine.io/youtube/youtube-titles-descriptions-tags): How to write YouTube titles and descriptions for business videos: what each field does per YouTube Help, hashtag and tag rules, a template and a checklist.
 - [YouTube automation for businesses: what to automate](https://videngine.io/youtube/youtube-automation): YouTube automation for a real business channel: what software can do from your own pages, what still needs a person, and the YouTube rules that apply.
@@ -78,7 +75,6 @@
 ## Training
 
 - [Training videos from your documents: an AI training video maker](https://videngine.io/training): An AI training video maker for documents you already keep: SOPs, onboarding, lessons and patient leaflets as narrated, captioned videos that stay current.
-- [AI training video generator: videos from your documents](https://videngine.io/training/ai-training-video-generator): An AI training video generator that works from the documents your team already maintains: tool types, what good training needs, captions and LMS delivery.
 - [Onboarding videos: for new staff and new customers](https://videngine.io/training/onboarding-videos): Make onboarding videos for new staff and new customers from the documents you already keep: a series plan, what to leave out, delivery and keeping it current.
 - [SOP videos: turn standard operating procedures into video](https://videngine.io/training/sop-videos): SOP videos that stay matched to the controlled document: which procedures suit video, one step per scene, version on the closing card, review and delivery.
 - [Course and lesson videos from your notes](https://videngine.io/training/course-videos): Make lesson videos from written course notes: which parts suit narrated video, one objective per video, captions, a lesson structure and where to publish.
@@ -96,22 +92,21 @@
 ## Guides
 
 - [AI video tools: choose the right generator or platform](https://videngine.io/ai-video-tools): Compare AI video tools, generators and creation platforms by the job: generated footage, presenters, text, photos, URLs, ads or repeatable automation.
-- [Best AI video generators in 2026, by what you need to make](https://videngine.io/notes/best-ai-video-generators): The best AI video generator depends on the job. Named tools for footage, avatars, creators, articles, design, APIs and data, checked against their own pages.
-- [Text to video AI: prompt generators vs script to video](https://videngine.io/notes/text-to-video-ai): Text to video AI covers two jobs: generating footage from a prompt, and script to video with narration, scenes and captions. How to choose and what to check.
-- [AI voiceover for video: voices, pronunciation and disclosure](https://videngine.io/notes/ai-voiceover): AI voiceover for video: pick a voice, fix pronunciation with a lexicon, write scripts for the ear, get consent before voice cloning and disclose where needed.
-- [AI video generator costs: compare the full production bill](https://videngine.io/notes/ai-video-generator-cost): Compare AI video tool costs across subscriptions, credits, generated footage, rendering, retries and review using cost per approved video.
-- [URL to video: how to turn a webpage into a useful video](https://videngine.io/notes/url-to-video): A practical URL-to-video workflow: choose the right source, check extracted facts, plan scenes and evaluate tools before automating production.
-- [Article to video: turn a blog post into a clear explainer](https://videngine.io/notes/article-to-video): Turn articles into videos with an editorial workflow for choosing one answer, writing a spoken script, matching visuals and reviewing captions.
-- [Video templates: editor, API and data-driven templates](https://videngine.io/notes/video-templates): Video templates compared: editor templates, template APIs and coded templates that fill from your data, plus a checklist for records that break them.
-- [Bulk video creation from a CSV: a reliable workflow](https://videngine.io/notes/bulk-video-creation-from-csv): How to structure a spreadsheet for bulk video creation, validate rows, track failures and estimate render volume without losing control of quality.
-- [Video automation APIs: what to evaluate before integrating](https://videngine.io/notes/video-automation-api): Compare video generation and rendering APIs, asynchronous jobs, webhooks, retries, storage and the controls a production integration needs.
+- [Best AI video generators in 2026, by what you need to make](https://videngine.io/ai-video-tools/best-ai-video-generators): The best AI video generator depends on the job. Named tools for footage, avatars, creators, articles, design, APIs and data, checked against their own pages.
+- [Text to video AI: prompt generators vs script to video](https://videngine.io/ai-video-tools/text-to-video-ai): Text to video AI covers two jobs: generating footage from a prompt, and script to video with narration, scenes and captions. How to choose and what to check.
+- [AI voiceover for video: voices, pronunciation and disclosure](https://videngine.io/ai-video-tools/ai-voiceover): AI voiceover for video: pick a voice, fix pronunciation with a lexicon, write scripts for the ear, get consent before voice cloning and disclose where needed.
+- [AI video generator costs: compare the full production bill](https://videngine.io/ai-video-tools/ai-video-generator-cost): Compare AI video tool costs across subscriptions, credits, generated footage, rendering, retries and review using cost per approved video.
+- [URL to video: how to turn a webpage into a useful video](https://videngine.io/programmatic-video/url-to-video): A practical URL-to-video workflow: choose the right source, check extracted facts, plan scenes and evaluate tools before automating production.
+- [Article to video: turn a blog post into a clear explainer](https://videngine.io/programmatic-video/article-to-video): Turn articles into videos with an editorial workflow for choosing one answer, writing a spoken script, matching visuals and reviewing captions.
+- [Video templates: editor, API and data-driven templates](https://videngine.io/programmatic-video/video-templates): Video templates compared: editor templates, template APIs and coded templates that fill from your data, plus a checklist for records that break them.
+- [Bulk video creation from a CSV: a reliable workflow](https://videngine.io/programmatic-video/bulk-video-creation-from-csv): How to structure a spreadsheet for bulk video creation, validate rows, track failures and estimate render volume without losing control of quality.
+- [Video automation APIs: what to evaluate before integrating](https://videngine.io/programmatic-video/video-automation-api): Compare video generation and rendering APIs, asynchronous jobs, webhooks, retries, storage and the controls a production integration needs.
 - [Video automation glossary: AI video and video SEO terms explained](https://videngine.io/glossary): A video automation glossary of 55 terms in plain English: templates, renders, AI video generators, aspect ratios, captions, VideoObject and video sitemaps.
 - [Video automation guides and notes](https://videngine.io/notes): Guides to AI video tools, text, photos and URLs to video, bulk and API workflows, business use cases and honest comparisons, grouped by topic.
 
 ## Comparisons
 
 - [Compare Videngine with Synthesia, Canva, InVideo and more](https://videngine.io/compare): Honest comparisons of Videngine with Synthesia, Canva, InVideo, Animoto, Creatomate, Shotstack, Pictory, Renderforest and Animaker, checked on their own sites.
-- [Videngine vs AI video generators: which one do you need?](https://videngine.io/vs/ai-video-generators): Videngine is not an AI video generator. Generators invent new footage on every run; Videngine renders from templates and repeats. When to use each.
 - [Videngine vs Synthesia: a Synthesia alternative for bulk video](https://videngine.io/vs/synthesia): Synthesia makes avatar-led training and business video. Videngine renders narrated videos from your pages, products and data. Plans and prices compared.
 - [Videngine vs Canva: a Canva video alternative for bulk video](https://videngine.io/vs/canva): Canva’s video editor builds each video by hand. Videngine renders narrated videos from pages and data in batches. A Canva video alternative, compared.
 - [Videngine vs InVideo: an InVideo alternative for bulk video](https://videngine.io/vs/invideo): Looking for an InVideo alternative? InVideo AI makes one video at a time from a prompt; Videngine renders many from your own pages and data. Compared.

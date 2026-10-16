@@ -9,12 +9,97 @@
     },
     {
       "source": "/notes/generated-vs-rendered",
-      "destination": "/vs/ai-video-generators",
+      "destination": "/ai-video-tools",
       "permanent": true
     },
     {
       "source": "/notes/four-hundred-videos-one-spreadsheet",
-      "destination": "/notes/bulk-video-creation-from-csv",
+      "destination": "/programmatic-video/bulk-video-creation-from-csv",
+      "permanent": true
+    },
+    {
+      "source": "/notes/url-to-video",
+      "destination": "/programmatic-video/url-to-video",
+      "permanent": true
+    },
+    {
+      "source": "/notes/bulk-video-creation-from-csv",
+      "destination": "/programmatic-video/bulk-video-creation-from-csv",
+      "permanent": true
+    },
+    {
+      "source": "/notes/product-video-automation",
+      "destination": "/programmatic-video/product-video-automation",
+      "permanent": true
+    },
+    {
+      "source": "/notes/video-automation-api",
+      "destination": "/programmatic-video/video-automation-api",
+      "permanent": true
+    },
+    {
+      "source": "/notes/video-templates",
+      "destination": "/programmatic-video/video-templates",
+      "permanent": true
+    },
+    {
+      "source": "/notes/article-to-video",
+      "destination": "/programmatic-video/article-to-video",
+      "permanent": true
+    },
+    {
+      "source": "/notes/text-to-video-ai",
+      "destination": "/ai-video-tools/text-to-video-ai",
+      "permanent": true
+    },
+    {
+      "source": "/notes/best-ai-video-generators",
+      "destination": "/ai-video-tools/best-ai-video-generators",
+      "permanent": true
+    },
+    {
+      "source": "/notes/ai-video-generator-cost",
+      "destination": "/ai-video-tools/ai-video-generator-cost",
+      "permanent": true
+    },
+    {
+      "source": "/notes/ai-voiceover",
+      "destination": "/ai-video-tools/ai-voiceover",
+      "permanent": true
+    },
+    {
+      "source": "/notes/photos-to-video",
+      "destination": "/slideshows/photos-to-video",
+      "permanent": true
+    },
+    {
+      "source": "/use-cases/real-estate-video",
+      "destination": "/industries/real-estate-video",
+      "permanent": true
+    },
+    {
+      "source": "/use-cases/explainer-videos",
+      "destination": "/explainers/ai-explainer-video",
+      "permanent": true
+    },
+    {
+      "source": "/use-cases/youtube-videos",
+      "destination": "/youtube",
+      "permanent": true
+    },
+    {
+      "source": "/youtube/youtube-shorts-maker",
+      "destination": "/use-cases/short-form-video",
+      "permanent": true
+    },
+    {
+      "source": "/vs/ai-video-generators",
+      "destination": "/ai-video-tools",
+      "permanent": true
+    },
+    {
+      "source": "/training/ai-training-video-generator",
+      "destination": "/training",
       "permanent": true
     }
   ]

@@ -70,44 +70,44 @@
 <p>Programmatic video is video produced by running a coded template against structured data, so one template renders many videos. The template fixes layout, type, motion and timing, and each row, page or record supplies the values that change. Videngine is a programmatic video engine: it turns a web page, a listing, a block of text or a row of data into a narrated, captioned MP4. Read <a href="/programmatic-video">the full definition of programmatic video</a>.</p>
 
 <h3 id="render">Render</h3>
-<p>A render is the process of computing every frame of a video from its template, data, images and audio, then encoding those frames into a finished file such as an MP4. The word is also used for the output: one render is one finished file. Renders can fail or need repeating, so <a href="/notes/bulk-video-creation-from-csv">a bulk workflow tracks each render job</a> against its source.</p>
+<p>A render is the process of computing every frame of a video from its template, data, images and audio, then encoding those frames into a finished file such as an MP4. The word is also used for the output: one render is one finished file. Renders can fail or need repeating, so <a href="/programmatic-video/bulk-video-creation-from-csv">a bulk workflow tracks each render job</a> against its source.</p>
 
 <h3 id="coded-template">Coded template</h3>
-<p>A coded template is a video template written as software, for example React components rendered with Remotion, that decides layout, timing and behaviour from the data it receives. Because it is code, it can handle cases an editor template cannot, such as a missing photo, a very long name or a price that should be hidden. Compare it with the other kinds in <a href="/notes/video-templates">our guide to video templates</a>.</p>
+<p>A coded template is a video template written as software, for example React components rendered with Remotion, that decides layout, timing and behaviour from the data it receives. Because it is code, it can handle cases an editor template cannot, such as a missing photo, a very long name or a price that should be hidden. Compare it with the other kinds in <a href="/programmatic-video/video-templates">our guide to video templates</a>.</p>
 
 <h3 id="brand-tokens">Brand tokens</h3>
 <p>Brand tokens are the named values a template reads for a brand's typefaces, colours, logo, spacing, safe areas and motion. Setting them once means every video follows the same rules, and a brand change is made in one place rather than in every file.</p>
 
 <h3 id="editor-template">Editor template</h3>
-<p>An editor template is a pre-designed video layout that a person opens in an online editor, fills by replacing the text and pictures, and exports one video at a time. It suits designed one-offs and seasonal pieces; at volume, every video is another manual session. See <a href="/notes/video-templates">editor, API and data-driven templates compared</a>.</p>
+<p>An editor template is a pre-designed video layout that a person opens in an online editor, fills by replacing the text and pictures, and exports one video at a time. It suits designed one-offs and seasonal pieces; at volume, every video is another manual session. See <a href="/programmatic-video/video-templates">editor, API and data-driven templates compared</a>.</p>
 
 <h3 id="template-api">Template API</h3>
-<p>A template API is a rendering service that fills a stored template with data sent by your own code and returns a video file. It gives a developer full control of the template, while the script, voice, captions, review and retries around each render remain the developer's to build. See <a href="/notes/video-automation-api">what to evaluate before integrating a video automation API</a>.</p>
+<p>A template API is a rendering service that fills a stored template with data sent by your own code and returns a video file. It gives a developer full control of the template, while the script, voice, captions, review and retries around each render remain the developer's to build. See <a href="/programmatic-video/video-automation-api">what to evaluate before integrating a video automation API</a>.</p>
 
 <h3 id="scene-plan">Scene plan</h3>
-<p>A scene plan is the ordered list of a video's scenes, with each scene's timing, message, on-screen text and the picture that supports it. It is the brief the template works from, and the cheapest place to catch a missing fact or an unsupported claim before anything is rendered. Work through <a href="/notes/product-video-automation">an example scene plan for one product</a>.</p>
+<p>A scene plan is the ordered list of a video's scenes, with each scene's timing, message, on-screen text and the picture that supports it. It is the brief the template works from, and the cheapest place to catch a missing fact or an unsupported claim before anything is rendered. Work through <a href="/programmatic-video/product-video-automation">an example scene plan for one product</a>.</p>
 
 <h3 id="batch-run">Batch run</h3>
-<p>A batch run is a single job that renders many videos from a list of inputs, usually one video per spreadsheet row, record or page. It needs consistent input data, a way to retry failures and a record that ties each output back to its source. The steps are set out in <a href="/notes/bulk-video-creation-from-csv">bulk video creation from a CSV</a>.</p>
+<p>A batch run is a single job that renders many videos from a list of inputs, usually one video per spreadsheet row, record or page. It needs consistent input data, a way to retry failures and a record that ties each output back to its source. The steps are set out in <a href="/programmatic-video/bulk-video-creation-from-csv">bulk video creation from a CSV</a>.</p>
 </section>
 
 <section id="ai-video"><h2>AI video</h2>
 <p>AI video is a broad label: these terms separate tools that generate new footage from tools that assemble a video from words and pictures you already have.</p>
 
 <h3 id="ai-video-generator">AI video generator</h3>
-<p>An AI video generator is a tool that uses a generative model to create new video frames from a prompt, an image or other input, rather than assembling existing footage. The same prompt can produce different results each time, which suits concept and mood shots and makes exact facts harder to control. The term is also used loosely for any video tool with AI in its workflow; <a href="/notes/best-ai-video-generators">our guide to choosing an AI video generator</a> sorts them by job.</p>
+<p>An AI video generator is a tool that uses a generative model to create new video frames from a prompt, an image or other input, rather than assembling existing footage. The same prompt can produce different results each time, which suits concept and mood shots and makes exact facts harder to control. The term is also used loosely for any video tool with AI in its workflow; <a href="/ai-video-tools/best-ai-video-generators">our guide to choosing an AI video generator</a> sorts them by job.</p>
 
 <h3 id="text-to-video">Text-to-video</h3>
-<p>Text-to-video is the production of a video from written input. It covers two different jobs: a generative model creating footage from a prompt, and a tool turning a script into narration, scenes and captions. <a href="/notes/text-to-video-ai">Text to video AI: prompt generators vs script to video</a> explains how to tell them apart.</p>
+<p>Text-to-video is the production of a video from written input. It covers two different jobs: a generative model creating footage from a prompt, and a tool turning a script into narration, scenes and captions. <a href="/ai-video-tools/text-to-video-ai">Text to video AI: prompt generators vs script to video</a> explains how to tell them apart.</p>
 
 <h3 id="image-to-video">Image-to-video</h3>
-<p>Image-to-video is generative AI that takes a still image and creates new motion from it, such as a moving camera or an animated subject. It differs from a photo video, which moves across the real photographs with pans and zooms and invents nothing. Both are explained in <a href="/notes/photos-to-video">photos to video: the two kinds</a>.</p>
+<p>Image-to-video is generative AI that takes a still image and creates new motion from it, such as a moving camera or an animated subject. It differs from a photo video, which moves across the real photographs with pans and zooms and invents nothing. Both are explained in <a href="/slideshows/photos-to-video">photos to video: the two kinds</a>.</p>
 
 <h3 id="script-to-video">Script-to-video</h3>
-<p>Script-to-video is a form of text-to-video in which your words become the narration, word for word, and the tool assembles visuals and captions for each scene. Choose it when the wording must stay exactly as approved. See how to <a href="/use-cases/explainer-videos">write an explainer script for the ear</a>.</p>
+<p>Script-to-video is a form of text-to-video in which your words become the narration, word for word, and the tool assembles visuals and captions for each scene. Choose it when the wording must stay exactly as approved. See how to <a href="/explainers/ai-explainer-video">write an explainer script for the ear</a>.</p>
 
 <h3 id="url-to-video">URL-to-video</h3>
-<p>URL-to-video is a workflow that reads a web page, extracts its text, images and structured data, and turns them into a script and scenes. The result can only be as accurate as the page, so extracted facts need checking before rendering. Read <a href="/notes/url-to-video">how to turn a webpage into a useful video</a>.</p>
+<p>URL-to-video is a workflow that reads a web page, extracts its text, images and structured data, and turns them into a script and scenes. The result can only be as accurate as the page, so extracted facts need checking before rendering. Read <a href="/programmatic-video/url-to-video">how to turn a webpage into a useful video</a>.</p>
 
 <h3 id="avatar-video">Avatar video</h3>
 <p>An avatar video is a video in which a digital presenter, a synthetic or digitally recreated person, speaks a script to camera. It suits training and internal communication where a face helps, and is a different job from showing a product, property or listing. See <a href="/vs/synthesia">how avatar presenter tools compare with template rendering</a>.</p>
@@ -120,10 +120,10 @@
 <p>Aspect ratio is the proportion of a video frame's width to its height, written as width:height. One source usually needs more than one ratio, because a placement crops or letterboxes a frame that does not match it. See <a href="/use-cases/video-ads">which aspect ratio suits which placement</a>.</p>
 
 <h3 id="ratio-16-9">16:9</h3>
-<p>16:9 is the landscape aspect ratio, sixteen units wide to nine high, used by most television, desktop players and long-form YouTube video. At 1080p it is 1920 × 1080 pixels. It is the usual frame for <a href="/use-cases/youtube-videos">YouTube videos made from your pages</a>.</p>
+<p>16:9 is the landscape aspect ratio, sixteen units wide to nine high, used by most television, desktop players and long-form YouTube video. At 1080p it is 1920 × 1080 pixels. It is the usual frame for <a href="/youtube">YouTube videos made from your pages</a>.</p>
 
 <h3 id="ratio-9-16">9:16</h3>
-<p>9:16 is the vertical aspect ratio, nine units wide to sixteen high, that fills an upright phone screen. It is the usual frame for YouTube Shorts, Reels and TikTok; at 1080p it is 1080 × 1920 pixels. Landscape photos need reframing to fit it, as shown in <a href="/notes/photos-to-video">framing photos for 9:16 and 16:9</a>.</p>
+<p>9:16 is the vertical aspect ratio, nine units wide to sixteen high, that fills an upright phone screen. It is the usual frame for YouTube Shorts, Reels and TikTok; at 1080p it is 1080 × 1920 pixels. Landscape photos need reframing to fit it, as shown in <a href="/slideshows/photos-to-video">framing photos for 9:16 and 16:9</a>.</p>
 
 <h3 id="ratio-1-1">1:1</h3>
 <p>1:1 is the square aspect ratio, equal in width and height. It is used for feed posts and for placements where one file has to work on both desktop and phone; at 1080p it is 1080 × 1080 pixels.</p>
@@ -172,10 +172,10 @@
 <p>Narration and captions carry a video's words twice, as speech and as text; these terms cover how the speech is produced and how the text is attached.</p>
 
 <h3 id="voiceover">Voiceover</h3>
-<p>A voiceover is narration recorded separately from the pictures and laid over them, by a human speaker or a synthetic voice. In template-built video it usually carries the facts, so the on-screen text can stay short. See <a href="/notes/ai-voiceover">our guide to AI voiceover</a>.</p>
+<p>A voiceover is narration recorded separately from the pictures and laid over them, by a human speaker or a synthetic voice. In template-built video it usually carries the facts, so the on-screen text can stay short. See <a href="/ai-video-tools/ai-voiceover">our guide to AI voiceover</a>.</p>
 
 <h3 id="synthetic-voice">Synthetic voice</h3>
-<p>A synthetic voice is speech generated by a text-to-speech model from written text, with no person recording the line. A corrected line can be regenerated without booking a new recording session, and the result depends as much on the script and pronunciation rules as on the model. <a href="/notes/ai-voiceover">Choosing and directing an AI voice</a> covers the trade-offs.</p>
+<p>A synthetic voice is speech generated by a text-to-speech model from written text, with no person recording the line. A corrected line can be regenerated without booking a new recording session, and the result depends as much on the script and pronunciation rules as on the model. <a href="/ai-video-tools/ai-voiceover">Choosing and directing an AI voice</a> covers the trade-offs.</p>
 
 <h3 id="voice-cloning">Voice cloning</h3>
 <p>Voice cloning is the creation of a synthetic voice modelled on recordings of a specific real person. It needs that person's informed consent and clear terms on where the voice may be used, and it is distinct from choosing a stock synthetic voice or uploading audio you recorded yourself.</p>
@@ -257,7 +257,7 @@
 <p>A video ledger is a record of every video produced: its source, versions, review status, builder, reviewer, any defect code and where it was published. Joined to a listing or product table, it shows which live items still lack an approved video, as in <a href="/industries/marketplace-video">marketplace listing video</a>.</p>
 
 <h3 id="cost-per-approved-video">Cost per approved video</h3>
-<p>Cost per approved video is the total cost of production, including tool fees, extra usage and review time, divided by the number of videos that meet your acceptance criteria. It is a fairer comparison than the price per export, because rejected attempts and revisions are counted. Work it through in <a href="/notes/ai-video-generator-cost">AI video generator costs</a>.</p>
+<p>Cost per approved video is the total cost of production, including tool fees, extra usage and review time, divided by the number of videos that meet your acceptance criteria. It is a fairer comparison than the price per export, because rejected attempts and revisions are counted. Work it through in <a href="/ai-video-tools/ai-video-generator-cost">AI video generator costs</a>.</p>
 </section>
 
 <section id="next"><h2>Choose your next step</h2><p>Use these definitions with the two guides that put them in order: one for choosing a tool, one for getting the result found.</p><ul><li><a href="/ai-video-tools">Choose an AI video tool by the job it has to do</a></li><li><a href="/video-seo">Make your videos findable in search and AI answers</a></li></ul></section><div class="journal-cta"><h2>Put the terms to work.</h2><p>Bring one page, listing or spreadsheet row you want as a video. Agree the format, the captions and where it will be published, then render it.</p><a class="pill-button" href="/#waitlist">Join the waitlist ↗</a></div><p class="journal-note" style="margin-top:24px">Published by Videngine, a video rendering product built and run by Wall &amp; Fifth. External links refer to the original documentation or product descriptions; examples are illustrative unless stated otherwise.</p></article></div><section class="journal-related"><div class="page-shell"><h2>Keep reading.</h2><div class="journal-grid"><a class="journal-card" href="/programmatic-video"><span class="journal-label">Fundamentals</span><h3>What is programmatic video?</h3><p>Programmatic video is rendered from a coded template and structured data, so one template makes many videos. A plain definition, and when to use it.</p><span>Read the guide ↗</span></a><a class="journal-card" href="/ai-video-tools"><span class="journal-label">Start here</span><h3>AI video tools: choose the right generator or platform</h3><p>Compare AI video tools, generators and creation platforms by the job: generated footage, presenters, text, photos, URLs, ads or repeatable automation.</p><span>Read the guide ↗</span></a></div></div></section></main><footer class="footer" id="contact">
@@ -267,7 +267,7 @@
 <div class="footer-grid">
 <div class="footer-col"><h4>Studio</h4><a href="/#waitlist">Join the waitlist</a><h4 style="margin-top:24px">Email</h4><a href="mailto:hello@videngine.io">hello@videngine.io</a></div>
 <div class="footer-col"><h4>Product</h4><a href="/#how">How it works</a><a href="/use-cases">Use cases</a><a href="/industries">Industries</a><a href="/slideshows">Slideshows</a><a href="/youtube">YouTube</a><a href="/explainers">Explainers</a><a href="/training">Training</a><a href="/video-seo">Video SEO</a><a href="/pricing">Pricing</a><a href="/notes">Notes</a><a href="/glossary">Glossary</a><a href="/about">About</a></div>
-<div class="footer-col"><h4>Learn</h4><a href="/vs/ai-video-generators">vs AI generators</a><a href="/compare">All comparisons</a><a href="/programmatic-video">Programmatic video</a><a href="/notes">All guides</a></div>
+<div class="footer-col"><h4>Learn</h4><a href="/ai-video-tools">vs AI generators</a><a href="/compare">All comparisons</a><a href="/programmatic-video">Programmatic video</a><a href="/notes">All guides</a></div>
 <div class="footer-col"><h4>Contact</h4><a href="mailto:hello@videngine.io">hello@videngine.io</a><a href="https://wallandfifth.com">Wall &amp; Fifth</a><a href="/terms">Terms</a><a href="/privacy">Privacy</a></div>
 </div>
 <div class="footer-bottom"><span>© 2026 Videngine</span><span>Built and run by Wall &amp; Fifth</span></div>

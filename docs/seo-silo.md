@@ -159,3 +159,28 @@ Rules for this silo: write for the operator in that industry; no client names, v
 - **/training** hub ("AI training video maker") with five clusters: ai-training-video-generator, onboarding-videos, sop-videos, course-videos, patient-education-videos.
 - Comparisons: /vs/powtoon, /vs/videoscribe, /vs/colossyan.
 - Plan gating follows /pricing: batch runs and API from Growth, YouTube publishing on Scale (rolling out).
+
+## Restructure (16 October 2026)
+
+Audit found the silos were topic buckets with pages competing for the same searches, spokes stranded under /notes, and Industries thin. Pages now sit physically under their pillar, and each search has one page. Old URLs 301 to the new ones (vercel.json); older redirects point straight at the final page.
+
+Moved (content unchanged, breadcrumbs and canonicals updated):
+
+| From | To |
+| --- | --- |
+| /notes/url-to-video, bulk-video-creation-from-csv, product-video-automation, video-automation-api, video-templates, article-to-video | /programmatic-video/<same slug> |
+| /notes/text-to-video-ai, best-ai-video-generators, ai-video-generator-cost, ai-voiceover | /ai-video-tools/<same slug> |
+| /notes/photos-to-video | /slideshows/photos-to-video |
+| /use-cases/real-estate-video | /industries/real-estate-video |
+
+Merged (the first page retired into the second, which now owns both keyword sets):
+
+| Retired | Kept | Search |
+| --- | --- | --- |
+| /use-cases/explainer-videos | /explainers/ai-explainer-video | explainer video maker |
+| /use-cases/youtube-videos | /youtube | YouTube video maker / creator for business |
+| /youtube/youtube-shorts-maker | /use-cases/short-form-video | Shorts maker, reel maker |
+| /vs/ai-video-generators | /ai-video-tools | AI video generators, generated vs rendered |
+| /training/ai-training-video-generator | /training | AI training video maker |
+
+/notes is now the library index only; it is no longer a breadcrumb parent. Keyword map targets updated to match.

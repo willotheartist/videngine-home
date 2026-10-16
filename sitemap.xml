@@ -19,20 +19,19 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://videngine.io/vs/ai-video-generators</loc>
+    <loc>https://videngine.io/ai-video-tools</loc>
     <lastmod>2026-10-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url><loc>https://videngine.io/notes</loc><lastmod>2026-10-10</lastmod></url>
-  <url><loc>https://videngine.io/notes/url-to-video</loc><lastmod>2026-10-10</lastmod></url>
-  <url><loc>https://videngine.io/notes/bulk-video-creation-from-csv</loc><lastmod>2026-10-10</lastmod></url>
-  <url><loc>https://videngine.io/notes/product-video-automation</loc><lastmod>2026-10-10</lastmod></url>
-  <url><loc>https://videngine.io/notes/article-to-video</loc><lastmod>2026-10-10</lastmod></url>
-<url><loc>https://videngine.io/ai-video-tools</loc><lastmod>2026-10-10</lastmod></url>
-<url><loc>https://videngine.io/notes/text-to-video-ai</loc><lastmod>2026-10-10</lastmod></url>
-<url><loc>https://videngine.io/notes/video-automation-api</loc><lastmod>2026-10-10</lastmod></url>
-<url><loc>https://videngine.io/notes/ai-video-generator-cost</loc><lastmod>2026-10-10</lastmod></url>
+  <url><loc>https://videngine.io/programmatic-video/url-to-video</loc><lastmod>2026-10-10</lastmod></url>
+  <url><loc>https://videngine.io/programmatic-video/bulk-video-creation-from-csv</loc><lastmod>2026-10-10</lastmod></url>
+  <url><loc>https://videngine.io/programmatic-video/product-video-automation</loc><lastmod>2026-10-10</lastmod></url>
+  <url><loc>https://videngine.io/programmatic-video/article-to-video</loc><lastmod>2026-10-10</lastmod></url>
+<url><loc>https://videngine.io/ai-video-tools/text-to-video-ai</loc><lastmod>2026-10-10</lastmod></url>
+<url><loc>https://videngine.io/programmatic-video/video-automation-api</loc><lastmod>2026-10-10</lastmod></url>
+<url><loc>https://videngine.io/ai-video-tools/ai-video-generator-cost</loc><lastmod>2026-10-10</lastmod></url>
 <url><loc>https://videngine.io/compare</loc><lastmod>2026-10-10</lastmod></url>
 <url><loc>https://videngine.io/vs/synthesia</loc><lastmod>2026-10-10</lastmod></url>
 <url><loc>https://videngine.io/vs/creatomate</loc><lastmod>2026-10-10</lastmod></url>
@@ -40,11 +39,11 @@
 <url><loc>https://videngine.io/vs/pictory</loc><lastmod>2026-10-10</lastmod></url>
 <url><loc>https://videngine.io/use-cases</loc><lastmod>2026-10-10</lastmod></url>
 <url><loc>https://videngine.io/use-cases/video-ads</loc><lastmod>2026-10-10</lastmod></url>
-<url><loc>https://videngine.io/use-cases/explainer-videos</loc><lastmod>2026-10-10</lastmod></url>
-<url><loc>https://videngine.io/use-cases/youtube-videos</loc><lastmod>2026-10-10</lastmod></url>
+<url><loc>https://videngine.io/explainers/ai-explainer-video</loc><lastmod>2026-10-10</lastmod></url>
+<url><loc>https://videngine.io/youtube</loc><lastmod>2026-10-10</lastmod></url>
 <url><loc>https://videngine.io/use-cases/short-form-video</loc><lastmod>2026-10-10</lastmod></url>
-<url><loc>https://videngine.io/use-cases/real-estate-video</loc><lastmod>2026-10-10</lastmod></url>
-<url><loc>https://videngine.io/notes/photos-to-video</loc><lastmod>2026-10-10</lastmod></url>
+<url><loc>https://videngine.io/industries/real-estate-video</loc><lastmod>2026-10-10</lastmod></url>
+<url><loc>https://videngine.io/slideshows/photos-to-video</loc><lastmod>2026-10-10</lastmod></url>
 <url><loc>https://videngine.io/industries</loc><lastmod>2026-10-10</lastmod></url>
 <url><loc>https://videngine.io/industries/car-dealer-video</loc><lastmod>2026-10-10</lastmod></url>
 <url><loc>https://videngine.io/industries/boat-listing-video</loc><lastmod>2026-10-10</lastmod></url>
@@ -58,9 +57,9 @@
 <url><loc>https://videngine.io/video-seo/video-transcripts-captions</loc><lastmod>2026-10-10</lastmod></url>
 <url><loc>https://videngine.io/video-seo/ai-search-video</loc><lastmod>2026-10-10</lastmod></url>
 <url><loc>https://videngine.io/video-seo/youtube-vs-self-hosted</loc><lastmod>2026-10-10</lastmod></url>
-<url><loc>https://videngine.io/notes/best-ai-video-generators</loc><lastmod>2026-10-10</lastmod></url>
-<url><loc>https://videngine.io/notes/ai-voiceover</loc><lastmod>2026-10-10</lastmod></url>
-<url><loc>https://videngine.io/notes/video-templates</loc><lastmod>2026-10-10</lastmod></url>
+<url><loc>https://videngine.io/ai-video-tools/best-ai-video-generators</loc><lastmod>2026-10-10</lastmod></url>
+<url><loc>https://videngine.io/ai-video-tools/ai-voiceover</loc><lastmod>2026-10-10</lastmod></url>
+<url><loc>https://videngine.io/programmatic-video/video-templates</loc><lastmod>2026-10-10</lastmod></url>
 <url><loc>https://videngine.io/glossary</loc><lastmod>2026-10-10</lastmod></url>
 <url><loc>https://videngine.io/vs/canva</loc><lastmod>2026-10-10</lastmod></url>
 <url><loc>https://videngine.io/vs/invideo</loc><lastmod>2026-10-10</lastmod></url>
@@ -76,22 +75,18 @@
 <url><loc>https://videngine.io/slideshows/video-montage-maker</loc><lastmod>2026-10-10</lastmod></url>
 <url><loc>https://videngine.io/slideshows/image-to-video-ai-vs-slideshow</loc><lastmod>2026-10-10</lastmod></url>
 <url><loc>https://videngine.io/vs/animoto</loc><lastmod>2026-10-10</lastmod></url>
-<url><loc>https://videngine.io/youtube</loc><lastmod>2026-10-10</lastmod></url>
 <url><loc>https://videngine.io/youtube/youtube-channel-for-business</loc><lastmod>2026-10-10</lastmod></url>
-<url><loc>https://videngine.io/youtube/youtube-shorts-maker</loc><lastmod>2026-10-10</lastmod></url>
 <url><loc>https://videngine.io/youtube/shorts-vs-long-form</loc><lastmod>2026-10-10</lastmod></url>
 <url><loc>https://videngine.io/youtube/youtube-titles-descriptions-tags</loc><lastmod>2026-10-10</lastmod></url>
 <url><loc>https://videngine.io/youtube/youtube-automation</loc><lastmod>2026-10-10</lastmod></url>
 <url><loc>https://videngine.io/youtube/youtube-ai-disclosure</loc><lastmod>2026-10-10</lastmod></url>
 <url><loc>https://videngine.io/explainers</loc><lastmod>2026-10-10</lastmod></url>
-<url><loc>https://videngine.io/explainers/ai-explainer-video</loc><lastmod>2026-10-10</lastmod></url>
 <url><loc>https://videngine.io/explainers/animated-explainer-video</loc><lastmod>2026-10-10</lastmod></url>
 <url><loc>https://videngine.io/explainers/whiteboard-video</loc><lastmod>2026-10-10</lastmod></url>
 <url><loc>https://videngine.io/explainers/explainer-video-script</loc><lastmod>2026-10-10</lastmod></url>
 <url><loc>https://videngine.io/explainers/how-to-videos-from-help-articles</loc><lastmod>2026-10-10</lastmod></url>
 <url><loc>https://videngine.io/explainers/explainer-video-length-and-cost</loc><lastmod>2026-10-10</lastmod></url>
 <url><loc>https://videngine.io/training</loc><lastmod>2026-10-10</lastmod></url>
-<url><loc>https://videngine.io/training/ai-training-video-generator</loc><lastmod>2026-10-10</lastmod></url>
 <url><loc>https://videngine.io/training/onboarding-videos</loc><lastmod>2026-10-10</lastmod></url>
 <url><loc>https://videngine.io/training/sop-videos</loc><lastmod>2026-10-10</lastmod></url>
 <url><loc>https://videngine.io/training/course-videos</loc><lastmod>2026-10-10</lastmod></url>

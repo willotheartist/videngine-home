@@ -45,7 +45,7 @@
     </video:video>
   </url>
   <url>
-    <loc>https://videngine.io/notes/video-automation-api</loc>
+    <loc>https://videngine.io/programmatic-video/video-automation-api</loc>
     <video:video>
       <video:thumbnail_loc>https://videngine.io/videos/notes-video-automation-api.jpg</video:thumbnail_loc>
       <video:title>Video automation APIs: what to evaluate before integrating</video:title>
