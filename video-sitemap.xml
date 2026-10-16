@@ -56,6 +56,17 @@
     </video:video>
   </url>
   <url>
+    <loc>https://videngine.io/slideshows/how-to-make-a-slideshow</loc>
+    <video:video>
+      <video:thumbnail_loc>https://videngine.io/videos/slideshows-how-to-make-a-slideshow.jpg</video:thumbnail_loc>
+      <video:title>How to make a slideshow video: photos, order, timing and music</video:title>
+      <video:description>How to make a slideshow video for a business: how many photos, what resolution, story order, timing to narration, music, captions and 16:9 or 9:16 formats.</video:description>
+      <video:content_loc>https://videngine.io/videos/slideshows-how-to-make-a-slideshow.mp4</video:content_loc>
+      <video:duration>60</video:duration>
+      <video:publication_date>2026-10-16T11:14:02.397Z</video:publication_date>
+    </video:video>
+  </url>
+  <url>
     <loc>https://videngine.io/use-cases/video-ads</loc>
     <video:video>
       <video:thumbnail_loc>https://videngine.io/videos/use-cases-video-ads.jpg</video:thumbnail_loc>
