@@ -56,6 +56,17 @@
     </video:video>
   </url>
   <url>
+    <loc>https://videngine.io/slideshows/best-slideshow-makers</loc>
+    <video:video>
+      <video:thumbnail_loc>https://videngine.io/videos/slideshows-best-slideshow-makers.jpg</video:thumbnail_loc>
+      <video:title>The best slideshow makers in 2026, by what you need to make</video:title>
+      <video:description>The best slideshow maker depends on the job. Tools for phones, design, desktop, business video, APIs and narrated slideshows, checked against their own pages.</video:description>
+      <video:content_loc>https://videngine.io/videos/slideshows-best-slideshow-makers.mp4</video:content_loc>
+      <video:duration>67</video:duration>
+      <video:publication_date>2026-10-16T11:14:10.375Z</video:publication_date>
+    </video:video>
+  </url>
+  <url>
     <loc>https://videngine.io/slideshows/how-to-make-a-slideshow</loc>
     <video:video>
       <video:thumbnail_loc>https://videngine.io/videos/slideshows-how-to-make-a-slideshow.jpg</video:thumbnail_loc>
