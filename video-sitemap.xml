@@ -78,6 +78,17 @@
     </video:video>
   </url>
   <url>
+    <loc>https://videngine.io/slideshows/slideshow-with-music</loc>
+    <video:video>
+      <video:thumbnail_loc>https://videngine.io/videos/slideshows-slideshow-with-music.jpg</video:thumbnail_loc>
+      <video:title>Slideshow maker with music: photo videos with narration</video:title>
+      <video:description>A slideshow maker with music for business video: when music alone works, when it belongs under a voiceover, licences, Content ID, mixing levels and captions.</video:description>
+      <video:content_loc>https://videngine.io/videos/slideshows-slideshow-with-music.mp4</video:content_loc>
+      <video:duration>60</video:duration>
+      <video:publication_date>2026-10-16T11:16:11.695Z</video:publication_date>
+    </video:video>
+  </url>
+  <url>
     <loc>https://videngine.io/use-cases/video-ads</loc>
     <video:video>
       <video:thumbnail_loc>https://videngine.io/videos/use-cases-video-ads.jpg</video:thumbnail_loc>
