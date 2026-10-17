@@ -9,6 +9,8 @@
   const STOPS = [10, 20, 30, 40, 50, 60, 75, 100, 125, 150, 180, 200, 250, 300, 400, 500, 600, 750, 900, 1000, 1250, 1500, 1750, 2000];
   const TICKS = [50, 250, 750, 1500];
   const CONTACT = 'mailto:hello@videngine.io?subject=Videngine%20Custom%20plan';
+  const SIGNUP = 'https://app.videngine.io/signup';
+  const signupUrl = (key) => `${SIGNUP}?plan=${key}&period=${period}`;
 
   const reduced = window.matchMedia('(prefers-reduced-motion: reduce)');
   const money = (v) => '$' + Math.round(v).toLocaleString('en-US');
@@ -54,6 +56,7 @@
   }
 
   function renderPrices() {
+    document.querySelectorAll('.plan__cta[data-plan]').forEach((a) => { a.href = signupUrl(a.dataset.plan); });
     ORDER.forEach((key) => {
       const p = PLANS[key];
       const amount = document.querySelector(`[data-price="${key}"]`);
@@ -189,7 +192,7 @@
         out.detail.textContent = `${count(p.incl)} included plus ${count(n - p.incl)} extra at ${money2(p.extra)} each. About ${money2(cost / n)} a video.`;
       }
       out.cta.textContent = `Choose ${p.name}`;
-      out.cta.href = '#waitlist';
+      out.cta.href = signupUrl(pick);
     }
 
     const costs = ORDER.map((key) => costFor(key, n));
