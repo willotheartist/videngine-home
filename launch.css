@@ -65,3 +65,4 @@ body.launch-home{--bg:#000;--paper:#111;--ink:#eee;--muted:#aaa;--line:#292929;-
 .plan-strip__foot{margin-top:22px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:14px}
 @media(max-width:1000px){.plan-strip{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:560px){.plan-strip{grid-template-columns:1fr}.plan-strip__item{padding:24px 22px 26px}.plan-strip__price{margin-top:14px}}
+.start-actions{display:flex;flex-wrap:wrap;gap:12px;align-items:center}.start-actions .waitlist-small{flex-basis:100%;margin-top:6px}.start-actions .waitlist-small a{color:#eee;text-decoration:underline;text-underline-offset:3px}.start-actions .pill-button--ghost{background:transparent;color:#eee;border-color:#3a3a3a}.start-actions .pill-button--ghost:hover{background:#1a1a1a;border-color:#ff6036;color:#fff}

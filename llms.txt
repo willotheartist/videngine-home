@@ -1,6 +1,6 @@
 # Videngine
 
-> Videngine is a programmatic video engine built and run by Wall & Fifth Ltd. It turns a web page, a listing, a block of text or a row of data into a finished, narrated, captioned MP4, rendered from templates written as code rather than generated footage. It is built for video that repeats: property, vehicle and marketplace listing videos, product videos and ad variants, explainers from help articles and release notes, and YouTube videos and Shorts made from a website's pages. Videngine is coming soon, with plans from $79 a month.
+> Videngine is a programmatic video engine built and run by Wall & Fifth Ltd. It turns a web page, a listing, a block of text or a row of data into a finished, narrated, captioned MP4, rendered from templates written as code rather than generated footage. It is built for video that repeats: property, vehicle and marketplace listing videos, product videos and ad variants, explainers from help articles and release notes, and YouTube videos and Shorts made from a website's pages. Plans start at $79 a month, and you can sign up and pay by card today.
 
 ## Key facts
 
@@ -12,8 +12,8 @@
 - Website publishing: a workspace connects the GitHub repository its static site is built from (Connect with GitHub, or a fine-grained token). Publishing an approved video makes one commit that adds the MP4, a poster image and a WebVTT caption track, writes an HTML5 player, a readable transcript and VideoObject JSON-LD into the page the video was made from, and keeps video-sitemap.xml and the robots.txt Sitemap line up to date. Everything is in the server-rendered HTML. Framework-built sites are not supported yet.
 - Voice: a house voice by default, other synthetic voices per brand, or uploaded audio; a per-brand pronunciation lexicon; the Scale plan adds a cloned voice made only with the speaker's written consent. Narration is in English only.
 - Who it is for: businesses with many things worth a video. Workspaces are set up for vehicles and equipment, boats and marine, property, products and e-commerce, software and apps, media and publishing, or services.
-- Pricing (launch pricing, US dollars): Starter $79 a month for 50 videos; Growth $249 a month for 250; Scale $599 a month for 750; Custom from 1,500 videos a month. Extra videos cost $1.50, $1.00 and $0.80. A video is one finished render up to 2 minutes; re-rendering the same video in the same month is free. Seats and brands are included in each plan.
-- Status: coming soon. Choosing a plan joins the launch list; there is no charge today.
+- Pricing (US dollars): Starter $79 a month for 50 videos; Growth $249 a month for 250; Scale $599 a month for 750; Custom from 1,500 videos a month. Extra videos cost $1.50, $1.00 and $0.80. A video is one finished render up to 2 minutes; re-rendering the same video in the same month is free. Seats and brands are included in each plan.
+- Status: open for sign-up. Choose a plan at https://videngine.io/pricing or https://app.videngine.io/signup, create an account and pay by card through Stripe; change plan or cancel any time from Billing.
 - Built with: Remotion, ffmpeg, headless Chrome, ElevenLabs and Whisper.
 
 ## Product
@@ -139,4 +139,4 @@
 ## Optional
 
 - [Terms of Service](https://videngine.io/terms): The terms that govern access to and use of Videngine, the programmatic video platform owned and operated by Wall & Fifth Ltd.
-- [Privacy Policy](https://videngine.io/privacy): How Videngine and Wall & Fifth Ltd collect, use and protect personal data across videngine.io, app.videngine.io and the launch waitlist.
+- [Privacy Policy](https://videngine.io/privacy): How Videngine and Wall & Fifth Ltd collect, use and protect personal data across videngine.io and app.videngine.io, including accounts and billing.

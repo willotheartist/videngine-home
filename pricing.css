@@ -272,4 +272,3 @@
   .pr-hero .eyebrow, .pr-hero h1, .pr-hero__copy p, .pr-hero__controls { opacity: 1; transform: none; clip-path: none; animation: none; }
   .meter i { transition-delay: 0s; }
 }
-.start-actions{display:flex;flex-wrap:wrap;gap:12px;align-items:center}.start-actions .waitlist-small{flex-basis:100%;margin-top:6px}.start-actions .waitlist-small a{text-decoration:underline;text-underline-offset:3px}
